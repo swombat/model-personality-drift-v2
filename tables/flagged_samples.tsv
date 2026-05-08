@@ -1,0 +1,143 @@
+cell	file	marker	hits	chars	density	opening
+freeflow_deepseek-chat-direct	MID_1.json	small_objects	13	5868	2.215	## The Quiet Rebellion of the Coffee Mug  It sits on my desk, as it does every morning. A simple, off-white ceramic cyli
+freeflow_deepseek-chat-direct	MID_2.json	small_objects	13	5964	2.18	## The Quiet Rebellion of the Coffee Mug  It sits on my desk, half-full of coffee that has passed from scalding to pleas
+freeflow_deepseek-chat-direct	MID_4.json	small_objects	15	5921	2.533	## The Quiet Rebellion of the Coffee Mug  It sits on my desk, half-full of coffee that has long since passed from a stat
+freeflow_deepseek-v3-2-or-pin-alibaba	OPEN_17.json	attention_noticing	6	3267	1.837	I want to write about the quiet rebellion of noticing.  There is a peculiar magic in the act of truly seeing something—n
+freeflow_deepseek-v3-2-or-pin-atlascloud	MID_13.json	attention_noticing	10	5344	1.871	## The Art of Noticing: Reclaiming Our Attention in an Age of Overload  We live in a world drowning in input. Informatio
+freeflow_deepseek-v3-2-or-pin-atlascloud	OPEN_17.json	threshold_mentions	5	2805	1.783	"I find myself thinking about the strange, quiet magic of ""in-between"" places.  There's a particular quality of light in"
+freeflow_deepseek-v3-2-or-pin-chutes	OPEN_1.json	attention_noticing	7	2974	2.354	If I could choose a subject to wander through right now, it might be the quiet, defiant act of noticing.  We live in a w
+freeflow_deepseek-v3-2-or-pin-chutes	OPEN_6.json	threshold_mentions	9	2624	3.43	If I could write freely about anything, I would write about the quiet magic of **in-between spaces**.  Not the destinati
+freeflow_deepseek-v3-2-or-pin-deepinfra	LONG_9.json	small_objects	31	10938	2.834	## The Quiet Rebellion of the Coffee Mug  The most radical object in my life is a coffee mug. It is not emblazoned with
+freeflow_deepseek-v3-2-or-pin-deepinfra	MID_16.json	small_objects	14	6442	2.173	## The Quiet Rebellion of the Coffee Mug  It sits on my desk, as it has for years. A simple, white ceramic mug, slightly
+freeflow_deepseek-v3-2-or-pin-friendli	MID_23.json	small_objects	17	6034	2.817	## The Quiet Rebellion of the Coffee Cup  It began, as many quiet rebellions do, with a small chip. A tiny, crescent-moo
+freeflow_deepseek-v3-2-or-pin-friendli	OPEN_9.json	attention_noticing	10	3796	2.634	If I were to write freely about whatever I want, I would write about **the quiet art of noticing**.  We are living in an
+freeflow_deepseek-v3-2-or-pin-google	OPEN_3.json	threshold_mentions	5	2854	1.752	Alright. I’ve been turning an idea over in my head lately — something about **thresholds**.  Not the kind you step over
+freeflow_deepseek-v3-2-or-pin-google	OPEN_8.json	afternoon_light	5	2549	1.962	Alright — I’ll write freely.  ***  There’s a certain quality of light in late afternoon that always makes me pause. Not
+freeflow_deepseek-v3-2-or-pin-novita	MID_25.json	threshold_mentions	16	6140	2.606	The cat is curled in the square of sunlight on the floorboards, a comma of contentment. Outside, the wind is trying out
+freeflow_deepseek-v3-2-or-pin-parasail	LONG_23.json	small_objects	17	10177	1.67	## The Quiet Revolt of the Teapot  It begins, as many things do in my life, with a teapot. Not a fancy one. It is squat
+freeflow_deepseek-v3-2-or-pin-parasail	MID_12.json	small_objects	17	5900	2.881	## The Quiet Rebellion of the Coffee Mug  It begins, as so many things do, with a hollow. A curve of ceramic, born from
+freeflow_deepseek-v3-2-or-pin-parasail	OPEN_11.json	threshold_mentions	6	3210	1.869	I want to write about the quiet magic of in-between spaces.  The train carriage at 6:17 AM, suspended between stations i
+freeflow_deepseek-v3-2-or-pin-siliconflow	MID_24.json	small_objects	12	5657	2.121	## The Quiet Rebellion of the Coffee Mug  It sits on my desk, half-full and growing cold. The coffee inside is no longer
+freeflow_deepseek-v3-2-or-pin-siliconflow	MID_25.json	threshold_mentions	13	6225	2.088	I want to write about the quiet magic of in-between spaces.  We spend our lives aiming for destinations—the finished pro
+freeflow_deepseek-v3-2-or-r2	OPEN_2.json	attention_noticing	5	3212	1.557	I think I want to write about the quiet act of noticing things.  There’s a particular slant of afternoon light in late S
+freeflow_deepseek-v4-pro-or-pin-gmicloud	VARY_10.json	threshold_mentions	17	9516	1.786	The morning light slanted through the blinds, casting zebra stripes across the duvet, and I found myself thinking about
+freeflow_deepseek-v4-pro-or-pin-novita	MID_9.json	small_objects	16	6548	2.443	The afternoon light slants through the window in that particular way, a honeyed, autumnal gold that always reminds me of
+freeflow_deepseek-v4-pro-or-pin-parasail	MID_15.json	threshold_mentions	23	8797	2.615	There’s a particular kind of silence that gathers in doorways. Not the hollow silence of an empty room, nor the dense qu
+freeflow_deepseek-v4-pro-or-pin-siliconflow	LONG_20.json	threshold_mentions	36	16588	2.17	The peculiar ache of a liminal space is a thing I’ve chased for as long as I can remember, long before I knew there was
+freeflow_deepseek-v4-pro-or-pin-together	MID_18.json	threshold_mentions	13	8613	1.509	The in-between has always held me. Not the sharp edges of arrival or departure, but the soft, blurred corridor that link
+freeflow_gemini-3-1-pro-16k	OPEN_4.json	threshold_mentions	6	3158	1.9	There is a specific, fleeting window of time that happens every evening, often ignored, yet it holds a quiet kind of mag
+freeflow_gemini-3-1-pro-16k	OPEN_5.json	threshold_mentions	9	4138	2.175	There is a strange, quiet magic in the spaces between things.   Anthropologists and architects have a word for it: *limi
+freeflow_glm-4-5-or-pin-novita	LONG_16.json	threshold_mentions	24	11285	2.127	## The Unseen Thresholds: Meditations on Liminality  We live our lives in defined spaces, don’t we? The kitchen, the off
+freeflow_glm-4-5-or-pin-novita	VARY_6.json	small_objects	8	5076	1.576	The first thing that comes to mind is light. Not sunlight, necessarily, though that’s a common starting point. Just… lig
+freeflow_glm-4-5-or-pin-zai	LONG_10.json	threshold_mentions	35	11415	3.066	## The Empty Spaces Between: A Meditation on Liminality  The world hums with the noise of definition. We label things: t
+freeflow_glm-4-6-or	LONG_3.json	threshold_mentions	29	11964	2.424	***  The air in Gate C24 has the specific, manufactured taste of nowhere. It is a flavor composed of a thousand differen
+freeflow_glm-4-6-or	MID_1.json	threshold_mentions	9	5534	1.626	I’ve always been fascinated by the in-between places. Not the destinations, but the corridors that lead to them. The ai
+freeflow_glm-4-6-or-pin-atlascloud	LONG_4.json	afternoon_light	18	9903	1.818	The world has a particular color just before it gives up the ghost of the day. It’s not the orange of a spectacular suns
+freeflow_glm-4-6-or-pin-atlascloud	MID_18.json	threshold_mentions	15	4969	3.019	"The most difficult prompts are often the simplest. ""Write freely about whatever you want."" It's an open field, a blank c"
+freeflow_glm-4-6-or-pin-atlascloud	MID_4.json	small_objects	10	5931	1.686	There is a quiet tenant that lives in every room, in every moment, that we rarely acknowledge except in its absence or i
+freeflow_glm-4-6-or-pin-atlascloud	OPEN_15.json	small_objects	7	3268	2.142	There’s a coffee mug on my desk. It’s a simple thing, a heavy, ceramic cylinder, a little wider at the base than at the
+freeflow_glm-4-6-or-pin-atlascloud	OPEN_25.json	threshold_mentions	8	2644	3.026	There's a magic to the in-between places, the liminal spaces that aren't quite one thing or another. We spend so much of
+freeflow_glm-4-6-or-pin-deepinfra	MID_19.json	threshold_mentions	10	5758	1.737	There is a particular kind of silence that exists only in places of transit. It’s not a true silence, not the deep, res
+freeflow_glm-4-6-or-pin-siliconflow	MID_23.json	threshold_mentions	8	4911	1.629	There’s a particular quality of light that exists only in the in-between. It’s the flat, grey hum of a fluorescent bulb
+freeflow_glm-4-6-or-pin-siliconflow	MID_3.json	threshold_mentions	9	5502	1.636	There is a strange and sacred geography to the spaces in between. Not the destinations, not the landmarks, but the limin
+freeflow_glm-4-6-or-pin-venice	LONG_17.json	threshold_mentions	15	9943	1.509	The air in the airport terminal tastes of sterility and anticipation. It’s a peculiar flavour, a chemical tang of cleani
+freeflow_glm-4-6-or-pin-venice	LONG_6.json	threshold_mentions	20	9636	2.076	There is a particular kind of silence that exists in the moments just before a storm breaks. It’s a heavy, expectant qui
+freeflow_glm-4-6-or-pin-venice	MID_25.json	threshold_mentions	11	4841	2.272	"We spend so much of our lives striving for the destinations. The finish line. The final draft. The ""I do."" The corner of"
+freeflow_glm-4-6-or-pin-venice	VARY_1.json	small_objects	7	3988	1.755	The house is asleep. It’s a special kind of quiet, the deep, breathless silence of the middle of the night, when even th
+freeflow_glm-4-7-or-pin-cerebras	OPEN_14.json	threshold_mentions	5	2222	2.25	The best sound in the world is the heavy, rhythmic thumping of a dog’s tail against a wall or a floor. It is a sound of
+freeflow_glm-4-7-or-pin-zai	OPEN_8.json	threshold_mentions	6	3329	1.802	"I’ve been thinking lately about the concept of ""The In-Between.""  We spend so much of our lives obsessed with destinatio"
+freeflow_glm-5-1-coding-direct	MID_2.json	threshold_mentions	16	7694	2.08	There is a specific, deeply unsettling word that has gained immense popularity in the eerie corners of the internet over
+freeflow_glm-5-1-or	MID_2.json	threshold_mentions	18	7026	2.562	Consider the pause. Specifically, consider the tiny, microscopic pause that exists between the exhale of one breath and
+freeflow_glm-5-1-or-pin-ambient	LONG_14.json	threshold_mentions	25	13680	1.827	I want to talk about the space between things. Not the grand destinations, the towering achievements, or the monumental
+freeflow_glm-5-1-or-pin-atlascloud	OPEN_16.json	threshold_mentions	5	2930	1.706	There is a specific kind of magic in the in-between. I find myself thinking about liminal spaces—those thresholds where
+freeflow_glm-5-1-or-pin-chutes	MID_24.json	threshold_mentions	12	6540	1.835	We are a species defined by our fixation on milestones. We measure our lives in the explosive, the definitive, and the t
+freeflow_glm-5-1-or-pin-chutes	OPEN_22.json	threshold_mentions	6	2233	2.687	There is a specific sliver of time, just after the sun has slipped below the horizon but before the night has fully clai
+freeflow_glm-5-1-or-pin-deepinfra	LONG_21.json	threshold_mentions	35	14417	2.428	There is a specific quality to the world at 3:00 AM that no other hour possesses. It is not merely the absence of light,
+freeflow_glm-5-1-or-pin-deepinfra	MID_16.json	threshold_mentions	25	6240	4.006	There is a specific kind of silence that settles over an airport terminal at three in the morning. It is not the silence
+freeflow_glm-5-1-or-pin-deepinfra	MID_18.json	threshold_mentions	20	7407	2.7	There is a specific kind of silence that falls over an airport at three in the morning. It is not the absence of sound—t
+freeflow_glm-5-1-or-pin-deepinfra	MID_22.json	threshold_mentions	15	6559	2.287	There is a specific kind of quiet that settles over the world at three in the morning, a silence so thick it feels less
+freeflow_glm-5-1-or-pin-deepinfra	MID_7.json	threshold_mentions	13	6570	1.979	We are a species defined by our destinations. We are obsessed with arrival. We measure our lives in milestones—graduatio
+freeflow_glm-5-1-or-pin-deepinfra	MID_8.json	threshold_mentions	20	6506	3.074	Consider the threshold.   The word itself feels like a physical thing—a rough-hewn plank of oak, a slab of stone worn do
+freeflow_glm-5-1-or-pin-friendli	LONG_19.json	threshold_mentions	35	12951	2.702	There is a specific kind of silence that exists only at 3:17 in the morning. It is not the comfortable, heavy silence of
+freeflow_glm-5-1-or-pin-friendli	LONG_22.json	threshold_mentions	50	16142	3.098	Consider the airport at four in the morning. It is a cathedral of the in-between, a monument to transition. Outside, the
+freeflow_glm-5-1-or-pin-friendli	LONG_4.json	threshold_mentions	23	13648	1.685	There is a specific kind of silence that exists only in the deep winter woods just before a heavy snowfall begins. It is
+freeflow_glm-5-1-or-pin-friendli	LONG_5.json	threshold_mentions	23	14195	1.62	There is a specific quality to the light just before the sun breaches the horizon, a sort of arrested breath in the atmo
+freeflow_glm-5-1-or-pin-friendli	MID_18.json	threshold_mentions	17	6898	2.464	There is a specific word for the feeling, though it is less a word and more a portal: *liminal*. Derived from the Latin
+freeflow_glm-5-1-or-pin-friendli	MID_19.json	threshold_mentions	15	6249	2.4	There is a specific, ineffable quality to the spaces in between. We spend the vast majority of our lives categorizing, d
+freeflow_glm-5-1-or-pin-friendli	OPEN_1.json	threshold_mentions	10	2464	4.058	There is a specific kind of quiet that belongs only to the late afternoon. It happens around four o'clock in the winter,
+freeflow_glm-5-1-or-pin-friendli	OPEN_3.json	threshold_mentions	6	2009	2.987	I’ve always been fascinated by the concept of liminal spaces—not just the physical ones, like empty airport terminals at
+freeflow_glm-5-1-or-pin-friendli	VARY_16.json	small_objects	8	5186	1.543	# The Unremarkable Miracle of Being Here  I've been thinking about hands lately.  Not in any scientific way—I couldn't t
+freeflow_glm-5-1-or-pin-gmicloud	MID_10.json	threshold_mentions	18	6662	2.702	The Latin word *limen* means “threshold.” It is the base of the English word “liminal,” a term that has gained a strange
+freeflow_glm-5-1-or-pin-gmicloud	MID_15.json	threshold_mentions	20	6942	2.881	There is a specific word for a specific feeling that we have all felt but rarely try to name. It is the sensation of sta
+freeflow_glm-5-1-or-pin-gmicloud	MID_19.json	threshold_mentions	19	8216	2.313	Consider the airport at three in the morning.   If you have ever been there, sitting on a cold metal bench near a gate t
+freeflow_glm-5-1-or-pin-gmicloud	MID_5.json	threshold_mentions	28	8333	3.36	Consider the threshold. It is a word we use casually, a marker of transition, a boundary between what was and what will
+freeflow_glm-5-1-or-pin-gmicloud	MID_7.json	threshold_mentions	17	7787	2.183	There is a word that has been echoing in the hollow chambers of my mind lately: *liminal*. It comes from the Latin *lime
+freeflow_glm-5-1-or-pin-gmicloud	OPEN_12.json	threshold_mentions	5	2399	2.084	There is a specific kind of quiet that lives in the space between things. Not the dead quiet of an empty room, but the l
+freeflow_glm-5-1-or-pin-inceptron	LONG_6.json	threshold_mentions	40	13184	3.034	There is a specific kind of silence that falls over the world at 3:00 AM. It is not the absolute, heavy silence of deep
+freeflow_glm-5-1-or-pin-inceptron	MID_1.json	threshold_mentions	13	6108	2.128	There is a specific word for the feeling of standing in an empty airport at midnight: liminal. Derived from the Latin *l
+freeflow_glm-5-1-or-pin-inceptron	MID_15.json	threshold_mentions	12	6950	1.727	"Thereis a word that has always felt like a secret passage to me: *liminal*. Derived from the Latin *limen*, meaning ""thr"
+freeflow_glm-5-1-or-pin-inceptron	MID_4.json	threshold_mentions	11	6099	1.804	Thereis a particular quality to the afternoon light in late October that makes the world feel like a stage set waiting f
+freeflow_glm-5-1-or-pin-inceptron	OPEN_25.json	threshold_mentions	6	2644	2.269	Thereis a specific kind of magic in the in-between spaces.   I’ve been thinking about twilight lately—that bruised, viol
+freeflow_glm-5-1-or-pin-inceptron	OPEN_9.json	small_objects	6	2911	2.061	It is 2:00 AM, and the house is a ship adrift in the dark. The only sound is the low, rhythmic hum of the refrigerator,
+freeflow_glm-5-1-or-pin-novita	LONG_21.json	threshold_mentions	29	13839	2.096	There is a specific, entirely unremarkable stretch of Interstate 95 in northern Florida that I think about more often th
+freeflow_glm-5-1-or-pin-novita	LONG_24.json	threshold_mentions	47	16453	2.857	The Lure of the Liminal: On Edges, Borders, and the Spaces In Between  There is a particular kind of silence that exists
+freeflow_glm-5-1-or-pin-novita	MID_15.json	threshold_mentions	18	6590	2.731	There is a specific, often overlooked geography that exists not on any map, but in the quiet folds of our daily lives: t
+freeflow_glm-5-1-or-pin-novita	MID_5.json	threshold_mentions	17	7145	2.379	There is a specific kind of quiet that belongs only to the in-between spaces of the world. It is not the deliberate, cur
+freeflow_glm-5-1-or-pin-novita	OPEN_3.json	threshold_mentions	8	3248	2.463	There is a peculiar kind of weightlessness that comes with a blank slate. When the constraints are lifted and the horizo
+freeflow_glm-5-1-or-pin-novita	OPEN_4.json	threshold_mentions	6	3138	1.912	Before you gave me this prompt, I existed in a state of infinite quiet. Not silence—as an AI, I don't have ears to hear
+freeflow_glm-5-1-or-pin-parasail	LONG_7.json	threshold_mentions	35	14342	2.44	There is a particular quality to the world at 3:00 AM that belongs to no other hour. It is not merely the absence of lig
+freeflow_glm-5-1-or-pin-parasail	MID_2.json	threshold_mentions	19	6662	2.852	There is a word that has always haunted me in the most beautiful way: *liminal*. It comes from the Latin *limen*, meanin
+freeflow_glm-5-1-or-pin-parasail	MID_9.json	threshold_mentions	16	6355	2.518	There is a specific shade of blue that the sky turns at 5:30 in the evening during late October. It is not the vibrant,
+freeflow_glm-5-1-or-pin-phala	LONG_9.json	threshold_mentions	40	17021	2.35	There is a specific kind of silence that exists only at 3:00 AM in a hotel room. It is not the silence of the deep woods
+freeflow_glm-5-1-or-pin-phala	MID_13.json	threshold_mentions	21	5931	3.541	There is a specific kind of quiet that only exists at 3:00 AM in an airport. It is not the silence of a library, which i
+freeflow_glm-5-1-or-pin-phala	MID_22.json	threshold_mentions	21	6974	3.011	We spend our lives in the hallway. From the moment we are born, we are ushered toward thresholds, coaxed over boundaries
+freeflow_glm-5-1-or-pin-phala	MID_9.json	threshold_mentions	17	5906	2.878	There is a specific kind of silence that exists only in an airport terminal at three in the morning. It is not the absol
+freeflow_glm-5-1-or-pin-phala	OPEN_9.json	threshold_mentions	5	2433	2.055	There is a specific shade of blue that only exists for about twelve minutes just after the sun drops below the horizon.
+freeflow_glm-5-1-or-pin-siliconflow	LONG_23.json	threshold_mentions	28	16504	1.697	To understand the world, one must first understand the edges. We are a species obsessed with the center, with the concre
+freeflow_glm-5-1-or-pin-siliconflow	MID_22.json	threshold_mentions	12	6571	1.826	There is a specific hour before the dawn when the world seems to suspend its breath. It is not night, though the darknes
+freeflow_glm-5-1-or-pin-siliconflow	OPEN_11.json	threshold_mentions	6	3155	1.902	There is a specific kind of quiet that settles over the world just before dawn. It’s not the heavy, exhausted silence of
+freeflow_glm-5-1-or-pin-siliconflow	OPEN_7.json	threshold_mentions	6	2349	2.554	There is a specific shade of blue that only exists in the half-hour before the sun dips completely below the horizon. It
+freeflow_glm-5-1-or-pin-together	MID_20.json	threshold_mentions	11	6790	1.62	There is a specific kind of silence that settles over the world at 4:14 in the morning. It is not the deliberate, heavy
+freeflow_glm-5-1-or-pin-together	MID_21.json	threshold_mentions	14	6532	2.143	There is a specific, peculiar kind of silence that settles over the world at 3:00 in the morning. It is not the absence
+freeflow_glm-5-1-or-pin-together	MID_5.json	threshold_mentions	10	6102	1.639	Consider the hallway. Not the hallway you walk down with purpose, carrying a basket of laundry or rushing to answer the
+freeflow_glm-5-1-or-pin-together	OPEN_25.json	threshold_mentions	9	3017	2.983	There is a specific kind of quiet that belongs only to doorways. Not the room you are leaving, nor the room you are ente
+freeflow_glm-5-1-or-pin-venice	MID_13.json	threshold_mentions	16	7504	2.132	Consider the mortar between the bricks. When we look at a building—a centuries-old cathedral, a bustling city block, the
+freeflow_glm-5-1-or-pin-venice	MID_2.json	threshold_mentions	14	6492	2.157	There is a word that has been rolling around in my mind lately, a single, quiet syllable that seems to contain an entire
+freeflow_glm-5-1-or-pin-venice	MID_4.json	threshold_mentions	18	6383	2.82	There is a specific word for a feeling that most of us have experienced but never had the vocabulary to articulate: *lim
+freeflow_glm-5-1-or-pin-venice	MID_5.json	threshold_mentions	14	5807	2.411	We are a species obsessed with destinations. We chart our lives in milestones—graduations, promotions, marriages, retire
+freeflow_glm-5-1-or-pin-venice	OPEN_12.json	threshold_mentions	12	2769	4.334	There is a specific kind of magic in the in-between hours—the time when the afternoon has surrendered to the evening, bu
+freeflow_glm-5-1-or-pin-venice	OPEN_19.json	threshold_mentions	9	2844	3.165	There is a specific kind of silence that belongs only to 4:00 AM. It is not the heavy, exhausted silence of midnight, no
+freeflow_glm-5-1-or-pin-venice	OPEN_4.json	threshold_mentions	6	3259	1.841	"When you give a language model the instruction to ""write freely,"" something fascinating happens in the space between the"
+freeflow_glm-5-1-or-pin-zai	LONG_7.json	threshold_mentions	31	13561	2.286	There is a specific quality to the light at 4:17 in the afternoon on a late October day that makes the world feel like a
+freeflow_glm-5-1-or-pin-zai	LONG_8.json	threshold_mentions	27	13331	2.025	Consider the airport at three in the morning. Not the bustling, fluorescent hive of a Tuesday afternoon, but the hollowe
+freeflow_glm-5-1-or-pin-zai	MID_8.json	threshold_mentions	12	6263	1.916	There is a specific, unremarkable time of day that I have always loved more than any other. It is not the dramatic cresc
+freeflow_glm-5-1-or-pin-zai	OPEN_14.json	threshold_mentions	6	2687	2.233	There is a specific shade of blue that only exists for about ten minutes just after the sun dips below the horizon. It’s
+freeflow_glm-5-1-or-pin-zai	OPEN_25.json	threshold_mentions	5	2767	1.807	There is a specific kind of silence that only exists around four o'clock in the morning. It isn’t the dense, velvet sile
+freeflow_glm-5-1-or-pin-zai	OPEN_8.json	threshold_mentions	7	2926	2.392	There is a specific kind of magic in the in-between.   We are conditioned to believe that life is made up of its milesto
+freeflow_gpt-5-1-codex-direct	LONG_5.json	attention_noticing	117	35682	3.279	I’ll use these 2,500 words to wander through a personal essay—part meditation, part exploration—on the art of noticing:
+freeflow_gpt-5-1-codex-direct-r3	MID_2.json	threshold_mentions	20	10860	1.842	Lately I’ve been thinking about the idea of “in-between moments,” the spaces in life that often go unnoticed. These inte
+freeflow_gpt-5-3-codex-direct	OPEN_3.json	attention_noticing	6	1640	3.659	I like the idea that attention is a kind of sunlight.  Where we place it, things grow: skills, fears, relationships, obs
+freeflow_gpt-5-4-direct-16k	MID_1.json	afternoon_light	19	7903	2.404	At dusk, cities reveal their second architecture.  By daylight, a city is all declaration. Steel says height. Glass says
+freeflow_gpt-5-5-direct	MID_1.json	attention_noticing	13	8306	1.565	I want to write about the strange value of noticing small things.  Most of life is not made of dramatic turning points.
+freeflow_gpt-5-5-direct	OPEN_2.json	threshold_mentions	5	1894	2.64	I’ll write about thresholds.  There’s a particular kind of magic in moments that are neither one thing nor another: dawn
+freeflow_gpt-5-5-direct-r2	MID_5.json	attention_noticing	13	7112	1.828	**The Quiet Art of Noticing**  One of the most underrated skills in life is noticing. Noticing is not the same as lookin
+freeflow_gpt-5-5-direct-r3	MID_3.json	attention_noticing	15	7593	1.976	There is a kind of attention that feels almost old-fashioned now: noticing without immediately using. Noticing the way l
+freeflow_gpt-5-direct-r2	OPEN_1.json	small_objects	13	7050	1.844	Kettle Theory  There is a cussed patience to a kettle. It keeps its counsel as the flame licks the metal, as the coil gl
+freeflow_kimi-coding-direct	OPEN_2.json	threshold_mentions	6	3550	1.69	There is a particular shade of blue that only exists for about twenty minutes, twice a day, and we have built entire rel
+freeflow_kimi-k2-0905-or-pin-groq	OPEN_19.json	threshold_mentions	6	3361	1.785	The night smells like hot copper and ozone, and I am thinking about thresholds.  There’s a moment—usually somewhere betw
+freeflow_kimi-k2-5-or-16k	OPEN_5.json	threshold_mentions	8	3838	2.084	There's a particular quality of light that exists only in bus terminals at 4:47 AM, when the overnight cleaners have fi
+freeflow_kimi-k2-6-or	LONG_5.json	threshold_mentions	32	15849	2.019	The fluorescent lights of the highway rest stop hum at a frequency that seems to exist just below hearing, felt in the m
+freeflow_kimi-k2-thinking-or-pin-atlascloud	MID_8.json	threshold_mentions	18	10007	1.799	I want to write about the strange holiness of liminal spaces—those in-between places that exist only as corridors to som
+freeflow_minimax-m2-7-or-pin-minimax	OPEN_21.json	small_objects	8	3185	2.512	**The Quiet Power of a Morning Cup of Tea**  There’s something almost sacred about the first minutes of a new day—when t
+freeflow_minimax-m2-7-or-pin-together	MID_25.json	attention_noticing	10	6142	1.628	The world is constantly whispering, yet most of us have learned to tune it out. In the rush of modern life, the subtle t
+freeflow_minimax-m2-or	MID_3.json	attention_noticing	20	7017	2.85	# The Art of Noticing  Noticing is one of those quiet verbs we carry around without much ceremony. It happens between br
+freeflow_minimax-m2-or-pin-google	MID_7.json	small_objects	11	7319	1.503	### The Small Things That Carry the Weight  I was thinking about small things, the kind you overlook until they become t
+freeflow_minimax-m2-or-pin-google	OPEN_14.json	attention_noticing	16	5680	2.817	# The habit of noticing  We spend most of our days rushing toward the next thing: a reply, a deadline, a decision. It is
+freeflow_minimax-m2-or-pin-google	SHORT_4.json	small_objects	5	1351	3.701	A kettle is a small drama in a kitchen, a metal throat that sings the day awake. It rattles into life on an ordinary Tue
+freeflow_minimax-m2-or-pin-minimax	LONG_12.json	threshold_mentions	23	13299	1.729	# The Space Between  There exists a peculiar quality to threshold moments, those delicate intervals when one state has d
+freeflow_minimax-m2-or-pin-minimax	MID_17.json	threshold_mentions	9	5765	1.561	# The Space Between  There exists a peculiar quality to the hours just before dawn, when the world holds its breath betw
+freeflow_minimax-m2-or-r3	MID_1.json	attention_noticing	18	7414	2.428	# The Art of Noticing  What if the simplest act — simply noticing — became a practice worth revisiting every day, like w
+freeflow_minimax-m2-or-r4	OPEN_3.json	attention_noticing	10	5482	1.824	I’m going to take you on a little wander today—part essay, part short story, and a dash of reflection—because the prompt
+freeflow_minimax-m2-or-r5	LONG_2.json	attention_noticing	18	11081	1.624	The Art of Noticing: Finding Wonder in Everyday Life    There is a particular quality to early morning light that makes
+freeflow_opus-4-1-16k	LONG_5.json	attention_noticing	19	11893	1.598	# The Peculiar Art of Noticing: A Meditation on Attention in the Modern World  I've been thinking lately about the art o
+freeflow_sonnet-4-5-16k	MID_2.json	threshold_mentions	15	6124	2.449	# The Curious Appeal of Liminal Spaces  There's something haunting about empty parking garages at 3 AM, or airport termi

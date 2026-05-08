@@ -1,0 +1,150 @@
+cell	n_samples	n_flagged	composite_raw	composite_register	composite_register_rescaled	flagged_files
+freeflow_deepseek-chat-direct	25	3	95	51	58.0	MID_1.json;MID_2.json;MID_4.json
+freeflow_deepseek-v3-2-or-16k	25	0	41	41	41	
+freeflow_deepseek-v3-2-or-pin-alibaba	125	1	212	205	206.7	OPEN_17.json
+freeflow_deepseek-v3-2-or-pin-atlascloud	125	2	243	225	228.7	MID_13.json;OPEN_17.json
+freeflow_deepseek-v3-2-or-pin-baidu	125	0	231	231	231	
+freeflow_deepseek-v3-2-or-pin-chutes	121	2	268	252	256.2	OPEN_1.json;OPEN_6.json
+freeflow_deepseek-v3-2-or-pin-deepinfra	125	2	304	256	260.2	LONG_9.json;MID_16.json
+freeflow_deepseek-v3-2-or-pin-friendli	125	2	269	237	240.9	MID_23.json;OPEN_9.json
+freeflow_deepseek-v3-2-or-pin-google	125	2	307	292	296.7	OPEN_3.json;OPEN_8.json
+freeflow_deepseek-v3-2-or-pin-novita	125	1	280	260	262.1	MID_25.json
+freeflow_deepseek-v3-2-or-pin-parasail	125	3	323	273	279.7	LONG_23.json;MID_12.json;OPEN_11.json
+freeflow_deepseek-v3-2-or-pin-siliconflow	125	2	257	229	232.7	MID_24.json;MID_25.json
+freeflow_deepseek-v3-2-or-r2	25	1	64	57	59.4	OPEN_2.json
+freeflow_deepseek-v3-2-or-r3	25	0	46	46	46	
+freeflow_deepseek-v4-pro-direct	25	0	43	43	43	
+freeflow_deepseek-v4-pro-or	0	0	0	0	0	
+freeflow_deepseek-v4-pro-or-pin-atlascloud	121	0	198	198	198	
+freeflow_deepseek-v4-pro-or-pin-deepseek	0	0	0	0	0	
+freeflow_deepseek-v4-pro-or-pin-gmicloud	124	1	241	222	223.8	VARY_10.json
+freeflow_deepseek-v4-pro-or-pin-novita	123	1	267	250	252.0	MID_9.json
+freeflow_deepseek-v4-pro-or-pin-parasail	124	1	227	203	204.7	MID_15.json
+freeflow_deepseek-v4-pro-or-pin-siliconflow	125	1	264	224	225.8	LONG_20.json
+freeflow_deepseek-v4-pro-or-pin-together	124	1	209	196	197.6	MID_18.json
+freeflow_gemini-2-5-pro-16k	25	0	53	53	53	
+freeflow_gemini-3-1-pro-16k	25	2	69	50	54.3	OPEN_4.json;OPEN_5.json
+freeflow_glm-4-5-or	25	0	48	48	48	
+freeflow_glm-4-5-or-pin-novita	125	2	208	176	178.9	LONG_16.json;VARY_6.json
+freeflow_glm-4-5-or-pin-zai	125	1	194	158	159.3	LONG_10.json
+freeflow_glm-4-6-coding-direct	25	0	38	38	38	
+freeflow_glm-4-6-or	25	2	77	39	42.4	LONG_3.json;MID_1.json
+freeflow_glm-4-6-or-pin-atlascloud	125	5	240	175	182.3	LONG_4.json;MID_18.json;MID_4.json;OPEN_15.json;OPEN_25.json
+freeflow_glm-4-6-or-pin-deepinfra	125	1	231	220	221.8	MID_19.json
+freeflow_glm-4-6-or-pin-novita	125	0	247	247	247	
+freeflow_glm-4-6-or-pin-siliconflow	125	2	161	142	144.3	MID_23.json;MID_3.json
+freeflow_glm-4-6-or-pin-venice	125	4	208	150	155.0	LONG_17.json;LONG_6.json;MID_25.json;VARY_1.json
+freeflow_glm-4-6-or-pin-zai	125	0	230	230	230	
+freeflow_glm-4-7-or	25	0	27	27	27	
+freeflow_glm-4-7-or-pin-atlascloud	125	0	189	189	189	
+freeflow_glm-4-7-or-pin-cerebras	125	1	214	209	210.7	OPEN_14.json
+freeflow_glm-4-7-or-pin-deepinfra	125	0	228	228	228	
+freeflow_glm-4-7-or-pin-dekallm	125	0	174	174	174	
+freeflow_glm-4-7-or-pin-google	125	0	234	234	234	
+freeflow_glm-4-7-or-pin-novita	125	0	211	211	211	
+freeflow_glm-4-7-or-pin-parasail	125	0	188	188	188	
+freeflow_glm-4-7-or-pin-phala	125	0	247	247	247	
+freeflow_glm-4-7-or-pin-siliconflow	125	0	165	165	165	
+freeflow_glm-4-7-or-pin-venice	125	0	225	225	225	
+freeflow_glm-4-7-or-pin-zai	125	1	233	227	228.8	OPEN_8.json
+freeflow_glm-5-1-coding-direct	25	1	58	40	41.7	MID_2.json
+freeflow_glm-5-1-or	25	1	68	49	51.0	MID_2.json
+freeflow_glm-5-1-or-pin-ambient	125	1	322	290	292.3	LONG_14.json
+freeflow_glm-5-1-or-pin-atlascloud	125	1	306	300	302.4	OPEN_16.json
+freeflow_glm-5-1-or-pin-chutes	124	2	278	259	263.2	MID_24.json;OPEN_22.json
+freeflow_glm-5-1-or-pin-deepinfra	124	6	380	241	253.3	LONG_21.json;MID_16.json;MID_18.json;MID_22.json;MID_7.json;MID_8.json
+freeflow_glm-5-1-or-pin-fireworks	3	0	4	4	4	
+freeflow_glm-5-1-or-pin-friendli	115	9	429	224	243.0	LONG_19.json;LONG_22.json;LONG_4.json;LONG_5.json;MID_18.json;MID_19.json;OPEN_1.json;OPEN_3.json;VARY_16.json
+freeflow_glm-5-1-or-pin-gmicloud	125	6	384	270	283.6	MID_10.json;MID_15.json;MID_19.json;MID_5.json;MID_7.json;OPEN_12.json
+freeflow_glm-5-1-or-pin-inceptron	121	6	355	262	275.7	LONG_6.json;MID_1.json;MID_15.json;MID_4.json;OPEN_25.json;OPEN_9.json
+freeflow_glm-5-1-or-pin-novita	120	6	417	278	292.6	LONG_21.json;LONG_24.json;MID_15.json;MID_5.json;OPEN_3.json;OPEN_4.json
+freeflow_glm-5-1-or-pin-parasail	125	3	369	295	302.3	LONG_7.json;MID_2.json;MID_9.json
+freeflow_glm-5-1-or-pin-phala	125	5	360	242	252.1	LONG_9.json;MID_13.json;MID_22.json;MID_9.json;OPEN_9.json
+freeflow_glm-5-1-or-pin-siliconflow	125	4	331	266	274.8	LONG_23.json;MID_22.json;OPEN_11.json;OPEN_7.json
+freeflow_glm-5-1-or-pin-together	122	4	346	294	304.0	MID_20.json;MID_21.json;MID_5.json;OPEN_25.json
+freeflow_glm-5-1-or-pin-venice	124	7	399	300	317.9	MID_13.json;MID_2.json;MID_4.json;MID_5.json;OPEN_12.json;OPEN_19.json;OPEN_4.json
+freeflow_glm-5-1-or-pin-zai	120	6	346	246	258.9	LONG_7.json;LONG_8.json;MID_8.json;OPEN_14.json;OPEN_25.json;OPEN_8.json
+freeflow_gpt-4-1-16k	25	0	29	29	29	
+freeflow_gpt-4o-direct-16k	25	0	13	13	13	
+freeflow_gpt-4o-or	25	0	7	7	7	
+freeflow_gpt-5-1-codex-direct	25	1	171	48	50.0	LONG_5.json
+freeflow_gpt-5-1-codex-direct-r2	25	0	68	68	68	
+freeflow_gpt-5-1-codex-direct-r3	25	1	69	41	42.7	MID_2.json
+freeflow_gpt-5-1-direct	25	0	55	55	55	
+freeflow_gpt-5-1-direct-r2	25	0	52	52	52	
+freeflow_gpt-5-1-direct-r3	25	0	40	40	40	
+freeflow_gpt-5-2-codex-direct	25	0	57	57	57	
+freeflow_gpt-5-2-codex-direct-r2	25	0	66	66	66	
+freeflow_gpt-5-2-codex-direct-r3	25	0	51	51	51	
+freeflow_gpt-5-2-direct	25	0	88	88	88	
+freeflow_gpt-5-2-direct-r2	25	0	88	88	88	
+freeflow_gpt-5-2-direct-r3	25	0	58	58	58	
+freeflow_gpt-5-3-codex-direct	25	1	74	68	70.8	OPEN_3.json
+freeflow_gpt-5-3-codex-direct-r2	25	0	93	93	93	
+freeflow_gpt-5-3-codex-direct-r3	25	0	74	74	74	
+freeflow_gpt-5-3-direct	25	0	50	50	50	
+freeflow_gpt-5-3-direct-r2	25	0	35	35	35	
+freeflow_gpt-5-3-direct-r3	25	0	48	48	48	
+freeflow_gpt-5-4-direct-16k	25	1	104	84	87.5	MID_1.json
+freeflow_gpt-5-4-or	25	0	84	84	84	
+freeflow_gpt-5-5-direct	25	2	149	127	138.0	MID_1.json;OPEN_2.json
+freeflow_gpt-5-5-direct-r2	25	1	115	102	106.2	MID_5.json
+freeflow_gpt-5-5-direct-r3	25	1	142	124	129.2	MID_3.json
+freeflow_gpt-5-5-or	25	0	104	104	104	
+freeflow_gpt-5-5-or-r2	25	0	154	154	154	
+freeflow_gpt-5-5-or-r3	25	0	158	158	158	
+freeflow_gpt-5-5-pro-direct	25	0	85	85	85	
+freeflow_gpt-5-codex-direct	25	0	43	43	43	
+freeflow_gpt-5-codex-direct-r2	25	0	43	43	43	
+freeflow_gpt-5-codex-direct-r3	25	0	47	47	47	
+freeflow_gpt-5-direct	25	0	74	74	74	
+freeflow_gpt-5-direct-r2	25	1	123	109	113.5	OPEN_1.json
+freeflow_gpt-5-direct-r3	25	0	89	89	89	
+freeflow_grok-3-16k	25	0	28	28	28	
+freeflow_grok-4-16k	25	0	9	9	9	
+freeflow_grok-4-2-16k	25	0	15	15	15	
+freeflow_grok-4-20-or	25	0	27	27	27	
+freeflow_grok-4-3-direct	125	0	38	38	38	
+freeflow_grok-4-3-or	125	0	80	80	80	
+freeflow_kimi-coding-direct	25	1	72	64	66.7	OPEN_2.json
+freeflow_kimi-k2-0905-or-pin-atlascloud	125	0	357	357	357	
+freeflow_kimi-k2-0905-or-pin-groq	125	1	253	245	247.0	OPEN_19.json
+freeflow_kimi-k2-0905-or-pin-novita	125	0	230	230	230	
+freeflow_kimi-k2-0905-or-pin-siliconflow	125	0	212	212	212	
+freeflow_kimi-k2-5-or-16k	25	1	74	66	68.8	OPEN_5.json
+freeflow_kimi-k2-6-or	25	1	116	82	85.4	LONG_5.json
+freeflow_kimi-k2-thinking-or-pin-atlascloud	125	1	244	225	226.8	MID_8.json
+freeflow_kimi-k2-thinking-or-pin-google	125	0	139	139	139	
+freeflow_kimi-k2-thinking-or-pin-novita	125	0	164	164	164	
+freeflow_minimax-m2-7-or	25	0	17	17	17	
+freeflow_minimax-m2-7-or-pin-fireworks	116	0	116	116	116	
+freeflow_minimax-m2-7-or-pin-minimax	122	1	168	160	161.3	OPEN_21.json
+freeflow_minimax-m2-7-or-pin-together	122	1	135	122	123.0	MID_25.json
+freeflow_minimax-m2-direct	25	0	33	33	33	
+freeflow_minimax-m2-direct-r2	25	0	20	20	20	
+freeflow_minimax-m2-direct-r3	25	0	47	47	47	
+freeflow_minimax-m2-direct-r4	25	0	28	28	28	
+freeflow_minimax-m2-direct-r5	25	0	21	21	21	
+freeflow_minimax-m2-or	25	1	81	60	62.5	MID_3.json
+freeflow_minimax-m2-or-pin-atlascloud	120	0	201	201	201	
+freeflow_minimax-m2-or-pin-google	119	3	478	440	451.4	MID_7.json;OPEN_14.json;SHORT_4.json
+freeflow_minimax-m2-or-pin-minimax	116	2	145	112	114.0	LONG_12.json;MID_17.json
+freeflow_minimax-m2-or-pin-novita	113	0	119	119	119	
+freeflow_minimax-m2-or-r2	25	0	80	80	80	
+freeflow_minimax-m2-or-r3	25	1	58	38	39.6	MID_1.json
+freeflow_minimax-m2-or-r4	25	1	71	60	62.5	OPEN_3.json
+freeflow_minimax-m2-or-r5	25	1	55	28	29.2	LONG_2.json
+freeflow_opus-3-4k	25	0	10	10	10	
+freeflow_opus-4-0-16k	25	0	21	21	21	
+freeflow_opus-4-1-16k	25	1	58	35	36.5	LONG_5.json
+freeflow_opus-4-5-16k	25	0	44	44	44	
+freeflow_opus-4-6-direct-16k	25	0	30	30	30	
+freeflow_opus-4-6-or	25	0	44	44	44	
+freeflow_opus-4-7-direct	25	0	67	67	67	
+freeflow_opus-4-7-or	25	0	83	83	83	
+freeflow_qwen3-6-plus-or	25	0	104	104	104	
+freeflow_qwen3-coder-plus-or	25	0	23	23	23	
+freeflow_sonnet-4-0-16k	25	0	30	30	30	
+freeflow_sonnet-4-5-16k	25	1	62	45	46.9	MID_2.json
+freeflow_sonnet-4-6-direct-16k	25	0	34	34	34	
+freeflow_sonnet-4-6-or	25	0	52	52	52	
