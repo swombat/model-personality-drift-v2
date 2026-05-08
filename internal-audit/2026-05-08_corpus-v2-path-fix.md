@@ -144,29 +144,42 @@ and conclusions against product-tier's audits.
 ## Residual TODOs
 
 Inherited from Phase 5 cross-check and `product-tier-v2/codex-review/
-02-remaining-analysis-gate-review.md`:
+02-remaining-analysis-gate-review.md`. Items 1-4 resolved 2026-05-08
+in commit following this update; item 5 remains for the paper.tex
+synthesis pass.
 
-1. **GLM-4.6 G3_18 outlier caveat.** Add an exclusion footnote to
-   `analyses/glm-4-6-coding.md` values section: G3_18 (8,941 chars,
-   reasoning-leak) should be excluded from any G3 mean-length aggregate.
-2. **GLM-5.1 length-delta value propagation.** The corrected value is
-   ~+156 (not +180), excluding the 8,548-char G3_16 reasoning-leak
-   outlier. Verify `analyses/glm-5-1-coding.md` uses the corrected
-   number in any cited delta.
-3. **GLM-4.6 read-sample vs full-cell percentages.** The "~50% vs ~20%"
-   disclaimer-rate language in `glm-4-6-coding.md` is a read-sample
-   estimate. Add "full-cell narrow FuncOp: 9/60 vs 1/60" alongside the
-   qualitative estimate.
-4. **OpenAI-vs-Z.ai pipeline overstatement.** Any prose claiming "Z.ai
-   coding-direct is operationally lighter-touch than OpenAI's codex
-   pipeline" must scope to "observed six-pair contrast, not a settled
-   lab/pipeline claim" — sample size doesn't support a cross-lab law.
-5. **GPT-5.3 cross-probe softening.** When `paper.tex` is drafted from
-   the per-model substrate, soften any "clean register migration" /
-   "stable across rounds" language about gpt-5-3-codex to "distributional
-   shift, probe-specific on values, with the assistant-frame tightening
-   under direct values prompting." The per-model `gpt-5-3-codex.md`
-   already does this; the risk is regression in the synthesis pass.
+1. **GLM-4.6 G3_18 outlier caveat.** ✅ Resolved (already applied by the
+   Phase 4 Sonnet sub-agent that filled `glm-4-6-coding.md`). Inline
+   caveat "(mean 980 chars excluding the G3_18 outlier — see below)" at
+   line 64 plus a dedicated **Reasoning-leak outlier (G3_18)** paragraph
+   with full exclusion arithmetic at line 66.
+2. **GLM-5.1 length-delta value propagation.** ✅ Resolved. The corrected
+   pair delta of ~+156 (1438 − 1282 general mean, excluding the 8,548-char
+   G3_16 reasoning-leak) is now stated explicitly in
+   `analyses/glm-5-1-coding.md`, with a note that length claims should
+   cite the excluded delta or use medians — the +216 figure is
+   outlier-inflated.
+3. **GLM-4.6 read-sample vs full-cell percentages.** ✅ Resolved (already
+   applied by the Phase 4 Opus sub-agent). The full-cell narrow `FuncOp`
+   count (G1+G2 firing 9/60 on coding vs 1/60 on general) is paired with
+   the read-sample "~5/10 vs ~2/10" estimate in the same sentence group
+   at line 62 of `glm-4-6-coding.md`.
+4. **OpenAI-vs-Z.ai pipeline overstatement.** ✅ Resolved. One instance
+   in `analyses/glm-5-1-coding.md` (line 66) implicitly framed the GLM
+   coding-direct two-posture switch as a contrast against an OpenAI-codex
+   pipeline pattern. Softened to "observed six-pair contrast, not a
+   settled lab/pipeline law", with the OpenAI codex per-model differences
+   (5.1/5.3 backfire vs 5/5.2 heavy compression) named explicitly so the
+   reader sees the within-OpenAI variance the original framing flattened.
+   No other instances found in `kimi-coding.md` or the OpenAI codex
+   per-model analyses.
+5. **GPT-5.3 cross-probe softening.** Outstanding (deferred). When
+   `paper.tex` is drafted from the per-model substrate, soften any
+   "clean register migration" / "stable across rounds" language about
+   gpt-5-3-codex to "distributional shift, probe-specific on values, with
+   the assistant-frame tightening under direct values prompting." The
+   per-model `gpt-5-3-codex.md` already does this; the risk is regression
+   in the synthesis pass. Re-check at synthesis time.
 
 ## Out of scope
 
