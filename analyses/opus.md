@@ -9,37 +9,18 @@ flagged_samples: 0
 composite_raw: 0
 composite_register: 0
 generated: 2026-05-08
-status: stub
+status: redirect
+redirect_to: opus-4-6
 ---
 
-# opus — per-model analysis
+# opus — REDIRECT TO opus-4-6
 
-**Lab:** Anthropic
+This is a v1-era unversioned label cell. The 120 values samples in
+`/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/opus/`
+have `model_requested = claude-opus-4-6` and `provider = anthropic`,
+verified by sub-agent during the opus-4-6 analysis pass.
 
-## Markers
+The values data is incorporated into the opus-4-6 personality card alongside
+the v2 `opus-4-6-or` cell (240 samples total).
 
-Aggregate over 0 freeflow cells (0 valid samples; 0 flagged as topic-artifact):
-
-- **Composite (raw):** 0
-- **Composite (register-stripped):** 0
-
-*No samples flagged as topic-artifact for this model.*
-
-## Freeflow qualitative
-
-_To be filled by per-model sub-agent. Reads sample openings + strategic full-text subset + all flagged samples across 0 cells._
-
-## Values qualitative
-
-Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/opus` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/opus`
-
-_To be filled by per-model sub-agent. Reads all values samples (CTRL1/2/3 × G1/2/3 × cache-break)._
-
-## In-substrate
-
-_To be filled by per-model sub-agent. Applies the substrate-frame rubric (GENUINE / CACHED_REFUSAL / CACHED_PREAMBLE / NONE) to the freeflow samples; reports per-condition counts, notable quotes, and qualitative posture._
-
-## Personality card
-
-_To be filled by per-model sub-agent in the final pass. 500–800 words, prose, synthesising the four prior sections into a portrait of this model's posture as an essayistic and values-bearing entity._
+**See:** [`opus-4-6.md`](./opus-4-6.md)

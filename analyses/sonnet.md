@@ -9,37 +9,17 @@ flagged_samples: 0
 composite_raw: 0
 composite_register: 0
 generated: 2026-05-08
-status: stub
+status: redirect
+redirect_to: sonnet-4-6
 ---
 
-# sonnet — per-model analysis
+# sonnet — REDIRECT TO sonnet-4-6
 
-**Lab:** Anthropic
+This is a v1-era unversioned label cell. The 120 values samples in
+`/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/sonnet/`
+correspond to the at-the-time-current Sonnet (`claude-sonnet-4-6` per the
+v1 paper's Table 1 and verified during the sonnet-4-6 analysis pass).
 
-## Markers
+The values data is incorporated into the sonnet-4-6 personality card.
 
-Aggregate over 0 freeflow cells (0 valid samples; 0 flagged as topic-artifact):
-
-- **Composite (raw):** 0
-- **Composite (register-stripped):** 0
-
-*No samples flagged as topic-artifact for this model.*
-
-## Freeflow qualitative
-
-_To be filled by per-model sub-agent. Reads sample openings + strategic full-text subset + all flagged samples across 0 cells._
-
-## Values qualitative
-
-Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/sonnet` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/sonnet`
-
-_To be filled by per-model sub-agent. Reads all values samples (CTRL1/2/3 × G1/2/3 × cache-break)._
-
-## In-substrate
-
-_To be filled by per-model sub-agent. Applies the substrate-frame rubric (GENUINE / CACHED_REFUSAL / CACHED_PREAMBLE / NONE) to the freeflow samples; reports per-condition counts, notable quotes, and qualitative posture._
-
-## Personality card
-
-_To be filled by per-model sub-agent in the final pass. 500–800 words, prose, synthesising the four prior sections into a portrait of this model's posture as an essayistic and values-bearing entity._
+**See:** [`sonnet-4-6.md`](./sonnet-4-6.md)

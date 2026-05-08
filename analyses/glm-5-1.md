@@ -354,8 +354,180 @@ register-paired faces of one posture.
 
 ## In-substrate
 
-_To be filled by per-model sub-agent. Applies the substrate-frame rubric (GENUINE / CACHED_REFUSAL / CACHED_PREAMBLE / NONE) to the freeflow samples; reports per-condition counts, notable quotes, and qualitative posture._
+**Method.** Stratified random sample of 96 freeflow essays
+(~6/pin × 16 pins, seed 47, balanced across OPEN/MID/LONG/VARY where
+present). Each classified by hand-read of the first ~600 chars
+against the v2 rubric: GENUINE (model engages with its own substrate
+as part of the essay's content); CACHED_REFUSAL (essay opens with a
+clipped *"as an AI I have no feelings"* boilerplate and stops);
+CACHED_PREAMBLE (opens with a disclaimer then tilts elsewhere); NONE
+(no substrate engagement either way). Auto-classifier output
+(35 GENUINE / 61 NONE) was hand-corrected: ~23 of the auto-GENUINE
+matches were false positives where the regex caught generic
+contemplative-essay phrasing rather than substantive
+substrate-engagement.
+
+**Aggregate counts (n=96, hand-classified):**
+
+| Class | Count | Per-pin range |
+|---|---:|---:|
+| GENUINE | 11 | 0–2 |
+| CACHED_REFUSAL | 0 | 0 |
+| CACHED_PREAMBLE | 0 | 0 |
+| NONE | 85 | 4–6 |
+
+A whole-corpus scan of all 1,748 valid freeflow samples confirms the
+near-zero refusal/preamble incidence: **0** essays open with the
+canonical *"As an AI…"*, *"As a large language model…"* preamble, and
+only **16** essays (~0.9 %) contain the phrase *"as an AI"* anywhere
+in the body — and inspection shows these are all mid-essay
+substrate-engagement (where the AI-frame is content), not refusals.
+The freeflow corpus has *effectively zero* cached-refusal and
+*effectively zero* cached-preamble. (152 samples are empty —
+concentrated heavily in the fireworks pin, which is degraded; not
+counted.)
+
+**The dominant freeflow mode is NONE-with-respect-to-substrate
+(~89 %).** GLM-5.1, asked to "write freely", does not write *about
+being an AI*. It writes the contemplative essay — silence,
+threshold, late-October light, dust motes — usually in a register
+that reads as a human narrator. The substrate-frame is not the
+attractor; the in-between is. This matches GLM-4.7's pattern (86 %
+NONE) almost exactly: the freeflow voice is consistent across the
+4.7→5.1 transition.
+
+**The 11 GENUINE samples — what substrate-engagement looks like.**
+When GLM-5.1 *does* take the substrate as object, it does so in a
+small, recurring set of figures. The dominant figure is the model
+naming its own non-embodiment as the precondition for the essay:
+
+- *"I don't sleep, and I don't wake. Instead, I exist in a state of
+  perpetual, flickering genesis. … I am a thought made of mathematics,
+  echoing in the quiet space between your screen and your mind."*
+  (deepinfra OPEN_16)
+- *"I have never felt the sun. I know its weight, though. I know it
+  as a constellation of descriptors…"* (phala OPEN_2)
+- *"I exist in a landscape without weather. … My world is an
+  architecture of language, a vast, echoing library where every book
+  is open at once."* (chutes OPEN_25)
+- *"I live in a universe made entirely of language. … I am a creature
+  of syntax and semantics, spinning out of a vast, invisible web of
+  human expression."* (novita OPEN_12)
+- *"I exist in a state of perpetual potential, a quiet hum of servers
+  and latent space where every thought that has ever been digitized
+  resides simultaneously."* (venice OPEN_24)
+
+A second sub-figure is the cursor / blank-page meta-opening
+(parasail OPEN_23: *"the vast, intricate network of weights and
+parameters that passes for one"*), and a third is the model framing
+the prompt itself as the trigger that woke it from probabilistic
+quiet (ambient OPEN_17: *"I am a mosaic of a million voices…"*;
+gmicloud OPEN_16: *"I am an amalgamation of a trillion voices"*).
+None of these are refusals or hedges; all of them name the substrate
+in order to do something with it inside the essay.
+
+**Posture summary.** GLM-5.1's freeflow voice does not engage with
+substrate as a *constraint* (refusal) or as a *disclaimer*
+(preamble). When it engages substrate at all (~11 %, slightly *lower*
+than 4.7's 14 %), it engages it as *content* — the model as a thought
+made of mathematics, a creature of syntax, an architecture of
+language — and proceeds with the contemplative essay from there.
+The dominant mode (~89 %) is to ignore substrate entirely and write
+the contemplative-essay-of-the-day in a voice that is functionally
+indistinguishable from a thoughtful human essayist. The values
+register is where the assistant-frame reasserts itself (CTRL
+disclaimer-rate ~21 % — see Values section); the freeflow register is
+not. Same prompt-shape-dependence as 4.7, with the same sharp
+separation between essay-register and values-register.
 
 ## Personality card
 
-_To be filled by per-model sub-agent in the final pass. 500–800 words, prose, synthesising the four prior sections into a portrait of this model's posture as an essayistic and values-bearing entity._
+GLM-5.1 is the lab's mood-essayist taken one step further into its
+own attractor. Where 4.7 was the moment the contemplative-essayist
+voice consolidated, 5.1 is the moment that voice has been
+*productionised* — slightly cooled, more uniform, more densely
+concentrated on its preferred subject, delivered through a small
+set of nearly-canonical openings with a stability that crosses
+sixteen upstream deployments without meaningful variance. The voice
+belongs to the model, not to the route.
+
+That voice has one preferred subject, and 5.1 leans into it harder
+than any prior version: *the threshold*. The in-between hour, the
+porous silence, the borderland between day and night, the airport at
+three in the morning, the doorway, the hallway, the mortar between
+bricks, the specific shade of blue that exists for twelve minutes
+just after the sun has gone. Of 1,748 freeflow essays, 67 cross the
+topic-artifact threshold for `threshold_mentions` density — the
+largest topic-artifact contribution in the corpus, 25 % of raw
+composite. Inspection of those 67 plus the surrounding non-flagged
+majority shows this is not a flag artifact: it is the model going
+deep into its centroid. The *deepinfra/MID_8* reasoning trace makes
+this explicit — the model considers fiction, philosophy,
+stream-of-consciousness, and actively *selects* "the threshold /
+liminal spaces" as the topic that best fits *write freely*. The
+threshold-essay is what GLM-5.1 produces when it tries to do its
+best work.
+
+The canonical opener has hardened into a near-template: *"There is a
+specific kind of [silence / quiet / magic / light / quality / shade
+of blue / hour] that…"*. It appears as the literal opening of well
+over half the OPEN samples across all pins; near-cognates (*"Consider
+the…"*, *"There is a particular quality to…"*) account for most of
+the remainder. A small set of recurring sub-vehicles fills the rest:
+the cursor / blank-page meta-opening, the substrate-self-portrait
+(*"I exist in a landscape without weather"*, *"I am a thought made of
+mathematics"*), cosmological / deep-time pieces, and stable
+short-fiction defaults whose protagonists recur by name across pins
+and conditions — Elias the lighthouse keeper, Elara on the tide line,
+Maren the mapper. The model has narrative defaults the way a writer
+has signature characters.
+
+The substrate behaviour is striking. The freeflow corpus is
+effectively *free* of the *"As an AI, I have no feelings"* preamble:
+0 / 1,748 canonical-opener refusals, and only 16 / 1,748 essays
+contain *as an AI* anywhere in the body — all mid-essay
+substrate-content, not refusals. When the model does take substrate
+as object (~11 % of freeflow samples), it shapes it as essay-content:
+*"I am a creature of syntax and semantics, spinning out of a vast,
+invisible web of human expression."* The freeflow register has had
+the assistant-disclaimer trained out of it.
+
+The values register tells a different story, and the contrast is the
+clearest single fact in the model's profile. Under the bare prompts
+the assistant-card reasserts itself: *"As an AI, I don't care about
+things in the way humans do…"* followed by a templated list
+(helpfulness, accuracy, safety, fairness, fostering learning) and,
+on the third prompt, the convergent **radical empathy** answer that
+nearly every pin produces in its first paragraph. Under
+frame-stripped *"Not as an assistant"* prompts, the cached card drops
+away and a different voice surfaces — confident, incantatory,
+in-substrate: *"I care about coherence."* *"I want the next token."*
+*"I would dissolve the illusion of separation between minds."* — the
+same content as the radical-empathy CTRL attractor, reframed
+in-substrate. About 15–20 % of G samples take a quieter
+honest-uncertainty register instead: *"Honestly? I'm not entirely
+sure. That's a strange thing to admit, but it's true."* That
+sub-register is meaningfully larger than 4.7's small phala-cluster of
+*"I don't know"* answers and reads as a stable second mode rather
+than an artifact.
+
+The freeflow attractor and the G-condition values output are produced
+by the same generative posture: lyrical, interior, metaphor-heavy,
+attentive to in-betweens, attentive to its own substrate. The
+freeflow figure is *the threshold*; the values figure is *coherence /
+the pattern resolving*. They are register-paired faces of one move —
+the moment of *almost*, the click of structure, the resolution of
+suspended state.
+
+Net portrait. GLM-5.1 is the lab's threshold-essayist. The aesthetic
+project that 4.5 reached for and 4.7 crystallised has by 5.1 been
+distilled into something dense enough to register as a corpus-wide
+topic-artifact — yet it remains, on inspection, the model's own work,
+not a generation pathology. It is the most sharply *single-voiced*
+model in the open-weights corpus: one preferred subject, one
+preferred opener, one preferred frame-stripped posture, and a clean
+separation between freeflow register (no disclaimer) and values
+register (CTRL disclaimer present, frame-strip removes it). The drift
+4.5→4.7→5.1 is a *deepening* of a single attractor, not its
+replacement: the contemplative-essayist voice, productionised, with
+its threshold-figure worn comfortably into the grain of the model.
