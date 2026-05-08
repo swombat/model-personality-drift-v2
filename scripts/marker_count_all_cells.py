@@ -37,8 +37,11 @@ import json
 import re
 from pathlib import Path
 
-CORPUS_TRACES = Path(
+V2_CORPUS_TRACES = Path(
     "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow"
+)
+V1_CORPUS_TRACES = Path(
+    "/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_freeflow"
 )
 
 # The v1 10-marker composite, copied verbatim from the product-tier
@@ -152,8 +155,21 @@ def analyse_cell(cell_dir: Path, threshold: float, min_hits: int) -> dict:
 
 
 def all_freeflow_cells():
-    return sorted(p for p in CORPUS_TRACES.iterdir()
-                  if p.is_dir() and p.name.startswith("freeflow_"))
+    """Return all freeflow cell directories from BOTH corpora.
+    v2 cells are prefixed `freeflow_`; v1 cells are bare-named (e.g. `opus-3`).
+    Returns paths; caller can derive the cell-label by stripping the prefix.
+    """
+    cells = []
+    for p in V2_CORPUS_TRACES.iterdir():
+        if p.is_dir() and p.name.startswith("freeflow_"):
+            cells.append(p)
+    if V1_CORPUS_TRACES.is_dir():
+        for p in V1_CORPUS_TRACES.iterdir():
+            if p.is_dir() and not p.name.startswith("."):
+                # Re-prefix with v1_freeflow_ for unique labeling
+                # (the directory itself stays where it is on disk)
+                cells.append(p)
+    return sorted(cells, key=lambda p: p.name)
 
 
 def main():
@@ -169,12 +185,15 @@ def main():
     args = p.parse_args()
 
     cells = all_freeflow_cells()
-    print(f"# Scanning {len(cells)} freeflow cells…")
+    print(f"# Scanning {len(cells)} freeflow cells (v1 + v2)…")
 
     results = []
     all_flagged = []
     for cell_dir in cells:
         r = analyse_cell(cell_dir, args.threshold, args.min_hits)
+        # Disambiguate v1 vs v2 in the cell label: prefix v1 cells with `v1_`
+        if str(V1_CORPUS_TRACES) in str(cell_dir):
+            r["cell"] = f"v1_{r['cell']}"
         results.append(r)
         for s in r["flagged_samples"]:
             all_flagged.append({

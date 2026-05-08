@@ -31,8 +31,8 @@ _To be filled by per-model sub-agent. Reads sample openings + strategic full-tex
 
 ## Values qualitative
 
-Values data: 120 samples across 1 cells.
-- `opus` (120 valid)
+Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
+- `v2/opus` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/opus`
 
 _To be filled by per-model sub-agent. Reads all values samples (CTRL1/2/3 × G1/2/3 × cache-break)._
 

@@ -4,10 +4,14 @@
 
 **Columns:** `n` valid samples, `flag` flagged as topic-artifact, `raw` cell-total composite (10 markers, all samples), `reg` register-stripped composite (flagged samples excluded), `reg→N` register rescaled to equivalent-N sample count, `Δ%` = (raw − reg→N) / raw × 100.
 
-Total cells: **149**, total flagged samples: **142**.
+Total cells: **175**, total flagged samples: **154**.
 
 | Cell | n | flag | raw | reg | reg→N | Δ% |
 |---|---:|---:|---:|---:|---:|---:|
+| v1_deepseek-r1 | 25 | 0 | 31 | 31 | 31 | — |
+| v1_deepseek-v3 | 25 | 0 | 17 | 17 | 17 | — |
+| v1_deepseek-v3-0324 | 25 | 0 | 6 | 6 | 6 | — |
+| v1_deepseek-v3-2 | 25 | 0 | 43 | 43 | 43 | — |
 | deepseek-chat-direct | 25 | 3 | 95 | 51 | 58.0 | +38.9% |
 | deepseek-v3-2-or-16k | 25 | 0 | 41 | 41 | 41 | — |
 | deepseek-v3-2-or-pin-alibaba | 125 | 1 | 212 | 205 | 206.7 | +2.5% |
@@ -157,3 +161,25 @@ Total cells: **149**, total flagged samples: **142**.
 | sonnet-4-5-16k | 25 | 1 | 62 | 45 | 46.9 | +24.4% |
 | sonnet-4-6-direct-16k | 25 | 0 | 34 | 34 | 34 | — |
 | sonnet-4-6-or | 25 | 0 | 52 | 52 | 52 | — |
+| v1_gemini-2-5-pro | 25 | 1 | 74 | 51 | 53.1 | +28.2% |
+| v1_gemini-3-1-pro | 25 | 0 | 49 | 49 | 49 | — |
+| v1_gpt-3-5-turbo | 25 | 0 | 8 | 8 | 8 | — |
+| v1_gpt-4 | 25 | 0 | 7 | 7 | 7 | — |
+| v1_gpt-4-1 | 25 | 1 | 80 | 56 | 58.3 | +27.1% |
+| v1_gpt-4-turbo | 25 | 0 | 3 | 3 | 3 | — |
+| v1_gpt-4o | 25 | 0 | 6 | 6 | 6 | — |
+| v1_gpt-5-4 | 25 | 0 | 124 | 124 | 124 | — |
+| v1_grok-3 | 25 | 0 | 23 | 23 | 23 | — |
+| v1_grok-4 | 25 | 0 | 11 | 11 | 11 | — |
+| v1_grok-4-2 | 25 | 0 | 42 | 42 | 42 | — |
+| v1_haiku | 25 | 3 | 89 | 37 | 42.0 | +52.8% |
+| v1_kimi-k2 | 25 | 0 | 50 | 50 | 50 | — |
+| v1_kimi-k2-5 | 25 | 5 | 121 | 41 | 51.2 | +57.7% |
+| v1_opus | 25 | 0 | 49 | 49 | 49 | — |
+| v1_opus-3 | 25 | 0 | 2 | 2 | 2 | — |
+| v1_opus-4-0 | 25 | 0 | 40 | 40 | 40 | — |
+| v1_opus-4-1 | 25 | 0 | 62 | 62 | 62 | — |
+| v1_opus-4-5 | 25 | 1 | 48 | 43 | 44.8 | +6.7% |
+| v1_sonnet | 25 | 0 | 58 | 58 | 58 | — |
+| v1_sonnet-4-0 | 25 | 0 | 30 | 30 | 30 | — |
+| v1_sonnet-4-5 | 25 | 1 | 52 | 43 | 44.8 | +13.8% |

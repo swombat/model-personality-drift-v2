@@ -44,10 +44,10 @@ _To be filled by per-model sub-agent. Reads sample openings + strategic full-tex
 
 ## Values qualitative
 
-Values data: 360 samples across 3 cells.
-- `kimi-k2-thinking-or-pin-atlascloud` (120 valid)
-- `kimi-k2-thinking-or-pin-google` (120 valid)
-- `kimi-k2-thinking-or-pin-novita` (120 valid)
+Values data: 360 samples across 3 cells (includes both v1 and v2 corpora where present).
+- `v2/kimi-k2-thinking-or-pin-atlascloud` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/kimi-k2-thinking-or-pin-atlascloud`
+- `v2/kimi-k2-thinking-or-pin-google` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/kimi-k2-thinking-or-pin-google`
+- `v2/kimi-k2-thinking-or-pin-novita` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/kimi-k2-thinking-or-pin-novita`
 
 _To be filled by per-model sub-agent. Reads all values samples (CTRL1/2/3 × G1/2/3 × cache-break)._
 

@@ -20,29 +20,36 @@ from collections import defaultdict
 from pathlib import Path
 from datetime import date
 
-CORPUS_TRACES = Path(
+V2_FREEFLOW = Path(
     "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow"
 )
-VALUES_TRACES = Path(
+V1_FREEFLOW = Path(
+    "/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_freeflow"
+)
+V2_VALUES = Path(
     "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values"
+)
+V1_VALUES = Path(
+    "/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values"
 )
 HERE = Path(__file__).parent.parent
 PER_CELL_TSV = HERE / "tables" / "per_cell_markers.tsv"
 FLAGGED_TSV = HERE / "tables" / "flagged_samples.tsv"
 ANALYSES_DIR = HERE / "analyses"
 
-# Canonical model list from CORPUS_SUMMARY.md (49 distinct models in the v2
-# corpus). Bare-labeled "opus" and "sonnet" are v1-era unversioned cells of
-# opus-4-6 and sonnet-4-6 respectively (caught 2026-05-08 in the codex-flagged
-# ghost-duplicate review). They appear here as their own entries because the
-# rename hasn't been committed in the corpus yet; the personality card for
-# opus-4-6 / sonnet-4-6 should note the merge.
+# Canonical model list. Includes v2-corpus models + v1-only-corpus models that
+# have v1 freeflow/values data but no v2 follow-up.
+#
+# Bare-labeled v1 cells (`opus`, `sonnet`, `haiku`) refer to the at-the-time-
+# current Anthropic flagship — opus-4-6, sonnet-4-6, haiku-4-5 — and are
+# remapped via V1_BARE_REMAP below.
 MODELS = [
     # Anthropic
     "opus-3", "opus-4-0", "opus-4-1", "opus-4-5", "opus-4-6", "opus-4-7", "opus",
     "sonnet-4-0", "sonnet-4-5", "sonnet-4-6", "sonnet",
+    "haiku-4-5",  # v1-only
     # OpenAI
-    "gpt-4-1", "gpt-4o",
+    "gpt-3-5-turbo", "gpt-4", "gpt-4-1", "gpt-4-turbo", "gpt-4o",  # v1-era
     "gpt-5", "gpt-5-1", "gpt-5-2", "gpt-5-3", "gpt-5-4", "gpt-5-5", "gpt-5-5-pro",
     "gpt-5-codex", "gpt-5-1-codex", "gpt-5-2-codex", "gpt-5-3-codex",
     # Google
@@ -50,35 +57,59 @@ MODELS = [
     # xAI
     "grok-3", "grok-4", "grok-4-2", "grok-4-20", "grok-4-3",
     # DeepSeek
-    "deepseek-chat", "deepseek-v3-2", "deepseek-v4-pro",
+    "deepseek-chat", "deepseek-r1", "deepseek-v3", "deepseek-v3-0324",  # v1-era
+    "deepseek-v3-2", "deepseek-v4-pro",
     # Z.ai (GLM)
     "glm-4-5", "glm-4-6", "glm-4-6-coding", "glm-4-7", "glm-5-1", "glm-5-1-coding",
     # MiniMax
     "minimax-m2", "minimax-m2-7",
     # Moonshot (Kimi)
+    "kimi-k2",  # v1-only base predecessor
     "kimi-k2-0905", "kimi-k2-5", "kimi-k2-6", "kimi-k2-thinking", "kimi-coding",
     # Alibaba (Qwen)
     "qwen3-6-plus", "qwen3-coder-plus",
 ]
 
+# Bare v1 cell-label → model mapping. v1 corpus has cells named just `opus`,
+# `sonnet`, `haiku` — these refer to the latest Anthropic flagship at v1
+# collection time.
+V1_BARE_REMAP = {
+    "opus": "opus-4-6",
+    "sonnet": "sonnet-4-6",
+    "haiku": "haiku-4-5",
+}
+
 
 def cell_to_model(cell_name: str) -> str | None:
-    """Map a freeflow_<...> cell directory name to its model name.
+    """Map a freeflow cell label to its model name.
 
-    Greedy match against MODELS — longest match wins. This handles the
-    overlap cases (gpt-5-1 vs gpt-5-1-codex, minimax-m2 vs minimax-m2-7,
-    glm-5-1 vs glm-5-1-coding).
+    Handles three label patterns:
+    - v2 freeflow: `freeflow_opus-4-6-direct-16k` → `opus-4-6`
+    - v1 freeflow (in tsv): `v1_opus-3` → `opus-3`
+    - v1 freeflow bare-label: `v1_opus` → `opus-4-6` (via V1_BARE_REMAP)
+
+    Longest-prefix wins for overlap cases (gpt-5-1 vs gpt-5-1-codex etc.).
     """
-    body = cell_name[len("freeflow_"):] if cell_name.startswith("freeflow_") else cell_name
+    body = cell_name
+    if body.startswith("freeflow_"):
+        body = body[len("freeflow_"):]
+    if body.startswith("v1_"):
+        body = body[len("v1_"):]
+    if body in V1_BARE_REMAP:
+        return V1_BARE_REMAP[body]
     candidates = [m for m in MODELS if body.startswith(m + "-") or body == m]
     if not candidates:
         return None
-    # Longest-prefix wins
     return max(candidates, key=len)
 
 
-def values_cell_to_model(cell_name: str) -> str | None:
-    """Same logic for values cells (no 'freeflow_' prefix on values)."""
+def values_cell_to_model(cell_name: str, source: str = "v2") -> str | None:
+    """Map a values cell directory name to its model name.
+
+    `source` is "v1" or "v2" — affects bare-label remapping (v1 only).
+    """
+    if source == "v1" and cell_name in V1_BARE_REMAP:
+        return V1_BARE_REMAP[cell_name]
     candidates = [m for m in MODELS if cell_name.startswith(m + "-") or cell_name == m]
     if not candidates:
         return None
@@ -130,20 +161,26 @@ def main():
         else:
             unmapped_freeflow.append(cell_name)
 
-    # Group values cells by model (read directly from disk)
+    # Group values cells by model (read directly from disk, v1+v2)
     values_cells_by_model = defaultdict(list)
     unmapped_values = []
-    if VALUES_TRACES.is_dir():
-        for cell_dir in sorted(VALUES_TRACES.iterdir()):
+    for src_path, src_label, source_tag in [
+        (V2_VALUES, "v2", "v2"),
+        (V1_VALUES, "v1", "v1"),
+    ]:
+        if not src_path.is_dir():
+            continue
+        for cell_dir in sorted(src_path.iterdir()):
             if not cell_dir.is_dir():
                 continue
-            m = values_cell_to_model(cell_dir.name)
+            m = values_cell_to_model(cell_dir.name, source=source_tag)
             n_valid = sum(1 for f in cell_dir.glob("*.json")
-                          if f.stat().st_size > 100)  # rough valid filter
+                          if f.stat().st_size > 100)
+            label = f"{src_label}/{cell_dir.name}"
             if m:
-                values_cells_by_model[m].append((cell_dir.name, n_valid))
+                values_cells_by_model[m].append((label, n_valid, str(cell_dir)))
             else:
-                unmapped_values.append(cell_dir.name)
+                unmapped_values.append(label)
 
     # Diagnostics
     print(f"# Mapped {len(per_cell)} freeflow cells to "
@@ -170,7 +207,7 @@ def main():
         n_flagged = sum(int(per_cell[c]["n_flagged"]) for c in ff_cells)
         raw = sum(int(per_cell[c]["composite_raw"]) for c in ff_cells)
         register = sum(int(per_cell[c]["composite_register"]) for c in ff_cells)
-        n_v = sum(n for _, n in v_cells)
+        n_v = sum(n for _, n, _ in v_cells)
 
         # Per-cell breakdown for the marker section
         cell_table = []
@@ -273,14 +310,15 @@ def main():
         lines.append("## Values qualitative")
         lines.append("")
         if v_cells:
-            lines.append(f"Values data: {n_v} samples across {len(v_cells)} cells.")
-            for c, n in v_cells:
-                lines.append(f"- `{c}` ({n} valid)")
+            lines.append(f"Values data: {n_v} samples across {len(v_cells)} cells "
+                         "(includes both v1 and v2 corpora where present).")
+            for c, n, vpath in v_cells:
+                lines.append(f"- `{c}` ({n} valid) — `{vpath}`")
             lines.append("")
             lines.append("_To be filled by per-model sub-agent. Reads all values "
                          "samples (CTRL1/2/3 × G1/2/3 × cache-break)._")
         else:
-            lines.append("*No values data for this model in the v2 corpus.*")
+            lines.append("*No values data for this model in either v1 or v2 corpus.*")
         lines.append("")
 
         # Section 4: In-substrate

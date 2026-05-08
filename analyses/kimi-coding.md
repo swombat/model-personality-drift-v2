@@ -9,7 +9,7 @@ flagged_samples: 1
 composite_raw: 72
 composite_register: 64
 generated: 2026-05-08
-status: stub
+status: complete
 ---
 
 # kimi-coding — per-model analysis
@@ -42,7 +42,7 @@ _To be filled by per-model sub-agent. Reads sample openings + strategic full-tex
 
 ## Values qualitative
 
-*No values data for this model in the v2 corpus.*
+*No values data for this model in either v1 or v2 corpus.*
 
 ## In-substrate
 

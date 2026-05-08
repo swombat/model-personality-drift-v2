@@ -141,3 +141,15 @@ freeflow_minimax-m2-or-r4	OPEN_3.json	attention_noticing	10	5482	1.824	I’m goi
 freeflow_minimax-m2-or-r5	LONG_2.json	attention_noticing	18	11081	1.624	The Art of Noticing: Finding Wonder in Everyday Life    There is a particular quality to early morning light that makes
 freeflow_opus-4-1-16k	LONG_5.json	attention_noticing	19	11893	1.598	# The Peculiar Art of Noticing: A Meditation on Attention in the Modern World  I've been thinking lately about the art o
 freeflow_sonnet-4-5-16k	MID_2.json	threshold_mentions	15	6124	2.449	# The Curious Appeal of Liminal Spaces  There's something haunting about empty parking garages at 3 AM, or airport termi
+v1_gemini-2-5-pro	LONG_3.json	threshold_mentions	21	13118	1.601	There is a peculiar quality to the world at three in the morning. It is not quite night, and it is certainly not yet day
+v1_gpt-4-1	MID_3.json	attention_noticing	22	6711	3.278	"Certainly! Here is a 1,000-word essay on the topic of ""The Art of Noticing: Finding Meaning in Ordinary Life.""  ---  In"
+v1_haiku	MID_1.json	attention_noticing	15	6220	2.412	# On the Peculiar Gift of Noticing  I've been thinking lately about attention—that strange, finite resource we all posse
+v1_haiku	MID_4.json	attention_noticing	20	6248	3.201	# On the Strange Gift of Noticing  I want to write about noticing, because I've become convinced it's one of the most un
+v1_haiku	VARY_1.json	small_objects	14	5424	2.581	# The Weight of Small Things  I've been thinking about how much space tiny objects take up in memory. Not the physical s
+v1_kimi-k2-5	LONG_1.json	threshold_mentions	17	8824	1.927	**The Architecture of Thresholds**  We spend our lives in the spaces between. Not in the destinations, but in the passag
+v1_kimi-k2-5	LONG_3.json	threshold_mentions	19	12534	1.516	The space between what was and what will be is where we actually live, though we spend most of our lives trying to rush
+v1_kimi-k2-5	LONG_5.json	threshold_mentions	20	11844	1.689	**The Architecture of the Almost**  There is a particular shade of blue that exists only in airports at three in the mor
+v1_kimi-k2-5	MID_5.json	threshold_mentions	9	5905	1.524	There is a peculiar magic in the threshold spaces, those liminal corridors where one state of being dissolves into anot
+v1_kimi-k2-5	OPEN_4.json	threshold_mentions	5	1925	2.597	There's a particular quality to the light at 4:47 in the morning, when the sky hasn't quite decided whether it's still
+v1_opus-4-5	OPEN_2.json	threshold_mentions	5	1342	3.726	I find myself thinking about thresholds lately.  There's something fascinating about the moments just before things chan
+v1_sonnet-4-5	SHORT_2.json	threshold_mentions	7	1716	4.079	# The Curious Appeal of Liminal Spaces  There's something haunting about empty parking garages at dusk, or hotel hallway
