@@ -2,16 +2,15 @@
 model: grok-3
 lab: xAI
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 0
 composite_raw: 51
 composite_register: 51
 generated: 2026-05-08
 status: filled
 ---
-
 # grok-3 — per-model analysis
 
 **Lab:** xAI
@@ -26,14 +25,12 @@ Aggregate over 2 freeflow cells (50 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| grok-3-16k | 25 | 0 | 28 | 28 | 28 |
-| v1_grok-3 | 25 | 0 | 23 | 23 | 23 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| grok-3-16k | 25 | 0 | 28 | 28 | 28 | 28.0 |
+| v1_grok-3 | 25 | 0 | 23 | 23 | 23 | 23.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-xAI within-lab trajectory on the composite: **Grok 3 (51, two-cell aggregate; v1=23, v2=28)** → Grok 4 (20, dropped *outside* the attractor via meta-preamble) → Grok 4.2 (57, re-entered through a small-objects / wabi-sabi door) → Grok 4.20 (27, single-cell) → Grok 4.3 (118, the aggregate high-water mark). Grok 3 sits in a peculiar position relative to the rest of the line: low-but-not-outside on the marker count, and qualitatively the *only* xAI model in the line that does not gesture at AI-substrate at all. Both cells produce structurally identical prose (the v2 16k cell scores 5 points higher than v1 mostly through marginally more "small ordinary moments" / "quiet beauty" lexicon — same register, same vehicles); the two cells are best treated as one population for the qualitative read.
 
 ## Freeflow qualitative
 

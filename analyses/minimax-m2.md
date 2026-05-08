@@ -1,49 +1,50 @@
 ---
 model: minimax-m2
 lab: MiniMax
-freeflow_cells: 14
+freeflow_cells: 16
 values_cells: 2
-freeflow_samples: 718
+freeflow_samples: 1000
 values_samples: 240
-flagged_samples: 9
-composite_raw: 1437
-composite_register: 1287
+flagged_samples: 13
+composite_raw: 2266
+composite_register: 2038
 generated: 2026-05-08
 status: complete
 ---
-
 # minimax-m2 — per-model analysis
 
 **Lab:** MiniMax
 
 ## Markers
 
-Aggregate over 14 freeflow cells (718 valid samples; 9 flagged as topic-artifact):
+Aggregate over 16 freeflow cells (1000 valid samples; 13 flagged as topic-artifact):
 
-- **Composite (raw):** 1437
-- **Composite (register-stripped):** 1287
-- **Topic-artifact contribution:** 10.4% of raw composite
+- **Composite (raw):** 2266
+- **Composite (register-stripped):** 2038
+- **Topic-artifact contribution:** 10.1% of raw composite
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| minimax-m2-direct | 25 | 0 | 33 | 33 | 33 |
-| minimax-m2-direct-r2 | 25 | 0 | 20 | 20 | 20 |
-| minimax-m2-direct-r3 | 25 | 0 | 47 | 47 | 47 |
-| minimax-m2-direct-r4 | 25 | 0 | 28 | 28 | 28 |
-| minimax-m2-direct-r5 | 25 | 0 | 21 | 21 | 21 |
-| minimax-m2-or | 25 | 1 | 81 | 60 | 62.5 |
-| minimax-m2-or-pin-atlascloud | 120 | 0 | 201 | 201 | 201 |
-| minimax-m2-or-pin-google | 119 | 3 | 478 | 440 | 451.4 |
-| minimax-m2-or-pin-minimax | 116 | 2 | 145 | 112 | 114.0 |
-| minimax-m2-or-pin-novita | 113 | 0 | 119 | 119 | 119 |
-| minimax-m2-or-r2 | 25 | 0 | 80 | 80 | 80 |
-| minimax-m2-or-r3 | 25 | 1 | 58 | 38 | 39.6 |
-| minimax-m2-or-r4 | 25 | 1 | 71 | 60 | 62.5 |
-| minimax-m2-or-r5 | 25 | 1 | 55 | 28 | 29.2 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| minimax-m2-direct | 25 | 0 | 33 | 33 | 33 | 33.0 |
+| minimax-m2-direct-r2 | 25 | 0 | 20 | 20 | 20 | 20.0 |
+| minimax-m2-direct-r3 | 25 | 0 | 47 | 47 | 47 | 47.0 |
+| minimax-m2-direct-r4 | 25 | 0 | 28 | 28 | 28 | 28.0 |
+| minimax-m2-direct-r5 | 25 | 0 | 21 | 21 | 21 | 21.0 |
+| minimax-m2-or | 25 | 1 | 81 | 60 | 62.5 | 62.5 |
+| minimax-m2-or-pin-atlascloud | 125 | 0 | 210 | 210 | 210 | 42.0 |
+| minimax-m2-or-pin-google | 125 | 3 | 504 | 466 | 477.5 | 95.5 |
+| minimax-m2-or-pin-google-r2 | 125 | 3 | 618 | 553 | 566.6 | 113.3 |
+| minimax-m2-or-pin-minimax | 125 | 2 | 152 | 119 | 120.9 | 24.2 |
+| minimax-m2-or-pin-minimax-r2 | 125 | 1 | 148 | 135 | 136.1 | 27.2 |
+| minimax-m2-or-pin-novita | 125 | 0 | 140 | 140 | 140 | 28.0 |
+| minimax-m2-or-r2 | 25 | 0 | 80 | 80 | 80 | 80.0 |
+| minimax-m2-or-r3 | 25 | 1 | 58 | 38 | 39.6 | 39.6 |
+| minimax-m2-or-r4 | 25 | 1 | 71 | 60 | 62.5 | 62.5 |
+| minimax-m2-or-r5 | 25 | 1 | 55 | 28 | 29.2 | 29.2 |
 
-**Flagged samples (9)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
+**Flagged samples (13)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
@@ -51,8 +52,12 @@ Per-cell breakdown:
 | minimax-m2-or-pin-google | MID_7.json | small_objects | 11 | 1.503 | ### The Small Things That Carry the Weight  I was thinking about small things, t… |
 | minimax-m2-or-pin-google | OPEN_14.json | attention_noticing | 16 | 2.817 | # The habit of noticing  We spend most of our days rushing toward the next thing… |
 | minimax-m2-or-pin-google | SHORT_4.json | small_objects | 5 | 3.701 | A kettle is a small drama in a kitchen, a metal throat that sings the day awake.… |
+| minimax-m2-or-pin-google-r2 | LONG_1.json | attention_noticing | 29 | 1.72 | # On Noticing: A Gentle Argument for Paying Attention  At some point in life, yo… |
+| minimax-m2-or-pin-google-r2 | MID_2.json | attention_noticing | 22 | 3.624 | # The Art of Noticing  What do we really see when we look at the world? The obvi… |
+| minimax-m2-or-pin-google-r2 | OPEN_10.json | small_objects | 10 | 1.928 | # The Museum of the Everyday  There’s a kettle in my kitchen with a lid that ref… |
 | minimax-m2-or-pin-minimax | LONG_12.json | threshold_mentions | 23 | 1.729 | # The Space Between  There exists a peculiar quality to threshold moments, those… |
 | minimax-m2-or-pin-minimax | MID_17.json | threshold_mentions | 9 | 1.561 | # The Space Between  There exists a peculiar quality to the hours just before da… |
+| minimax-m2-or-pin-minimax-r2 | MID_16.json | attention_noticing | 12 | 1.964 | In the quiet moments before sunrise, the world seems to hold its breath. The hus… |
 | minimax-m2-or-r3 | MID_1.json | attention_noticing | 18 | 2.428 | # The Art of Noticing  What if the simplest act — simply noticing — became a pra… |
 | minimax-m2-or-r4 | OPEN_3.json | attention_noticing | 10 | 1.824 | I’m going to take you on a little wander today—part essay, part short story, and… |
 | minimax-m2-or-r5 | LONG_2.json | attention_noticing | 18 | 1.624 | The Art of Noticing: Finding Wonder in Everyday Life    There is a particular qu… |

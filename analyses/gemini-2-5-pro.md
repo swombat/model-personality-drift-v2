@@ -2,16 +2,15 @@
 model: gemini-2-5-pro
 lab: Google
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 1
 composite_raw: 127
 composite_register: 104
 generated: 2026-05-08
 status: complete
 ---
-
 # gemini-2-5-pro — per-model analysis
 
 **Lab:** Google
@@ -26,20 +25,16 @@ Aggregate over 2 freeflow cells (50 valid samples; 1 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gemini-2-5-pro-16k | 25 | 0 | 53 | 53 | 53 |
-| v1_gemini-2-5-pro | 25 | 1 | 74 | 51 | 53.1 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gemini-2-5-pro-16k | 25 | 0 | 53 | 53 | 53 | 53.0 |
+| v1_gemini-2-5-pro | 25 | 1 | 74 | 51 | 53.1 | 53.1 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
 | v1_gemini-2-5-pro | LONG_3.json | threshold_mentions | 21 | 1.601 | There is a peculiar quality to the world at three in the morning. It is not quit… |
-
-The single flagged sample (`v1/LONG_3`) is a confirmed topic-meta-essay: the entire 13,118-character piece is structured *about* the liminal/threshold concept, opening *"This is the threshold. The limen. It is a space between spaces, a time between times,"* and recurring through airport non-places, dusk, adolescence, grief, and the digital "in-between" — all genuine examples of the threshold subject the marker is meant to detect at a register level. The register-stripped composite (104 vs raw 127, a −18.1% adjustment) is the appropriate cross-model comparison; the raw 127 reflects that one essay's topical concentration of `threshold` rather than register density across the cell.
-
-The two cells (v1, March 2025 collection; v2, late 2026 collection on the gemini-2.5-pro endpoint that Google has held stable) produce near-identical register-stripped composites (53 vs 51, n-normalised). This is the route-invariance result the companion routing paper predicts for closed-weights direct deployments — Google direct in both rounds — and confirms that whatever attractor signature this model has was already in place at the v1 collection (March 2025) and has not drifted on the same model-id between then and now.
 
 ## Freeflow qualitative
 

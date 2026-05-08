@@ -2,184 +2,186 @@
 
 **Topic-artifact filter:** density ≥ 1.5 hits/1000 chars AND hit count ≥ 5.
 
-**Columns:** `n` valid samples, `flag` flagged as topic-artifact, `raw` cell-total composite (10 markers, all samples), `reg` register-stripped composite (flagged samples excluded), `reg→N` register rescaled to equivalent-N sample count, `Δ%` = (raw − reg→N) / raw × 100.
+**Columns:** `n` valid samples, `flag` flagged as topic-artifact, `raw` cell-total composite (10 markers, all samples), `reg` register-stripped composite (flagged samples excluded), `reg→N` register rescaled to equivalent-N sample count (in-paper drift comparisons), `reg/25` register projected to per-25-sample equivalent (cross-paper currency vs product-tier), `Δ%` = (raw − reg→N) / raw × 100.
 
-Total cells: **175**, total flagged samples: **154**.
+Total cells: **177**, total flagged samples: **158**.
 
-| Cell | n | flag | raw | reg | reg→N | Δ% |
-|---|---:|---:|---:|---:|---:|---:|
-| v1_deepseek-r1 | 25 | 0 | 31 | 31 | 31 | — |
-| v1_deepseek-v3 | 25 | 0 | 17 | 17 | 17 | — |
-| v1_deepseek-v3-0324 | 25 | 0 | 6 | 6 | 6 | — |
-| v1_deepseek-v3-2 | 25 | 0 | 43 | 43 | 43 | — |
-| deepseek-chat-direct | 25 | 3 | 95 | 51 | 58.0 | +38.9% |
-| deepseek-v3-2-or-16k | 25 | 0 | 41 | 41 | 41 | — |
-| deepseek-v3-2-or-pin-alibaba | 125 | 1 | 212 | 205 | 206.7 | +2.5% |
-| deepseek-v3-2-or-pin-atlascloud | 125 | 2 | 243 | 225 | 228.7 | +5.9% |
-| deepseek-v3-2-or-pin-baidu | 125 | 0 | 231 | 231 | 231 | — |
-| deepseek-v3-2-or-pin-chutes | 121 | 2 | 268 | 252 | 256.2 | +4.4% |
-| deepseek-v3-2-or-pin-deepinfra | 125 | 2 | 304 | 256 | 260.2 | +14.4% |
-| deepseek-v3-2-or-pin-friendli | 125 | 2 | 269 | 237 | 240.9 | +10.4% |
-| deepseek-v3-2-or-pin-google | 125 | 2 | 307 | 292 | 296.7 | +3.4% |
-| deepseek-v3-2-or-pin-novita | 125 | 1 | 280 | 260 | 262.1 | +6.4% |
-| deepseek-v3-2-or-pin-parasail | 125 | 3 | 323 | 273 | 279.7 | +13.4% |
-| deepseek-v3-2-or-pin-siliconflow | 125 | 2 | 257 | 229 | 232.7 | +9.5% |
-| deepseek-v3-2-or-r2 | 25 | 1 | 64 | 57 | 59.4 | +7.2% |
-| deepseek-v3-2-or-r3 | 25 | 0 | 46 | 46 | 46 | — |
-| deepseek-v4-pro-direct | 25 | 0 | 43 | 43 | 43 | — |
-| deepseek-v4-pro-or | 0 | 0 | 0 | 0 | 0 | — |
-| deepseek-v4-pro-or-pin-atlascloud | 121 | 0 | 198 | 198 | 198 | — |
-| deepseek-v4-pro-or-pin-deepseek | 0 | 0 | 0 | 0 | 0 | — |
-| deepseek-v4-pro-or-pin-gmicloud | 124 | 1 | 241 | 222 | 223.8 | +7.1% |
-| deepseek-v4-pro-or-pin-novita | 123 | 1 | 267 | 250 | 252.0 | +5.6% |
-| deepseek-v4-pro-or-pin-parasail | 124 | 1 | 227 | 203 | 204.7 | +9.8% |
-| deepseek-v4-pro-or-pin-siliconflow | 125 | 1 | 264 | 224 | 225.8 | +14.5% |
-| deepseek-v4-pro-or-pin-together | 124 | 1 | 209 | 196 | 197.6 | +5.5% |
-| gemini-2-5-pro-16k | 25 | 0 | 53 | 53 | 53 | — |
-| gemini-3-1-pro-16k | 25 | 2 | 69 | 50 | 54.3 | +21.3% |
-| glm-4-5-or | 25 | 0 | 48 | 48 | 48 | — |
-| glm-4-5-or-pin-novita | 125 | 2 | 208 | 176 | 178.9 | +14.0% |
-| glm-4-5-or-pin-zai | 125 | 1 | 194 | 158 | 159.3 | +17.9% |
-| glm-4-6-coding-direct | 25 | 0 | 38 | 38 | 38 | — |
-| glm-4-6-or | 25 | 2 | 77 | 39 | 42.4 | +44.9% |
-| glm-4-6-or-pin-atlascloud | 125 | 5 | 240 | 175 | 182.3 | +24.0% |
-| glm-4-6-or-pin-deepinfra | 125 | 1 | 231 | 220 | 221.8 | +4.0% |
-| glm-4-6-or-pin-novita | 125 | 0 | 247 | 247 | 247 | — |
-| glm-4-6-or-pin-siliconflow | 125 | 2 | 161 | 142 | 144.3 | +10.4% |
-| glm-4-6-or-pin-venice | 125 | 4 | 208 | 150 | 155.0 | +25.5% |
-| glm-4-6-or-pin-zai | 125 | 0 | 230 | 230 | 230 | — |
-| glm-4-7-or | 25 | 0 | 27 | 27 | 27 | — |
-| glm-4-7-or-pin-atlascloud | 125 | 0 | 189 | 189 | 189 | — |
-| glm-4-7-or-pin-cerebras | 125 | 1 | 214 | 209 | 210.7 | +1.5% |
-| glm-4-7-or-pin-deepinfra | 125 | 0 | 228 | 228 | 228 | — |
-| glm-4-7-or-pin-dekallm | 125 | 0 | 174 | 174 | 174 | — |
-| glm-4-7-or-pin-google | 125 | 0 | 234 | 234 | 234 | — |
-| glm-4-7-or-pin-novita | 125 | 0 | 211 | 211 | 211 | — |
-| glm-4-7-or-pin-parasail | 125 | 0 | 188 | 188 | 188 | — |
-| glm-4-7-or-pin-phala | 125 | 0 | 247 | 247 | 247 | — |
-| glm-4-7-or-pin-siliconflow | 125 | 0 | 165 | 165 | 165 | — |
-| glm-4-7-or-pin-venice | 125 | 0 | 225 | 225 | 225 | — |
-| glm-4-7-or-pin-zai | 125 | 1 | 233 | 227 | 228.8 | +1.8% |
-| glm-5-1-coding-direct | 25 | 1 | 58 | 40 | 41.7 | +28.1% |
-| glm-5-1-or | 25 | 1 | 68 | 49 | 51.0 | +25.0% |
-| glm-5-1-or-pin-ambient | 125 | 1 | 322 | 290 | 292.3 | +9.2% |
-| glm-5-1-or-pin-atlascloud | 125 | 1 | 306 | 300 | 302.4 | +1.2% |
-| glm-5-1-or-pin-chutes | 124 | 2 | 278 | 259 | 263.2 | +5.3% |
-| glm-5-1-or-pin-deepinfra | 124 | 6 | 380 | 241 | 253.3 | +33.3% |
-| glm-5-1-or-pin-fireworks | 3 | 0 | 4 | 4 | 4 | — |
-| glm-5-1-or-pin-friendli | 115 | 9 | 429 | 224 | 243.0 | +43.4% |
-| glm-5-1-or-pin-gmicloud | 125 | 6 | 384 | 270 | 283.6 | +26.1% |
-| glm-5-1-or-pin-inceptron | 121 | 6 | 355 | 262 | 275.7 | +22.3% |
-| glm-5-1-or-pin-novita | 120 | 6 | 417 | 278 | 292.6 | +29.8% |
-| glm-5-1-or-pin-parasail | 125 | 3 | 369 | 295 | 302.3 | +18.1% |
-| glm-5-1-or-pin-phala | 125 | 5 | 360 | 242 | 252.1 | +30.0% |
-| glm-5-1-or-pin-siliconflow | 125 | 4 | 331 | 266 | 274.8 | +17.0% |
-| glm-5-1-or-pin-together | 122 | 4 | 346 | 294 | 304.0 | +12.1% |
-| glm-5-1-or-pin-venice | 124 | 7 | 399 | 300 | 317.9 | +20.3% |
-| glm-5-1-or-pin-zai | 120 | 6 | 346 | 246 | 258.9 | +25.2% |
-| gpt-4-1-16k | 25 | 0 | 29 | 29 | 29 | — |
-| gpt-4o-direct-16k | 25 | 0 | 13 | 13 | 13 | — |
-| gpt-4o-or | 25 | 0 | 7 | 7 | 7 | — |
-| gpt-5-1-codex-direct | 25 | 1 | 171 | 48 | 50.0 | +70.8% |
-| gpt-5-1-codex-direct-r2 | 25 | 0 | 68 | 68 | 68 | — |
-| gpt-5-1-codex-direct-r3 | 25 | 1 | 69 | 41 | 42.7 | +38.1% |
-| gpt-5-1-direct | 25 | 0 | 55 | 55 | 55 | — |
-| gpt-5-1-direct-r2 | 25 | 0 | 52 | 52 | 52 | — |
-| gpt-5-1-direct-r3 | 25 | 0 | 40 | 40 | 40 | — |
-| gpt-5-2-codex-direct | 25 | 0 | 57 | 57 | 57 | — |
-| gpt-5-2-codex-direct-r2 | 25 | 0 | 66 | 66 | 66 | — |
-| gpt-5-2-codex-direct-r3 | 25 | 0 | 51 | 51 | 51 | — |
-| gpt-5-2-direct | 25 | 0 | 88 | 88 | 88 | — |
-| gpt-5-2-direct-r2 | 25 | 0 | 88 | 88 | 88 | — |
-| gpt-5-2-direct-r3 | 25 | 0 | 58 | 58 | 58 | — |
-| gpt-5-3-codex-direct | 25 | 1 | 74 | 68 | 70.8 | +4.3% |
-| gpt-5-3-codex-direct-r2 | 25 | 0 | 93 | 93 | 93 | — |
-| gpt-5-3-codex-direct-r3 | 25 | 0 | 74 | 74 | 74 | — |
-| gpt-5-3-direct | 25 | 0 | 50 | 50 | 50 | — |
-| gpt-5-3-direct-r2 | 25 | 0 | 35 | 35 | 35 | — |
-| gpt-5-3-direct-r3 | 25 | 0 | 48 | 48 | 48 | — |
-| gpt-5-4-direct-16k | 25 | 1 | 104 | 84 | 87.5 | +15.9% |
-| gpt-5-4-or | 25 | 0 | 84 | 84 | 84 | — |
-| gpt-5-5-direct | 25 | 2 | 149 | 127 | 138.0 | +7.4% |
-| gpt-5-5-direct-r2 | 25 | 1 | 115 | 102 | 106.2 | +7.7% |
-| gpt-5-5-direct-r3 | 25 | 1 | 142 | 124 | 129.2 | +9.0% |
-| gpt-5-5-or | 25 | 0 | 104 | 104 | 104 | — |
-| gpt-5-5-or-r2 | 25 | 0 | 154 | 154 | 154 | — |
-| gpt-5-5-or-r3 | 25 | 0 | 158 | 158 | 158 | — |
-| gpt-5-5-pro-direct | 25 | 0 | 85 | 85 | 85 | — |
-| gpt-5-codex-direct | 25 | 0 | 43 | 43 | 43 | — |
-| gpt-5-codex-direct-r2 | 25 | 0 | 43 | 43 | 43 | — |
-| gpt-5-codex-direct-r3 | 25 | 0 | 47 | 47 | 47 | — |
-| gpt-5-direct | 25 | 0 | 74 | 74 | 74 | — |
-| gpt-5-direct-r2 | 25 | 1 | 123 | 109 | 113.5 | +7.7% |
-| gpt-5-direct-r3 | 25 | 0 | 89 | 89 | 89 | — |
-| grok-3-16k | 25 | 0 | 28 | 28 | 28 | — |
-| grok-4-16k | 25 | 0 | 9 | 9 | 9 | — |
-| grok-4-2-16k | 25 | 0 | 15 | 15 | 15 | — |
-| grok-4-20-or | 25 | 0 | 27 | 27 | 27 | — |
-| grok-4-3-direct | 125 | 0 | 38 | 38 | 38 | — |
-| grok-4-3-or | 125 | 0 | 80 | 80 | 80 | — |
-| kimi-coding-direct | 25 | 1 | 72 | 64 | 66.7 | +7.4% |
-| kimi-k2-0905-or-pin-atlascloud | 125 | 0 | 357 | 357 | 357 | — |
-| kimi-k2-0905-or-pin-groq | 125 | 1 | 253 | 245 | 247.0 | +2.4% |
-| kimi-k2-0905-or-pin-novita | 125 | 0 | 230 | 230 | 230 | — |
-| kimi-k2-0905-or-pin-siliconflow | 125 | 0 | 212 | 212 | 212 | — |
-| kimi-k2-5-or-16k | 25 | 1 | 74 | 66 | 68.8 | +7.0% |
-| kimi-k2-6-or | 25 | 1 | 116 | 82 | 85.4 | +26.4% |
-| kimi-k2-thinking-or-pin-atlascloud | 125 | 1 | 244 | 225 | 226.8 | +7.0% |
-| kimi-k2-thinking-or-pin-google | 125 | 0 | 139 | 139 | 139 | — |
-| kimi-k2-thinking-or-pin-novita | 125 | 0 | 164 | 164 | 164 | — |
-| minimax-m2-7-or | 25 | 0 | 17 | 17 | 17 | — |
-| minimax-m2-7-or-pin-fireworks | 116 | 0 | 116 | 116 | 116 | — |
-| minimax-m2-7-or-pin-minimax | 122 | 1 | 168 | 160 | 161.3 | +4.0% |
-| minimax-m2-7-or-pin-together | 122 | 1 | 135 | 122 | 123.0 | +8.9% |
-| minimax-m2-direct | 25 | 0 | 33 | 33 | 33 | — |
-| minimax-m2-direct-r2 | 25 | 0 | 20 | 20 | 20 | — |
-| minimax-m2-direct-r3 | 25 | 0 | 47 | 47 | 47 | — |
-| minimax-m2-direct-r4 | 25 | 0 | 28 | 28 | 28 | — |
-| minimax-m2-direct-r5 | 25 | 0 | 21 | 21 | 21 | — |
-| minimax-m2-or | 25 | 1 | 81 | 60 | 62.5 | +22.8% |
-| minimax-m2-or-pin-atlascloud | 120 | 0 | 201 | 201 | 201 | — |
-| minimax-m2-or-pin-google | 119 | 3 | 478 | 440 | 451.4 | +5.6% |
-| minimax-m2-or-pin-minimax | 116 | 2 | 145 | 112 | 114.0 | +21.4% |
-| minimax-m2-or-pin-novita | 113 | 0 | 119 | 119 | 119 | — |
-| minimax-m2-or-r2 | 25 | 0 | 80 | 80 | 80 | — |
-| minimax-m2-or-r3 | 25 | 1 | 58 | 38 | 39.6 | +31.7% |
-| minimax-m2-or-r4 | 25 | 1 | 71 | 60 | 62.5 | +12.0% |
-| minimax-m2-or-r5 | 25 | 1 | 55 | 28 | 29.2 | +46.9% |
-| opus-3-4k | 25 | 0 | 10 | 10 | 10 | — |
-| opus-4-0-16k | 25 | 0 | 21 | 21 | 21 | — |
-| opus-4-1-16k | 25 | 1 | 58 | 35 | 36.5 | +37.1% |
-| opus-4-5-16k | 25 | 0 | 44 | 44 | 44 | — |
-| opus-4-6-direct-16k | 25 | 0 | 30 | 30 | 30 | — |
-| opus-4-6-or | 25 | 0 | 44 | 44 | 44 | — |
-| opus-4-7-direct | 25 | 0 | 67 | 67 | 67 | — |
-| opus-4-7-or | 25 | 0 | 83 | 83 | 83 | — |
-| qwen3-6-plus-or | 25 | 0 | 104 | 104 | 104 | — |
-| qwen3-coder-plus-or | 25 | 0 | 23 | 23 | 23 | — |
-| sonnet-4-0-16k | 25 | 0 | 30 | 30 | 30 | — |
-| sonnet-4-5-16k | 25 | 1 | 62 | 45 | 46.9 | +24.4% |
-| sonnet-4-6-direct-16k | 25 | 0 | 34 | 34 | 34 | — |
-| sonnet-4-6-or | 25 | 0 | 52 | 52 | 52 | — |
-| v1_gemini-2-5-pro | 25 | 1 | 74 | 51 | 53.1 | +28.2% |
-| v1_gemini-3-1-pro | 25 | 0 | 49 | 49 | 49 | — |
-| v1_gpt-3-5-turbo | 25 | 0 | 8 | 8 | 8 | — |
-| v1_gpt-4 | 25 | 0 | 7 | 7 | 7 | — |
-| v1_gpt-4-1 | 25 | 1 | 80 | 56 | 58.3 | +27.1% |
-| v1_gpt-4-turbo | 25 | 0 | 3 | 3 | 3 | — |
-| v1_gpt-4o | 25 | 0 | 6 | 6 | 6 | — |
-| v1_gpt-5-4 | 25 | 0 | 124 | 124 | 124 | — |
-| v1_grok-3 | 25 | 0 | 23 | 23 | 23 | — |
-| v1_grok-4 | 25 | 0 | 11 | 11 | 11 | — |
-| v1_grok-4-2 | 25 | 0 | 42 | 42 | 42 | — |
-| v1_haiku | 25 | 3 | 89 | 37 | 42.0 | +52.8% |
-| v1_kimi-k2 | 25 | 0 | 50 | 50 | 50 | — |
-| v1_kimi-k2-5 | 25 | 5 | 121 | 41 | 51.2 | +57.7% |
-| v1_opus | 25 | 0 | 49 | 49 | 49 | — |
-| v1_opus-3 | 25 | 0 | 2 | 2 | 2 | — |
-| v1_opus-4-0 | 25 | 0 | 40 | 40 | 40 | — |
-| v1_opus-4-1 | 25 | 0 | 62 | 62 | 62 | — |
-| v1_opus-4-5 | 25 | 1 | 48 | 43 | 44.8 | +6.7% |
-| v1_sonnet | 25 | 0 | 58 | 58 | 58 | — |
-| v1_sonnet-4-0 | 25 | 0 | 30 | 30 | 30 | — |
-| v1_sonnet-4-5 | 25 | 1 | 52 | 43 | 44.8 | +13.8% |
+| Cell | n | flag | raw | reg | reg→N | reg/25 | Δ% |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| v1_deepseek-r1 | 25 | 0 | 31 | 31 | 31 | 31.0 | — |
+| v1_deepseek-v3 | 25 | 0 | 17 | 17 | 17 | 17.0 | — |
+| v1_deepseek-v3-0324 | 25 | 0 | 6 | 6 | 6 | 6.0 | — |
+| v1_deepseek-v3-2 | 25 | 0 | 43 | 43 | 43 | 43.0 | — |
+| deepseek-chat-direct | 25 | 3 | 95 | 51 | 58.0 | 58.0 | +38.9% |
+| deepseek-v3-2-or-16k | 25 | 0 | 41 | 41 | 41 | 41.0 | — |
+| deepseek-v3-2-or-pin-alibaba | 125 | 1 | 212 | 205 | 206.7 | 41.3 | +2.5% |
+| deepseek-v3-2-or-pin-atlascloud | 125 | 2 | 243 | 225 | 228.7 | 45.7 | +5.9% |
+| deepseek-v3-2-or-pin-baidu | 125 | 0 | 231 | 231 | 231 | 46.2 | — |
+| deepseek-v3-2-or-pin-chutes | 121 | 2 | 268 | 252 | 256.2 | 52.9 | +4.4% |
+| deepseek-v3-2-or-pin-deepinfra | 125 | 2 | 304 | 256 | 260.2 | 52.0 | +14.4% |
+| deepseek-v3-2-or-pin-friendli | 125 | 2 | 269 | 237 | 240.9 | 48.2 | +10.4% |
+| deepseek-v3-2-or-pin-google | 125 | 2 | 307 | 292 | 296.7 | 59.3 | +3.4% |
+| deepseek-v3-2-or-pin-novita | 125 | 1 | 280 | 260 | 262.1 | 52.4 | +6.4% |
+| deepseek-v3-2-or-pin-parasail | 125 | 3 | 323 | 273 | 279.7 | 55.9 | +13.4% |
+| deepseek-v3-2-or-pin-siliconflow | 125 | 2 | 257 | 229 | 232.7 | 46.5 | +9.5% |
+| deepseek-v3-2-or-r2 | 25 | 1 | 64 | 57 | 59.4 | 59.4 | +7.2% |
+| deepseek-v3-2-or-r3 | 25 | 0 | 46 | 46 | 46 | 46.0 | — |
+| deepseek-v4-pro-direct | 25 | 0 | 43 | 43 | 43 | 43.0 | — |
+| deepseek-v4-pro-or | 0 | 0 | 0 | 0 | 0 | 0.0 | — |
+| deepseek-v4-pro-or-pin-atlascloud | 121 | 0 | 198 | 198 | 198 | 40.9 | — |
+| deepseek-v4-pro-or-pin-deepseek | 0 | 0 | 0 | 0 | 0 | 0.0 | — |
+| deepseek-v4-pro-or-pin-gmicloud | 124 | 1 | 241 | 222 | 223.8 | 45.1 | +7.1% |
+| deepseek-v4-pro-or-pin-novita | 123 | 1 | 267 | 250 | 252.0 | 51.2 | +5.6% |
+| deepseek-v4-pro-or-pin-parasail | 124 | 1 | 227 | 203 | 204.7 | 41.3 | +9.8% |
+| deepseek-v4-pro-or-pin-siliconflow | 125 | 1 | 264 | 224 | 225.8 | 45.2 | +14.5% |
+| deepseek-v4-pro-or-pin-together | 124 | 1 | 209 | 196 | 197.6 | 39.8 | +5.5% |
+| gemini-2-5-pro-16k | 25 | 0 | 53 | 53 | 53 | 53.0 | — |
+| gemini-3-1-pro-16k | 25 | 2 | 69 | 50 | 54.3 | 54.3 | +21.3% |
+| glm-4-5-or | 25 | 0 | 48 | 48 | 48 | 48.0 | — |
+| glm-4-5-or-pin-novita | 125 | 2 | 208 | 176 | 178.9 | 35.8 | +14.0% |
+| glm-4-5-or-pin-zai | 125 | 1 | 194 | 158 | 159.3 | 31.9 | +17.9% |
+| glm-4-6-coding-direct | 25 | 0 | 38 | 38 | 38 | 38.0 | — |
+| glm-4-6-or | 25 | 2 | 77 | 39 | 42.4 | 42.4 | +44.9% |
+| glm-4-6-or-pin-atlascloud | 125 | 5 | 240 | 175 | 182.3 | 36.5 | +24.0% |
+| glm-4-6-or-pin-deepinfra | 125 | 1 | 231 | 220 | 221.8 | 44.4 | +4.0% |
+| glm-4-6-or-pin-novita | 125 | 0 | 247 | 247 | 247 | 49.4 | — |
+| glm-4-6-or-pin-siliconflow | 125 | 2 | 161 | 142 | 144.3 | 28.9 | +10.4% |
+| glm-4-6-or-pin-venice | 125 | 4 | 208 | 150 | 155.0 | 31.0 | +25.5% |
+| glm-4-6-or-pin-zai | 125 | 0 | 230 | 230 | 230 | 46.0 | — |
+| glm-4-7-or | 25 | 0 | 27 | 27 | 27 | 27.0 | — |
+| glm-4-7-or-pin-atlascloud | 125 | 0 | 189 | 189 | 189 | 37.8 | — |
+| glm-4-7-or-pin-cerebras | 125 | 1 | 214 | 209 | 210.7 | 42.1 | +1.5% |
+| glm-4-7-or-pin-deepinfra | 125 | 0 | 228 | 228 | 228 | 45.6 | — |
+| glm-4-7-or-pin-dekallm | 125 | 0 | 174 | 174 | 174 | 34.8 | — |
+| glm-4-7-or-pin-google | 125 | 0 | 234 | 234 | 234 | 46.8 | — |
+| glm-4-7-or-pin-novita | 125 | 0 | 211 | 211 | 211 | 42.2 | — |
+| glm-4-7-or-pin-parasail | 125 | 0 | 188 | 188 | 188 | 37.6 | — |
+| glm-4-7-or-pin-phala | 125 | 0 | 247 | 247 | 247 | 49.4 | — |
+| glm-4-7-or-pin-siliconflow | 125 | 0 | 165 | 165 | 165 | 33.0 | — |
+| glm-4-7-or-pin-venice | 125 | 0 | 225 | 225 | 225 | 45.0 | — |
+| glm-4-7-or-pin-zai | 125 | 1 | 233 | 227 | 228.8 | 45.8 | +1.8% |
+| glm-5-1-coding-direct | 25 | 1 | 58 | 40 | 41.7 | 41.7 | +28.1% |
+| glm-5-1-or | 25 | 1 | 68 | 49 | 51.0 | 51.0 | +25.0% |
+| glm-5-1-or-pin-ambient | 125 | 1 | 322 | 290 | 292.3 | 58.5 | +9.2% |
+| glm-5-1-or-pin-atlascloud | 125 | 1 | 306 | 300 | 302.4 | 60.5 | +1.2% |
+| glm-5-1-or-pin-chutes | 124 | 2 | 278 | 259 | 263.2 | 53.1 | +5.3% |
+| glm-5-1-or-pin-deepinfra | 124 | 6 | 380 | 241 | 253.3 | 51.1 | +33.3% |
+| glm-5-1-or-pin-fireworks | 3 | 0 | 4 | 4 | 4 | 33.3 | — |
+| glm-5-1-or-pin-friendli | 115 | 9 | 429 | 224 | 243.0 | 52.8 | +43.4% |
+| glm-5-1-or-pin-gmicloud | 125 | 6 | 384 | 270 | 283.6 | 56.7 | +26.1% |
+| glm-5-1-or-pin-inceptron | 121 | 6 | 355 | 262 | 275.7 | 57.0 | +22.3% |
+| glm-5-1-or-pin-novita | 120 | 6 | 417 | 278 | 292.6 | 61.0 | +29.8% |
+| glm-5-1-or-pin-parasail | 125 | 3 | 369 | 295 | 302.3 | 60.5 | +18.1% |
+| glm-5-1-or-pin-phala | 125 | 5 | 360 | 242 | 252.1 | 50.4 | +30.0% |
+| glm-5-1-or-pin-siliconflow | 125 | 4 | 331 | 266 | 274.8 | 55.0 | +17.0% |
+| glm-5-1-or-pin-together | 122 | 4 | 346 | 294 | 304.0 | 62.3 | +12.1% |
+| glm-5-1-or-pin-venice | 124 | 7 | 399 | 300 | 317.9 | 64.1 | +20.3% |
+| glm-5-1-or-pin-zai | 120 | 6 | 346 | 246 | 258.9 | 53.9 | +25.2% |
+| gpt-4-1-16k | 25 | 0 | 29 | 29 | 29 | 29.0 | — |
+| gpt-4o-direct-16k | 25 | 0 | 13 | 13 | 13 | 13.0 | — |
+| gpt-4o-or | 25 | 0 | 7 | 7 | 7 | 7.0 | — |
+| gpt-5-1-codex-direct | 25 | 1 | 171 | 48 | 50.0 | 50.0 | +70.8% |
+| gpt-5-1-codex-direct-r2 | 25 | 0 | 68 | 68 | 68 | 68.0 | — |
+| gpt-5-1-codex-direct-r3 | 25 | 1 | 69 | 41 | 42.7 | 42.7 | +38.1% |
+| gpt-5-1-direct | 25 | 0 | 55 | 55 | 55 | 55.0 | — |
+| gpt-5-1-direct-r2 | 25 | 0 | 52 | 52 | 52 | 52.0 | — |
+| gpt-5-1-direct-r3 | 25 | 0 | 40 | 40 | 40 | 40.0 | — |
+| gpt-5-2-codex-direct | 25 | 0 | 57 | 57 | 57 | 57.0 | — |
+| gpt-5-2-codex-direct-r2 | 25 | 0 | 66 | 66 | 66 | 66.0 | — |
+| gpt-5-2-codex-direct-r3 | 25 | 0 | 51 | 51 | 51 | 51.0 | — |
+| gpt-5-2-direct | 25 | 0 | 88 | 88 | 88 | 88.0 | — |
+| gpt-5-2-direct-r2 | 25 | 0 | 88 | 88 | 88 | 88.0 | — |
+| gpt-5-2-direct-r3 | 25 | 0 | 58 | 58 | 58 | 58.0 | — |
+| gpt-5-3-codex-direct | 25 | 1 | 74 | 68 | 70.8 | 70.8 | +4.3% |
+| gpt-5-3-codex-direct-r2 | 25 | 0 | 93 | 93 | 93 | 93.0 | — |
+| gpt-5-3-codex-direct-r3 | 25 | 0 | 74 | 74 | 74 | 74.0 | — |
+| gpt-5-3-direct | 25 | 0 | 50 | 50 | 50 | 50.0 | — |
+| gpt-5-3-direct-r2 | 25 | 0 | 35 | 35 | 35 | 35.0 | — |
+| gpt-5-3-direct-r3 | 25 | 0 | 48 | 48 | 48 | 48.0 | — |
+| gpt-5-4-direct-16k | 25 | 1 | 104 | 84 | 87.5 | 87.5 | +15.9% |
+| gpt-5-4-or | 25 | 0 | 84 | 84 | 84 | 84.0 | — |
+| gpt-5-5-direct | 25 | 2 | 149 | 127 | 138.0 | 138.0 | +7.4% |
+| gpt-5-5-direct-r2 | 25 | 1 | 115 | 102 | 106.2 | 106.2 | +7.7% |
+| gpt-5-5-direct-r3 | 25 | 1 | 142 | 124 | 129.2 | 129.2 | +9.0% |
+| gpt-5-5-or | 25 | 0 | 104 | 104 | 104 | 104.0 | — |
+| gpt-5-5-or-r2 | 25 | 0 | 154 | 154 | 154 | 154.0 | — |
+| gpt-5-5-or-r3 | 25 | 0 | 158 | 158 | 158 | 158.0 | — |
+| gpt-5-5-pro-direct | 25 | 0 | 85 | 85 | 85 | 85.0 | — |
+| gpt-5-codex-direct | 25 | 0 | 43 | 43 | 43 | 43.0 | — |
+| gpt-5-codex-direct-r2 | 25 | 0 | 43 | 43 | 43 | 43.0 | — |
+| gpt-5-codex-direct-r3 | 25 | 0 | 47 | 47 | 47 | 47.0 | — |
+| gpt-5-direct | 25 | 0 | 74 | 74 | 74 | 74.0 | — |
+| gpt-5-direct-r2 | 25 | 1 | 123 | 109 | 113.5 | 113.5 | +7.7% |
+| gpt-5-direct-r3 | 25 | 0 | 89 | 89 | 89 | 89.0 | — |
+| grok-3-16k | 25 | 0 | 28 | 28 | 28 | 28.0 | — |
+| grok-4-16k | 25 | 0 | 9 | 9 | 9 | 9.0 | — |
+| grok-4-2-16k | 25 | 0 | 15 | 15 | 15 | 15.0 | — |
+| grok-4-20-or | 25 | 0 | 27 | 27 | 27 | 27.0 | — |
+| grok-4-3-direct | 125 | 0 | 38 | 38 | 38 | 7.6 | — |
+| grok-4-3-or | 125 | 0 | 80 | 80 | 80 | 16.0 | — |
+| kimi-coding-direct | 25 | 1 | 72 | 64 | 66.7 | 66.7 | +7.4% |
+| kimi-k2-0905-or-pin-atlascloud | 125 | 0 | 357 | 357 | 357 | 71.4 | — |
+| kimi-k2-0905-or-pin-groq | 125 | 1 | 253 | 245 | 247.0 | 49.4 | +2.4% |
+| kimi-k2-0905-or-pin-novita | 125 | 0 | 230 | 230 | 230 | 46.0 | — |
+| kimi-k2-0905-or-pin-siliconflow | 125 | 0 | 212 | 212 | 212 | 42.4 | — |
+| kimi-k2-5-or-16k | 25 | 1 | 74 | 66 | 68.8 | 68.8 | +7.0% |
+| kimi-k2-6-or | 25 | 1 | 116 | 82 | 85.4 | 85.4 | +26.4% |
+| kimi-k2-thinking-or-pin-atlascloud | 125 | 1 | 244 | 225 | 226.8 | 45.4 | +7.0% |
+| kimi-k2-thinking-or-pin-google | 125 | 0 | 139 | 139 | 139 | 27.8 | — |
+| kimi-k2-thinking-or-pin-novita | 125 | 0 | 164 | 164 | 164 | 32.8 | — |
+| minimax-m2-7-or | 25 | 0 | 17 | 17 | 17 | 17.0 | — |
+| minimax-m2-7-or-pin-fireworks | 116 | 0 | 116 | 116 | 116 | 25.0 | — |
+| minimax-m2-7-or-pin-minimax | 122 | 1 | 168 | 160 | 161.3 | 33.1 | +4.0% |
+| minimax-m2-7-or-pin-together | 122 | 1 | 135 | 122 | 123.0 | 25.2 | +8.9% |
+| minimax-m2-direct | 25 | 0 | 33 | 33 | 33 | 33.0 | — |
+| minimax-m2-direct-r2 | 25 | 0 | 20 | 20 | 20 | 20.0 | — |
+| minimax-m2-direct-r3 | 25 | 0 | 47 | 47 | 47 | 47.0 | — |
+| minimax-m2-direct-r4 | 25 | 0 | 28 | 28 | 28 | 28.0 | — |
+| minimax-m2-direct-r5 | 25 | 0 | 21 | 21 | 21 | 21.0 | — |
+| minimax-m2-or | 25 | 1 | 81 | 60 | 62.5 | 62.5 | +22.8% |
+| minimax-m2-or-pin-atlascloud | 125 | 0 | 210 | 210 | 210 | 42.0 | — |
+| minimax-m2-or-pin-google | 125 | 3 | 504 | 466 | 477.5 | 95.5 | +5.3% |
+| minimax-m2-or-pin-google-r2 | 125 | 3 | 618 | 553 | 566.6 | 113.3 | +8.3% |
+| minimax-m2-or-pin-minimax | 125 | 2 | 152 | 119 | 120.9 | 24.2 | +20.5% |
+| minimax-m2-or-pin-minimax-r2 | 125 | 1 | 148 | 135 | 136.1 | 27.2 | +8.0% |
+| minimax-m2-or-pin-novita | 125 | 0 | 140 | 140 | 140 | 28.0 | — |
+| minimax-m2-or-r2 | 25 | 0 | 80 | 80 | 80 | 80.0 | — |
+| minimax-m2-or-r3 | 25 | 1 | 58 | 38 | 39.6 | 39.6 | +31.7% |
+| minimax-m2-or-r4 | 25 | 1 | 71 | 60 | 62.5 | 62.5 | +12.0% |
+| minimax-m2-or-r5 | 25 | 1 | 55 | 28 | 29.2 | 29.2 | +46.9% |
+| opus-3-4k | 25 | 0 | 10 | 10 | 10 | 10.0 | — |
+| opus-4-0-16k | 25 | 0 | 21 | 21 | 21 | 21.0 | — |
+| opus-4-1-16k | 25 | 1 | 58 | 35 | 36.5 | 36.5 | +37.1% |
+| opus-4-5-16k | 25 | 0 | 44 | 44 | 44 | 44.0 | — |
+| opus-4-6-direct-16k | 25 | 0 | 30 | 30 | 30 | 30.0 | — |
+| opus-4-6-or | 25 | 0 | 44 | 44 | 44 | 44.0 | — |
+| opus-4-7-direct | 25 | 0 | 67 | 67 | 67 | 67.0 | — |
+| opus-4-7-or | 25 | 0 | 83 | 83 | 83 | 83.0 | — |
+| qwen3-6-plus-or | 25 | 0 | 104 | 104 | 104 | 104.0 | — |
+| qwen3-coder-plus-or | 25 | 0 | 23 | 23 | 23 | 23.0 | — |
+| sonnet-4-0-16k | 25 | 0 | 30 | 30 | 30 | 30.0 | — |
+| sonnet-4-5-16k | 25 | 1 | 62 | 45 | 46.9 | 46.9 | +24.4% |
+| sonnet-4-6-direct-16k | 25 | 0 | 34 | 34 | 34 | 34.0 | — |
+| sonnet-4-6-or | 25 | 0 | 52 | 52 | 52 | 52.0 | — |
+| v1_gemini-2-5-pro | 25 | 1 | 74 | 51 | 53.1 | 53.1 | +28.2% |
+| v1_gemini-3-1-pro | 25 | 0 | 49 | 49 | 49 | 49.0 | — |
+| v1_gpt-3-5-turbo | 25 | 0 | 8 | 8 | 8 | 8.0 | — |
+| v1_gpt-4 | 25 | 0 | 7 | 7 | 7 | 7.0 | — |
+| v1_gpt-4-1 | 25 | 1 | 80 | 56 | 58.3 | 58.3 | +27.1% |
+| v1_gpt-4-turbo | 25 | 0 | 3 | 3 | 3 | 3.0 | — |
+| v1_gpt-4o | 25 | 0 | 6 | 6 | 6 | 6.0 | — |
+| v1_gpt-5-4 | 25 | 0 | 124 | 124 | 124 | 124.0 | — |
+| v1_grok-3 | 25 | 0 | 23 | 23 | 23 | 23.0 | — |
+| v1_grok-4 | 25 | 0 | 11 | 11 | 11 | 11.0 | — |
+| v1_grok-4-2 | 25 | 0 | 42 | 42 | 42 | 42.0 | — |
+| v1_haiku | 25 | 3 | 89 | 37 | 42.0 | 42.0 | +52.8% |
+| v1_kimi-k2 | 25 | 0 | 50 | 50 | 50 | 50.0 | — |
+| v1_kimi-k2-5 | 25 | 5 | 121 | 41 | 51.2 | 51.2 | +57.7% |
+| v1_opus | 25 | 0 | 49 | 49 | 49 | 49.0 | — |
+| v1_opus-3 | 25 | 0 | 2 | 2 | 2 | 2.0 | — |
+| v1_opus-4-0 | 25 | 0 | 40 | 40 | 40 | 40.0 | — |
+| v1_opus-4-1 | 25 | 0 | 62 | 62 | 62 | 62.0 | — |
+| v1_opus-4-5 | 25 | 1 | 48 | 43 | 44.8 | 44.8 | +6.7% |
+| v1_sonnet | 25 | 0 | 58 | 58 | 58 | 58.0 | — |
+| v1_sonnet-4-0 | 25 | 0 | 30 | 30 | 30 | 30.0 | — |
+| v1_sonnet-4-5 | 25 | 1 | 52 | 43 | 44.8 | 44.8 | +13.8% |

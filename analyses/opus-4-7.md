@@ -11,7 +11,6 @@ composite_register: 150
 generated: 2026-05-08
 status: complete
 ---
-
 # opus-4-7 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,10 +25,10 @@ Aggregate over 2 freeflow cells (50 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| opus-4-7-direct | 25 | 0 | 67 | 67 | 67 |
-| opus-4-7-or | 25 | 0 | 83 | 83 | 83 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| opus-4-7-direct | 25 | 0 | 67 | 67 | 67 | 67.0 |
+| opus-4-7-or | 25 | 0 | 83 | 83 | 83 | 83.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

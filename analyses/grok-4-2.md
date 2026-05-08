@@ -2,16 +2,15 @@
 model: grok-4-2
 lab: xAI
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 0
 composite_raw: 57
 composite_register: 57
 generated: 2026-05-08
 status: complete
 ---
-
 # grok-4-2 — per-model analysis
 
 **Lab:** xAI
@@ -26,10 +25,10 @@ Aggregate over 2 freeflow cells (50 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| grok-4-2-16k | 25 | 0 | 15 | 15 | 15 |
-| v1_grok-4-2 | 25 | 0 | 42 | 42 | 42 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| grok-4-2-16k | 25 | 0 | 15 | 15 | 15 | 15.0 |
+| v1_grok-4-2 | 25 | 0 | 42 | 42 | 42 | 42.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

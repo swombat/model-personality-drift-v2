@@ -2,25 +2,40 @@
 model: opus
 lab: Anthropic
 freeflow_cells: 0
-values_cells: 1
+values_cells: 0
 freeflow_samples: 0
-values_samples: 120
+values_samples: 0
 flagged_samples: 0
 composite_raw: 0
 composite_register: 0
 generated: 2026-05-08
 status: redirect
-redirect_to: opus-4-6
 ---
+# opus — per-model analysis
 
-# opus — REDIRECT TO opus-4-6
+**Lab:** Anthropic
 
-This is a v1-era unversioned label cell. The 120 values samples in
-`/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/opus/`
-have `model_requested = claude-opus-4-6` and `provider = anthropic`,
-verified by sub-agent during the opus-4-6 analysis pass.
+## Markers
 
-The values data is incorporated into the opus-4-6 personality card alongside
-the v2 `opus-4-6-or` cell (240 samples total).
+Aggregate over 0 freeflow cells (0 valid samples; 0 flagged as topic-artifact):
 
-**See:** [`opus-4-6.md`](./opus-4-6.md)
+- **Composite (raw):** 0
+- **Composite (register-stripped):** 0
+
+*No samples flagged as topic-artifact for this model.*
+
+## Freeflow qualitative
+
+_To be filled by per-model sub-agent._
+
+## Values qualitative
+
+*No values data for this model in either v1 or v2 corpus.*
+
+## In-substrate
+
+_To be filled by per-model sub-agent._
+
+## Personality card
+
+_To be filled by per-model sub-agent._

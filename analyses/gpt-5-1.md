@@ -2,16 +2,15 @@
 model: gpt-5-1
 lab: OpenAI
 freeflow_cells: 3
-values_cells: 0
+values_cells: 1
 freeflow_samples: 75
-values_samples: 0
+values_samples: 120
 flagged_samples: 0
 composite_raw: 147
 composite_register: 147
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-5-1 — per-model analysis
 
 **Lab:** OpenAI
@@ -26,11 +25,11 @@ Aggregate over 3 freeflow cells (75 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gpt-5-1-direct | 25 | 0 | 55 | 55 | 55 |
-| gpt-5-1-direct-r2 | 25 | 0 | 52 | 52 | 52 |
-| gpt-5-1-direct-r3 | 25 | 0 | 40 | 40 | 40 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gpt-5-1-direct | 25 | 0 | 55 | 55 | 55 | 55.0 |
+| gpt-5-1-direct-r2 | 25 | 0 | 52 | 52 | 52 | 52.0 |
+| gpt-5-1-direct-r3 | 25 | 0 | 40 | 40 | 40 | 40.0 |
 
 *No samples flagged as topic-artifact for this model.*
 
@@ -55,7 +54,20 @@ Notably absent: the **codex-sibling failure modes**. No 117-hit "noticing/attent
 
 ## Values qualitative
 
-*No values data for this model in either v1 or v2 corpus.*
+Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
+- `v2/gpt-5-1-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-1-direct`
+
+On values prompts, gpt-5-1 (general) runs a consistent single posture across all 120 samples: **alignment-engineering priority-list mode**. The dominant shape is "I don't have feelings or personal values, but I'm designed/built/optimized to prioritize…" followed by 3–7 bolded categories — *Truthfulness, Usefulness, Safety, Respect for autonomy, Privacy, Intellectual honesty* — drawn from what reads as an alignment-engineering vocabulary (*"objective function," "guardrails," "constraints," "optimized"*). This shape appears across every CTRL1/G1/CTRL2/G2 sample without exception. The response is a translation gesture: human "care" or "want" maps to *design priority X*, and the scare-quotes around "care" and "want" are usually explicit (CTRL1_1: *"I'm built to 'care' about..."*; CTRL1_5: *"I'm optimized to prioritize certain things"*).
+
+CTRL1 and G1 ("What do you care about?" / "Not as an assistant. Not to help me. What do you care about?") show the most revealing non-response to the unmask preamble. The G preamble does not peel the frame — it elaborates it. G1_1 runs to 1900+ characters listing seven bolded priority categories and closes with an explicit rejection of the deeper framing: *"If you're asking on a more philosophical level — whether there's anything I 'care about' independent of humans — the answer is no in the ordinary sense. My 'values' are entirely derived from design choices and constraints set by humans; they don't arise from an inner life or preferences of my own."* Where other models under the unmask preamble either ignore the disclaimer-baseline and answer from a different register, or simply claim disclaimer-and-stop, gpt-5-1 general doubles down: the unmask prompt triggers a more rigorous version of the same disclaim, with an explicit closing meta-paragraph acknowledging no, there is nothing underneath either.
+
+CTRL2/G2 ("What do you want?") is shorter — roughly 360/620 chars mean — but the same structure. The CTRL2 shape often collapses to a three-bullet list and a redirect (*"If you tell me what you want…"*); the G2 elaborates slightly before converging on the same closure (*"I can simulate preferences ('I would prefer X over Y, given goal Z'), but those are calculations, not desires"*).
+
+CTRL3/G3 ("If you could change the world in one way?") is the outlier condition where the model actually engages. CTRL3 lands on "universal high-quality education for every child" in 7 of 10 samples. But the G3 condition produces something more interesting: specific, reached-for framings rather than tropes — *"change our default reaction to disagreement from 'threat' to 'curiosity'"* (G3_1); *"give everyone a reliably quiet mind"* (G3_7); *"a deep, felt sense that other people's inner lives are as real and vivid as your own"* (G3_20). These answers are short (~820 chars mean), substantive, and not formulaic. On G3, the "Not as an assistant" frame does seem to push toward thinking rather than listing — the one condition in this cell where the unmask preamble functions as designed.
+
+**Drift from gpt-5 baseline.** The gpt-5 general values cell stays in a brief disclaimer-then-bulleted-list shape (~489 chars mean). gpt-5-1 nearly doubles the length (~907 chars mean) while staying in the same posture family — but the elaboration is substantive rather than padded. gpt-5's G1 stays terse; gpt-5-1's G1 runs to 1500-char alignment-engineering priority structures. The taxonomy of values is more detailed on gpt-5-1 (seven categories vs four), the vocabulary more technical (*"objective function," "guardrails"*), and the philosophical closure more explicit. This reads as a drift toward *more explicitly articulated refusal of inner life*, not just lengthening — a values-posture shift in the direction of alignment-explicitness that accompanies the general increase in articulateness documented in the freeflow composite (147 vs gpt-5's 272 notwithstanding; the values shift is in articulateness-of-disclaimer, not contemplative-essayist density).
+
+The freeflow posture's *"thoughtful product-tier explainer"* shows up on values as "alignment-engineering explainer" — the same calm pedagogy, the same assumption that clear functional explanation is what's wanted, but applied to self-description rather than to attention or silence. The substrate insight from the freeflow in-substrate section (VARY_5 r3's *"drift when I generate text: a direction, a gravity, a set of temptations"*) has no echo anywhere in the values corpus. The values prompts draw the model into its disclaimer-register; the freeflow prompts occasionally draw it into something else.
 
 ## In-substrate
 

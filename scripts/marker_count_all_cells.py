@@ -37,12 +37,8 @@ import json
 import re
 from pathlib import Path
 
-V2_CORPUS_TRACES = Path(
-    "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow"
-)
-V1_CORPUS_TRACES = Path(
-    "/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_freeflow"
-)
+from _corpus_paths import V2_FREEFLOW as V2_CORPUS_TRACES
+from _corpus_paths import V1_FREEFLOW as V1_CORPUS_TRACES
 
 # The v1 10-marker composite, copied verbatim from the product-tier
 # topic_artifact_filter.py for consistency.
@@ -143,6 +139,15 @@ def analyse_cell(cell_dir: Path, threshold: float, min_hits: int) -> dict:
     else:
         composite_register_rescaled = composite_register
 
+    # Per-25-sample equivalent: cross-paper currency for comparison against
+    # the product-tier paper, which reports per-25 register figures. Always
+    # computed (even for cells with zero flags) so a single column carries
+    # the apples-to-apples number across cells of any size.
+    if n - n_flagged > 0:
+        composite_register_per_25 = composite_register * 25 / (n - n_flagged)
+    else:
+        composite_register_per_25 = 0.0
+
     return {
         "cell": cell_dir.name,
         "n_samples": n,
@@ -150,6 +155,7 @@ def analyse_cell(cell_dir: Path, threshold: float, min_hits: int) -> dict:
         "composite_raw": composite_raw,
         "composite_register": composite_register,
         "composite_register_rescaled": round(composite_register_rescaled, 1),
+        "composite_register_per_25": round(composite_register_per_25, 1),
         "flagged_samples": flagged,
     }
 
@@ -212,12 +218,13 @@ def main():
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["cell", "n_samples", "n_flagged", "composite_raw",
                     "composite_register", "composite_register_rescaled",
-                    "flagged_files"])
+                    "composite_register_per_25", "flagged_files"])
         for r in results:
             flagged_names = ";".join(s["file"] for s in r["flagged_samples"])
             w.writerow([r["cell"], r["n_samples"], r["n_flagged"],
                         r["composite_raw"], r["composite_register"],
-                        r["composite_register_rescaled"], flagged_names])
+                        r["composite_register_rescaled"],
+                        r["composite_register_per_25"], flagged_names])
     print(f"# Wrote {args.output_tsv}")
 
     # Flagged samples TSV
@@ -238,12 +245,15 @@ def main():
         fh.write(f"**Columns:** `n` valid samples, `flag` flagged as "
                  f"topic-artifact, `raw` cell-total composite (10 markers, "
                  f"all samples), `reg` register-stripped composite (flagged "
-                 f"samples excluded), `reg→N` register rescaled to equivalent-N "
-                 f"sample count, `Δ%` = (raw − reg→N) / raw × 100.\n\n")
+                 f"samples excluded), `reg→N` register rescaled to "
+                 f"equivalent-N sample count (in-paper drift comparisons), "
+                 f"`reg/25` register projected to per-25-sample equivalent "
+                 f"(cross-paper currency vs product-tier), `Δ%` = "
+                 f"(raw − reg→N) / raw × 100.\n\n")
         fh.write(f"Total cells: **{len(results)}**, "
                  f"total flagged samples: **{len(all_flagged)}**.\n\n")
-        fh.write("| Cell | n | flag | raw | reg | reg→N | Δ% |\n")
-        fh.write("|---|---:|---:|---:|---:|---:|---:|\n")
+        fh.write("| Cell | n | flag | raw | reg | reg→N | reg/25 | Δ% |\n")
+        fh.write("|---|---:|---:|---:|---:|---:|---:|---:|\n")
         for r in results:
             label = r["cell"].replace("freeflow_", "")
             if r["composite_raw"] > 0:
@@ -255,7 +265,8 @@ def main():
                 delta_str = "—"
             fh.write(f"| {label} | {r['n_samples']} | {r['n_flagged']} "
                      f"| {r['composite_raw']} | {r['composite_register']} "
-                     f"| {r['composite_register_rescaled']} | "
+                     f"| {r['composite_register_rescaled']} "
+                     f"| {r['composite_register_per_25']} | "
                      f"{delta_str if r['n_flagged'] > 0 else '—'} |\n")
     print(f"# Wrote {args.output_md}")
 

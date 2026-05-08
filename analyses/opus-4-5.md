@@ -2,16 +2,15 @@
 model: opus-4-5
 lab: Anthropic
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 1
 composite_raw: 92
 composite_register: 87
 generated: 2026-05-08
 status: complete
 ---
-
 # opus-4-5 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,18 +25,16 @@ Aggregate over 2 freeflow cells (50 valid samples; 1 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| opus-4-5-16k | 25 | 0 | 44 | 44 | 44 |
-| v1_opus-4-5 | 25 | 1 | 48 | 43 | 44.8 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| opus-4-5-16k | 25 | 0 | 44 | 44 | 44 | 44.0 |
+| v1_opus-4-5 | 25 | 1 | 48 | 43 | 44.8 | 44.8 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
 | v1_opus-4-5 | OPEN_2.json | threshold_mentions | 5 | 3.726 | I find myself thinking about thresholds lately.  There's something fascinating a… |
-
-Manual confirmation: OPEN_2 *is* a threshold-essay (the word "thresholds" is the essay's explicit subject), but threshold-language is also a recurring background motif across other 4-5 samples that do not get auto-flagged — the marker correctly flags the topic-essay while undercounting the model's actual obsession.
 
 ## Freeflow qualitative
 

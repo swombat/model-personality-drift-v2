@@ -11,7 +11,6 @@ composite_register: 51
 generated: 2026-05-08
 status: complete
 ---
-
 # deepseek-chat — per-model analysis
 
 **Lab:** DeepSeek
@@ -26,9 +25,9 @@ Aggregate over 1 freeflow cell (25 valid samples; 3 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| deepseek-chat-direct | 25 | 3 | 95 | 51 | 58.0 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| deepseek-chat-direct | 25 | 3 | 95 | 51 | 58.0 | 58.0 |
 
 **Flagged samples (3)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

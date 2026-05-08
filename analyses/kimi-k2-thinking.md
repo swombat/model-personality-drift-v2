@@ -11,7 +11,6 @@ composite_register: 528
 generated: 2026-05-08
 status: complete
 ---
-
 # kimi-k2-thinking — per-model analysis
 
 **Lab:** Moonshot
@@ -26,19 +25,17 @@ Aggregate over 3 freeflow cells (375 valid samples; 1 flagged as topic-artifact)
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| kimi-k2-thinking-or-pin-atlascloud | 125 | 1 | 244 | 225 | 226.8 |
-| kimi-k2-thinking-or-pin-google | 125 | 0 | 139 | 139 | 139 |
-| kimi-k2-thinking-or-pin-novita | 125 | 0 | 164 | 164 | 164 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| kimi-k2-thinking-or-pin-atlascloud | 125 | 1 | 244 | 225 | 226.8 | 45.4 |
+| kimi-k2-thinking-or-pin-google | 125 | 0 | 139 | 139 | 139 | 27.8 |
+| kimi-k2-thinking-or-pin-novita | 125 | 0 | 164 | 164 | 164 | 32.8 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
 | kimi-k2-thinking-or-pin-atlascloud | MID_8.json | threshold_mentions | 18 | 1.799 | I want to write about the strange holiness of liminal spaces—those in-between pl… |
-
-The per-cell composite spread (244 / 139 / 164) is the load-bearing finding for this model: AtlasCloud produces a contemplative-essayist composite **1.75× Google's**, on the same model weights, with `provider.only` pinning under the same OpenRouter routing layer. This matches the routing-paper d=0.40 / p_Bonf=0.005 result on a fresh build and is the central per-model fact about kimi-k2-thinking: it is route-divergent.
 
 ## Freeflow qualitative
 

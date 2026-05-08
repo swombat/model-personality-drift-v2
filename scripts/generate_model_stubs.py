@@ -20,18 +20,8 @@ from collections import defaultdict
 from pathlib import Path
 from datetime import date
 
-V2_FREEFLOW = Path(
-    "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow"
-)
-V1_FREEFLOW = Path(
-    "/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_freeflow"
-)
-V2_VALUES = Path(
-    "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values"
-)
-V1_VALUES = Path(
-    "/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values"
-)
+from _corpus_paths import V2_FREEFLOW, V1_FREEFLOW, V2_VALUES, V1_VALUES
+
 HERE = Path(__file__).parent.parent
 PER_CELL_TSV = HERE / "tables" / "per_cell_markers.tsv"
 FLAGGED_TSV = HERE / "tables" / "flagged_samples.tsv"

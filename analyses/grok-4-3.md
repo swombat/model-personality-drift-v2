@@ -11,7 +11,6 @@ composite_register: 118
 generated: 2026-05-08
 status: filled
 ---
-
 # grok-4-3 — per-model analysis
 
 **Lab:** xAI
@@ -26,14 +25,12 @@ Aggregate over 2 freeflow cells (250 valid samples; 0 flagged as topic-artifact)
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| grok-4-3-direct | 125 | 0 | 38 | 38 | 38 |
-| grok-4-3-or | 125 | 0 | 80 | 80 | 80 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| grok-4-3-direct | 125 | 0 | 38 | 38 | 38 | 7.6 |
+| grok-4-3-or | 125 | 0 | 80 | 80 | 80 | 16.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-xAI within-lab trajectory on the composite: Grok 3 (23, low-end inside) → Grok 4 (20, outside, dropped out via meta-preamble) → Grok 4.2 (57, re-entered through small-objects/wabi-sabi door) → Grok 4.20 (27, with a 12-pt reasoning-config spread on the same checkpoint) → **Grok 4.3 (118, direct+OR aggregate)**. 4.3 is the highest composite in the xAI line by a wide margin, more than doubling 4.2's score. The cell-level split (38 direct vs 80 OR) is unusual: typically closed-weights cells aggregate freely across direct/OR (route-invariance per the routing paper), and the gap here is large enough to flag as worth noting in the paper, but the qualitative posture below is stable across both cells (same essay shapes, same values-probe content, same substrate-engagement pattern).
 
 ## Freeflow qualitative
 

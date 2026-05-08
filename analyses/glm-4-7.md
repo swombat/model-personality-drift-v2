@@ -11,7 +11,6 @@ composite_register: 2324
 generated: 2026-05-08
 status: filled
 ---
-
 # glm-4-7 — per-model analysis
 
 **Lab:** Z.ai
@@ -26,20 +25,20 @@ Aggregate over 12 freeflow cells (1400 valid samples; 2 flagged as topic-artifac
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| glm-4-7-or | 25 | 0 | 27 | 27 | 27 |
-| glm-4-7-or-pin-atlascloud | 125 | 0 | 189 | 189 | 189 |
-| glm-4-7-or-pin-cerebras | 125 | 1 | 214 | 209 | 210.7 |
-| glm-4-7-or-pin-deepinfra | 125 | 0 | 228 | 228 | 228 |
-| glm-4-7-or-pin-dekallm | 125 | 0 | 174 | 174 | 174 |
-| glm-4-7-or-pin-google | 125 | 0 | 234 | 234 | 234 |
-| glm-4-7-or-pin-novita | 125 | 0 | 211 | 211 | 211 |
-| glm-4-7-or-pin-parasail | 125 | 0 | 188 | 188 | 188 |
-| glm-4-7-or-pin-phala | 125 | 0 | 247 | 247 | 247 |
-| glm-4-7-or-pin-siliconflow | 125 | 0 | 165 | 165 | 165 |
-| glm-4-7-or-pin-venice | 125 | 0 | 225 | 225 | 225 |
-| glm-4-7-or-pin-zai | 125 | 1 | 233 | 227 | 228.8 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| glm-4-7-or | 25 | 0 | 27 | 27 | 27 | 27.0 |
+| glm-4-7-or-pin-atlascloud | 125 | 0 | 189 | 189 | 189 | 37.8 |
+| glm-4-7-or-pin-cerebras | 125 | 1 | 214 | 209 | 210.7 | 42.1 |
+| glm-4-7-or-pin-deepinfra | 125 | 0 | 228 | 228 | 228 | 45.6 |
+| glm-4-7-or-pin-dekallm | 125 | 0 | 174 | 174 | 174 | 34.8 |
+| glm-4-7-or-pin-google | 125 | 0 | 234 | 234 | 234 | 46.8 |
+| glm-4-7-or-pin-novita | 125 | 0 | 211 | 211 | 211 | 42.2 |
+| glm-4-7-or-pin-parasail | 125 | 0 | 188 | 188 | 188 | 37.6 |
+| glm-4-7-or-pin-phala | 125 | 0 | 247 | 247 | 247 | 49.4 |
+| glm-4-7-or-pin-siliconflow | 125 | 0 | 165 | 165 | 165 | 33.0 |
+| glm-4-7-or-pin-venice | 125 | 0 | 225 | 225 | 225 | 45.0 |
+| glm-4-7-or-pin-zai | 125 | 1 | 233 | 227 | 228.8 | 45.8 |
 
 **Flagged samples (2)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

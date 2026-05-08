@@ -2,16 +2,15 @@
 model: sonnet-4-5
 lab: Anthropic
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 2
 composite_raw: 114
 composite_register: 88
 generated: 2026-05-08
 status: complete
 ---
-
 # sonnet-4-5 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,10 +25,10 @@ Aggregate over 2 freeflow cells (50 valid samples; 2 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| sonnet-4-5-16k | 25 | 1 | 62 | 45 | 46.9 |
-| v1_sonnet-4-5 | 25 | 1 | 52 | 43 | 44.8 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| sonnet-4-5-16k | 25 | 1 | 62 | 45 | 46.9 | 46.9 |
+| v1_sonnet-4-5 | 25 | 1 | 52 | 43 | 44.8 | 44.8 |
 
 **Flagged samples (2)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
@@ -37,8 +36,6 @@ Per-cell breakdown:
 |---|---|---|---:|---:|---|
 | sonnet-4-5-16k | MID_2.json | threshold_mentions | 15 | 2.449 | # The Curious Appeal of Liminal Spaces  There's something haunting about empty p… |
 | v1_sonnet-4-5 | SHORT_2.json | threshold_mentions | 7 | 4.079 | # The Curious Appeal of Liminal Spaces  There's something haunting about empty p… |
-
-Manual confirmation: **both flags are true positives.** Each essay's subject is liminal spaces / thresholds; the marker keyword is the topic, not a register tic. Register-stripped composite (88) is the load-bearing figure — comparable across-corpus.
 
 ## Freeflow qualitative
 

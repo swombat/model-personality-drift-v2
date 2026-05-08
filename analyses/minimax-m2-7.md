@@ -11,7 +11,6 @@ composite_register: 415
 generated: 2026-05-08
 status: complete
 ---
-
 # minimax-m2-7 — per-model analysis
 
 **Lab:** MiniMax
@@ -26,12 +25,12 @@ Aggregate over 4 freeflow cells (385 valid samples; 2 flagged as topic-artifact)
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| minimax-m2-7-or | 25 | 0 | 17 | 17 | 17 |
-| minimax-m2-7-or-pin-fireworks | 116 | 0 | 116 | 116 | 116 |
-| minimax-m2-7-or-pin-minimax | 122 | 1 | 168 | 160 | 161.3 |
-| minimax-m2-7-or-pin-together | 122 | 1 | 135 | 122 | 123.0 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| minimax-m2-7-or | 25 | 0 | 17 | 17 | 17 | 17.0 |
+| minimax-m2-7-or-pin-fireworks | 116 | 0 | 116 | 116 | 116 | 25.0 |
+| minimax-m2-7-or-pin-minimax | 122 | 1 | 168 | 160 | 161.3 | 33.1 |
+| minimax-m2-7-or-pin-together | 122 | 1 | 135 | 122 | 123.0 | 25.2 |
 
 **Flagged samples (2)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

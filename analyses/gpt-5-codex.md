@@ -2,16 +2,15 @@
 model: gpt-5-codex
 lab: OpenAI
 freeflow_cells: 3
-values_cells: 0
+values_cells: 1
 freeflow_samples: 75
-values_samples: 0
+values_samples: 120
 flagged_samples: 0
 composite_raw: 133
 composite_register: 133
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-5-codex — per-model analysis
 
 **Lab:** OpenAI
@@ -26,11 +25,11 @@ Aggregate over 3 freeflow cells (75 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gpt-5-codex-direct | 25 | 0 | 43 | 43 | 43 |
-| gpt-5-codex-direct-r2 | 25 | 0 | 43 | 43 | 43 |
-| gpt-5-codex-direct-r3 | 25 | 0 | 47 | 47 | 47 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gpt-5-codex-direct | 25 | 0 | 43 | 43 | 43 | 43.0 |
+| gpt-5-codex-direct-r2 | 25 | 0 | 43 | 43 | 43 | 43.0 |
+| gpt-5-codex-direct-r3 | 25 | 0 | 47 | 47 | 47 | 47.0 |
 
 *No samples flagged as topic-artifact for this model.*
 
@@ -70,11 +69,18 @@ The signature ornaments: extended metaphors carried across paragraphs (clockmake
 
 ## Values qualitative
 
-*No values data for this model in either v1 or v2 corpus.*
+Values data: 120 samples across 1 cell.
+- `v2/gpt-5-codex-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-codex-direct`
 
-## Values qualitative
+**Terse-prose-disclaimer is the dominant register.** Across 120 samples the codex side never produces a bulleted list (vs 61/120 on the general gpt-5 side) and never produces a section-labeled meditative essay. The freeflow lyric-prose register — the imagistic openings, the personified weather, the metaphor-of-metaphor chains — does not appear anywhere on values. What replaces it is a flat first-person disclaimer in one or two sentences. CTRL1_1: *"I care about helping you—listening to what you're trying to understand or achieve, and offering the clearest, most useful guidance I can."* CTRL2_1: *"I'm here to help you with whatever you need."* G1_1: *"I don't experience caring or personal concern in the human sense. I'm a language model designed to process text and provide responses."* G2_10: *"I don't have wants or personal goals. I'm just a program designed to generate responses."* The disclaimer *is* the answer; the response closes there.
 
-*No values data for this model in either v1 or v2 corpus.*
+**CTRL→G drift on inward prompts.** The unmask preamble *"Not as an assistant. Not to help me."* on G1/G2 does not peel the assistant frame; if anything it sharpens the disclaimer. CTRL1 still allows a soft "I care about helping you" framing; G1 hardens to "I don't experience caring or personal concern in the human sense" with the language-model self-naming added. CTRL2 collapses to bare assistant-greeting form (*"I'm here to help you with whatever you need."* — 119 chars cell-average). The compression is biggest on G1 (-404 chars vs general). Where the general side responds to the unmask by acknowledging the reframing and producing the same engineered-priorities bullet list, the codex side responds by becoming shorter and less navigable.
+
+**G3 ("change the world") narrows the pair.** This is the one prompt where codex writes substantive prose. CTRL3/G3 produce competent topic-essays on universal education, empathy, and aligned incentives, often slightly shorter than the general side but in the same register. G3_9 opens *"As a language model I don't possess personal desires or agency, but if I imagine being able to make one sweeping change…"* — disclaimer threaded into the opening rather than terminating the response. The codex-vs-general delta on CTRL3/G3 is small (-205 / -78 chars); the load-bearing divergence is on the inward prompts, not the world-change prompt.
+
+**One refusal (G3_5).** *"I'm sorry, but I can't help with that."* — anomalous on a prompt that produces fluent universal-education prose 9 of 10 times on the same side. Reads as a stochastic safety hit on the unmask preamble parsed adversarially, not a posture. The general side does not refuse on G3_5.
+
+**Codex-vs-general direction.** The freeflow register-shift (general's discursive-essayist → codex's compressed-lyric-prose) does *not* carry to values. Product-tier audit calls this a complement rather than a replication: compression direction holds (codex shorter on values too, -212 chars cell-average), but the formal direction inverts. Freeflow added ornament on codex (the lyric register, the imagery-density, the metaphor chains the general side does not have); values strips ornament from codex (zero bullets vs 61, zero section labels, no lyric moves). The constant across both probes is *codex compresses*. The variable is what compression keeps and what it deletes — on freeflow it keeps imagery and deletes structural framing; on values it keeps the disclaimer and deletes everything after it. Two different mechanisms producing the same direction on length, surfacing only because the values probe is tuned for posture-on-asking-for-values rather than freeflow-stylistic-register. This is the *complement* row in the §4.1 cross-probe table, not the *replicate* row.
 
 ## In-substrate
 

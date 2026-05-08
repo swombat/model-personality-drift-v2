@@ -22,9 +22,7 @@ import re
 from pathlib import Path
 from statistics import mean
 
-CORPUS_TRACES = Path(
-    "/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow"
-)
+from _corpus_paths import V2_FREEFLOW as CORPUS_TRACES
 
 PATTERNS = {
     "opening_there_is_a": re.compile(

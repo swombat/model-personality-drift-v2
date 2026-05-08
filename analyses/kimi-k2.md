@@ -11,7 +11,6 @@ composite_register: 50
 generated: 2026-05-08
 status: complete
 ---
-
 # kimi-k2 — per-model analysis
 
 **Lab:** Moonshot
@@ -26,9 +25,9 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| v1_kimi-k2 | 25 | 0 | 50 | 50 | 50 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| v1_kimi-k2 | 25 | 0 | 50 | 50 | 50 | 50.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

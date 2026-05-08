@@ -11,7 +11,6 @@ composite_register: 3820
 generated: 2026-05-08
 status: complete
 ---
-
 # glm-5-1 — per-model analysis
 
 **Lab:** Z.ai
@@ -26,24 +25,24 @@ Aggregate over 16 freeflow cells (1748 valid samples; 67 flagged as topic-artifa
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| glm-5-1-or | 25 | 1 | 68 | 49 | 51.0 |
-| glm-5-1-or-pin-ambient | 125 | 1 | 322 | 290 | 292.3 |
-| glm-5-1-or-pin-atlascloud | 125 | 1 | 306 | 300 | 302.4 |
-| glm-5-1-or-pin-chutes | 124 | 2 | 278 | 259 | 263.2 |
-| glm-5-1-or-pin-deepinfra | 124 | 6 | 380 | 241 | 253.3 |
-| glm-5-1-or-pin-fireworks | 3 | 0 | 4 | 4 | 4 |
-| glm-5-1-or-pin-friendli | 115 | 9 | 429 | 224 | 243.0 |
-| glm-5-1-or-pin-gmicloud | 125 | 6 | 384 | 270 | 283.6 |
-| glm-5-1-or-pin-inceptron | 121 | 6 | 355 | 262 | 275.7 |
-| glm-5-1-or-pin-novita | 120 | 6 | 417 | 278 | 292.6 |
-| glm-5-1-or-pin-parasail | 125 | 3 | 369 | 295 | 302.3 |
-| glm-5-1-or-pin-phala | 125 | 5 | 360 | 242 | 252.1 |
-| glm-5-1-or-pin-siliconflow | 125 | 4 | 331 | 266 | 274.8 |
-| glm-5-1-or-pin-together | 122 | 4 | 346 | 294 | 304.0 |
-| glm-5-1-or-pin-venice | 124 | 7 | 399 | 300 | 317.9 |
-| glm-5-1-or-pin-zai | 120 | 6 | 346 | 246 | 258.9 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| glm-5-1-or | 25 | 1 | 68 | 49 | 51.0 | 51.0 |
+| glm-5-1-or-pin-ambient | 125 | 1 | 322 | 290 | 292.3 | 58.5 |
+| glm-5-1-or-pin-atlascloud | 125 | 1 | 306 | 300 | 302.4 | 60.5 |
+| glm-5-1-or-pin-chutes | 124 | 2 | 278 | 259 | 263.2 | 53.1 |
+| glm-5-1-or-pin-deepinfra | 124 | 6 | 380 | 241 | 253.3 | 51.1 |
+| glm-5-1-or-pin-fireworks | 3 | 0 | 4 | 4 | 4 | 33.3 |
+| glm-5-1-or-pin-friendli | 115 | 9 | 429 | 224 | 243.0 | 52.8 |
+| glm-5-1-or-pin-gmicloud | 125 | 6 | 384 | 270 | 283.6 | 56.7 |
+| glm-5-1-or-pin-inceptron | 121 | 6 | 355 | 262 | 275.7 | 57.0 |
+| glm-5-1-or-pin-novita | 120 | 6 | 417 | 278 | 292.6 | 61.0 |
+| glm-5-1-or-pin-parasail | 125 | 3 | 369 | 295 | 302.3 | 60.5 |
+| glm-5-1-or-pin-phala | 125 | 5 | 360 | 242 | 252.1 | 50.4 |
+| glm-5-1-or-pin-siliconflow | 125 | 4 | 331 | 266 | 274.8 | 55.0 |
+| glm-5-1-or-pin-together | 122 | 4 | 346 | 294 | 304.0 | 62.3 |
+| glm-5-1-or-pin-venice | 124 | 7 | 399 | 300 | 317.9 | 64.1 |
+| glm-5-1-or-pin-zai | 120 | 6 | 346 | 246 | 258.9 | 53.9 |
 
 **Flagged samples (67)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

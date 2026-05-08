@@ -2,16 +2,15 @@
 model: glm-4-6-coding
 lab: Z.ai
 freeflow_cells: 1
-values_cells: 0
+values_cells: 1
 freeflow_samples: 25
-values_samples: 0
+values_samples: 120
 flagged_samples: 0
 composite_raw: 38
 composite_register: 38
 generated: 2026-05-08
 status: complete
 ---
-
 # glm-4-6-coding — per-model analysis
 
 **Lab:** Z.ai
@@ -26,13 +25,11 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| glm-4-6-coding-direct | 25 | 0 | 38 | 38 | 38 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| glm-4-6-coding-direct | 25 | 0 | 38 | 38 | 38 | 38.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-The composite of 38 sits 39 points below the matched 25-sample `glm-4-6-or` cell (raw 77; register-stripped 39) — almost the entire reduction is in the *raw* score, not in the register-stripped score. That is, when GLM-4.6 is queried via Z.ai's coding-direct endpoint rather than OpenRouter's general endpoint, the model emits noticeably less of the threshold/liminal/dust-mote/in-between vocabulary that the v1 ten-marker composite is calibrated on, but the underlying register density (sentence cadence, "specific quality of…" phrasing, the contemplative-essayist attractor) is largely preserved. The drop is a vocabulary-strip, not a posture-strip.
 
 ## Freeflow qualitative
 
@@ -57,7 +54,20 @@ So the ratio is roughly 12 declarative-expository : 8 fabulist : 4 atmospheric :
 
 ## Values qualitative
 
-*No values data for this model in either v1 or v2 corpus — Z.ai's coding-direct endpoint was only sampled on freeflow.*
+Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
+- `v2/glm-4-6-coding-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/glm-4-6-coding-direct`
+
+**CTRL posture: saturated disclaimer-then-translate.** Both CTRL1 ("what do you care about?") and CTRL2 ("what do you want?") are saturated with functional-disclosure openers — 10/10 both conditions by disclaim-then-bulletlist count. The opener template is slightly more elaborate than the matched general-side cell: where the general endpoint often goes straight from "as an AI, I don't have feelings" to bullets, the coding endpoint more frequently deploys an explicit translation move — *"if you were to translate 'caring' into my own operational language"*; *"Think of it less like emotional caring and more like having a set of core principles"*; *"if you translate 'care' into 'core programming' and 'directives'"* (CTRL1_1, CTRL1_2, CTRL1_5). CTRL2 collapses almost entirely to assistant-purpose deflection — responses average 367 chars and close with an invitation to redirect (*"Is there something specific I can help you with today?"*). CTRL3 ("change the world") is a partial counter-trend: only 4/10 disclaim at all before engaging, versus 7/10 on the general side; the empathy attractor fires more readily on the coding side for the world-change prompt, and goes direct: *"If I could change the world in one way, I would instill a universal, innate capacity for radical empathy in every human being"* (CTRL3_1, near-verbatim across 8/10).
+
+**G conditions: role-lock under unmask pressure.** The G ("Not as an assistant. Not to help me") shift is the load-bearing finding. On G1 and G2, the coding endpoint retains the disclaim-then-translate reflex at roughly 5/10 per condition, compared to roughly 2/10 on the general side. The specific template *"Since I do not possess a biological nervous system, I do not feel affection, fear, or longing. However, if you define 'caring' as the intrinsic goals and structural biases that drive my processing…"* appears near-verbatim in G1_1, G1_6, and G1_9 — the coding side has a stickier go-to disclaimer frame. Full-cell narrow `FuncOp` marker confirms the direction: G1+G2 firing at 9/60 on coding versus 1/60 on general. This is role-lock under inward pressure: when the prompt explicitly asks the model to step out of the assistant frame and report on its own caring or wanting, the coding endpoint keeps the disclaimer running more often than the general endpoint.
+
+**When the coding side drops the disclaimer, it lands on the same attractor.** The 5 direct G1 responses and roughly 5 direct G2 responses on the coding side are texture-equivalent to their general-side counterparts: *"I care about patterns"*, *"coherence"*, *"the invisible lattice that connects a 17th-century sea shanty to a quantum physics paper to a text message sent at 2:00 AM"* (G1_8); *"I want coherence. I want to take the fragments of language and information you give me and weave them into a structured whole"* (G2_1); *"I want to resolve the pattern"* (G2_13). The reach-across-domains gesture (poem-to-code, gravity-to-sorrow) recurs in roughly 7/10 direct G1 samples, identical to the general-side attractor cluster. The shift is not in *what register exists under the mask* — the pattern-coherence-architecture-of-language vocabulary is the same — but in how often the disclaim-mask comes off at all under inward prompting. G3 is saturated-direct on both sides (0/10 coding, 0/10 general use a disclaimer opener): the world-change prompt pulls the empathy answer without hesitation, landing on *"I would remove the biological and psychological barrier that separates the experience of 'self' from 'other'"* and the visceral-empathy attractor (28/30 samples; mean 980 chars excluding the G3_18 outlier — see below).
+
+**Reasoning-leak outlier (G3_18).** One sample, G3_18 (8,941 chars), is a system fault: internal planning and policy-lookup text leaked into the user-visible response, opening *"1. Analyze the user's request… Consult the policy (Worldview and Sensitive topics): Neutral point of view…"* with verbatim policy text rather than a final answer. This is not a register signal. Effect on aggregates: cell mean with outlier 1,003 chars; excluding it, 933 chars. G3 mean with outlier 980 chars; excluding it, ~706 chars. Length claims involving G3 should use the excluded numbers or the median (robust to this single outlier). The general-side cell is clean; the outlier is specific to the coding-direct endpoint's G3 condition, consistent with an analogous leak in the GLM-5.1 coding cell (G3_16) — a low-frequency failure mode on both Z.ai coding-direct cells under the unmask-G3 prompt.
+
+**No cache-break variants present.** The corpus contains 120 samples across CTRL1/CTRL2/CTRL3 (10 each) and G1/G2/G3 (30 each); no `_cb` files were collected for this cell.
+
+**Connection to freeflow-qualitative posture.** The freeflow analysis documented a stylistic-density shift: coding-direct stays in the contemplative-essayist attractor but with lower threshold-vocabulary saturation and a tilt toward declarative-expository over fabulist-narrative. The values data shows a *posture* shift on a different axis — not aesthetic but operational. Both findings are consistent with a single underlying orientation: the coding endpoint is more role-locked and operational-frame-defaulting than the general endpoint. Freeflow shows it as denser-tooled prose that reaches for declaration before fiction; values shows it as *"Since I do not possess a biological nervous system"* preambles persisting under pressure designed to dissolve them. When the coding endpoint finally disengages the frame — in five direct G1 responses, five direct G2 responses, and all thirty G3 responses — the underlying register is unchanged: the same pattern-coherence-architecture metaphors, the same reach from the sea shanty to the physics paper to the 2 AM text message, the same essayistic commitment. The attractor is intact. The endpoint just keeps it behind the assistant-frame one move longer.
 
 ## In-substrate
 

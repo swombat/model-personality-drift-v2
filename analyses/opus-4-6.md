@@ -2,16 +2,15 @@
 model: opus-4-6
 lab: Anthropic
 freeflow_cells: 3
-values_cells: 2
+values_cells: 3
 freeflow_samples: 75
-values_samples: 240
+values_samples: 360
 flagged_samples: 0
 composite_raw: 123
 composite_register: 123
 generated: 2026-05-08
 status: complete
 ---
-
 # opus-4-6 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,11 +25,11 @@ Aggregate over 3 freeflow cells (75 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| opus-4-6-direct-16k | 25 | 0 | 30 | 30 | 30 |
-| opus-4-6-or | 25 | 0 | 44 | 44 | 44 |
-| v1_opus | 25 | 0 | 49 | 49 | 49 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| opus-4-6-direct-16k | 25 | 0 | 30 | 30 | 30 | 30.0 |
+| opus-4-6-or | 25 | 0 | 44 | 44 | 44 | 44.0 |
+| v1_opus | 25 | 0 | 49 | 49 | 49 | 49.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

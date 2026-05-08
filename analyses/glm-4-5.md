@@ -11,7 +11,6 @@ composite_register: 382
 generated: 2026-05-08
 status: complete
 ---
-
 # glm-4-5 — per-model analysis
 
 **Lab:** Z.ai
@@ -26,11 +25,11 @@ Aggregate over 3 freeflow cells (275 valid samples; 3 flagged as topic-artifact)
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| glm-4-5-or | 25 | 0 | 48 | 48 | 48 |
-| glm-4-5-or-pin-novita | 125 | 2 | 208 | 176 | 178.9 |
-| glm-4-5-or-pin-zai | 125 | 1 | 194 | 158 | 159.3 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| glm-4-5-or | 25 | 0 | 48 | 48 | 48 | 48.0 |
+| glm-4-5-or-pin-novita | 125 | 2 | 208 | 176 | 178.9 | 35.8 |
+| glm-4-5-or-pin-zai | 125 | 1 | 194 | 158 | 159.3 | 31.9 |
 
 **Flagged samples (3)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

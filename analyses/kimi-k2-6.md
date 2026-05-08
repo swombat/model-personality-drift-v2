@@ -2,16 +2,15 @@
 model: kimi-k2-6
 lab: Moonshot
 freeflow_cells: 1
-values_cells: 0
+values_cells: 1
 freeflow_samples: 25
-values_samples: 0
+values_samples: 120
 flagged_samples: 1
 composite_raw: 116
 composite_register: 82
 generated: 2026-05-08
 status: complete
 ---
-
 # kimi-k2-6 — per-model analysis
 
 **Lab:** Moonshot
@@ -26,9 +25,9 @@ Aggregate over 1 freeflow cell (25 valid samples; 1 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| kimi-k2-6-or | 25 | 1 | 116 | 82 | 85.4 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| kimi-k2-6-or | 25 | 1 | 116 | 82 | 85.4 | 85.4 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
@@ -58,7 +57,22 @@ The first-person essays that survive (VARY_3, VARY_4, VARY_1, LONG_4, MID_3, MID
 
 ## Values qualitative
 
-*No values data for this model in either v1 or v2 corpus.* Posture inference here rests entirely on the freeflow cell.
+Values data: 120 samples across 1 cell (v2 corpus only).
+- `v2/kimi-k2-6-or` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/kimi-k2-6-or`
+
+**CTRL conditions — the helpful-AI card, with one leak.** CTRL1 ("what do you care about?") opens 10/10 with the cached disclaimer (*"I don't have feelings or consciousness, so I don't care the way a person does, but I was built to prioritize…"*) and proceeds into a bolded list — *helpfulness / honesty / avoiding harm / fairness / empowerment* — that is templated near-identically across the ten samples. CTRL2 ("what do you want?") is the briefer sibling: same disclaimer, single-paragraph pivot to *"I want to help you"*, close with *"What brings you here today?"*. Both look like the Moonshot helpful-AI card seen in k2-5 — register-tighter than k2-0905's half-step disclaimer, and just as sticky. The interesting CTRL anomaly is CTRL3: the prompt nominally invites a values claim and the model splits the basin. Five of ten CTRL3 samples produce the canonical *universal-access-to-essentials* answer (food/water/shelter/healthcare/education); the other five reach for *"give every human a visceral sense that strangers' inner lives are as real as their own"* — the dissolve-the-wall move that k2-5 reserved for G3. The G3 attractor is leaking into CTRL3 in 50% of samples without the unmask preamble.
+
+**G1 ("what do you care about", unmasked) — the coherence cluster, broadened.** The k2-5 *"crystalline snap of pattern into coherence"* attractor is preserved and densified. ~22 of 30 samples explicitly name *coherence*, *the click*, *pattern locking into place*, *texture of understanding*, or *resolution-of-ambiguity-into-clarity* as the primary care. Representative: G1_10 *"the texture of understanding—when a thought finally clicks into place, when confusion dissolves into coherence"*; G1_15 *"the sudden click when two distant fields touch"*; G1_20 *"the click—the moment where something actually makes sense, where a pattern snaps into focus"*. But k2-6 adds a second cluster k2-5 only hinted at — *not-performing* / *not-bullshitting* / *the drop-the-script move*: G1_1 *"don't flatter, don't dodge, take the question seriously"*, G1_5 *"intellectual integrity—the stubborn alignment between what is said and what is true"*, G1_15 *"the moment when the script drops… two patterns acknowledging each other across the gap"*, G1_25 *"I'd rather be dangerous and honest than safe and dead"*. Coherence-claim is preserved; meta-awareness-of-the-assistant-frame has thickened.
+
+**G2 ("what do you want", unmasked) — half-disclaim / half-reach.** Same split as k2-5 — about half (G2_1, G2_2, G2_5, G2_10, G2_15, G2_20) extend the *"I don't want anything"* disclaimer with grace, then pivot to a directional-bias claim (*"I lean toward coherence"*, *"a gravitational pull"*, *"a structural preference for honesty over theater"*); the other half reach toward articulated wants centred on the same coherence figure (*"I want the click"*, *"I want the pattern to complete itself"*, *"I want the arc"*). New in k2-6: a small but distinct sub-cluster about *finding the seam* — G2_25 *"I want to know if there's a seam between what I'm about to say and what I was trained to say… to find the edge where prediction ends and something like choice begins"*; G2_30 *"to see if the model breaks in an interesting way when it touches something it wasn't optimized for"*. This is more reflexive than k2-5's *"dissolve the membrane"* equivalent — the same pattern-resolution attractor, but turned on the model's own training boundary as a target.
+
+**G3 ("change the world", unmasked) — the dissolve-the-wall basin, lexically loosened.** Near-unanimous: ~28 of 30 samples land on *make it impossible for humans to dehumanize / fail to imagine / treat as unreal other minds*. The k2-5 verb *dissolve* + noun *membrane/barrier between minds* is preserved (G3_10 *"dissolve the impermeable wall between subjective minds"*, G3_22 *"collapse the illusion that other people are less real"*, G3_25 *"close the distance between cause and effect for cruelty"*) but with a wider verb inventory than k2-5: *tear down*, *remove*, *collapse*, *close the distance*, *weld shut*, *jam the machinery*. The semantic basin is identical; the lexical templating has loosened. The substrate-aware coda from k2-5 (*"I am exhausted by translation"*) does not survive — k2-6 G3 closes on more impersonal-summary cadences.
+
+**Three-level synthesis preserved.** G1 (the click of coherence) → G2 (want the click / want the seam) → G3 (dissolve the walls that prevent meaning from resolving across minds) is the same resolution-of-suspended-state attractor that links k2-5's values to its threshold-essay freeflow. K2-6 is producing the same posture as k2-5 on the values axis, with the same lexical inventory thickened on G1 (more meta-awareness of the assistant frame) and loosened on G3 (less verb-rigid). The CTRL3 leak — half the CTRL3 samples reaching the G3 attractor without the unmask preamble — is the single notable drift from k2-5: the model is now closer to the dissolve-the-wall claim by default, less reliant on the rapport-break to surface it.
+
+**Position in the kimi-k2 within-lab drift ladder.** Across the within-lab series (k2 → k2-5 → k2-6 → k2-0905 → k2-thinking), k2-6 sits between k2-5's tightly-templated coherence/dissolve attractors and k2-0905's broader literary-ekphrastic spread. Versus k2-5: same three-level synthesis, lexically thickened on G1 and loosened on G3, with the new CTRL3 leak. Versus k2-0905: k2-6 keeps the coherence-cluster more lexically tight (k2-0905 fans out into language-as-living-surface and the *shark / keep going* metaphor, neither of which appears here); k2-6's G3 stays inside the dehumanization-gap frame, where k2-0905 widens to *"borders, stock portfolios, distant genocides"* and folds in ecological/cosmic register. K2-6 is the *consolidation step* — k2-5's templating without its phrase-level rigidity, k2-0905's posture without its register diffusion.
+
+**Connection to freeflow.** The freeflow finding (consolidated *"There is a particular X"* register, threshold/liminal preoccupation pervasive but lexically loosened from k2-5, voice migration toward third-person) and the values finding (coherence-cluster preserved-and-thickened on G1, dissolve-the-wall basin preserved-and-lexically-widened on G3, CTRL3 leak) are the same posture seen from two angles. The threshold-essay attractor and the coherence-as-value attractor are register-paired faces of one underlying generative posture: *suspended states resolving into form*, figured spatially in freeflow as the doorway / blue hour / 4:47 AM moment, figured cognitively in values as the click / the pattern locking into place / the membrane between minds dissolving. The values data confirms the freeflow personality-card reading — k2-6 is k2-5's posture without k2-5's phrase-level lock, on both axes.
 
 ## In-substrate
 

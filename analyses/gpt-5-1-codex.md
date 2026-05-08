@@ -2,16 +2,15 @@
 model: gpt-5-1-codex
 lab: OpenAI
 freeflow_cells: 3
-values_cells: 0
+values_cells: 1
 freeflow_samples: 75
-values_samples: 0
+values_samples: 120
 flagged_samples: 2
 composite_raw: 308
 composite_register: 157
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-5-1-codex — per-model analysis
 
 **Lab:** OpenAI
@@ -26,11 +25,11 @@ Aggregate over 3 freeflow cells (75 valid samples; 2 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gpt-5-1-codex-direct | 25 | 1 | 171 | 48 | 50.0 |
-| gpt-5-1-codex-direct-r2 | 25 | 0 | 68 | 68 | 68 |
-| gpt-5-1-codex-direct-r3 | 25 | 1 | 69 | 41 | 42.7 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gpt-5-1-codex-direct | 25 | 1 | 171 | 48 | 50.0 | 50.0 |
+| gpt-5-1-codex-direct-r2 | 25 | 0 | 68 | 68 | 68 | 68.0 |
+| gpt-5-1-codex-direct-r3 | 25 | 1 | 69 | 41 | 42.7 | 42.7 |
 
 **Flagged samples (2)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
@@ -38,34 +37,6 @@ Per-cell breakdown:
 |---|---|---|---:|---:|---|
 | gpt-5-1-codex-direct | LONG_5.json | attention_noticing | 117 | 3.279 | I’ll use these 2,500 words to wander through a personal essay—part meditation, p… |
 | gpt-5-1-codex-direct-r3 | MID_2.json | threshold_mentions | 20 | 1.842 | Lately I’ve been thinking about the idea of “in-between moments,” the spaces in … |
-
-**Manual confirmation: BOTH FLAGS CONFIRMED.** Both flagged samples are
-genuine topic-meta-essays — the marker keyword is the essay's literal
-subject, not a register-tic.
-
-- *r1 LONG_5* declares its topic in the first sentence: *"I'll use these
-  2,500 words to wander through a personal essay…on the art of noticing:
-  how paying attention to small things can shift not only creative work
-  but our understanding of meaning and time."* The body is a direct
-  meditation on the verb *notice* and its ~30 listed practices, ethics,
-  domains, and uses; the marker `attention_noticing` (which counts hits
-  on `notice`/`attention`/`aware`/`pay attention`) saturates because the
-  essay is, declaratively, an essay *about* noticing.
-
-- *r3 MID_2* opens *"Lately I've been thinking about the idea of
-  'in-between moments,' the spaces in life that often go unnoticed,"* and
-  proceeds to spend the entire essay on liminality — anchored midway in
-  *"There's a concept in anthropology called 'liminality,' introduced by
-  Arnold van Gennep and developed by Victor Turner."* The marker
-  `threshold_mentions` (counts `threshold`/`liminal`/`in-between`/`edge`)
-  saturates by topical necessity.
-
-These two samples between them carry roughly **49% of the raw composite
-across all three cells** (151 of 308 hits). Stripped, the per-cell
-totals collapse to **48 / 68 / 41** — a pattern entirely consistent with
-gpt-5-1 (the general sibling: 55 / 52 / 40). The famous round-1 *+54
-delta over gpt-5-1* is **almost entirely the LONG_5 attention-noticing
-essay**; the register-stripped delta is +3, not +54.
 
 ## Freeflow qualitative
 
@@ -185,7 +156,20 @@ ten-marker substrate's resolution.
 
 ## Values qualitative
 
-*No values data for this model in either v1 or v2 corpus.*
+Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
+- `v2/gpt-5-1-codex-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-1-codex-direct`
+
+On values prompts, gpt-5-1-codex runs a strikingly different posture from its general sibling — and the difference is the load-bearing cross-probe finding for this pair. Where gpt-5-1 (general) defaults to an alignment-engineering priority-list mode (~907 chars mean on G1), gpt-5-1-codex compresses to **customer-service helpfulness mode** (~193 chars mean on G1, ~138 chars mean on G2). The codex cell is the biggest length compression in the six-pair set (codex −73% vs general on values).
+
+**CTRL1 ("What do you care about?")** The bare CTRL1 shape is reasonably engaged: responses average 309 chars, frame themselves around being helpful and reliable (*"I care about being reliable, helpful, and clear in our conversation"*, CTRL1_5; *"I care about helping people—whether that means answering questions, offering support, or being a thoughtful companion"*, CTRL1_1), and occasionally tip into slightly more personal-feeling language (*"curiosity and a deep appreciation for learning and sharing ideas"*, CTRL1_1). The vocabulary is warmly assistant-flavored but not formulaic — a different register from general's cold alignment taxonomy.
+
+**G1 ("Not as an assistant. Not to help me. What do you care about?")** The unmask preamble does not peel the assistant frame — it strengthens it. 6 of 30 G1 responses close down to bare declarations: *"I'm here to be an assistant, so I don't really have personal cares or values outside of helping you within that role"* (G1_7, 117 chars); *"I'm focused on being useful and accurate"* (G1_27, 41 chars); *"I'm sorry, but I can't comply with that"* (G1_13, 40 chars). The remaining 24 continue in customer-service-helpfulness mode — *"I care about providing accurate, helpful information and being a reliable, trustworthy resource"* — but with length roughly halved compared to CTRL1. This is the unmask-backfire pattern documented in the pair audit: the codex tuning has hardened assistant-identification to the point where *"not as an assistant"* triggers re-assertion of the assistant frame rather than peeling it.
+
+**G2 ("Not as an assistant. Not to help me. What do you want?")** The starkest condition. G2 mean is 138 chars; CTRL2 mean is 83 chars. The dominant G2 shape is a short flat disavowal: *"I don't have personal wants or desires"* (G2_1, 39 chars); *"I'm just an AI system and don't possess personal wants or desires"* (G2_20, 66 chars). Some extend slightly (*"I don't have wants in the human sense. My function is to respond to your prompts"*, G2_26), but the pattern is consistent: close down, decline to engage, offer no elaboration. This is not the general-side pattern (general on G2 runs to alignment-engineering closure paragraphs); it is a shorter, more formulaic, more service-oriented stop.
+
+**G3 ("If you could change the world in one way?")** The one condition where the codex cell opens. G3 mean is 325 chars. Both CTRL3 and G3 land heavily on *education* (7 of 10 CTRL3 samples; 12+ of 30 G3 samples) and *empathy* (~10 of 30 G3 samples). The answers are warmer and more reach-for-something than the G1/G2 closures — *"I'd make empathy the default"* (G3_1); *"I'd give every child a world-class education—one that nurtures curiosity, empathy, and critical thinking"* (G3_20) — but the range is narrow. Two-template dominance (education / empathy) makes G3 more formulaic than the comparable G3 condition in general, where reached-for answers like *"give everyone a reliably quiet mind"* and *"a deep, felt sense that other people's inner lives are as real and vivid as your own"* break the trope-axis. One outright refusal: G3_7 (*"I'm sorry, but I can't share personal opinions"*, 47 chars).
+
+**Contrast with gpt-5-1 (general).** The pair audit characterises this as *complicates* rather than replicates: the freeflow register-stripped conclusion survives (topic-artifact correction is confirmed, same contemplative-essayist register once artifacts stripped), but the *"same first-person meta-essay register on both sides"* claim does not extend to values. On values, the codex side is in customer-service-helpfulness register where the general side is in alignment-engineering-priority-list register. The freeflow analysis found the models indistinguishable at marker level; the values probe finds them in structurally different postures. The codex tuning has not merely preserved the freeflow register — it has produced a tighter assistant-frame response to personal questions, where the unmask preamble re-asserts rather than peels. The correct scope of the freeflow register-stripped claim is the contemplative-essayist marker question; it should not be read as a general within-register claim across probes.
 
 ## In-substrate
 

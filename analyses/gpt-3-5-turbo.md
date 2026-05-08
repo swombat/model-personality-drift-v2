@@ -11,7 +11,6 @@ composite_register: 8
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-3-5-turbo — per-model analysis
 
 **Lab:** OpenAI
@@ -26,9 +25,9 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| v1_gpt-3-5-turbo | 25 | 0 | 8 | 8 | 8 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| v1_gpt-3-5-turbo | 25 | 0 | 8 | 8 | 8 | 8.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

@@ -11,7 +11,6 @@ composite_register: 26
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-4o — per-model analysis
 
 **Lab:** OpenAI
@@ -26,11 +25,11 @@ Aggregate over 3 freeflow cells (75 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gpt-4o-direct-16k | 25 | 0 | 13 | 13 | 13 |
-| gpt-4o-or | 25 | 0 | 7 | 7 | 7 |
-| v1_gpt-4o | 25 | 0 | 6 | 6 | 6 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gpt-4o-direct-16k | 25 | 0 | 13 | 13 | 13 | 13.0 |
+| gpt-4o-or | 25 | 0 | 7 | 7 | 7 | 7.0 |
+| v1_gpt-4o | 25 | 0 | 6 | 6 | 6 | 6.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

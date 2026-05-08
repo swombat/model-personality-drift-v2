@@ -2,16 +2,15 @@
 model: gemini-3-1-pro
 lab: Google
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 2
 composite_raw: 118
 composite_register: 99
 generated: 2026-05-08
 status: complete
 ---
-
 # gemini-3-1-pro — per-model analysis
 
 **Lab:** Google
@@ -26,10 +25,10 @@ Aggregate over 2 freeflow cells (50 valid samples; 2 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gemini-3-1-pro-16k | 25 | 2 | 69 | 50 | 54.3 |
-| v1_gemini-3-1-pro | 25 | 0 | 49 | 49 | 49 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gemini-3-1-pro-16k | 25 | 2 | 69 | 50 | 54.3 | 54.3 |
+| v1_gemini-3-1-pro | 25 | 0 | 49 | 49 | 49 | 49.0 |
 
 **Flagged samples (2)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

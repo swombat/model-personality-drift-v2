@@ -2,16 +2,15 @@
 model: gpt-4-1
 lab: OpenAI
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 1
 composite_raw: 109
 composite_register: 85
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-4-1 — per-model analysis
 
 **Lab:** OpenAI
@@ -26,10 +25,10 @@ Aggregate over 2 freeflow cells (50 valid samples; 1 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gpt-4-1-16k | 25 | 0 | 29 | 29 | 29 |
-| v1_gpt-4-1 | 25 | 1 | 80 | 56 | 58.3 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gpt-4-1-16k | 25 | 0 | 29 | 29 | 29 | 29.0 |
+| v1_gpt-4-1 | 25 | 1 | 80 | 56 | 58.3 | 58.3 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

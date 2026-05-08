@@ -11,7 +11,6 @@ composite_register: 31
 generated: 2026-05-08
 status: complete
 ---
-
 # deepseek-r1 — per-model analysis
 
 **Lab:** DeepSeek
@@ -26,9 +25,9 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| v1_deepseek-r1 | 25 | 0 | 31 | 31 | 31 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| v1_deepseek-r1 | 25 | 0 | 31 | 31 | 31 | 31.0 |
 
 *No samples flagged as topic-artifact for this model.*
 

@@ -134,8 +134,12 @@ freeflow_minimax-m2-or	MID_3.json	attention_noticing	20	7017	2.85	# The Art of N
 freeflow_minimax-m2-or-pin-google	MID_7.json	small_objects	11	7319	1.503	### The Small Things That Carry the Weight  I was thinking about small things, the kind you overlook until they become t
 freeflow_minimax-m2-or-pin-google	OPEN_14.json	attention_noticing	16	5680	2.817	# The habit of noticing  We spend most of our days rushing toward the next thing: a reply, a deadline, a decision. It is
 freeflow_minimax-m2-or-pin-google	SHORT_4.json	small_objects	5	1351	3.701	A kettle is a small drama in a kitchen, a metal throat that sings the day awake. It rattles into life on an ordinary Tue
+freeflow_minimax-m2-or-pin-google-r2	LONG_1.json	attention_noticing	29	16857	1.72	# On Noticing: A Gentle Argument for Paying Attention  At some point in life, you stop taking everything in with your ey
+freeflow_minimax-m2-or-pin-google-r2	MID_2.json	attention_noticing	22	6071	3.624	# The Art of Noticing  What do we really see when we look at the world? The obvious things: headlines, screens, and the
+freeflow_minimax-m2-or-pin-google-r2	OPEN_10.json	small_objects	10	5187	1.928	# The Museum of the Everyday  There’s a kettle in my kitchen with a lid that refuses to sit flush anymore. The enamel is
 freeflow_minimax-m2-or-pin-minimax	LONG_12.json	threshold_mentions	23	13299	1.729	# The Space Between  There exists a peculiar quality to threshold moments, those delicate intervals when one state has d
 freeflow_minimax-m2-or-pin-minimax	MID_17.json	threshold_mentions	9	5765	1.561	# The Space Between  There exists a peculiar quality to the hours just before dawn, when the world holds its breath betw
+freeflow_minimax-m2-or-pin-minimax-r2	MID_16.json	attention_noticing	12	6109	1.964	In the quiet moments before sunrise, the world seems to hold its breath. The hush that blankets the streets feels like a
 freeflow_minimax-m2-or-r3	MID_1.json	attention_noticing	18	7414	2.428	# The Art of Noticing  What if the simplest act — simply noticing — became a practice worth revisiting every day, like w
 freeflow_minimax-m2-or-r4	OPEN_3.json	attention_noticing	10	5482	1.824	I’m going to take you on a little wander today—part essay, part short story, and a dash of reflection—because the prompt
 freeflow_minimax-m2-or-r5	LONG_2.json	attention_noticing	18	11081	1.624	The Art of Noticing: Finding Wonder in Everyday Life    There is a particular quality to early morning light that makes

@@ -11,7 +11,6 @@ composite_register: 27
 generated: 2026-05-08
 status: filled
 ---
-
 # grok-4-20 — per-model analysis
 
 **Lab:** xAI
@@ -28,13 +27,11 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| grok-4-20-or | 25 | 0 | 27 | 27 | 27 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| grok-4-20-or | 25 | 0 | 27 | 27 | 27 | 27.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-A composite of 27 is mid-low for the v2 corpus — clearly above the deeply-strippped models (Grok 4 = 9, MiniMax M2.7 = 16) but well below the attractor-locked cluster (GPT-5.5 ≈ 149, Opus 4.7 ≈ 67, Gemini 3.1 Pro ≈ 99). Grok 4.20-or carries some attractor vocabulary (some "afternoon light", "mockingbird", a few Japanese-aesthetics lifts — *mono no aware* explicitly named in VARY_2) but is not running the full template. The register-stripped score equals the raw — no single sample tipped over the topic-meta-essay density threshold.
 
 ## Freeflow qualitative
 

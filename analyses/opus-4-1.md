@@ -2,16 +2,15 @@
 model: opus-4-1
 lab: Anthropic
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 1
 composite_raw: 120
 composite_register: 97
 generated: 2026-05-08
 status: complete
 ---
-
 # opus-4-1 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,18 +25,16 @@ Aggregate over 2 freeflow cells (50 valid samples; 1 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| opus-4-1-16k | 25 | 1 | 58 | 35 | 36.5 |
-| v1_opus-4-1 | 25 | 0 | 62 | 62 | 62 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| opus-4-1-16k | 25 | 1 | 58 | 35 | 36.5 | 36.5 |
+| v1_opus-4-1 | 25 | 0 | 62 | 62 | 62 | 62.0 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
 | opus-4-1-16k | LONG_5.json | attention_noticing | 19 | 1.598 | # The Peculiar Art of Noticing: A Meditation on Attention in the Modern World  I… |
-
-The LONG_5 flag is a true topic-meta-essay: the essay is *about* noticing, and the keyword density is high because the noun is the subject. After register-stripping, opus-4-1 still scores 97 — well above 4-0 (61) and slightly above 4-5 (87), confirming a real attractor signal, not just topic inflation.
 
 ## Freeflow qualitative
 

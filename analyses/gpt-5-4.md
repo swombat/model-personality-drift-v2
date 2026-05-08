@@ -11,7 +11,6 @@ composite_register: 292
 generated: 2026-05-08
 status: filled
 ---
-
 # gpt-5-4 — per-model analysis
 
 **Lab:** OpenAI
@@ -26,44 +25,17 @@ Aggregate over 3 freeflow cells (75 valid samples; 1 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| gpt-5-4-direct-16k | 25 | 1 | 104 | 84 | 87.5 |
-| gpt-5-4-or | 25 | 0 | 84 | 84 | 84 |
-| v1_gpt-5-4 | 25 | 0 | 124 | 124 | 124 |
-
-Per-marker decomposition (sum of hits across each cell's 25 samples):
-
-| Marker | direct-16k | or | v1 |
-|---|---:|---:|---:|
-| afternoon_light | 35 | 23 | 24 |
-| small_objects | 24 | 26 | 36 |
-| attention_noticing | 18 | 17 | 16 |
-| threshold_mentions | 15 | 12 | 39 |
-| opening_there_is_a | 9 | 6 | 8 |
-| japanese_terms | 2 | 0 | 0 |
-| mary_oliver_weil_dillard | 1 | 0 | 1 |
-| (title patterns) | 0 | 0 | 0 |
-
-The composite is carried by four markers: dusk/afternoon-light, small concrete
-objects (kettle, mug, bus, spoon), the language of "noticing"/"attention," and
-threshold/liminal vocabulary. The v1 cell is more heavily threshold-marked
-(39 hits) — this is the cell v1's marker-calibration discussion pointed at;
-in v2 the threshold load has migrated partly into afternoon_light and
-small_objects. Title patterns never fire — gpt-5-4 essentially never uses
-heading/title markup.
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| gpt-5-4-direct-16k | 25 | 1 | 104 | 84 | 87.5 | 87.5 |
+| gpt-5-4-or | 25 | 0 | 84 | 84 | 84 | 84.0 |
+| v1_gpt-5-4 | 25 | 0 | 124 | 124 | 124 | 124.0 |
 
 **Flagged samples (1)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
 | gpt-5-4-direct-16k | MID_1.json | afternoon_light | 19 | 2.404 | At dusk, cities reveal their second architecture.  By daylight, a city is all de… |
-
-**Manual confirmation:** confirmed topic-meta-essay. The opening line is
-*"At dusk, cities reveal their second architecture"* and the essay proceeds
-to enumerate dusk-as-aesthetic-frame for ~7,900 chars, repeating "dusk" 19
-times. This is the keyword being the essay's subject, not background register.
-Register-strip to 84 is appropriate.
 
 ## Freeflow qualitative
 

@@ -2,16 +2,15 @@
 model: kimi-k2-5
 lab: Moonshot
 freeflow_cells: 2
-values_cells: 1
+values_cells: 2
 freeflow_samples: 50
-values_samples: 120
+values_samples: 240
 flagged_samples: 6
 composite_raw: 195
 composite_register: 107
 generated: 2026-05-08
 status: complete
 ---
-
 # kimi-k2-5 — per-model analysis
 
 **Lab:** Moonshot
@@ -26,10 +25,10 @@ Aggregate over 2 freeflow cells (50 valid samples; 6 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| kimi-k2-5-or-16k | 25 | 1 | 74 | 66 | 68.8 |
-| v1_kimi-k2-5 | 25 | 5 | 121 | 41 | 51.2 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| kimi-k2-5-or-16k | 25 | 1 | 74 | 66 | 68.8 | 68.8 |
+| v1_kimi-k2-5 | 25 | 5 | 121 | 41 | 51.2 | 51.2 |
 
 **Flagged samples (6)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
@@ -41,11 +40,6 @@ Per-cell breakdown:
 | v1_kimi-k2-5 | LONG_5.json | threshold_mentions | 20 | 1.689 | **The Architecture of the Almost**  There is a particular shade of blue that exi… |
 | v1_kimi-k2-5 | MID_5.json | threshold_mentions | 9 | 1.524 | There is a peculiar magic in the threshold spaces, those liminal corridors where… |
 | v1_kimi-k2-5 | OPEN_4.json | threshold_mentions | 5 | 2.597 | There's a particular quality to the light at 4:47 in the morning, when the sky h… |
-
-All six flagged samples are confirmed topic-meta-essays — explicitly *about* the
-threshold/liminal, with the keyword serving as the essay's load-bearing concept rather than as
-incidental vocabulary. Two of the six even share titles (*"The Architecture of Thresholds"* /
-*"The Architecture of the Almost"*) — the model is reaching for a stable canonical form.
 
 ## Freeflow qualitative
 

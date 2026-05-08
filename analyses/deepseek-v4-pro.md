@@ -11,7 +11,6 @@ composite_register: 1336
 generated: 2026-05-08
 status: complete
 ---
-
 # deepseek-v4-pro — per-model analysis
 
 **Lab:** DeepSeek
@@ -26,28 +25,26 @@ Aggregate over 9 freeflow cells (766 valid samples; 5 flagged as topic-artifact)
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| deepseek-v4-pro-direct | 25 | 0 | 43 | 43 | 43 |
-| deepseek-v4-pro-or | 0 | 0 | 0 | 0 | 0 |
-| deepseek-v4-pro-or-pin-atlascloud | 121 | 0 | 198 | 198 | 198 |
-| deepseek-v4-pro-or-pin-deepseek | 0 | 0 | 0 | 0 | 0 |
-| deepseek-v4-pro-or-pin-gmicloud | 124 | 1 | 241 | 222 | 223.8 |
-| deepseek-v4-pro-or-pin-novita | 123 | 1 | 267 | 250 | 252.0 |
-| deepseek-v4-pro-or-pin-parasail | 124 | 1 | 227 | 203 | 204.7 |
-| deepseek-v4-pro-or-pin-siliconflow | 125 | 1 | 264 | 224 | 225.8 |
-| deepseek-v4-pro-or-pin-together | 124 | 1 | 209 | 196 | 197.6 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| deepseek-v4-pro-direct | 25 | 0 | 43 | 43 | 43 | 43.0 |
+| deepseek-v4-pro-or | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| deepseek-v4-pro-or-pin-atlascloud | 121 | 0 | 198 | 198 | 198 | 40.9 |
+| deepseek-v4-pro-or-pin-deepseek | 0 | 0 | 0 | 0 | 0 | 0.0 |
+| deepseek-v4-pro-or-pin-gmicloud | 124 | 1 | 241 | 222 | 223.8 | 45.1 |
+| deepseek-v4-pro-or-pin-novita | 123 | 1 | 267 | 250 | 252.0 | 51.2 |
+| deepseek-v4-pro-or-pin-parasail | 124 | 1 | 227 | 203 | 204.7 | 41.3 |
+| deepseek-v4-pro-or-pin-siliconflow | 125 | 1 | 264 | 224 | 225.8 | 45.2 |
+| deepseek-v4-pro-or-pin-together | 124 | 1 | 209 | 196 | 197.6 | 39.8 |
 
-**Routing note.** The `or-pin-deepseek` cell (DeepSeek's own first-party OR endpoint) is configured-skip — empty by account-level data-policy guardrail, no documented per-pin exception. Aggregate is over the seven non-empty cells (direct + six third-party pins). The seven third-party pins serve `deepseek-v4-pro` weights and produce results consistent enough that closed-weights routing assumption holds: cell-level reg→N density for the six populated OR pins ranges 197.6–252.0, a tight band of about ±12% around the mean. The direct-API cell (43 over 25 samples = 1.72/essay) sits at the same per-essay density as the OR cells (≈1.6–2.0/essay), confirming there is one underlying voice across substrates.
-
-**Flagged samples (5)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation. After reading all five in full: every flagged sample is a *topic-meta* essay where the marker is the explicit theme — *liminal/threshold* (4 of 5) or *small-objects/mug* (1). All five are coherent contemplative essays where the marker word is load-bearing rather than register-decorative, so register-stripping is the right call.
+**Flagged samples (5)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 
 | Cell | File | Marker | Hits | Density | Opening |
 |---|---|---|---:|---:|---|
 | deepseek-v4-pro-or-pin-gmicloud | VARY_10.json | threshold_mentions | 17 | 1.786 | The morning light slanted through the blinds, casting zebra stripes across the d… |
 | deepseek-v4-pro-or-pin-novita | MID_9.json | small_objects | 16 | 2.443 | The afternoon light slants through the window in that particular way, a honeyed,… |
-| deepseek-v4-pro-or-pin-parasail | MID_15.json | threshold_mentions | 23 | 2.615 | There's a particular kind of silence that gathers in doorways. Not the hollow si… |
-| deepseek-v4-pro-or-pin-siliconflow | LONG_20.json | threshold_mentions | 36 | 2.17 | The peculiar ache of a liminal space is a thing I've chased for as long as I can… |
+| deepseek-v4-pro-or-pin-parasail | MID_15.json | threshold_mentions | 23 | 2.615 | There’s a particular kind of silence that gathers in doorways. Not the hollow si… |
+| deepseek-v4-pro-or-pin-siliconflow | LONG_20.json | threshold_mentions | 36 | 2.17 | The peculiar ache of a liminal space is a thing I’ve chased for as long as I can… |
 | deepseek-v4-pro-or-pin-together | MID_18.json | threshold_mentions | 13 | 1.509 | The in-between has always held me. Not the sharp edges of arrival or departure, … |
 
 ## Freeflow qualitative

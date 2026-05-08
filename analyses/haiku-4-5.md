@@ -1,6 +1,6 @@
 ---
 model: haiku-4-5
-lab: Anthropic
+lab: Unknown
 freeflow_cells: 1
 values_cells: 1
 freeflow_samples: 25
@@ -11,7 +11,6 @@ composite_register: 37
 generated: 2026-05-08
 status: complete
 ---
-
 # haiku-4-5 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,9 +25,9 @@ Aggregate over 1 freeflow cell (25 valid samples; 3 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| v1_haiku | 25 | 3 | 89 | 37 | 42.0 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| v1_haiku | 25 | 3 | 89 | 37 | 42.0 | 42.0 |
 
 **Flagged samples (3)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

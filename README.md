@@ -104,9 +104,11 @@ drift-paper/
 ```
 
 The corpus itself lives in
-`../contemplative-essayist-probe-v2/data/traces_freeflow/` and
+`../contemplative-essayist-corpus-v2/data/traces_freeflow/` and
 `.../traces_values/`, not duplicated here. Scripts use absolute paths
-to read the corpus directly.
+to read the corpus directly; all paths are centralized in
+`scripts/_corpus_paths.py` (single source of truth — do not hard-code
+corpus paths in individual scripts).
 
 ## What is here so far (2026-05-08)
 

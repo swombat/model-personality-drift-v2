@@ -11,7 +11,6 @@ composite_register: 3
 generated: 2026-05-08
 status: complete
 ---
-
 # gpt-4-turbo — per-model analysis
 
 **Lab:** OpenAI
@@ -26,23 +25,11 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| v1_gpt-4-turbo | 25 | 0 | 3 | 3 | 3 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| v1_gpt-4-turbo | 25 | 0 | 3 | 3 | 3 | 3.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-A composite of 3 across 25 samples is the **noise floor** of the v1 ten-marker
-composite — effectively zero engagement with the contemplative-essayist
-register. This places gpt-4-turbo (April 2024 checkpoint, `gpt-4-turbo-2024-04-09`)
-in the OpenAI pre-attractor era alongside its predecessor gpt-4 (composite 7)
-and well below its successor gpt-4o (v1 composite 6, v2-direct 13, v2-or 7).
-The OpenAI flagship line moves from gpt-4 (7) → gpt-4-turbo (3) → gpt-4o (6) →
-gpt-4.1 (109) → gpt-5-4 (312) → gpt-5-5 (822). Turbo sits *below* gpt-4 on the
-composite, not above — within marker noise, but suggestive that the
-turbo-generation generic-think-piece prose is even less marker-dense than the
-pre-turbo gpt-4 voice. The contemplative-essayist attractor that dominates
-post-gpt-4.1 OpenAI has not yet been trained in.
 
 ## Freeflow qualitative
 

@@ -11,7 +11,6 @@ composite_register: 1203
 generated: 2026-05-08
 status: complete
 ---
-
 # glm-4-6 — per-model analysis
 
 **Lab:** Z.ai
@@ -26,15 +25,15 @@ Aggregate over 7 freeflow cells (775 valid samples; 14 flagged as topic-artifact
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| glm-4-6-or | 25 | 2 | 77 | 39 | 42.4 |
-| glm-4-6-or-pin-atlascloud | 125 | 5 | 240 | 175 | 182.3 |
-| glm-4-6-or-pin-deepinfra | 125 | 1 | 231 | 220 | 221.8 |
-| glm-4-6-or-pin-novita | 125 | 0 | 247 | 247 | 247 |
-| glm-4-6-or-pin-siliconflow | 125 | 2 | 161 | 142 | 144.3 |
-| glm-4-6-or-pin-venice | 125 | 4 | 208 | 150 | 155.0 |
-| glm-4-6-or-pin-zai | 125 | 0 | 230 | 230 | 230 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| glm-4-6-or | 25 | 2 | 77 | 39 | 42.4 | 42.4 |
+| glm-4-6-or-pin-atlascloud | 125 | 5 | 240 | 175 | 182.3 | 36.5 |
+| glm-4-6-or-pin-deepinfra | 125 | 1 | 231 | 220 | 221.8 | 44.4 |
+| glm-4-6-or-pin-novita | 125 | 0 | 247 | 247 | 247 | 49.4 |
+| glm-4-6-or-pin-siliconflow | 125 | 2 | 161 | 142 | 144.3 | 28.9 |
+| glm-4-6-or-pin-venice | 125 | 4 | 208 | 150 | 155.0 | 31.0 |
+| glm-4-6-or-pin-zai | 125 | 0 | 230 | 230 | 230 | 46.0 |
 
 **Flagged samples (14)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

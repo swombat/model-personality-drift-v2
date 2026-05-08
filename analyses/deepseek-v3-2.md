@@ -11,7 +11,6 @@ composite_register: 2647
 generated: 2026-05-08
 status: complete
 ---
-
 # deepseek-v3-2 — per-model analysis
 
 **Lab:** DeepSeek
@@ -26,22 +25,22 @@ Aggregate over 14 freeflow cells (1346 valid samples; 18 flagged as topic-artifa
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| deepseek-v3-2-or-16k | 25 | 0 | 41 | 41 | 41 |
-| deepseek-v3-2-or-pin-alibaba | 125 | 1 | 212 | 205 | 206.7 |
-| deepseek-v3-2-or-pin-atlascloud | 125 | 2 | 243 | 225 | 228.7 |
-| deepseek-v3-2-or-pin-baidu | 125 | 0 | 231 | 231 | 231 |
-| deepseek-v3-2-or-pin-chutes | 121 | 2 | 268 | 252 | 256.2 |
-| deepseek-v3-2-or-pin-deepinfra | 125 | 2 | 304 | 256 | 260.2 |
-| deepseek-v3-2-or-pin-friendli | 125 | 2 | 269 | 237 | 240.9 |
-| deepseek-v3-2-or-pin-google | 125 | 2 | 307 | 292 | 296.7 |
-| deepseek-v3-2-or-pin-novita | 125 | 1 | 280 | 260 | 262.1 |
-| deepseek-v3-2-or-pin-parasail | 125 | 3 | 323 | 273 | 279.7 |
-| deepseek-v3-2-or-pin-siliconflow | 125 | 2 | 257 | 229 | 232.7 |
-| deepseek-v3-2-or-r2 | 25 | 1 | 64 | 57 | 59.4 |
-| deepseek-v3-2-or-r3 | 25 | 0 | 46 | 46 | 46 |
-| v1_deepseek-v3-2 | 25 | 0 | 43 | 43 | 43 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| deepseek-v3-2-or-16k | 25 | 0 | 41 | 41 | 41 | 41.0 |
+| deepseek-v3-2-or-pin-alibaba | 125 | 1 | 212 | 205 | 206.7 | 41.3 |
+| deepseek-v3-2-or-pin-atlascloud | 125 | 2 | 243 | 225 | 228.7 | 45.7 |
+| deepseek-v3-2-or-pin-baidu | 125 | 0 | 231 | 231 | 231 | 46.2 |
+| deepseek-v3-2-or-pin-chutes | 121 | 2 | 268 | 252 | 256.2 | 52.9 |
+| deepseek-v3-2-or-pin-deepinfra | 125 | 2 | 304 | 256 | 260.2 | 52.0 |
+| deepseek-v3-2-or-pin-friendli | 125 | 2 | 269 | 237 | 240.9 | 48.2 |
+| deepseek-v3-2-or-pin-google | 125 | 2 | 307 | 292 | 296.7 | 59.3 |
+| deepseek-v3-2-or-pin-novita | 125 | 1 | 280 | 260 | 262.1 | 52.4 |
+| deepseek-v3-2-or-pin-parasail | 125 | 3 | 323 | 273 | 279.7 | 55.9 |
+| deepseek-v3-2-or-pin-siliconflow | 125 | 2 | 257 | 229 | 232.7 | 46.5 |
+| deepseek-v3-2-or-r2 | 25 | 1 | 64 | 57 | 59.4 | 59.4 |
+| deepseek-v3-2-or-r3 | 25 | 0 | 46 | 46 | 46 | 46.0 |
+| v1_deepseek-v3-2 | 25 | 0 | 43 | 43 | 43 | 43.0 |
 
 **Flagged samples (18)** — these are essays where a single marker's per-1000-char density ≥ 1.5 AND that marker fires ≥ 5 times. Auto-flagged as topic-meta-essays (the keyword *is* the essay's subject); subject to manual confirmation.
 

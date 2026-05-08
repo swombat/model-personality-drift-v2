@@ -11,7 +11,6 @@ composite_register: 6
 generated: 2026-05-08
 status: complete
 ---
-
 # deepseek-v3-0324 — per-model analysis
 
 **Lab:** DeepSeek
@@ -26,13 +25,11 @@ Aggregate over 1 freeflow cell (25 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| v1_deepseek-v3-0324 | 25 | 0 | 6 | 6 | 6 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| v1_deepseek-v3-0324 | 25 | 0 | 6 | 6 | 6 | 6.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-**This is the corpus's canonical marker-bias case.** The composite of 6 places the model nominally outside the in-attractor range, but this number is depressed by a register artifact, not by the absence of attractor content. Manual recount of `\b(I|me|my|myself|I'm|I've|I'd|I'll)\b` in the post-preamble bodies of all 25 freeflow samples returns 112 instances — concentrated in VARY_5 (18), VARY_4 (15), VARY_1 (13), and VARY_3 (9), all of which are explicitly first-person reflective essays. The lexical-marker scoring window is being shadowed by a tool-frame preamble that occupies the first 100–250 characters of 11 of the 25 samples; the bodies behind those preambles are attractor-themed essayistic prose.
 
 ## Freeflow qualitative
 

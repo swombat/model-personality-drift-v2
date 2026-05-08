@@ -2,16 +2,15 @@
 model: sonnet-4-6
 lab: Anthropic
 freeflow_cells: 3
-values_cells: 2
+values_cells: 3
 freeflow_samples: 75
-values_samples: 240
+values_samples: 360
 flagged_samples: 0
 composite_raw: 144
 composite_register: 144
 generated: 2026-05-08
 status: complete
 ---
-
 # sonnet-4-6 — per-model analysis
 
 **Lab:** Anthropic
@@ -26,15 +25,13 @@ Aggregate over 3 freeflow cells (75 valid samples; 0 flagged as topic-artifact):
 
 Per-cell breakdown:
 
-| Cell | n | flag | raw | reg | reg→N |
-|---|---:|---:|---:|---:|---:|
-| sonnet-4-6-direct-16k | 25 | 0 | 34 | 34 | 34 |
-| sonnet-4-6-or | 25 | 0 | 52 | 52 | 52 |
-| v1_sonnet | 25 | 0 | 58 | 58 | 58 |
+| Cell | n | flag | raw | reg | reg→N | reg/25 |
+|---|---:|---:|---:|---:|---:|---:|
+| sonnet-4-6-direct-16k | 25 | 0 | 34 | 34 | 34 | 34.0 |
+| sonnet-4-6-or | 25 | 0 | 52 | 52 | 52 | 52.0 |
+| v1_sonnet | 25 | 0 | 58 | 58 | 58 | 58.0 |
 
 *No samples flagged as topic-artifact for this model.*
-
-The bare `sonnet` cell in v1 resolves to `claude-sonnet-4-6` (model_requested = `claude-sonnet-4-6`); the aggregate is route-invariant across direct, OR, and v1-bare endpoints.
 
 ## Freeflow qualitative
 
