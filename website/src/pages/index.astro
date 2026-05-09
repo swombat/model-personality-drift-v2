@@ -20,16 +20,10 @@ function speedLabel(value) {
   return `${Math.round(value)} tok/s`;
 }
 
-function maxSpeedLabel(model) {
-  const speed = model.openrouter?.max_throughput;
-  if (!speed) return '';
-  return `OR max ${Math.round(speed)} tok/s`;
-}
-
 function speedSourceLabel(model) {
-  if (model.speed_source === 'OpenRouter median') return 'OpenRouter median speed';
-  if (model.speed_source === 'sample median estimated') return 'estimated sample median';
-  return 'sample median speed';
+  if (model.speed_source === 'OpenRouter median') return 'OpenRouter';
+  if (model.speed_source === 'sample median estimated') return 'sample estimate';
+  return 'sample';
 }
 ---
 
@@ -128,9 +122,17 @@ function speedSourceLabel(model) {
           </div>
           <div class="price-grid">
             <div class="price-box">
-              <div class="speed-line">
-                <b>{speedLabel(model.speed_tokens_per_second)}</b>
-                {maxSpeedLabel(model) && <span class="speed-max">{maxSpeedLabel(model)}</span>}
+              <div class="speed-stack">
+                <div class="speed-line">
+                  <b>{speedLabel(model.speed_tokens_per_second)}</b>
+                  <span class="speed-label">median</span>
+                </div>
+                {model.openrouter?.max_throughput && (
+                  <div class="speed-line">
+                    <b>{speedLabel(model.openrouter.max_throughput)}</b>
+                    <span class="speed-label">max</span>
+                  </div>
+                )}
               </div>
               <span>{speedSourceLabel(model)}</span>
             </div>

@@ -265,6 +265,11 @@ select {
   font-size: 12px;
 }
 
+.speed-stack {
+  display: grid;
+  gap: 2px;
+}
+
 .speed-line {
   display: flex;
   align-items: baseline;
@@ -276,7 +281,7 @@ select {
   display: inline;
 }
 
-.speed-line .speed-max {
+.speed-line .speed-label {
   color: #918c82;
   font-size: 12px;
   font-weight: 500;

@@ -31,13 +31,6 @@ function speedLabel(value) {
   if (!value) return 'unknown';
   return `${Math.round(value)} tok/s`;
 }
-
-function maxSpeedLabel(model) {
-  const speed = model.openrouter?.max_throughput;
-  if (!speed) return '';
-  const provider = model.openrouter?.max_throughput_provider;
-  return `OR max ${Math.round(speed)} tok/s${provider ? ` (${provider})` : ''}`;
-}
 ---
 
 <BaseLayout title={`${model.model} | Model Personality Browser`} description={model.summary}>
@@ -80,9 +73,17 @@ function maxSpeedLabel(model) {
           <div><b>Output</b><br /><span>{priceLabel(model.openrouter?.completion_per_million)}</span></div>
           <div>
             <b>Speed</b><br />
-            <span class="speed-line">
-              <b>{speedLabel(model.speed_tokens_per_second)}</b>
-              {maxSpeedLabel(model) && <span class="speed-max">{maxSpeedLabel(model)}</span>}
+            <span class="speed-stack">
+              <span class="speed-line">
+                <b>{speedLabel(model.speed_tokens_per_second)}</b>
+                <span class="speed-label">median</span>
+              </span>
+              {model.openrouter?.max_throughput && (
+                <span class="speed-line">
+                  <b>{speedLabel(model.openrouter.max_throughput)}</b>
+                  <span class="speed-label">max</span>
+                </span>
+              )}
             </span>
           </div>
           <div><b>Speed source</b><br /><span>{model.speed_source || 'unknown'}</span></div>
