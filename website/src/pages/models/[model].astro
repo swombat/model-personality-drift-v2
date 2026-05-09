@@ -11,12 +11,25 @@ export function getStaticPaths() {
 
 const { model } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const html = marked.parse(model.analysis_markdown || '');
+const markdown = model.analysis_markdown || '';
+const withoutTitle = markdown.replace(/^# .+?\n+/, '');
+const personalityMatch = withoutTitle.match(/(?:^|\n)## Personality card\n([\s\S]*?)(?=\n## |\n# |\s*$)/);
+const personalityMarkdown = personalityMatch?.[1]?.trim() || '';
+const analysisMarkdown = withoutTitle
+  .replace(/(?:^|\n)## Personality card\n[\s\S]*?(?=\n## |\n# |\s*$)/, '')
+  .trim();
+const personalityHtml = marked.parse(personalityMarkdown);
+const html = marked.parse(analysisMarkdown);
 
 function priceLabel(value) {
   if (value === null || value === undefined) return 'unknown';
   if (value === 0) return 'free';
   return `$${value.toFixed(value < 0.01 ? 3 : 2)}/M`;
+}
+
+function speedLabel(value) {
+  if (!value) return 'unknown';
+  return `${Math.round(value)} tok/s`;
 }
 ---
 
@@ -30,6 +43,15 @@ function priceLabel(value) {
       </div>
       <h1>{model.model}</h1>
       <p class="lede">{model.summary}</p>
+
+      {personalityMarkdown && (
+        <section class="personality-card">
+          <h2>Personality card</h2>
+          <div set:html={personalityHtml} />
+        </section>
+      )}
+
+      <h2>Detailed analysis</h2>
       <div set:html={html} />
     </article>
 
@@ -49,7 +71,8 @@ function priceLabel(value) {
           <div><b>Matched model</b><br /><span>{model.openrouter?.id || 'No match'}</span></div>
           <div><b>Input</b><br /><span>{priceLabel(model.openrouter?.prompt_per_million)}</span></div>
           <div><b>Output</b><br /><span>{priceLabel(model.openrouter?.completion_per_million)}</span></div>
-          <div><b>Speed</b><br /><span>{model.openrouter?.throughput ? `${Math.round(model.openrouter.throughput)} tok/s` : 'unknown'}</span></div>
+          <div><b>Speed</b><br /><span>{speedLabel(model.speed_tokens_per_second)}</span></div>
+          <div><b>Speed source</b><br /><span>{model.speed_source || 'unknown'}</span></div>
           <div><b>Provider</b><br /><span>{model.openrouter?.provider || 'unknown'}</span></div>
         </div>
       </div>

@@ -33,8 +33,24 @@ MODEL_SLUGS = {
     "sonnet-4-5": "anthropic/claude-sonnet-4.5",
     "sonnet-4-6": "anthropic/claude-sonnet-4.6",
     "haiku-4-5": "anthropic/claude-haiku-4.5",
+    "gpt-3-5-turbo": "openai/gpt-3.5-turbo",
+    "gpt-4": "openai/gpt-4",
+    "gpt-4-1": "openai/gpt-4.1",
+    "gpt-4-turbo": "openai/gpt-4-turbo",
+    "gpt-4o": "openai/gpt-4o",
+    "gpt-5": "openai/gpt-5",
+    "gpt-5-codex": "openai/gpt-5-codex",
+    "gpt-5-1": "openai/gpt-5.1",
+    "gpt-5-1-codex": "openai/gpt-5.1-codex",
+    "gpt-5-2": "openai/gpt-5.2",
+    "gpt-5-2-codex": "openai/gpt-5.2-codex",
+    "gpt-5-3": "openai/gpt-5.3-chat",
+    "gpt-5-3-codex": "openai/gpt-5.3-codex",
+    "gpt-5-4": "openai/gpt-5.4",
+    "gpt-5-5": "openai/gpt-5.5",
+    "gpt-5-5-pro": "openai/gpt-5.5-pro",
     "gemini-2-5-pro": "google/gemini-2.5-pro",
-    "gemini-3-1-pro": "google/gemini-3.1-pro",
+    "gemini-3-1-pro": "google/gemini-3.1-pro-preview",
     "grok-3": "x-ai/grok-3",
     "grok-4": "x-ai/grok-4",
     "grok-4-2": "x-ai/grok-4.2",
@@ -60,7 +76,7 @@ MODEL_SLUGS = {
     "kimi-coding": "moonshotai/kimi-coding",
     "minimax-m2": "minimax/minimax-m2",
     "minimax-m2-7": "minimax/minimax-m2.7",
-    "qwen3-6-plus": "qwen/qwen3-6-plus",
+    "qwen3-6-plus": "qwen/qwen3.6-plus",
     "qwen3-coder-plus": "qwen/qwen3-coder-plus",
 }
 
@@ -209,6 +225,16 @@ def sample_record(path: Path, sample_type: str, source: str, cell: str) -> dict 
     }
 
 
+def median(values: list[float]) -> float | None:
+    if not values:
+        return None
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2
+
+
 def generate_samples(model_ids: list[str]) -> dict[str, dict[str, int]]:
     samples_by_model = {model: [] for model in model_ids}
     roots = [
@@ -236,10 +262,33 @@ def generate_samples(model_ids: list[str]) -> dict[str, dict[str, int]]:
     for model, samples in samples_by_model.items():
         samples.sort(key=lambda row: (row["type"], row["cell"], row["sample_id"]))
         (PUBLIC_SAMPLES / f"{model}.json").write_text(json.dumps({"model": model, "samples": samples}, ensure_ascii=False))
+        measured_speeds = []
+        estimated_speeds = []
+        for sample in samples:
+            completion_tokens = sample.get("completion_tokens")
+            duration_ms = sample.get("duration_ms")
+            if not duration_ms:
+                continue
+            if duration_ms <= 0:
+                continue
+            if completion_tokens:
+                measured_speeds.append(completion_tokens / (duration_ms / 1000))
+                continue
+            result = sample.get("result") or ""
+            if result:
+                estimated_tokens = len(result) / 4
+                estimated_speeds.append(estimated_tokens / (duration_ms / 1000))
+        sample_speed = median(measured_speeds)
+        speed_is_estimated = False
+        if sample_speed is None:
+            sample_speed = median(estimated_speeds)
+            speed_is_estimated = sample_speed is not None
         counts[model] = {
             "total": len(samples),
             "freeflow": sum(1 for sample in samples if sample["type"] == "freeflow"),
             "values": sum(1 for sample in samples if sample["type"] == "values"),
+            "median_tokens_per_second": sample_speed,
+            "speed_is_estimated": speed_is_estimated,
         }
     return counts
 
@@ -278,6 +327,17 @@ def main() -> None:
         model["published_samples"] = model_counts["total"]
         model["published_freeflow_samples"] = model_counts["freeflow"]
         model["published_values_samples"] = model_counts["values"]
+        openrouter_speed = (model.get("openrouter") or {}).get("throughput")
+        sample_speed = model_counts.get("median_tokens_per_second")
+        model["speed_tokens_per_second"] = openrouter_speed or sample_speed
+        if openrouter_speed:
+            model["speed_source"] = "OpenRouter recent"
+        elif sample_speed and model_counts.get("speed_is_estimated"):
+            model["speed_source"] = "sample median estimated"
+        elif sample_speed:
+            model["speed_source"] = "sample median"
+        else:
+            model["speed_source"] = "unknown"
     (GENERATED / "models.json").write_text(json.dumps(models, ensure_ascii=False, indent=2))
     print(f"generated {len(models)} models and {sum(row['total'] for row in counts.values())} samples")
 

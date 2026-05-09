@@ -14,6 +14,11 @@ function priceLabel(value) {
   if (value === 0) return 'free';
   return `$${value.toFixed(value < 0.01 ? 3 : 2)}/M`;
 }
+
+function speedLabel(value) {
+  if (!value) return 'unknown';
+  return `${Math.round(value)} tok/s`;
+}
 ---
 
 <BaseLayout title="Model Personality Browser">
@@ -86,7 +91,7 @@ function priceLabel(value) {
         data-status={model.status}
         data-search={`${model.model} ${model.lab} ${model.family} ${model.summary}`.toLowerCase()}
         data-price={model.openrouter?.prompt_per_million ?? 999999}
-        data-speed={model.openrouter?.throughput ?? -1}
+        data-speed={model.speed_tokens_per_second ?? -1}
         data-samples={model.published_samples}
       >
         <div>
@@ -111,8 +116,8 @@ function priceLabel(value) {
           </div>
           <div class="price-grid">
             <div class="price-box">
-              <b>{model.openrouter?.throughput ? `${Math.round(model.openrouter.throughput)} tok/s` : 'unknown'}</b>
-              <span>speed at selected price</span>
+              <b>{speedLabel(model.speed_tokens_per_second)}</b>
+              <span>{model.speed_source === 'OpenRouter recent' ? 'speed at selected price' : model.speed_source === 'sample median estimated' ? 'estimated sample speed' : 'sample median speed'}</span>
             </div>
             <div class="price-box">
               <b>{model.published_samples.toLocaleString()}</b>

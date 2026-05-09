@@ -319,6 +319,21 @@ select {
   border-top: 1px solid var(--line);
 }
 
+.personality-card {
+  margin: 24px 0 30px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--paper-strong);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
+
+.personality-card h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 .article p,
 .article li {
   max-width: 860px;
