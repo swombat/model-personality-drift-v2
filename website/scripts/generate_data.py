@@ -345,6 +345,8 @@ def main() -> None:
     GENERATED.mkdir(parents=True, exist_ok=True)
     summaries_path = GENERATED / "model-summaries.json"
     summaries = json.loads(summaries_path.read_text()) if summaries_path.exists() else {}
+    release_dates_path = GENERATED / "model-release-dates.json"
+    release_dates = json.loads(release_dates_path.read_text()) if release_dates_path.exists() else {}
     models = []
     for path in sorted(ANALYSES.glob("*.md")):
         text = path.read_text()
@@ -366,6 +368,7 @@ def main() -> None:
             "composite_raw": meta.get("composite_raw", 0),
             "composite_register": meta.get("composite_register", 0),
             "summary": summaries.get(model, "Personality summary pending"),
+            "release_date": release_dates.get(model),
             "analysis_markdown": body.strip(),
             "openrouter": openrouter_for_model(model),
         })

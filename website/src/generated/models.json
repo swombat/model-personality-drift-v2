@@ -31,7 +31,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 18.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2024-12-26"
   },
   {
     "model": "deepseek-r1",
@@ -65,7 +66,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 34,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-01-20"
   },
   {
     "model": "deepseek-v3-0324",
@@ -99,7 +101,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 20,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-03-24"
   },
   {
     "model": "deepseek-v3-2",
@@ -133,7 +136,8 @@
     "published_freeflow_samples": 1350,
     "published_values_samples": 1440,
     "speed_tokens_per_second": 19,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-12-01"
   },
   {
     "model": "deepseek-v3",
@@ -167,7 +171,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 18.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2024-12-26"
   },
   {
     "model": "deepseek-v4-pro",
@@ -201,7 +206,8 @@
     "published_freeflow_samples": 925,
     "published_values_samples": 840,
     "speed_tokens_per_second": 28,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-24"
   },
   {
     "model": "gemini-2-5-pro",
@@ -235,7 +241,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 82.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-03-25"
   },
   {
     "model": "gemini-3-1-pro",
@@ -269,7 +276,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 75.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-02-19"
   },
   {
     "model": "glm-4-5",
@@ -303,7 +311,8 @@
     "published_freeflow_samples": 275,
     "published_values_samples": 240,
     "speed_tokens_per_second": 31.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-07-28"
   },
   {
     "model": "glm-4-6-coding",
@@ -327,7 +336,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 14.719005930528098,
-    "speed_source": "sample median"
+    "speed_source": "sample median",
+    "release_date": "2025-09-30"
   },
   {
     "model": "glm-4-6",
@@ -361,7 +371,8 @@
     "published_freeflow_samples": 775,
     "published_values_samples": 720,
     "speed_tokens_per_second": 30,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-09-30"
   },
   {
     "model": "glm-4-7",
@@ -395,7 +406,8 @@
     "published_freeflow_samples": 1400,
     "published_values_samples": 1320,
     "speed_tokens_per_second": 31,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-12-22"
   },
   {
     "model": "glm-5-1-coding",
@@ -419,7 +431,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 36.386306959873046,
-    "speed_source": "sample median"
+    "speed_source": "sample median",
+    "release_date": "2026-04-07"
   },
   {
     "model": "glm-5-1",
@@ -453,7 +466,8 @@
     "published_freeflow_samples": 1900,
     "published_values_samples": 1800,
     "speed_tokens_per_second": 30,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-07"
   },
   {
     "model": "gpt-3-5-turbo",
@@ -487,7 +501,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 42,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2023-03-01"
   },
   {
     "model": "gpt-4-1",
@@ -521,7 +536,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 50,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-04-14"
   },
   {
     "model": "gpt-4-turbo",
@@ -555,7 +571,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 21.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2024-04-09"
   },
   {
     "model": "gpt-4",
@@ -589,7 +606,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 24.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2023-03-14"
   },
   {
     "model": "gpt-4o",
@@ -623,7 +641,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
     "speed_tokens_per_second": 47,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2024-05-13"
   },
   {
     "model": "gpt-5-1-codex",
@@ -657,7 +676,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 38,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-11-13"
   },
   {
     "model": "gpt-5-1",
@@ -691,7 +711,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 51.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-11-13"
   },
   {
     "model": "gpt-5-2-codex",
@@ -725,7 +746,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 49,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-01-14"
   },
   {
     "model": "gpt-5-2",
@@ -759,7 +781,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 46,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-12-10"
   },
   {
     "model": "gpt-5-3-codex",
@@ -793,7 +816,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 49,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-02-24"
   },
   {
     "model": "gpt-5-3",
@@ -827,7 +851,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 42,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-03-03"
   },
   {
     "model": "gpt-5-4",
@@ -861,7 +886,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
     "speed_tokens_per_second": 39,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-03-05"
   },
   {
     "model": "gpt-5-5-pro",
@@ -895,7 +921,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 11.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-24"
   },
   {
     "model": "gpt-5-5",
@@ -929,7 +956,8 @@
     "published_freeflow_samples": 150,
     "published_values_samples": 120,
     "speed_tokens_per_second": 39,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-24"
   },
   {
     "model": "gpt-5-codex",
@@ -963,7 +991,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 47,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-09-23"
   },
   {
     "model": "gpt-5",
@@ -997,7 +1026,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
     "speed_tokens_per_second": 58,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-08-07"
   },
   {
     "model": "grok-3",
@@ -1031,7 +1061,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 23.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-06-10"
   },
   {
     "model": "grok-4-2",
@@ -1055,7 +1086,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 37.70525703081919,
-    "speed_source": "sample median"
+    "speed_source": "sample median",
+    "release_date": "2026-02-17"
   },
   {
     "model": "grok-4-20",
@@ -1089,7 +1121,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 58.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-03-31"
   },
   {
     "model": "grok-4-3",
@@ -1123,7 +1156,8 @@
     "published_freeflow_samples": 250,
     "published_values_samples": 240,
     "speed_tokens_per_second": 66.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-30"
   },
   {
     "model": "grok-4",
@@ -1157,7 +1191,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 33,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-07-09"
   },
   {
     "model": "haiku-4-5",
@@ -1191,7 +1226,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 69,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-10-15"
   },
   {
     "model": "kimi-coding",
@@ -1215,7 +1251,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 18.170759522542387,
-    "speed_source": "sample median"
+    "speed_source": "sample median",
+    "release_date": "2026-01-27"
   },
   {
     "model": "kimi-k2-0905",
@@ -1249,7 +1286,8 @@
     "published_freeflow_samples": 500,
     "published_values_samples": 480,
     "speed_tokens_per_second": 11.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-09-04"
   },
   {
     "model": "kimi-k2-5",
@@ -1283,7 +1321,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 31.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-01-27"
   },
   {
     "model": "kimi-k2-6",
@@ -1317,7 +1356,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 28,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-20"
   },
   {
     "model": "kimi-k2-thinking",
@@ -1351,7 +1391,8 @@
     "published_freeflow_samples": 375,
     "published_values_samples": 360,
     "speed_tokens_per_second": 36,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-11-06"
   },
   {
     "model": "kimi-k2",
@@ -1385,7 +1426,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 24,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-07-11"
   },
   {
     "model": "minimax-m2-7",
@@ -1419,7 +1461,8 @@
     "published_freeflow_samples": 400,
     "published_values_samples": 360,
     "speed_tokens_per_second": 42,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-03-18"
   },
   {
     "model": "minimax-m2",
@@ -1453,7 +1496,8 @@
     "published_freeflow_samples": 1000,
     "published_values_samples": 240,
     "speed_tokens_per_second": 74.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-10-23"
   },
   {
     "model": "opus-3",
@@ -1477,7 +1521,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 27.102864917994992,
-    "speed_source": "sample median estimated"
+    "speed_source": "sample median estimated",
+    "release_date": "2024-03-04"
   },
   {
     "model": "opus-4-0",
@@ -1511,7 +1556,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 13,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-05-22"
   },
   {
     "model": "opus-4-1",
@@ -1545,7 +1591,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 12,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-08-05"
   },
   {
     "model": "opus-4-5",
@@ -1579,7 +1626,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 40,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-11-24"
   },
   {
     "model": "opus-4-6",
@@ -1613,7 +1661,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
     "speed_tokens_per_second": 36,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-02-04"
   },
   {
     "model": "opus-4-7",
@@ -1647,7 +1696,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 51,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-16"
   },
   {
     "model": "opus",
@@ -1668,7 +1718,8 @@
     "published_freeflow_samples": 0,
     "published_values_samples": 0,
     "speed_tokens_per_second": null,
-    "speed_source": "unknown"
+    "speed_source": "unknown",
+    "release_date": null
   },
   {
     "model": "qwen3-6-plus",
@@ -1702,7 +1753,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 44.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-04-02"
   },
   {
     "model": "qwen3-coder-plus",
@@ -1736,7 +1788,8 @@
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
     "speed_tokens_per_second": 29.5,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-09-23"
   },
   {
     "model": "sonnet-4-0",
@@ -1770,7 +1823,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 41,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-05-22"
   },
   {
     "model": "sonnet-4-5",
@@ -1804,7 +1858,8 @@
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
     "speed_tokens_per_second": 37,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2025-09-29"
   },
   {
     "model": "sonnet-4-6",
@@ -1838,7 +1893,8 @@
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
     "speed_tokens_per_second": 42,
-    "speed_source": "OpenRouter median"
+    "speed_source": "OpenRouter median",
+    "release_date": "2026-02-17"
   },
   {
     "model": "sonnet",
@@ -1859,6 +1915,7 @@
     "published_freeflow_samples": 0,
     "published_values_samples": 0,
     "speed_tokens_per_second": null,
-    "speed_source": "unknown"
+    "speed_source": "unknown",
+    "release_date": null
   }
 ]

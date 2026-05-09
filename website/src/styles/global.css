@@ -243,6 +243,13 @@ select {
   font-size: 15px;
 }
 
+.release-date {
+  margin: 8px 0 0;
+  color: #918c82;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
 .price-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

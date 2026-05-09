@@ -2,7 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import models from '../generated/models.json';
 
-const completeModels = models.filter((model) => model.status !== 'redirect');
+const completeModels = models
+  .filter((model) => model.status !== 'redirect')
+  .sort((a, b) => (b.release_date || '').localeCompare(a.release_date || '') || a.model.localeCompare(b.model));
 const labs = [...new Set(completeModels.map((model) => model.lab))].sort();
 const families = [...new Set(completeModels.map((model) => model.family))].sort();
 const statuses = [...new Set(completeModels.map((model) => model.status))].sort();
@@ -24,6 +26,16 @@ function speedSourceLabel(model) {
   if (model.speed_source === 'OpenRouter median') return 'OpenRouter';
   if (model.speed_source === 'sample median estimated') return 'sample estimate';
   return 'sample';
+}
+
+function releaseLabel(date) {
+  if (!date) return 'Release date unavailable';
+  return new Date(`${date}T00:00:00Z`).toLocaleDateString('en', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
 }
 ---
 
@@ -72,6 +84,7 @@ function speedSourceLabel(model) {
     <label>
       Sort
       <select id="sortSelect">
+        <option value="release">Newest release</option>
         <option value="model">Model</option>
         <option value="lab">Lab</option>
         <option value="price">Cheapest input</option>
@@ -96,6 +109,7 @@ function speedSourceLabel(model) {
         data-family={model.family}
         data-status={model.status}
         data-search={`${model.model} ${model.lab} ${model.family} ${model.summary}`.toLowerCase()}
+        data-release={model.release_date || ''}
         data-price={model.openrouter?.prompt_per_million ?? 999999}
         data-speed={model.speed_tokens_per_second ?? -1}
         data-samples={model.published_samples}
@@ -108,6 +122,7 @@ function speedSourceLabel(model) {
           </div>
           <h2>{model.model}</h2>
           <p class="summary">{model.summary}</p>
+          <p class="release-date">Released {releaseLabel(model.release_date)}</p>
         </div>
         <div>
           <div class="price-grid">
@@ -183,6 +198,7 @@ function speedSourceLabel(model) {
         if (sort === 'speed') return Number(b.dataset.speed) - Number(a.dataset.speed);
         if (sort === 'samples') return Number(b.dataset.samples) - Number(a.dataset.samples);
         if (sort === 'lab') return `${a.dataset.lab} ${a.dataset.model}`.localeCompare(`${b.dataset.lab} ${b.dataset.model}`);
+        if (sort === 'release') return b.dataset.release.localeCompare(a.dataset.release) || a.dataset.model.localeCompare(b.dataset.model);
         return a.dataset.model.localeCompare(b.dataset.model);
       });
 

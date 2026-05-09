@@ -12,8 +12,20 @@ export function getStaticPaths() {
 }
 
 const { lab } = Astro.props;
-const labModels = models.filter((model) => model.lab === lab && model.status !== 'redirect').sort((a, b) => a.model.localeCompare(b.model));
+const labModels = models
+  .filter((model) => model.lab === lab && model.status !== 'redirect')
+  .sort((a, b) => (b.release_date || '').localeCompare(a.release_date || '') || a.model.localeCompare(b.model));
 const base = import.meta.env.BASE_URL;
+
+function releaseLabel(date) {
+  if (!date) return 'Release date unavailable';
+  return new Date(`${date}T00:00:00Z`).toLocaleDateString('en', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
+}
 ---
 
 <BaseLayout title={`${lab} | Model Personality Browser`}>
@@ -29,6 +41,7 @@ const base = import.meta.env.BASE_URL;
           </div>
           <h2>{model.model}</h2>
           <p class="summary">{model.summary}</p>
+          <p class="release-date">Released {releaseLabel(model.release_date)}</p>
         </div>
       </a>
     ))}
