@@ -22,6 +22,13 @@ function releaseLabel(date) {
     timeZone: 'UTC',
   });
 }
+
+function benchmarkTitle(model) {
+  const score = model.benchmarks?.aaii;
+  if (score === null || score === undefined) return '';
+  const suffix = model.benchmarks?.estimated ? ' (estimated)' : '';
+  return `Artificial Analysis Intelligence Index: ${score}${suffix}`;
+}
 ---
 
 <BaseLayout title={`${family} | Model Personality Browser`}>
@@ -29,17 +36,31 @@ function releaseLabel(date) {
   <p class="lede">Models in the {family} family.</p>
   <section class="model-grid">
     {familyModels.map((model) => (
-      <a class="model-card" href={`${base}models/${model.model}/`}>
-        <div>
-          <div class="card-kicker">
-            <span class="chip">{model.lab}</span>
-            <span class="chip green">{model.family}</span>
+      <article class="model-card">
+        {model.benchmarks?.aaii !== undefined && (
+          <a
+            class="benchmark-score"
+            href={model.benchmarks.url}
+            title={benchmarkTitle(model)}
+            aria-label={benchmarkTitle(model)}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {model.benchmarks.aaii}
+          </a>
+        )}
+        <a class="card-link" href={`${base}models/${model.model}/`}>
+          <div>
+            <div class="card-kicker">
+              <span class="chip">{model.lab}</span>
+              <span class="chip green">{model.family}</span>
+            </div>
+            <h2>{model.model}</h2>
+            <p class="summary">{model.summary}</p>
+            <p class="release-date">Released {releaseLabel(model.release_date)}</p>
           </div>
-          <h2>{model.model}</h2>
-          <p class="summary">{model.summary}</p>
-          <p class="release-date">Released {releaseLabel(model.release_date)}</p>
-        </div>
-      </a>
+        </a>
+      </article>
     ))}
   </section>
 </BaseLayout>

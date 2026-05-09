@@ -32,7 +32,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 18.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2024-12-26"
+    "release_date": "2024-12-26",
+    "benchmarks": {
+      "aaii": 16,
+      "url": "https://artificialanalysis.ai/models/deepseek-v3"
+    }
   },
   {
     "model": "deepseek-r1",
@@ -67,7 +71,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 34,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-01-20"
+    "release_date": "2025-01-20",
+    "benchmarks": {
+      "aaii": 27,
+      "url": "https://artificialanalysis.ai/models/deepseek-r1"
+    }
   },
   {
     "model": "deepseek-v3-0324",
@@ -102,7 +110,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 20,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-03-24"
+    "release_date": "2025-03-24",
+    "benchmarks": {
+      "aaii": 22,
+      "url": "https://artificialanalysis.ai/models/deepseek-v3-0324"
+    }
   },
   {
     "model": "deepseek-v3-2",
@@ -137,7 +149,11 @@
     "published_values_samples": 1440,
     "speed_tokens_per_second": 19,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-12-01"
+    "release_date": "2025-12-01",
+    "benchmarks": {
+      "aaii": 32,
+      "url": "https://artificialanalysis.ai/models/deepseek-v3-2"
+    }
   },
   {
     "model": "deepseek-v3",
@@ -172,7 +188,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 18.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2024-12-26"
+    "release_date": "2024-12-26",
+    "benchmarks": {
+      "aaii": 16,
+      "url": "https://artificialanalysis.ai/models/deepseek-v3"
+    }
   },
   {
     "model": "deepseek-v4-pro",
@@ -207,7 +227,11 @@
     "published_values_samples": 840,
     "speed_tokens_per_second": 28,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-24"
+    "release_date": "2026-04-24",
+    "benchmarks": {
+      "aaii": 52,
+      "url": "https://artificialanalysis.ai/models/deepseek-v4-pro"
+    }
   },
   {
     "model": "gemini-2-5-pro",
@@ -242,7 +266,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 82.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-03-25"
+    "release_date": "2025-03-25",
+    "benchmarks": {
+      "aaii": 35,
+      "url": "https://artificialanalysis.ai/models/gemini-2-5-pro"
+    }
   },
   {
     "model": "gemini-3-1-pro",
@@ -277,7 +305,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 75.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-02-19"
+    "release_date": "2026-02-19",
+    "benchmarks": {
+      "aaii": 57,
+      "url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview"
+    }
   },
   {
     "model": "glm-4-5",
@@ -372,7 +404,11 @@
     "published_values_samples": 720,
     "speed_tokens_per_second": 30,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-09-30"
+    "release_date": "2025-09-30",
+    "benchmarks": {
+      "aaii": 30,
+      "url": "https://artificialanalysis.ai/models/glm-4-6"
+    }
   },
   {
     "model": "glm-4-7",
@@ -407,7 +443,11 @@
     "published_values_samples": 1320,
     "speed_tokens_per_second": 31,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-12-22"
+    "release_date": "2025-12-22",
+    "benchmarks": {
+      "aaii": 42,
+      "url": "https://artificialanalysis.ai/models/glm-4-7"
+    }
   },
   {
     "model": "glm-5-1-coding",
@@ -467,7 +507,11 @@
     "published_values_samples": 1800,
     "speed_tokens_per_second": 30,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-07"
+    "release_date": "2026-04-07",
+    "benchmarks": {
+      "aaii": 51,
+      "url": "https://artificialanalysis.ai/models/glm-5-1"
+    }
   },
   {
     "model": "gpt-3-5-turbo",
@@ -537,7 +581,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 50,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-04-14"
+    "release_date": "2025-04-14",
+    "benchmarks": {
+      "aaii": 26,
+      "url": "https://artificialanalysis.ai/models/gpt-4-1"
+    }
   },
   {
     "model": "gpt-4-turbo",
@@ -572,7 +620,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 21.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2024-04-09"
+    "release_date": "2024-04-09",
+    "benchmarks": {
+      "aaii": 14,
+      "url": "https://artificialanalysis.ai/models/gpt-4-turbo"
+    }
   },
   {
     "model": "gpt-4",
@@ -607,7 +659,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 24.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2023-03-14"
+    "release_date": "2023-03-14",
+    "benchmarks": {
+      "aaii": 13,
+      "url": "https://artificialanalysis.ai/models/gpt-4"
+    }
   },
   {
     "model": "gpt-4o",
@@ -642,7 +698,11 @@
     "published_values_samples": 360,
     "speed_tokens_per_second": 47,
     "speed_source": "OpenRouter median",
-    "release_date": "2024-05-13"
+    "release_date": "2024-05-13",
+    "benchmarks": {
+      "aaii": 17,
+      "url": "https://artificialanalysis.ai/models/gpt-4o"
+    }
   },
   {
     "model": "gpt-5-1-codex",
@@ -677,7 +737,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 38,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-11-13"
+    "release_date": "2025-11-13",
+    "benchmarks": {
+      "aaii": 43,
+      "url": "https://artificialanalysis.ai/models/gpt-5-1-codex"
+    }
   },
   {
     "model": "gpt-5-1",
@@ -712,7 +776,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 51.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-11-13"
+    "release_date": "2025-11-13",
+    "benchmarks": {
+      "aaii": 48,
+      "url": "https://artificialanalysis.ai/models/gpt-5-1"
+    }
   },
   {
     "model": "gpt-5-2-codex",
@@ -747,7 +815,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 49,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-01-14"
+    "release_date": "2026-01-14",
+    "benchmarks": {
+      "aaii": 49,
+      "url": "https://artificialanalysis.ai/models/gpt-5-2-codex"
+    }
   },
   {
     "model": "gpt-5-2",
@@ -782,7 +854,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 46,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-12-10"
+    "release_date": "2025-12-10",
+    "benchmarks": {
+      "aaii": 51,
+      "url": "https://artificialanalysis.ai/models/gpt-5-2"
+    }
   },
   {
     "model": "gpt-5-3-codex",
@@ -817,7 +893,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 49,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-02-24"
+    "release_date": "2026-02-24",
+    "benchmarks": {
+      "aaii": 54,
+      "url": "https://artificialanalysis.ai/models/gpt-5-3-codex"
+    }
   },
   {
     "model": "gpt-5-3",
@@ -887,7 +967,11 @@
     "published_values_samples": 360,
     "speed_tokens_per_second": 39,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-03-05"
+    "release_date": "2026-03-05",
+    "benchmarks": {
+      "aaii": 57,
+      "url": "https://artificialanalysis.ai/models/gpt-5-4"
+    }
   },
   {
     "model": "gpt-5-5-pro",
@@ -957,7 +1041,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 39,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-24"
+    "release_date": "2026-04-24",
+    "benchmarks": {
+      "aaii": 60,
+      "url": "https://artificialanalysis.ai/models/gpt-5-5"
+    }
   },
   {
     "model": "gpt-5-codex",
@@ -992,7 +1080,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 47,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-09-23"
+    "release_date": "2025-09-23",
+    "benchmarks": {
+      "aaii": 45,
+      "url": "https://artificialanalysis.ai/models/gpt-5-codex"
+    }
   },
   {
     "model": "gpt-5",
@@ -1027,7 +1119,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 58,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-08-07"
+    "release_date": "2025-08-07",
+    "benchmarks": {
+      "aaii": 45,
+      "url": "https://artificialanalysis.ai/models/gpt-5"
+    }
   },
   {
     "model": "grok-3",
@@ -1062,7 +1158,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 23.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-06-10"
+    "release_date": "2025-06-10",
+    "benchmarks": {
+      "aaii": 25,
+      "url": "https://artificialanalysis.ai/models/grok-3"
+    }
   },
   {
     "model": "grok-4-2",
@@ -1122,7 +1222,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 58.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-03-31"
+    "release_date": "2026-03-31",
+    "benchmarks": {
+      "aaii": 49,
+      "url": "https://artificialanalysis.ai/models/grok-4-20"
+    }
   },
   {
     "model": "grok-4-3",
@@ -1157,7 +1261,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 66.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-30"
+    "release_date": "2026-04-30",
+    "benchmarks": {
+      "aaii": 53,
+      "url": "https://artificialanalysis.ai/models/grok-4-3"
+    }
   },
   {
     "model": "grok-4",
@@ -1192,7 +1300,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 33,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-07-09"
+    "release_date": "2025-07-09",
+    "benchmarks": {
+      "aaii": 42,
+      "url": "https://artificialanalysis.ai/models/grok-4"
+    }
   },
   {
     "model": "haiku-4-5",
@@ -1227,7 +1339,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 69,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-10-15"
+    "release_date": "2025-10-15",
+    "benchmarks": {
+      "aaii": 31,
+      "url": "https://artificialanalysis.ai/models/claude-4-5-haiku"
+    }
   },
   {
     "model": "kimi-coding",
@@ -1287,7 +1403,11 @@
     "published_values_samples": 480,
     "speed_tokens_per_second": 11.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-09-04"
+    "release_date": "2025-09-04",
+    "benchmarks": {
+      "aaii": 31,
+      "url": "https://artificialanalysis.ai/models/kimi-k2-0905"
+    }
   },
   {
     "model": "kimi-k2-5",
@@ -1322,7 +1442,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 31.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-01-27"
+    "release_date": "2026-01-27",
+    "benchmarks": {
+      "aaii": 47,
+      "url": "https://artificialanalysis.ai/models/kimi-k2-5"
+    }
   },
   {
     "model": "kimi-k2-6",
@@ -1357,7 +1481,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 28,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-20"
+    "release_date": "2026-04-20",
+    "benchmarks": {
+      "aaii": 54,
+      "url": "https://artificialanalysis.ai/models/kimi-k2-6"
+    }
   },
   {
     "model": "kimi-k2-thinking",
@@ -1392,7 +1520,11 @@
     "published_values_samples": 360,
     "speed_tokens_per_second": 36,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-11-06"
+    "release_date": "2025-11-06",
+    "benchmarks": {
+      "aaii": 41,
+      "url": "https://artificialanalysis.ai/models/kimi-k2-thinking"
+    }
   },
   {
     "model": "kimi-k2",
@@ -1427,7 +1559,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 24,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-07-11"
+    "release_date": "2025-07-11",
+    "benchmarks": {
+      "aaii": 26,
+      "url": "https://artificialanalysis.ai/models/kimi-k2"
+    }
   },
   {
     "model": "minimax-m2-7",
@@ -1462,7 +1598,11 @@
     "published_values_samples": 360,
     "speed_tokens_per_second": 42,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-03-18"
+    "release_date": "2026-03-18",
+    "benchmarks": {
+      "aaii": 50,
+      "url": "https://artificialanalysis.ai/models/minimax-m2-7"
+    }
   },
   {
     "model": "minimax-m2",
@@ -1497,7 +1637,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 74.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-10-23"
+    "release_date": "2025-10-23",
+    "benchmarks": {
+      "aaii": 36,
+      "url": "https://artificialanalysis.ai/models/minimax-m2"
+    }
   },
   {
     "model": "opus-3",
@@ -1522,7 +1666,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 27.102864917994992,
     "speed_source": "sample median estimated",
-    "release_date": "2024-03-04"
+    "release_date": "2024-03-04",
+    "benchmarks": {
+      "aaii": 18,
+      "url": "https://artificialanalysis.ai/models/claude-3-opus"
+    }
   },
   {
     "model": "opus-4-0",
@@ -1557,7 +1705,12 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 13,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-05-22"
+    "release_date": "2025-05-22",
+    "benchmarks": {
+      "aaii": 33,
+      "url": "https://artificialanalysis.ai/models/claude-4-opus",
+      "estimated": true
+    }
   },
   {
     "model": "opus-4-1",
@@ -1592,7 +1745,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 12,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-08-05"
+    "release_date": "2025-08-05",
+    "benchmarks": {
+      "aaii": 36,
+      "url": "https://artificialanalysis.ai/models/claude-4-1-opus"
+    }
   },
   {
     "model": "opus-4-5",
@@ -1627,7 +1784,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 40,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-11-24"
+    "release_date": "2025-11-24",
+    "benchmarks": {
+      "aaii": 43,
+      "url": "https://artificialanalysis.ai/models/claude-opus-4-5"
+    }
   },
   {
     "model": "opus-4-6",
@@ -1662,7 +1823,11 @@
     "published_values_samples": 360,
     "speed_tokens_per_second": 36,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-02-04"
+    "release_date": "2026-02-04",
+    "benchmarks": {
+      "aaii": 46,
+      "url": "https://artificialanalysis.ai/models/claude-opus-4-6"
+    }
   },
   {
     "model": "opus-4-7",
@@ -1697,7 +1862,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 51,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-16"
+    "release_date": "2026-04-16",
+    "benchmarks": {
+      "aaii": 57,
+      "url": "https://artificialanalysis.ai/models/claude-opus-4-7"
+    }
   },
   {
     "model": "opus",
@@ -1754,7 +1923,11 @@
     "published_values_samples": 120,
     "speed_tokens_per_second": 44.5,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-04-02"
+    "release_date": "2026-04-02",
+    "benchmarks": {
+      "aaii": 50,
+      "url": "https://artificialanalysis.ai/models/qwen3-6-plus"
+    }
   },
   {
     "model": "qwen3-coder-plus",
@@ -1824,7 +1997,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 41,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-05-22"
+    "release_date": "2025-05-22",
+    "benchmarks": {
+      "aaii": 33,
+      "url": "https://artificialanalysis.ai/models/claude-4-sonnet"
+    }
   },
   {
     "model": "sonnet-4-5",
@@ -1859,7 +2036,11 @@
     "published_values_samples": 240,
     "speed_tokens_per_second": 37,
     "speed_source": "OpenRouter median",
-    "release_date": "2025-09-29"
+    "release_date": "2025-09-29",
+    "benchmarks": {
+      "aaii": 37,
+      "url": "https://artificialanalysis.ai/models/claude-4-5-sonnet"
+    }
   },
   {
     "model": "sonnet-4-6",
@@ -1894,7 +2075,11 @@
     "published_values_samples": 360,
     "speed_tokens_per_second": 42,
     "speed_source": "OpenRouter median",
-    "release_date": "2026-02-17"
+    "release_date": "2026-02-17",
+    "benchmarks": {
+      "aaii": 44,
+      "url": "https://artificialanalysis.ai/models/claude-sonnet-4-6"
+    }
   },
   {
     "model": "sonnet",

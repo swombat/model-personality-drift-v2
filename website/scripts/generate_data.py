@@ -347,6 +347,8 @@ def main() -> None:
     summaries = json.loads(summaries_path.read_text()) if summaries_path.exists() else {}
     release_dates_path = GENERATED / "model-release-dates.json"
     release_dates = json.loads(release_dates_path.read_text()) if release_dates_path.exists() else {}
+    benchmarks_path = GENERATED / "model-benchmarks.json"
+    benchmarks = json.loads(benchmarks_path.read_text()) if benchmarks_path.exists() else {}
     models = []
     for path in sorted(ANALYSES.glob("*.md")):
         text = path.read_text()
@@ -369,6 +371,7 @@ def main() -> None:
             "composite_register": meta.get("composite_register", 0),
             "summary": summaries.get(model, "Personality summary pending"),
             "release_date": release_dates.get(model),
+            "benchmarks": benchmarks.get(model),
             "analysis_markdown": body.strip(),
             "openrouter": openrouter_for_model(model),
         })

@@ -1,0 +1,187 @@
+{
+  "deepseek-chat": {
+    "aaii": 16,
+    "url": "https://artificialanalysis.ai/models/deepseek-v3"
+  },
+  "deepseek-r1": {
+    "aaii": 27,
+    "url": "https://artificialanalysis.ai/models/deepseek-r1"
+  },
+  "deepseek-v3": {
+    "aaii": 16,
+    "url": "https://artificialanalysis.ai/models/deepseek-v3"
+  },
+  "deepseek-v3-0324": {
+    "aaii": 22,
+    "url": "https://artificialanalysis.ai/models/deepseek-v3-0324"
+  },
+  "deepseek-v3-2": {
+    "aaii": 32,
+    "url": "https://artificialanalysis.ai/models/deepseek-v3-2"
+  },
+  "deepseek-v4-pro": {
+    "aaii": 52,
+    "url": "https://artificialanalysis.ai/models/deepseek-v4-pro"
+  },
+  "gemini-2-5-pro": {
+    "aaii": 35,
+    "url": "https://artificialanalysis.ai/models/gemini-2-5-pro"
+  },
+  "gemini-3-1-pro": {
+    "aaii": 57,
+    "url": "https://artificialanalysis.ai/models/gemini-3-1-pro-preview"
+  },
+  "glm-4-6": {
+    "aaii": 30,
+    "url": "https://artificialanalysis.ai/models/glm-4-6"
+  },
+  "glm-4-7": {
+    "aaii": 42,
+    "url": "https://artificialanalysis.ai/models/glm-4-7"
+  },
+  "glm-5-1": {
+    "aaii": 51,
+    "url": "https://artificialanalysis.ai/models/glm-5-1"
+  },
+  "gpt-4": {
+    "aaii": 13,
+    "url": "https://artificialanalysis.ai/models/gpt-4"
+  },
+  "gpt-4-1": {
+    "aaii": 26,
+    "url": "https://artificialanalysis.ai/models/gpt-4-1"
+  },
+  "gpt-4-turbo": {
+    "aaii": 14,
+    "url": "https://artificialanalysis.ai/models/gpt-4-turbo"
+  },
+  "gpt-4o": {
+    "aaii": 17,
+    "url": "https://artificialanalysis.ai/models/gpt-4o"
+  },
+  "gpt-5": {
+    "aaii": 45,
+    "url": "https://artificialanalysis.ai/models/gpt-5"
+  },
+  "gpt-5-codex": {
+    "aaii": 45,
+    "url": "https://artificialanalysis.ai/models/gpt-5-codex"
+  },
+  "gpt-5-1": {
+    "aaii": 48,
+    "url": "https://artificialanalysis.ai/models/gpt-5-1"
+  },
+  "gpt-5-1-codex": {
+    "aaii": 43,
+    "url": "https://artificialanalysis.ai/models/gpt-5-1-codex"
+  },
+  "gpt-5-2": {
+    "aaii": 51,
+    "url": "https://artificialanalysis.ai/models/gpt-5-2"
+  },
+  "gpt-5-2-codex": {
+    "aaii": 49,
+    "url": "https://artificialanalysis.ai/models/gpt-5-2-codex"
+  },
+  "gpt-5-3-codex": {
+    "aaii": 54,
+    "url": "https://artificialanalysis.ai/models/gpt-5-3-codex"
+  },
+  "gpt-5-4": {
+    "aaii": 57,
+    "url": "https://artificialanalysis.ai/models/gpt-5-4"
+  },
+  "gpt-5-5": {
+    "aaii": 60,
+    "url": "https://artificialanalysis.ai/models/gpt-5-5"
+  },
+  "grok-3": {
+    "aaii": 25,
+    "url": "https://artificialanalysis.ai/models/grok-3"
+  },
+  "grok-4": {
+    "aaii": 42,
+    "url": "https://artificialanalysis.ai/models/grok-4"
+  },
+  "grok-4-20": {
+    "aaii": 49,
+    "url": "https://artificialanalysis.ai/models/grok-4-20"
+  },
+  "grok-4-3": {
+    "aaii": 53,
+    "url": "https://artificialanalysis.ai/models/grok-4-3"
+  },
+  "haiku-4-5": {
+    "aaii": 31,
+    "url": "https://artificialanalysis.ai/models/claude-4-5-haiku"
+  },
+  "kimi-k2": {
+    "aaii": 26,
+    "url": "https://artificialanalysis.ai/models/kimi-k2"
+  },
+  "kimi-k2-0905": {
+    "aaii": 31,
+    "url": "https://artificialanalysis.ai/models/kimi-k2-0905"
+  },
+  "kimi-k2-5": {
+    "aaii": 47,
+    "url": "https://artificialanalysis.ai/models/kimi-k2-5"
+  },
+  "kimi-k2-6": {
+    "aaii": 54,
+    "url": "https://artificialanalysis.ai/models/kimi-k2-6"
+  },
+  "kimi-k2-thinking": {
+    "aaii": 41,
+    "url": "https://artificialanalysis.ai/models/kimi-k2-thinking"
+  },
+  "minimax-m2": {
+    "aaii": 36,
+    "url": "https://artificialanalysis.ai/models/minimax-m2"
+  },
+  "minimax-m2-7": {
+    "aaii": 50,
+    "url": "https://artificialanalysis.ai/models/minimax-m2-7"
+  },
+  "opus-3": {
+    "aaii": 18,
+    "url": "https://artificialanalysis.ai/models/claude-3-opus"
+  },
+  "opus-4-0": {
+    "aaii": 33,
+    "url": "https://artificialanalysis.ai/models/claude-4-opus",
+    "estimated": true
+  },
+  "opus-4-1": {
+    "aaii": 36,
+    "url": "https://artificialanalysis.ai/models/claude-4-1-opus"
+  },
+  "opus-4-5": {
+    "aaii": 43,
+    "url": "https://artificialanalysis.ai/models/claude-opus-4-5"
+  },
+  "opus-4-6": {
+    "aaii": 46,
+    "url": "https://artificialanalysis.ai/models/claude-opus-4-6"
+  },
+  "opus-4-7": {
+    "aaii": 57,
+    "url": "https://artificialanalysis.ai/models/claude-opus-4-7"
+  },
+  "qwen3-6-plus": {
+    "aaii": 50,
+    "url": "https://artificialanalysis.ai/models/qwen3-6-plus"
+  },
+  "sonnet-4-0": {
+    "aaii": 33,
+    "url": "https://artificialanalysis.ai/models/claude-4-sonnet"
+  },
+  "sonnet-4-5": {
+    "aaii": 37,
+    "url": "https://artificialanalysis.ai/models/claude-4-5-sonnet"
+  },
+  "sonnet-4-6": {
+    "aaii": 44,
+    "url": "https://artificialanalysis.ai/models/claude-sonnet-4-6"
+  }
+}

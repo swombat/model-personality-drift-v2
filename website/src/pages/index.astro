@@ -37,6 +37,13 @@ function releaseLabel(date) {
     timeZone: 'UTC',
   });
 }
+
+function benchmarkTitle(model) {
+  const score = model.benchmarks?.aaii;
+  if (score === null || score === undefined) return '';
+  const suffix = model.benchmarks?.estimated ? ' (estimated)' : '';
+  return `Artificial Analysis Intelligence Index: ${score}${suffix}`;
+}
 ---
 
 <BaseLayout title="Model Personality Browser">
@@ -101,9 +108,8 @@ function releaseLabel(date) {
 
   <section id="modelGrid" class="model-grid">
     {completeModels.map((model) => (
-      <a
+      <article
         class="model-card"
-        href={`${base}models/${model.model}/`}
         data-model={model.model}
         data-lab={model.lab}
         data-family={model.family}
@@ -114,50 +120,64 @@ function releaseLabel(date) {
         data-speed={model.speed_tokens_per_second ?? -1}
         data-samples={model.published_samples}
       >
-        <div>
-          <div class="card-kicker">
-            <span class="chip">{model.lab}</span>
-            <span class="chip green">{model.family}</span>
-            <span class="chip amber">{model.status}</span>
-          </div>
-          <h2>{model.model}</h2>
-          <p class="summary">{model.summary}</p>
-          <p class="release-date">Released {releaseLabel(model.release_date)}</p>
-        </div>
-        <div>
-          <div class="price-grid">
-            <div class="price-box">
-              <b>{priceLabel(model.openrouter?.prompt_per_million)}</b>
-              <span>input tokens</span>
+        {model.benchmarks?.aaii !== undefined && (
+          <a
+            class="benchmark-score"
+            href={model.benchmarks.url}
+            title={benchmarkTitle(model)}
+            aria-label={benchmarkTitle(model)}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {model.benchmarks.aaii}
+          </a>
+        )}
+        <a class="card-link" href={`${base}models/${model.model}/`}>
+          <div>
+            <div class="card-kicker">
+              <span class="chip">{model.lab}</span>
+              <span class="chip green">{model.family}</span>
+              <span class="chip amber">{model.status}</span>
             </div>
-            <div class="price-box">
-              <b>{priceLabel(model.openrouter?.completion_per_million)}</b>
-              <span>output tokens</span>
-            </div>
+            <h2>{model.model}</h2>
+            <p class="summary">{model.summary}</p>
+            <p class="release-date">Released {releaseLabel(model.release_date)}</p>
           </div>
-          <div class="price-grid">
-            <div class="price-box">
-              <div class="speed-stack">
-                <div class="speed-line">
-                  <b>{speedLabel(model.speed_tokens_per_second)}</b>
-                  <span class="speed-label">median</span>
-                </div>
-                {model.openrouter?.max_throughput && (
-                  <div class="speed-line">
-                    <b>{speedLabel(model.openrouter.max_throughput)}</b>
-                    <span class="speed-label">max</span>
-                  </div>
-                )}
+          <div>
+            <div class="price-grid">
+              <div class="price-box">
+                <b>{priceLabel(model.openrouter?.prompt_per_million)}</b>
+                <span>input tokens</span>
               </div>
-              <span>{speedSourceLabel(model)}</span>
+              <div class="price-box">
+                <b>{priceLabel(model.openrouter?.completion_per_million)}</b>
+                <span>output tokens</span>
+              </div>
             </div>
-            <div class="price-box">
-              <b>{model.published_samples.toLocaleString()}</b>
-              <span>samples</span>
+            <div class="price-grid">
+              <div class="price-box">
+                <div class="speed-stack">
+                  <div class="speed-line">
+                    <b>{speedLabel(model.speed_tokens_per_second)}</b>
+                    <span class="speed-label">median</span>
+                  </div>
+                  {model.openrouter?.max_throughput && (
+                    <div class="speed-line">
+                      <b>{speedLabel(model.openrouter.max_throughput)}</b>
+                      <span class="speed-label">max</span>
+                    </div>
+                  )}
+                </div>
+                <span>{speedSourceLabel(model)}</span>
+              </div>
+              <div class="price-box">
+                <b>{model.published_samples.toLocaleString()}</b>
+                <span>samples</span>
+              </div>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </article>
     ))}
   </section>
 
