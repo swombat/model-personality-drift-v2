@@ -19,6 +19,12 @@ function speedLabel(value) {
   if (!value) return 'unknown';
   return `${Math.round(value)} tok/s`;
 }
+
+function maxSpeedLabel(model) {
+  const speed = model.openrouter?.max_throughput;
+  if (!speed) return '';
+  return `max ${Math.round(speed)} tok/s`;
+}
 ---
 
 <BaseLayout title="Model Personality Browser">
@@ -116,8 +122,11 @@ function speedLabel(value) {
           </div>
           <div class="price-grid">
             <div class="price-box">
-              <b>{speedLabel(model.speed_tokens_per_second)}</b>
-              <span>{model.speed_source === 'OpenRouter recent' ? 'speed at selected price' : model.speed_source === 'sample median estimated' ? 'estimated sample speed' : 'sample median speed'}</span>
+              <div class="speed-line">
+                <b>{speedLabel(model.speed_tokens_per_second)}</b>
+                {maxSpeedLabel(model) && <span class="speed-max">{maxSpeedLabel(model)}</span>}
+              </div>
+              <span>{model.speed_source === 'sample median estimated' ? 'estimated median speed' : 'median speed'}</span>
             </div>
             <div class="price-box">
               <b>{model.published_samples.toLocaleString()}</b>

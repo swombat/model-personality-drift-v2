@@ -139,6 +139,46 @@ def fetch_json(url: str) -> dict | None:
         return None
 
 
+def endpoint_permaslug(endpoint: dict) -> str | None:
+    name = endpoint.get("name") or ""
+    if " | " not in name:
+        return None
+    return name.split(" | ", 1)[1]
+
+
+def openrouter_max_throughput(permaslug: str | None) -> dict:
+    if not permaslug:
+        return {"max_throughput": None, "max_throughput_provider": None}
+    encoded = urllib.parse.quote(permaslug, safe="")
+    endpoint_data = fetch_json(
+        f"https://openrouter.ai/api/frontend/stats/endpoint?permaslug={encoded}&variant=standard"
+    )
+    id_to_provider = {}
+    for endpoint in (endpoint_data or {}).get("data", []):
+        endpoint_id = endpoint.get("id")
+        if endpoint_id:
+            id_to_provider[endpoint_id] = endpoint.get("provider_name")
+    throughput_data = fetch_json(
+        f"https://openrouter.ai/api/frontend/stats/throughput-comparison?permaslug={encoded}"
+    )
+    best = None
+    for row in (throughput_data or {}).get("data", []):
+        for endpoint_id, value in (row.get("y") or {}).items():
+            if value is None:
+                continue
+            if best is None or value > best["value"]:
+                best = {
+                    "value": value,
+                    "provider": id_to_provider.get(endpoint_id),
+                    "date": row.get("x"),
+                }
+    return {
+        "max_throughput": best["value"] if best else None,
+        "max_throughput_provider": best["provider"] if best else None,
+        "max_throughput_date": best["date"] if best else None,
+    }
+
+
 def openrouter_for_model(model: str) -> dict | None:
     slug = MODEL_SLUGS.get(model)
     if not slug:
@@ -169,6 +209,8 @@ def openrouter_for_model(model: str) -> dict | None:
             return {"id": slug, "matched": True}
         if math.isnan(prompt) or math.isnan(completion):
             return {"id": slug, "matched": True}
+        permaslug = endpoint_permaslug(endpoints[0]) if endpoints else None
+        max_throughput = openrouter_max_throughput(permaslug)
         return {
             "id": slug,
             "matched": True,
@@ -176,9 +218,11 @@ def openrouter_for_model(model: str) -> dict | None:
             "prompt_per_million": prompt * 1_000_000,
             "completion_per_million": completion * 1_000_000,
             "throughput": None,
+            **max_throughput,
             "latency": None,
         }
     _, endpoint, prompt, completion = min(priced, key=lambda row: row[0])
+    max_throughput = openrouter_max_throughput(endpoint_permaslug(endpoint))
     return {
         "id": slug,
         "matched": True,
@@ -187,6 +231,7 @@ def openrouter_for_model(model: str) -> dict | None:
         "prompt_per_million": prompt * 1_000_000,
         "completion_per_million": completion * 1_000_000,
         "throughput": endpoint.get("throughput_last_30m") or endpoint.get("throughput_last_5m"),
+        **max_throughput,
         "latency": endpoint.get("latency_last_30m") or endpoint.get("latency_last_5m"),
     }
 
@@ -327,12 +372,9 @@ def main() -> None:
         model["published_samples"] = model_counts["total"]
         model["published_freeflow_samples"] = model_counts["freeflow"]
         model["published_values_samples"] = model_counts["values"]
-        openrouter_speed = (model.get("openrouter") or {}).get("throughput")
         sample_speed = model_counts.get("median_tokens_per_second")
-        model["speed_tokens_per_second"] = openrouter_speed or sample_speed
-        if openrouter_speed:
-            model["speed_source"] = "OpenRouter recent"
-        elif sample_speed and model_counts.get("speed_is_estimated"):
+        model["speed_tokens_per_second"] = sample_speed
+        if sample_speed and model_counts.get("speed_is_estimated"):
             model["speed_source"] = "sample median estimated"
         elif sample_speed:
             model["speed_source"] = "sample median"

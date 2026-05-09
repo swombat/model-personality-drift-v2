@@ -265,6 +265,23 @@ select {
   font-size: 12px;
 }
 
+.speed-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.speed-line b {
+  display: inline;
+}
+
+.speed-line .speed-max {
+  color: #918c82;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .section-title {
   display: flex;
   align-items: center;
