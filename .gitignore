@@ -25,3 +25,9 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+
+# Website build artifacts
+website/node_modules/
+website/dist/
+.astro/
+.superdesign/

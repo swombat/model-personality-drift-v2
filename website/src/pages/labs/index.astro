@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import models from '../../generated/models.json';
+
+const labs = [...new Set(models.filter((model) => model.status !== 'redirect').map((model) => model.lab))].sort();
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Labs | Model Personality Browser">
+  <h1>Labs</h1>
+  <p class="lede">Browse models grouped by lab.</p>
+  <section class="model-grid">
+    {labs.map((lab) => {
+      const labModels = models.filter((model) => model.lab === lab && model.status !== 'redirect');
+      const samples = labModels.reduce((sum, model) => sum + model.published_samples, 0);
+      return (
+        <a class="model-card" href={`${base}labs/${encodeURIComponent(lab.toLowerCase().replaceAll(' ', '-').replaceAll('.', ''))}/`}>
+          <div>
+            <span class="chip">{lab}</span>
+            <h2>{lab}</h2>
+            <p class="summary">{labModels.length} models, {samples.toLocaleString()} samples.</p>
+          </div>
+        </a>
+      );
+    })}
+  </section>
+</BaseLayout>

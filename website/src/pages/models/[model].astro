@@ -1,0 +1,59 @@
+---
+import { marked } from 'marked';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import models from '../../generated/models.json';
+
+export function getStaticPaths() {
+  return models
+    .filter((model) => model.status !== 'redirect')
+    .map((model) => ({ params: { model: model.model }, props: { model } }));
+}
+
+const { model } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const html = marked.parse(model.analysis_markdown || '');
+
+function priceLabel(value) {
+  if (value === null || value === undefined) return 'unknown';
+  if (value === 0) return 'free';
+  return `$${value.toFixed(value < 0.01 ? 3 : 2)}/M`;
+}
+---
+
+<BaseLayout title={`${model.model} | Model Personality Browser`} description={model.summary}>
+  <section class="model-layout">
+    <article class="article">
+      <div class="card-kicker">
+        <span class="chip">{model.lab}</span>
+        <span class="chip green">{model.family}</span>
+        <span class="chip amber">{model.status}</span>
+      </div>
+      <h1>{model.model}</h1>
+      <p class="lede">{model.summary}</p>
+      <div set:html={html} />
+    </article>
+
+    <aside class="side-panel" aria-label="Model metadata">
+      <div class="panel">
+        <h2>Model</h2>
+        <div class="table-list">
+          <div><b>Lab</b><br /><span>{model.lab}</span></div>
+          <div><b>Family</b><br /><span>{model.family}</span></div>
+          <div><b>Published freeflow samples</b><br /><span>{model.published_freeflow_samples.toLocaleString()}</span></div>
+          <div><b>Published values samples</b><br /><span>{model.published_values_samples.toLocaleString()}</span></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>OpenRouter</h2>
+        <div class="table-list">
+          <div><b>Matched model</b><br /><span>{model.openrouter?.id || 'No match'}</span></div>
+          <div><b>Input</b><br /><span>{priceLabel(model.openrouter?.prompt_per_million)}</span></div>
+          <div><b>Output</b><br /><span>{priceLabel(model.openrouter?.completion_per_million)}</span></div>
+          <div><b>Speed</b><br /><span>{model.openrouter?.throughput ? `${Math.round(model.openrouter.throughput)} tok/s` : 'unknown'}</span></div>
+          <div><b>Provider</b><br /><span>{model.openrouter?.provider || 'unknown'}</span></div>
+        </div>
+      </div>
+      <a class="button-link" href={`${base}samples/${model.model}/`}>Browse samples</a>
+    </aside>
+  </section>
+</BaseLayout>

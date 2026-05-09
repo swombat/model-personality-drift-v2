@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import models from '../../generated/models.json';
+
+const families = [...new Set(models.filter((model) => model.status !== 'redirect').map((model) => model.family))].sort();
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Families | Model Personality Browser">
+  <h1>Families</h1>
+  <p class="lede">Browse models grouped by model family.</p>
+  <section class="model-grid">
+    {families.map((family) => {
+      const familyModels = models.filter((model) => model.family === family && model.status !== 'redirect');
+      const labs = [...new Set(familyModels.map((model) => model.lab))].sort();
+      return (
+        <a class="model-card" href={`${base}families/${family}/`}>
+          <div>
+            <span class="chip green">{family}</span>
+            <h2>{family}</h2>
+            <p class="summary">{familyModels.length} models across {labs.join(', ')}.</p>
+          </div>
+        </a>
+      );
+    })}
+  </section>
+</BaseLayout>

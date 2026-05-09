@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import models from '../../generated/models.json';
+
+export function getStaticPaths() {
+  return models
+    .filter((model) => model.status !== 'redirect')
+    .map((model) => ({ params: { model: model.model }, props: { model } }));
+}
+
+const { model } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const sampleUrl = `${base}data/samples/${model.model}.json`;
+---
+
+<BaseLayout title={`${model.model} samples | Model Personality Browser`} description={`Browse source samples for ${model.model}.`}>
+  <section class="hero">
+    <div>
+      <div class="card-kicker">
+        <span class="chip">{model.lab}</span>
+        <span class="chip green">{model.family}</span>
+      </div>
+      <h1>{model.model} samples</h1>
+      <p class="lede">Freeflow and values samples rendered as readable prose, with filters for condition, corpus type, cell, provider, and text search.</p>
+    </div>
+    <div class="stats-strip">
+      <div class="stat"><b>{model.published_freeflow_samples.toLocaleString()}</b><span>freeflow</span></div>
+      <div class="stat"><b>{model.published_values_samples.toLocaleString()}</b><span>values</span></div>
+      <div class="stat"><b>{model.published_samples.toLocaleString()}</b><span>total</span></div>
+    </div>
+  </section>
+
+  <section class="toolbar" aria-label="Sample filters">
+    <label>
+      Search
+      <input id="sampleSearch" type="search" placeholder="Prompt, response, provider..." />
+    </label>
+    <label>
+      Type
+      <select id="typeFilter">
+        <option value="">All types</option>
+      </select>
+    </label>
+    <label>
+      Condition
+      <select id="conditionFilter">
+        <option value="">All conditions</option>
+      </select>
+    </label>
+    <label>
+      Cell
+      <select id="cellFilter">
+        <option value="">All cells</option>
+      </select>
+    </label>
+    <label>
+      Sort
+      <select id="sampleSort">
+        <option value="sample">Sample</option>
+        <option value="type">Type</option>
+        <option value="cost">Highest cost</option>
+        <option value="duration">Slowest</option>
+      </select>
+    </label>
+  </section>
+
+  <div class="section-title">
+    <h2>Samples</h2>
+    <span id="sampleCount" class="chip amber">Loading</span>
+  </div>
+
+  <section id="sampleList" class="sample-list" data-src={sampleUrl}></section>
+  <p id="emptyState" class="empty hidden">No samples match the current filters.</p>
+
+  <script>
+    const list = document.getElementById('sampleList');
+    const src = list.dataset.src;
+    const search = document.getElementById('sampleSearch');
+    const typeFilter = document.getElementById('typeFilter');
+    const conditionFilter = document.getElementById('conditionFilter');
+    const cellFilter = document.getElementById('cellFilter');
+    const sampleSort = document.getElementById('sampleSort');
+    const sampleCount = document.getElementById('sampleCount');
+    const emptyState = document.getElementById('emptyState');
+    let samples = [];
+    let rendered = [];
+
+    function addOptions(select, values) {
+      values.filter(Boolean).sort().forEach((value) => {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = value;
+        select.appendChild(option);
+      });
+    }
+
+    function renderSample(sample) {
+      const article = document.createElement('article');
+      article.className = 'sample-card';
+      article.dataset.type = sample.type || '';
+      article.dataset.condition = sample.condition || '';
+      article.dataset.cell = sample.cell || '';
+      article.dataset.cost = sample.cost || 0;
+      article.dataset.duration = sample.duration_ms || 0;
+      article.dataset.sample = sample.sample_id || '';
+      article.dataset.search = [
+        sample.sample_id,
+        sample.type,
+        sample.condition,
+        sample.cell,
+        sample.provider,
+        sample.model_requested,
+        sample.prompt,
+        sample.result
+      ].join(' ').toLowerCase();
+
+      const cost = sample.cost ? `$${Number(sample.cost).toFixed(5)}` : 'cost unknown';
+      const duration = sample.duration_ms ? `${Math.round(sample.duration_ms / 1000)}s` : 'duration unknown';
+      article.innerHTML = `
+        <div class="card-kicker">
+          <span class="chip">${sample.type}</span>
+          <span class="chip green">${sample.condition || 'unknown'}</span>
+          <span class="chip amber">${sample.provider || 'provider unknown'}</span>
+        </div>
+        <h2>${sample.sample_id}</h2>
+        <div class="meta-row">
+          <span>${sample.cell}</span>
+          <span>${sample.model_requested || ''}</span>
+          <span>${cost}</span>
+          <span>${duration}</span>
+        </div>
+        <p><b>Prompt:</b> ${sample.prompt || 'No prompt recorded.'}</p>
+        <div class="sample-prose"></div>
+      `;
+      article.querySelector('.sample-prose').textContent = sample.result || '';
+      return article;
+    }
+
+    function applyFilters() {
+      const query = search.value.trim().toLowerCase();
+      let visible = 0;
+      rendered.forEach((card) => {
+        const matches =
+          (!query || card.dataset.search.includes(query)) &&
+          (!typeFilter.value || card.dataset.type === typeFilter.value) &&
+          (!conditionFilter.value || card.dataset.condition === conditionFilter.value) &&
+          (!cellFilter.value || card.dataset.cell === cellFilter.value);
+        card.classList.toggle('hidden', !matches);
+        if (matches) visible += 1;
+      });
+
+      const sorted = [...rendered].sort((a, b) => {
+        if (sampleSort.value === 'cost') return Number(b.dataset.cost) - Number(a.dataset.cost);
+        if (sampleSort.value === 'duration') return Number(b.dataset.duration) - Number(a.dataset.duration);
+        if (sampleSort.value === 'type') return `${a.dataset.type} ${a.dataset.condition} ${a.dataset.sample}`.localeCompare(`${b.dataset.type} ${b.dataset.condition} ${b.dataset.sample}`);
+        return a.dataset.sample.localeCompare(b.dataset.sample);
+      });
+      sorted.forEach((card) => list.appendChild(card));
+      sampleCount.textContent = `${visible} shown`;
+      emptyState.classList.toggle('hidden', visible !== 0);
+    }
+
+    fetch(src)
+      .then((response) => response.json())
+      .then((data) => {
+        samples = data.samples || [];
+        addOptions(typeFilter, [...new Set(samples.map((sample) => sample.type))]);
+        addOptions(conditionFilter, [...new Set(samples.map((sample) => sample.condition))]);
+        addOptions(cellFilter, [...new Set(samples.map((sample) => sample.cell))]);
+        rendered = samples.map(renderSample);
+        rendered.forEach((card) => list.appendChild(card));
+        applyFilters();
+      });
+
+    [search, typeFilter, conditionFilter, cellFilter, sampleSort].forEach((el) => {
+      el.addEventListener('input', applyFilters);
+      el.addEventListener('change', applyFilters);
+    });
+  </script>
+</BaseLayout>

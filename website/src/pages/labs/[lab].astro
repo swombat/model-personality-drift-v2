@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import models from '../../generated/models.json';
+
+export function getStaticPaths() {
+  const labSlugs = new Map();
+  for (const model of models) {
+    if (model.status === 'redirect') continue;
+    labSlugs.set(model.lab.toLowerCase().replaceAll(' ', '-').replaceAll('.', ''), model.lab);
+  }
+  return [...labSlugs.entries()].map(([slug, lab]) => ({ params: { lab: slug }, props: { lab } }));
+}
+
+const { lab } = Astro.props;
+const labModels = models.filter((model) => model.lab === lab && model.status !== 'redirect').sort((a, b) => a.model.localeCompare(b.model));
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={`${lab} | Model Personality Browser`}>
+  <h1>{lab}</h1>
+  <p class="lede">Models from {lab}, with personality summaries and sample links.</p>
+  <section class="model-grid">
+    {labModels.map((model) => (
+      <a class="model-card" href={`${base}models/${model.model}/`}>
+        <div>
+          <div class="card-kicker">
+            <span class="chip">{model.lab}</span>
+            <span class="chip green">{model.family}</span>
+          </div>
+          <h2>{model.model}</h2>
+          <p class="summary">{model.summary}</p>
+        </div>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
