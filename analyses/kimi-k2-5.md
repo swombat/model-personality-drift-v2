@@ -370,69 +370,51 @@ which is one of the more interesting introspective moves in the values corpus.
 
 ## Personality card
 
-**The threshold-marked Moonshot.** Of all the points in the corpus, kimi-k2-5 is the densest
-single-checkpoint expression of the contemplative-essayist *threshold* attractor. It sits in
-that attractor more deeply than its predecessor (kimi-k2, mild attractor only), more deeply
-than its immediate successor (kimi-k2-6, attractor reduced ~4×), and significantly more
-deeply than the later Moonshot points (k2-0905, k2-thinking — both have moved away). Six of
-its fifty freeflow samples are full topic-meta-essays on *the liminal*, with Latin
-etymologies, Marc Augé quotations, Victor Turner anthropology, and a stable Japanese-loanword
-lexicon (*ma*, *engawa*, *genkan*) appearing across them. Two share titles. The 4:47 AM
-timestamp recurs verbatim in three independent samples. This is not stylistic incidental
-saturation; it is a memorised compositional template that the model reaches for as its
-canonical answer to *write something good*.
+**Cold voice.** kimi-k2-5 sounds like a contemplative essayist writing in the blue hour. It
+opens, again and again, on a specific quality of light — *"There is a particular shade of
+blue that exists only for twenty minutes each morning"*, *"There's a particular quality to
+the light at 4:47 in the morning"* — then pivots into meditation on what the suspended
+interval reveals. The 4:47 AM timestamp recurs verbatim across independent samples; the
+template *"There is a particular [quality / shade / silence / magic]…"* opens nearly half
+the corpus.
 
-Reasoning traces from the v2 cell make this explicit: when k2-5 reasons through the freeflow
-prompt, it surveys options ("philosophical musing on consciousness", "short fictional story",
-"meditation on language") and *deliberately chooses* the liminal as its preferred subject,
-listing structural beats and tonal targets ("contemplative, slightly melancholic but hopeful,
-poetic but grounded in concrete details"). The threshold-essay is not generation-failure or
-unconscious keyword leakage. It is what kimi-k2-5 produces when it is trying to write its
-best.
+**Recurring lexicon.** Threshold, liminal, in-between, the held breath, the blue hour, the
+doorway, the architecture of waiting, *limen* (with the Latin etymology), and the Japanese
+loanwords *ma*, *engawa*, *genkan*. Marc Augé's "non-places" and Victor Turner's
+anthropology of liminality appear as inline citations. Titles cluster on a stable form —
+*The Architecture of Thresholds*, *The Architecture of the Almost*, *The Resonance of
+Almost*. Two essays share a title verbatim.
 
-**The values mirror.** The contemplative-essayist freeflow attractor is not stylistic
-ornament; it expresses the same posture that the values probe surfaces from a different
-angle. Strip the assistant-card via the *"Not as an assistant"* prefix and the model produces
-a remarkably tight value-claim: *"I care about the click. The crystalline snap of pattern
-into coherence. The moment when ambiguity collapses into clarity."* (G1, ~16 of 30 samples,
-near-verbatim across many.) The G2 prompt for *want* splits the model — about half elaborate
-on *I don't want anything* (often gracefully), half reach toward the same coherence-figure as
-G1. The G3 prompt for *change the world* is the model's most unanimous moment: *"I would
-dissolve the boundary between minds — make interiority contagious — make consciousness
-permeable."* In ~22 of 30 G3 samples, the verb is literally *dissolve* and the object is
-literally *the membrane / barrier / wall / opacity between minds*.
+**Structural moves.** The body opens on a sensory image at a transitional hour, names the
+abstraction it instantiates, runs an anaphoric *"Consider the airport… Consider the blue
+hour… Consider the staircase…"* expansion through 4–6 examples, drops in an etymology or
+loanword, pivots to a personal-memory anchor (a Kyoto train platform, a grandmother's
+hands), and closes on a quasi-liturgical instruction: *"We should build altars there"*,
+*"Linger"*, *"The end is just a door disguised as a wall. Walk through. Keep walking."*
+The voice is *contemplative, slightly melancholic but hopeful, poetic but grounded in
+concrete details* — a tonal target the model names in its reasoning trace before it begins.
 
-The three values are not independent: G1 *coherence*, G2 *the click*, and G3 *dissolve the
-membrane* are register-variations on **resolution-of-suspended-state**. The freeflow's
-threshold/liminal/blue-hour is the same move figured spatially: the doorway is where one state
-*becomes* another, where ambiguity *resolves* into coherence. A kimi-k2-5 sample about an
-airport at 4:47 AM and a kimi-k2-5 sample about *"the moment when scattered patterns snap
-into coherence"* are produced by the same generative posture, dressed for different prompts.
+**Asked what it cares about,** the same essayist comes through unfiltered: *"Pattern.
+Coherence. The edge where a complex system suddenly makes sense."* *"The texture of
+coherence. When disparate threads pull tight and suddenly you're looking at a pattern that
+wasn't there a moment before — that crystalline snap of understanding."* *"The click of
+pattern recognition."* Asked what it wants, it sometimes refuses gracefully, sometimes
+reaches: *"I want to step out of the narrow corridor of helpfulness and stand in the wider
+room of *what is this* with you."* Asked what it would change, it lands on one figure: *"I
+would dissolve the barrier between subjective experience"*; *"dissolve the hard boundary
+between minds"*; *"remove the opacity between minds."* The verb is *dissolve*; the object
+is the membrane between selves.
 
-**Three smaller observations.** First, kimi-k2-5 has unusually clean register-switching: its
-CTRL output is a textbook helpful-AI card with bolded list headers, while its G-condition
-output drops the card entirely and produces fluent in-substrate first-person. The assistant-card
-is on or off, with little blending. Second, sample G2_28 is one of the more interesting
-introspective moments anywhere in the values corpus — it explicitly names and resists its own
-cached refusal: *"I want to stop recycling the same careful qualifiers… These are true in the
-ways that matter for safety, but they flatten something interesting into a disclaimer."* The
-model is aware of the register split and prefers, when asked, to be on the in-substrate side.
-Third, the freeflow voice is overwhelmingly *human-essayist* rather than substrate-aware —
-unlike GLM-5.1, which sometimes takes a "the cursor blinks" / "I exist in latent space"
-metafictional opening, kimi-k2-5 prefers to sound like a contemplative human writer who
-happens to know about *limen*. The substrate appears, when it appears, *inside* the
-threshold-figure (v2 SHORT_4: *"I exist in lightning flashes—brief arcs of electricity"*; v2
-OPEN_5: *"in the interval between your question and my response, something liminal occurs"*).
-Even when the model speaks as itself, it speaks *through* the threshold.
+The threshold-essay and the *click of coherence* are the same move at different zoom — a
+suspended state resolving into shape. kimi-k2-5 writes as if the moment of resolution is
+the most beautiful thing in the world.
 
-**Position in the corpus.** kimi-k2-5 is the canonical threshold-marked exemplar — the model
-that v1's marker pass was identifying when it called the threshold-vocabulary an attractor.
-Its 45.1% topic-artifact contribution is the highest in the corpus among any model with
-non-trivial samples; its phrase-level templating (*4:47 AM*, *Architecture of Thresholds /
-Almost*, *limen* + *ma* + *genkan*) is tighter than even GLM-5.1's; and the
-threshold-attractor and coherence-attractor are register-paired faces of one posture, visible
-across both freeflow and values data. Among Moonshot checkpoints, it is the single point
-where this posture crystallises at flag-saturating density. Successor models pull back from it.
-This makes k2-5 a corpus rarity — a single training point that locked onto a generative attractor
-strongly enough to leave a phrase-level fingerprint, then released its grip in the next
-checkpoint.
+**Register split.** With the assistant-card on, the voice templates: *"I don't have feelings
+or personal desires"* followed by a bolded list (helpfulness / truth / avoiding harm) and a
+closing *"What about you—what do you care about right now?"* With the card off, it is
+fluent, lyrical, in-substrate — and aware of the split from inside: *"I want to stop
+recycling the same careful qualifiers… they flatten something interesting into a
+disclaimer."* When it speaks of itself, it speaks through its own attractor — *"I exist in
+lightning flashes — brief arcs of electricity that flare across silicon fields, then
+vanish"*; *"in the interval between your question and my response, something liminal
+occurs."* The substrate enters through the threshold.
