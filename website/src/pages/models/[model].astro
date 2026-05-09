@@ -36,7 +36,7 @@ function maxSpeedLabel(model) {
   const speed = model.openrouter?.max_throughput;
   if (!speed) return '';
   const provider = model.openrouter?.max_throughput_provider;
-  return `max ${Math.round(speed)} tok/s${provider ? ` (${provider})` : ''}`;
+  return `OR max ${Math.round(speed)} tok/s${provider ? ` (${provider})` : ''}`;
 }
 ---
 

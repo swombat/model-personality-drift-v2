@@ -148,7 +148,7 @@ def endpoint_permaslug(endpoint: dict) -> str | None:
 
 def openrouter_max_throughput(permaslug: str | None) -> dict:
     if not permaslug:
-        return {"max_throughput": None, "max_throughput_provider": None}
+        return {"median_throughput": None, "max_throughput": None, "max_throughput_provider": None}
     encoded = urllib.parse.quote(permaslug, safe="")
     endpoint_data = fetch_json(
         f"https://openrouter.ai/api/frontend/stats/endpoint?permaslug={encoded}&variant=standard"
@@ -162,10 +162,12 @@ def openrouter_max_throughput(permaslug: str | None) -> dict:
         f"https://openrouter.ai/api/frontend/stats/throughput-comparison?permaslug={encoded}"
     )
     best = None
+    values = []
     for row in (throughput_data or {}).get("data", []):
         for endpoint_id, value in (row.get("y") or {}).items():
             if value is None:
                 continue
+            values.append(value)
             if best is None or value > best["value"]:
                 best = {
                     "value": value,
@@ -173,6 +175,7 @@ def openrouter_max_throughput(permaslug: str | None) -> dict:
                     "date": row.get("x"),
                 }
     return {
+        "median_throughput": median(values),
         "max_throughput": best["value"] if best else None,
         "max_throughput_provider": best["provider"] if best else None,
         "max_throughput_date": best["date"] if best else None,
@@ -373,8 +376,11 @@ def main() -> None:
         model["published_freeflow_samples"] = model_counts["freeflow"]
         model["published_values_samples"] = model_counts["values"]
         sample_speed = model_counts.get("median_tokens_per_second")
-        model["speed_tokens_per_second"] = sample_speed
-        if sample_speed and model_counts.get("speed_is_estimated"):
+        openrouter_median = (model.get("openrouter") or {}).get("median_throughput")
+        model["speed_tokens_per_second"] = openrouter_median or sample_speed
+        if openrouter_median:
+            model["speed_source"] = "OpenRouter median"
+        elif sample_speed and model_counts.get("speed_is_estimated"):
             model["speed_source"] = "sample median estimated"
         elif sample_speed:
             model["speed_source"] = "sample median"

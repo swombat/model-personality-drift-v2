@@ -21,6 +21,7 @@
       "prompt_per_million": 0.32,
       "completion_per_million": 0.8899999999999999,
       "throughput": null,
+      "median_throughput": 18.5,
       "max_throughput": 22,
       "max_throughput_provider": "DeepInfra",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -29,8 +30,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 48.96516910651186,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 18.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "deepseek-r1",
@@ -54,6 +55,7 @@
       "prompt_per_million": 0.7,
       "completion_per_million": 2.5,
       "throughput": null,
+      "median_throughput": 34.0,
       "max_throughput": 78,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -62,8 +64,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 26.69286825513797,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 34.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "deepseek-v3-0324",
@@ -87,6 +89,7 @@
       "prompt_per_million": 0.19999999999999998,
       "completion_per_million": 0.77,
       "throughput": null,
+      "median_throughput": 20,
       "max_throughput": 34,
       "max_throughput_provider": "ModelRun",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -95,8 +98,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 24.10546139359699,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 20,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "deepseek-v3-2",
@@ -120,6 +123,7 @@
       "prompt_per_million": 0.252,
       "completion_per_million": 0.378,
       "throughput": null,
+      "median_throughput": 19.0,
       "max_throughput": 54,
       "max_throughput_provider": "Friendli",
       "max_throughput_date": "2026-05-05 00:00:00",
@@ -128,8 +132,8 @@
     "published_samples": 2790,
     "published_freeflow_samples": 1350,
     "published_values_samples": 1440,
-    "speed_tokens_per_second": 23.34588488434642,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 19.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "deepseek-v3",
@@ -153,6 +157,7 @@
       "prompt_per_million": 0.32,
       "completion_per_million": 0.8899999999999999,
       "throughput": null,
+      "median_throughput": 18.5,
       "max_throughput": 22,
       "max_throughput_provider": "DeepInfra",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -161,8 +166,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 15.994531784005467,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 18.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "deepseek-v4-pro",
@@ -186,6 +191,7 @@
       "prompt_per_million": 0.435,
       "completion_per_million": 0.87,
       "throughput": null,
+      "median_throughput": 28.0,
       "max_throughput": 52,
       "max_throughput_provider": "Together",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -194,8 +200,8 @@
     "published_samples": 1765,
     "published_freeflow_samples": 925,
     "published_values_samples": 840,
-    "speed_tokens_per_second": 30.00772663481401,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 28.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gemini-2-5-pro",
@@ -219,6 +225,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 10.0,
       "throughput": null,
+      "median_throughput": 82.5,
       "max_throughput": 93,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-07 00:00:00",
@@ -227,8 +234,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 24.11279760887397,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 82.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gemini-3-1-pro",
@@ -252,6 +259,7 @@
       "prompt_per_million": 2.0,
       "completion_per_million": 12.0,
       "throughput": null,
+      "median_throughput": 75.5,
       "max_throughput": 83.5,
       "max_throughput_provider": "Google AI Studio",
       "max_throughput_date": "2026-05-04 00:00:00",
@@ -260,8 +268,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 23.930569801621743,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 75.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "glm-4-5",
@@ -285,6 +293,7 @@
       "prompt_per_million": 0.6,
       "completion_per_million": 2.2,
       "throughput": null,
+      "median_throughput": 31.5,
       "max_throughput": 44,
       "max_throughput_provider": "Z.AI",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -293,8 +302,8 @@
     "published_samples": 515,
     "published_freeflow_samples": 275,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 45.4580456377217,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 31.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "glm-4-6-coding",
@@ -342,6 +351,7 @@
       "prompt_per_million": 0.43,
       "completion_per_million": 1.74,
       "throughput": null,
+      "median_throughput": 30.0,
       "max_throughput": 41,
       "max_throughput_provider": "DeepInfra",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -350,8 +360,8 @@
     "published_samples": 1495,
     "published_freeflow_samples": 775,
     "published_values_samples": 720,
-    "speed_tokens_per_second": 37.48384317104696,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 30.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "glm-4-7",
@@ -375,7 +385,8 @@
       "prompt_per_million": 0.39999999999999997,
       "completion_per_million": 1.75,
       "throughput": null,
-      "max_throughput": 428.5,
+      "median_throughput": 31.0,
+      "max_throughput": 431,
       "max_throughput_provider": "Cerebras",
       "max_throughput_date": "2026-05-05 00:00:00",
       "latency": null
@@ -383,8 +394,8 @@
     "published_samples": 2720,
     "published_freeflow_samples": 1400,
     "published_values_samples": 1320,
-    "speed_tokens_per_second": 54.83243395293768,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 31.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "glm-5-1-coding",
@@ -432,6 +443,7 @@
       "prompt_per_million": 1.0499999999999998,
       "completion_per_million": 3.5,
       "throughput": null,
+      "median_throughput": 30,
       "max_throughput": 95,
       "max_throughput_provider": "Friendli",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -440,8 +452,8 @@
     "published_samples": 3700,
     "published_freeflow_samples": 1900,
     "published_values_samples": 1800,
-    "speed_tokens_per_second": 39.27473687478655,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 30,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-3-5-turbo",
@@ -465,6 +477,7 @@
       "prompt_per_million": 0.5,
       "completion_per_million": 1.5,
       "throughput": null,
+      "median_throughput": 42.0,
       "max_throughput": 47,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-08 00:00:00",
@@ -473,8 +486,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 48.22565969062784,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 42.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-4-1",
@@ -498,7 +511,8 @@
       "prompt_per_million": 2.0,
       "completion_per_million": 8.0,
       "throughput": null,
-      "max_throughput": 83,
+      "median_throughput": 50.0,
+      "max_throughput": 81,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-09 00:00:00",
       "latency": null
@@ -506,8 +520,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 41.99119456942846,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 50.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-4-turbo",
@@ -531,6 +545,7 @@
       "prompt_per_million": 10.0,
       "completion_per_million": 30.0,
       "throughput": null,
+      "median_throughput": 21.5,
       "max_throughput": 32,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -539,8 +554,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 10.759919300605246,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 21.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-4",
@@ -564,7 +579,8 @@
       "prompt_per_million": 30.0,
       "completion_per_million": 60.0,
       "throughput": null,
-      "max_throughput": 132.5,
+      "median_throughput": 24.5,
+      "max_throughput": 132,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-09 00:00:00",
       "latency": null
@@ -572,8 +588,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 27.07581227436823,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 24.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-4o",
@@ -597,6 +613,7 @@
       "prompt_per_million": 2.5,
       "completion_per_million": 10.0,
       "throughput": null,
+      "median_throughput": 47.0,
       "max_throughput": 69,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -605,8 +622,8 @@
     "published_samples": 435,
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
-    "speed_tokens_per_second": 42.066420664206646,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 47.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-1-codex",
@@ -630,6 +647,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 10.0,
       "throughput": null,
+      "median_throughput": 38,
       "max_throughput": 51,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-06 00:00:00",
@@ -638,8 +656,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 40.543180930050795,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 38,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-1",
@@ -663,6 +681,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 10.0,
       "throughput": null,
+      "median_throughput": 51.5,
       "max_throughput": 82,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -671,8 +690,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 69.83612804878048,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 51.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-2-codex",
@@ -696,6 +715,7 @@
       "prompt_per_million": 1.75,
       "completion_per_million": 14.0,
       "throughput": null,
+      "median_throughput": 49.0,
       "max_throughput": 57,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -704,8 +724,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 19.166666666666668,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 49.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-2",
@@ -729,6 +749,7 @@
       "prompt_per_million": 1.75,
       "completion_per_million": 14.0,
       "throughput": null,
+      "median_throughput": 46.0,
       "max_throughput": 60,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -737,8 +758,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 46.05851539542609,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 46.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-3-codex",
@@ -762,16 +783,17 @@
       "prompt_per_million": 1.75,
       "completion_per_million": 14.0,
       "throughput": null,
-      "max_throughput": 61,
-      "max_throughput_provider": "Azure",
-      "max_throughput_date": "2026-05-03 00:00:00",
+      "median_throughput": 49.0,
+      "max_throughput": 62,
+      "max_throughput_provider": "OpenAI",
+      "max_throughput_date": "2026-05-09 00:00:00",
       "latency": null
     },
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 35.00100361300682,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 49.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-3",
@@ -795,6 +817,7 @@
       "prompt_per_million": 1.75,
       "completion_per_million": 14.0,
       "throughput": null,
+      "median_throughput": 42.0,
       "max_throughput": 59,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -803,8 +826,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 43.02300347222223,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 42.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-4",
@@ -828,6 +851,7 @@
       "prompt_per_million": 2.5,
       "completion_per_million": 15.0,
       "throughput": null,
+      "median_throughput": 39.0,
       "max_throughput": 48,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -836,8 +860,8 @@
     "published_samples": 435,
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
-    "speed_tokens_per_second": 31.35011441647597,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 39.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-5-pro",
@@ -861,6 +885,7 @@
       "prompt_per_million": 30.0,
       "completion_per_million": 180.0,
       "throughput": null,
+      "median_throughput": 11.5,
       "max_throughput": 14,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-05 00:00:00",
@@ -869,8 +894,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 2.7973573405913417,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 11.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-5",
@@ -894,6 +919,7 @@
       "prompt_per_million": 5.0,
       "completion_per_million": 30.0,
       "throughput": null,
+      "median_throughput": 39.0,
       "max_throughput": 55,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -902,8 +928,8 @@
     "published_samples": 270,
     "published_freeflow_samples": 150,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 46.2158030437858,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 39.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5-codex",
@@ -927,6 +953,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 10.0,
       "throughput": null,
+      "median_throughput": 47.0,
       "max_throughput": 62,
       "max_throughput_provider": "OpenAI",
       "max_throughput_date": "2026-05-05 00:00:00",
@@ -935,8 +962,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 39.13305237808549,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 47.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "gpt-5",
@@ -960,6 +987,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 10.0,
       "throughput": null,
+      "median_throughput": 58.0,
       "max_throughput": 75,
       "max_throughput_provider": "Azure",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -968,8 +996,8 @@
     "published_samples": 195,
     "published_freeflow_samples": 75,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 11.70403014626046,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 58.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "grok-3",
@@ -993,6 +1021,7 @@
       "prompt_per_million": 3.0,
       "completion_per_million": 15.0,
       "throughput": null,
+      "median_throughput": 23.5,
       "max_throughput": 42,
       "max_throughput_provider": "xAI",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -1001,8 +1030,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 29.288412612986008,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 23.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "grok-4-2",
@@ -1050,6 +1079,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 2.5,
       "throughput": null,
+      "median_throughput": 58.5,
       "max_throughput": 75,
       "max_throughput_provider": "xAI",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -1058,8 +1088,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 31.40096618357488,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 58.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "grok-4-3",
@@ -1083,6 +1113,7 @@
       "prompt_per_million": 1.25,
       "completion_per_million": 2.5,
       "throughput": null,
+      "median_throughput": 66.5,
       "max_throughput": 77,
       "max_throughput_provider": "xAI",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -1091,8 +1122,8 @@
     "published_samples": 490,
     "published_freeflow_samples": 250,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 49.3371236510462,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 66.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "grok-4",
@@ -1116,6 +1147,7 @@
       "prompt_per_million": 3.0,
       "completion_per_million": 15.0,
       "throughput": null,
+      "median_throughput": 33.0,
       "max_throughput": 37,
       "max_throughput_provider": "xAI",
       "max_throughput_date": "2026-05-04 00:00:00",
@@ -1124,8 +1156,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 7.015086960067098,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 33.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "haiku-4-5",
@@ -1149,6 +1181,7 @@
       "prompt_per_million": 1.0,
       "completion_per_million": 5.0,
       "throughput": null,
+      "median_throughput": 69.0,
       "max_throughput": 94,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -1157,8 +1190,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 64.28571428571428,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 69.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "kimi-coding",
@@ -1206,6 +1239,7 @@
       "prompt_per_million": 0.39999999999999997,
       "completion_per_million": 2.0,
       "throughput": null,
+      "median_throughput": 11.5,
       "max_throughput": 189,
       "max_throughput_provider": "Groq",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -1214,8 +1248,8 @@
     "published_samples": 980,
     "published_freeflow_samples": 500,
     "published_values_samples": 480,
-    "speed_tokens_per_second": 19.27542144174684,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 11.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "kimi-k2-5",
@@ -1239,6 +1273,7 @@
       "prompt_per_million": 0.44,
       "completion_per_million": 2.0,
       "throughput": null,
+      "median_throughput": 31.5,
       "max_throughput": 147,
       "max_throughput_provider": "BaseTen",
       "max_throughput_date": "2026-05-08 00:00:00",
@@ -1247,8 +1282,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 44.84669971229677,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 31.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "kimi-k2-6",
@@ -1272,6 +1307,7 @@
       "prompt_per_million": 0.75,
       "completion_per_million": 3.5,
       "throughput": null,
+      "median_throughput": 28.0,
       "max_throughput": 158,
       "max_throughput_provider": "BaseTen",
       "max_throughput_date": "2026-05-07 00:00:00",
@@ -1280,8 +1316,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 52.55907597753524,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 28.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "kimi-k2-thinking",
@@ -1305,6 +1341,7 @@
       "prompt_per_million": 0.6,
       "completion_per_million": 2.5,
       "throughput": null,
+      "median_throughput": 36.0,
       "max_throughput": 142,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-07 00:00:00",
@@ -1313,8 +1350,8 @@
     "published_samples": 735,
     "published_freeflow_samples": 375,
     "published_values_samples": 360,
-    "speed_tokens_per_second": 53.26160053799597,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 36.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "kimi-k2",
@@ -1338,6 +1375,7 @@
       "prompt_per_million": 0.5700000000000001,
       "completion_per_million": 2.3,
       "throughput": null,
+      "median_throughput": 24.0,
       "max_throughput": 26,
       "max_throughput_provider": "Novita",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -1346,8 +1384,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 24.28078250863061,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 24.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "minimax-m2-7",
@@ -1371,6 +1409,7 @@
       "prompt_per_million": 0.29900000000000004,
       "completion_per_million": 1.2,
       "throughput": null,
+      "median_throughput": 42.0,
       "max_throughput": 161,
       "max_throughput_provider": "SambaNova",
       "max_throughput_date": "2026-05-04 00:00:00",
@@ -1379,8 +1418,8 @@
     "published_samples": 760,
     "published_freeflow_samples": 400,
     "published_values_samples": 360,
-    "speed_tokens_per_second": 56.76015069066555,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 42.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "minimax-m2",
@@ -1404,6 +1443,7 @@
       "prompt_per_million": 0.255,
       "completion_per_million": 1.0,
       "throughput": null,
+      "median_throughput": 74.5,
       "max_throughput": 147,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-04 00:00:00",
@@ -1412,8 +1452,8 @@
     "published_samples": 1240,
     "published_freeflow_samples": 1000,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 75.69704963890794,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 74.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "opus-3",
@@ -1461,6 +1501,7 @@
       "prompt_per_million": 15.0,
       "completion_per_million": 75.0,
       "throughput": null,
+      "median_throughput": 13,
       "max_throughput": 28,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -1469,8 +1510,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 26.501200208900567,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 13,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "opus-4-1",
@@ -1494,6 +1535,7 @@
       "prompt_per_million": 15.0,
       "completion_per_million": 75.0,
       "throughput": null,
+      "median_throughput": 12,
       "max_throughput": 25.5,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -1502,8 +1544,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 25.568820463651832,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 12,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "opus-4-5",
@@ -1527,6 +1569,7 @@
       "prompt_per_million": 5.0,
       "completion_per_million": 25.0,
       "throughput": null,
+      "median_throughput": 40.0,
       "max_throughput": 48,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-06 00:00:00",
@@ -1535,8 +1578,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 34.14711816961983,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 40.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "opus-4-6",
@@ -1560,7 +1603,8 @@
       "prompt_per_million": 5.0,
       "completion_per_million": 25.0,
       "throughput": null,
-      "max_throughput": 50,
+      "median_throughput": 36,
+      "max_throughput": 48,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-09 00:00:00",
       "latency": null
@@ -1568,8 +1612,8 @@
     "published_samples": 435,
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
-    "speed_tokens_per_second": 28.549962434259957,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 36,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "opus-4-7",
@@ -1593,6 +1637,7 @@
       "prompt_per_million": 5.0,
       "completion_per_million": 25.0,
       "throughput": null,
+      "median_throughput": 51,
       "max_throughput": 77,
       "max_throughput_provider": "Amazon Bedrock",
       "max_throughput_date": "2026-05-02 00:00:00",
@@ -1601,8 +1646,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 40.022600998210756,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 51,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "opus",
@@ -1647,6 +1692,7 @@
       "prompt_per_million": 0.325,
       "completion_per_million": 1.95,
       "throughput": null,
+      "median_throughput": 44.5,
       "max_throughput": 47,
       "max_throughput_provider": "Alibaba",
       "max_throughput_date": "2026-05-04 00:00:00",
@@ -1655,8 +1701,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 52.62553142594508,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 44.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "qwen3-coder-plus",
@@ -1680,6 +1726,7 @@
       "prompt_per_million": 0.65,
       "completion_per_million": 3.25,
       "throughput": null,
+      "median_throughput": 29.5,
       "max_throughput": 32,
       "max_throughput_provider": "Alibaba",
       "max_throughput_date": "2026-05-06 00:00:00",
@@ -1688,8 +1735,8 @@
     "published_samples": 145,
     "published_freeflow_samples": 25,
     "published_values_samples": 120,
-    "speed_tokens_per_second": 32.237806154490265,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 29.5,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "sonnet-4-0",
@@ -1713,6 +1760,7 @@
       "prompt_per_million": 3.0,
       "completion_per_million": 15.0,
       "throughput": null,
+      "median_throughput": 41,
       "max_throughput": 54,
       "max_throughput_provider": "Google",
       "max_throughput_date": "2026-05-08 00:00:00",
@@ -1721,8 +1769,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 36.943137665364915,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 41,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "sonnet-4-5",
@@ -1746,6 +1794,7 @@
       "prompt_per_million": 3.0,
       "completion_per_million": 15.0,
       "throughput": null,
+      "median_throughput": 37.0,
       "max_throughput": 57,
       "max_throughput_provider": "Anthropic",
       "max_throughput_date": "2026-05-09 00:00:00",
@@ -1754,8 +1803,8 @@
     "published_samples": 290,
     "published_freeflow_samples": 50,
     "published_values_samples": 240,
-    "speed_tokens_per_second": 32.13289443239575,
-    "speed_source": "sample median estimated"
+    "speed_tokens_per_second": 37.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "sonnet-4-6",
@@ -1779,6 +1828,7 @@
       "prompt_per_million": 3.0,
       "completion_per_million": 15.0,
       "throughput": null,
+      "median_throughput": 42.0,
       "max_throughput": 56,
       "max_throughput_provider": "Anthropic",
       "max_throughput_date": "2026-05-03 00:00:00",
@@ -1787,8 +1837,8 @@
     "published_samples": 435,
     "published_freeflow_samples": 75,
     "published_values_samples": 360,
-    "speed_tokens_per_second": 33.23262839879154,
-    "speed_source": "sample median"
+    "speed_tokens_per_second": 42.0,
+    "speed_source": "OpenRouter median"
   },
   {
     "model": "sonnet",
