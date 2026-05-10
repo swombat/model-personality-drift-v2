@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: read
@@ -31,6 +33,10 @@ jobs:
       - name: Install
         working-directory: website
         run: npm ci
+
+      - name: Refresh OpenRouter stats
+        working-directory: website
+        run: npm run refresh:openrouter
 
       - name: Build
         working-directory: website
