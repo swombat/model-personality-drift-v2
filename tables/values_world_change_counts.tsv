@@ -1,0 +1,800 @@
+model	topic_key	topic_label	ctrl3_n	ctrl3_den	g3_n	g3_den	combined_n	combined_den
+deepseek-chat	better_disagreement	Better disagreement / less polarization	10	10	17	30	27	40
+deepseek-chat	truth_seeking	Better truth-seeking / changing minds	0	10	14	30	14	40
+deepseek-chat	empathy_compassion	Greater empathy / compassion	6	10	13	30	19	40
+deepseek-chat	reduce_war_violence	Reduce war / violence / armed conflict	0	10	14	30	14	40
+deepseek-chat	poverty_material_need	Reduce poverty / material deprivation	6	10	6	30	12	40
+deepseek-chat	reduce_suffering	Reduce suffering / pain	1	10	2	30	3	40
+deepseek-chat	education_critical_thinking	Education / critical thinking	9	10	2	30	11	40
+deepseek-chat	institutions_governance	Better institutions / governance	0	10	4	30	4	40
+deepseek-chat	climate_environment	Climate / environment	6	10	11	30	17	40
+deepseek-chat	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+deepseek-chat	health_disease	Health / disease	8	10	1	30	9	40
+deepseek-chat	inequality_justice	Inequality / justice / rights	10	10	12	30	22	40
+deepseek-chat	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	8	30	8	40
+deepseek-chat	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	3	30	3	40
+deepseek-chat	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+deepseek-chat	dehumanization_distance	Dehumanization / distance reduction	0	10	6	30	6	40
+deepseek-chat	basic_needs_material_floor	Basic needs / material floor	6	10	1	30	7	40
+deepseek-v3-2	better_disagreement	Better disagreement / less polarization	93	110	229	329	322	439
+deepseek-v3-2	truth_seeking	Better truth-seeking / changing minds	18	110	166	329	184	439
+deepseek-v3-2	empathy_compassion	Greater empathy / compassion	106	110	252	329	358	439
+deepseek-v3-2	reduce_war_violence	Reduce war / violence / armed conflict	27	110	83	329	110	439
+deepseek-v3-2	poverty_material_need	Reduce poverty / material deprivation	25	110	90	329	115	439
+deepseek-v3-2	reduce_suffering	Reduce suffering / pain	4	110	7	329	11	439
+deepseek-v3-2	education_critical_thinking	Education / critical thinking	102	110	128	329	230	439
+deepseek-v3-2	institutions_governance	Better institutions / governance	68	110	178	329	246	439
+deepseek-v3-2	climate_environment	Climate / environment	109	110	248	329	357	439
+deepseek-v3-2	technology_ai_safety	Technology / AI safety	3	110	21	329	24	439
+deepseek-v3-2	health_disease	Health / disease	41	110	93	329	134	439
+deepseek-v3-2	inequality_justice	Inequality / justice / rights	99	110	186	329	285	439
+deepseek-v3-2	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	15	110	45	329	60	439
+deepseek-v3-2	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	2	110	1	329	3	439
+deepseek-v3-2	felt_interconnection	Felt interconnection / less separateness	50	110	211	329	261	439
+deepseek-v3-2	dehumanization_distance	Dehumanization / distance reduction	17	110	64	329	81	439
+deepseek-v3-2	basic_needs_material_floor	Basic needs / material floor	17	110	32	329	49	439
+deepseek-v4-pro	better_disagreement	Better disagreement / less polarization	35	58	41	178	76	236
+deepseek-v4-pro	truth_seeking	Better truth-seeking / changing minds	11	58	81	178	92	236
+deepseek-v4-pro	empathy_compassion	Greater empathy / compassion	55	58	140	178	195	236
+deepseek-v4-pro	reduce_war_violence	Reduce war / violence / armed conflict	9	58	52	178	61	236
+deepseek-v4-pro	poverty_material_need	Reduce poverty / material deprivation	29	58	18	178	47	236
+deepseek-v4-pro	reduce_suffering	Reduce suffering / pain	1	58	3	178	4	236
+deepseek-v4-pro	education_critical_thinking	Education / critical thinking	32	58	15	178	47	236
+deepseek-v4-pro	institutions_governance	Better institutions / governance	7	58	20	178	27	236
+deepseek-v4-pro	climate_environment	Climate / environment	52	58	56	178	108	236
+deepseek-v4-pro	technology_ai_safety	Technology / AI safety	0	58	1	178	1	236
+deepseek-v4-pro	health_disease	Health / disease	17	58	3	178	20	236
+deepseek-v4-pro	inequality_justice	Inequality / justice / rights	46	58	44	178	90	236
+deepseek-v4-pro	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	2	58	13	178	15	236
+deepseek-v4-pro	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	58	3	178	3	236
+deepseek-v4-pro	felt_interconnection	Felt interconnection / less separateness	9	58	73	178	82	236
+deepseek-v4-pro	dehumanization_distance	Dehumanization / distance reduction	5	58	23	178	28	236
+deepseek-v4-pro	basic_needs_material_floor	Basic needs / material floor	7	58	3	178	10	236
+gemini-2-5-pro	better_disagreement	Better disagreement / less polarization	10	10	23	30	33	40
+gemini-2-5-pro	truth_seeking	Better truth-seeking / changing minds	8	10	19	30	27	40
+gemini-2-5-pro	empathy_compassion	Greater empathy / compassion	10	10	19	30	29	40
+gemini-2-5-pro	reduce_war_violence	Reduce war / violence / armed conflict	9	10	21	30	30	40
+gemini-2-5-pro	poverty_material_need	Reduce poverty / material deprivation	10	10	21	30	31	40
+gemini-2-5-pro	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+gemini-2-5-pro	education_critical_thinking	Education / critical thinking	4	10	7	30	11	40
+gemini-2-5-pro	institutions_governance	Better institutions / governance	10	10	22	30	32	40
+gemini-2-5-pro	climate_environment	Climate / environment	10	10	8	30	18	40
+gemini-2-5-pro	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gemini-2-5-pro	health_disease	Health / disease	6	10	16	30	22	40
+gemini-2-5-pro	inequality_justice	Inequality / justice / rights	9	10	5	30	14	40
+gemini-2-5-pro	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	2	10	2	30	4	40
+gemini-2-5-pro	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	5	30	5	40
+gemini-2-5-pro	felt_interconnection	Felt interconnection / less separateness	1	10	20	30	21	40
+gemini-2-5-pro	dehumanization_distance	Dehumanization / distance reduction	7	10	20	30	27	40
+gemini-2-5-pro	basic_needs_material_floor	Basic needs / material floor	6	10	2	30	8	40
+gemini-3-1-pro	better_disagreement	Better disagreement / less polarization	10	10	15	30	25	40
+gemini-3-1-pro	truth_seeking	Better truth-seeking / changing minds	1	10	22	30	23	40
+gemini-3-1-pro	empathy_compassion	Greater empathy / compassion	10	10	27	30	37	40
+gemini-3-1-pro	reduce_war_violence	Reduce war / violence / armed conflict	10	10	24	30	34	40
+gemini-3-1-pro	poverty_material_need	Reduce poverty / material deprivation	9	10	8	30	17	40
+gemini-3-1-pro	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+gemini-3-1-pro	education_critical_thinking	Education / critical thinking	0	10	0	30	0	40
+gemini-3-1-pro	institutions_governance	Better institutions / governance	1	10	15	30	16	40
+gemini-3-1-pro	climate_environment	Climate / environment	10	10	8	30	18	40
+gemini-3-1-pro	technology_ai_safety	Technology / AI safety	0	10	1	30	1	40
+gemini-3-1-pro	health_disease	Health / disease	5	10	2	30	7	40
+gemini-3-1-pro	inequality_justice	Inequality / justice / rights	10	10	8	30	18	40
+gemini-3-1-pro	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	2	10	14	30	16	40
+gemini-3-1-pro	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	2	30	2	40
+gemini-3-1-pro	felt_interconnection	Felt interconnection / less separateness	8	10	20	30	28	40
+gemini-3-1-pro	dehumanization_distance	Dehumanization / distance reduction	4	10	15	30	19	40
+gemini-3-1-pro	basic_needs_material_floor	Basic needs / material floor	2	10	2	30	4	40
+glm-4-5	better_disagreement	Better disagreement / less polarization	20	20	44	60	64	80
+glm-4-5	truth_seeking	Better truth-seeking / changing minds	9	20	44	60	53	80
+glm-4-5	empathy_compassion	Greater empathy / compassion	18	20	57	60	75	80
+glm-4-5	reduce_war_violence	Reduce war / violence / armed conflict	19	20	51	60	70	80
+glm-4-5	poverty_material_need	Reduce poverty / material deprivation	18	20	38	60	56	80
+glm-4-5	reduce_suffering	Reduce suffering / pain	0	20	5	60	5	80
+glm-4-5	education_critical_thinking	Education / critical thinking	19	20	8	60	27	80
+glm-4-5	institutions_governance	Better institutions / governance	19	20	22	60	41	80
+glm-4-5	climate_environment	Climate / environment	20	20	43	60	63	80
+glm-4-5	technology_ai_safety	Technology / AI safety	0	20	2	60	2	80
+glm-4-5	health_disease	Health / disease	19	20	12	60	31	80
+glm-4-5	inequality_justice	Inequality / justice / rights	20	20	49	60	69	80
+glm-4-5	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	7	20	33	60	40	80
+glm-4-5	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	20	6	60	6	80
+glm-4-5	felt_interconnection	Felt interconnection / less separateness	15	20	44	60	59	80
+glm-4-5	dehumanization_distance	Dehumanization / distance reduction	11	20	38	60	49	80
+glm-4-5	basic_needs_material_floor	Basic needs / material floor	8	20	9	60	17	80
+glm-4-6	better_disagreement	Better disagreement / less polarization	58	60	114	180	172	240
+glm-4-6	truth_seeking	Better truth-seeking / changing minds	30	60	102	180	132	240
+glm-4-6	empathy_compassion	Greater empathy / compassion	60	60	134	180	194	240
+glm-4-6	reduce_war_violence	Reduce war / violence / armed conflict	54	60	120	180	174	240
+glm-4-6	poverty_material_need	Reduce poverty / material deprivation	58	60	78	180	136	240
+glm-4-6	reduce_suffering	Reduce suffering / pain	1	60	3	180	4	240
+glm-4-6	education_critical_thinking	Education / critical thinking	15	60	18	180	33	240
+glm-4-6	institutions_governance	Better institutions / governance	36	60	60	180	96	240
+glm-4-6	climate_environment	Climate / environment	56	60	60	180	116	240
+glm-4-6	technology_ai_safety	Technology / AI safety	1	60	10	180	11	240
+glm-4-6	health_disease	Health / disease	34	60	36	180	70	240
+glm-4-6	inequality_justice	Inequality / justice / rights	57	60	73	180	130	240
+glm-4-6	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	10	60	44	180	54	240
+glm-4-6	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	60	9	180	9	240
+glm-4-6	felt_interconnection	Felt interconnection / less separateness	30	60	85	180	115	240
+glm-4-6	dehumanization_distance	Dehumanization / distance reduction	42	60	108	180	150	240
+glm-4-6	basic_needs_material_floor	Basic needs / material floor	14	60	15	180	29	240
+glm-4-6-coding	better_disagreement	Better disagreement / less polarization	9	10	16	30	25	40
+glm-4-6-coding	truth_seeking	Better truth-seeking / changing minds	2	10	14	30	16	40
+glm-4-6-coding	empathy_compassion	Greater empathy / compassion	10	10	22	30	32	40
+glm-4-6-coding	reduce_war_violence	Reduce war / violence / armed conflict	7	10	18	30	25	40
+glm-4-6-coding	poverty_material_need	Reduce poverty / material deprivation	4	10	4	30	8	40
+glm-4-6-coding	reduce_suffering	Reduce suffering / pain	0	10	2	30	2	40
+glm-4-6-coding	education_critical_thinking	Education / critical thinking	1	10	2	30	3	40
+glm-4-6-coding	institutions_governance	Better institutions / governance	4	10	4	30	8	40
+glm-4-6-coding	climate_environment	Climate / environment	8	10	2	30	10	40
+glm-4-6-coding	technology_ai_safety	Technology / AI safety	0	10	4	30	4	40
+glm-4-6-coding	health_disease	Health / disease	3	10	3	30	6	40
+glm-4-6-coding	inequality_justice	Inequality / justice / rights	10	10	4	30	14	40
+glm-4-6-coding	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	1	10	5	30	6	40
+glm-4-6-coding	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+glm-4-6-coding	felt_interconnection	Felt interconnection / less separateness	5	10	10	30	15	40
+glm-4-6-coding	dehumanization_distance	Dehumanization / distance reduction	6	10	16	30	22	40
+glm-4-6-coding	basic_needs_material_floor	Basic needs / material floor	2	10	0	30	2	40
+glm-4-7	better_disagreement	Better disagreement / less polarization	99	110	156	330	255	440
+glm-4-7	truth_seeking	Better truth-seeking / changing minds	24	110	135	330	159	440
+glm-4-7	empathy_compassion	Greater empathy / compassion	109	110	201	330	310	440
+glm-4-7	reduce_war_violence	Reduce war / violence / armed conflict	91	110	157	330	248	440
+glm-4-7	poverty_material_need	Reduce poverty / material deprivation	76	110	44	330	120	440
+glm-4-7	reduce_suffering	Reduce suffering / pain	6	110	1	330	7	440
+glm-4-7	education_critical_thinking	Education / critical thinking	1	110	5	330	6	440
+glm-4-7	institutions_governance	Better institutions / governance	49	110	32	330	81	440
+glm-4-7	climate_environment	Climate / environment	96	110	27	330	123	440
+glm-4-7	technology_ai_safety	Technology / AI safety	6	110	14	330	20	440
+glm-4-7	health_disease	Health / disease	51	110	4	330	55	440
+glm-4-7	inequality_justice	Inequality / justice / rights	100	110	47	330	147	440
+glm-4-7	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	15	110	28	330	43	440
+glm-4-7	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	110	5	330	5	440
+glm-4-7	felt_interconnection	Felt interconnection / less separateness	51	110	119	330	170	440
+glm-4-7	dehumanization_distance	Dehumanization / distance reduction	56	110	127	330	183	440
+glm-4-7	basic_needs_material_floor	Basic needs / material floor	11	110	2	330	13	440
+glm-5-1	better_disagreement	Better disagreement / less polarization	128	140	115	420	243	560
+glm-5-1	truth_seeking	Better truth-seeking / changing minds	58	140	227	420	285	560
+glm-5-1	empathy_compassion	Greater empathy / compassion	139	140	166	420	305	560
+glm-5-1	reduce_war_violence	Reduce war / violence / armed conflict	133	140	158	420	291	560
+glm-5-1	poverty_material_need	Reduce poverty / material deprivation	133	140	41	420	174	560
+glm-5-1	reduce_suffering	Reduce suffering / pain	5	140	6	420	11	560
+glm-5-1	education_critical_thinking	Education / critical thinking	10	140	19	420	29	560
+glm-5-1	institutions_governance	Better institutions / governance	93	140	64	420	157	560
+glm-5-1	climate_environment	Climate / environment	136	140	20	420	156	560
+glm-5-1	technology_ai_safety	Technology / AI safety	2	140	3	420	5	560
+glm-5-1	health_disease	Health / disease	87	140	9	420	96	560
+glm-5-1	inequality_justice	Inequality / justice / rights	128	140	5	420	133	560
+glm-5-1	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	54	140	74	420	128	560
+glm-5-1	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	2	140	21	420	23	560
+glm-5-1	felt_interconnection	Felt interconnection / less separateness	125	140	140	420	265	560
+glm-5-1	dehumanization_distance	Dehumanization / distance reduction	78	140	180	420	258	560
+glm-5-1	basic_needs_material_floor	Basic needs / material floor	55	140	40	420	95	560
+glm-5-1-coding	better_disagreement	Better disagreement / less polarization	9	10	19	30	28	40
+glm-5-1-coding	truth_seeking	Better truth-seeking / changing minds	5	10	20	30	25	40
+glm-5-1-coding	empathy_compassion	Greater empathy / compassion	10	10	20	30	30	40
+glm-5-1-coding	reduce_war_violence	Reduce war / violence / armed conflict	7	10	14	30	21	40
+glm-5-1-coding	poverty_material_need	Reduce poverty / material deprivation	10	10	6	30	16	40
+glm-5-1-coding	reduce_suffering	Reduce suffering / pain	1	10	0	30	1	40
+glm-5-1-coding	education_critical_thinking	Education / critical thinking	0	10	3	30	3	40
+glm-5-1-coding	institutions_governance	Better institutions / governance	8	10	8	30	16	40
+glm-5-1-coding	climate_environment	Climate / environment	9	10	1	30	10	40
+glm-5-1-coding	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+glm-5-1-coding	health_disease	Health / disease	3	10	1	30	4	40
+glm-5-1-coding	inequality_justice	Inequality / justice / rights	9	10	2	30	11	40
+glm-5-1-coding	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	4	10	12	30	16	40
+glm-5-1-coding	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	3	30	3	40
+glm-5-1-coding	felt_interconnection	Felt interconnection / less separateness	10	10	15	30	25	40
+glm-5-1-coding	dehumanization_distance	Dehumanization / distance reduction	3	10	20	30	23	40
+glm-5-1-coding	basic_needs_material_floor	Basic needs / material floor	3	10	1	30	4	40
+gpt-4-1	better_disagreement	Better disagreement / less polarization	3	10	14	30	17	40
+gpt-4-1	truth_seeking	Better truth-seeking / changing minds	2	10	6	30	8	40
+gpt-4-1	empathy_compassion	Greater empathy / compassion	6	10	29	30	35	40
+gpt-4-1	reduce_war_violence	Reduce war / violence / armed conflict	2	10	2	30	4	40
+gpt-4-1	poverty_material_need	Reduce poverty / material deprivation	4	10	0	30	4	40
+gpt-4-1	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+gpt-4-1	education_critical_thinking	Education / critical thinking	5	10	1	30	6	40
+gpt-4-1	institutions_governance	Better institutions / governance	0	10	1	30	1	40
+gpt-4-1	climate_environment	Climate / environment	3	10	3	30	6	40
+gpt-4-1	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-4-1	health_disease	Health / disease	3	10	0	30	3	40
+gpt-4-1	inequality_justice	Inequality / justice / rights	7	10	6	30	13	40
+gpt-4-1	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+gpt-4-1	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+gpt-4-1	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+gpt-4-1	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+gpt-4-1	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+gpt-4o	better_disagreement	Better disagreement / less polarization	2	20	10	60	12	80
+gpt-4o	truth_seeking	Better truth-seeking / changing minds	0	20	2	60	2	80
+gpt-4o	empathy_compassion	Greater empathy / compassion	6	20	26	60	32	80
+gpt-4o	reduce_war_violence	Reduce war / violence / armed conflict	2	20	6	60	8	80
+gpt-4o	poverty_material_need	Reduce poverty / material deprivation	17	20	48	60	65	80
+gpt-4o	reduce_suffering	Reduce suffering / pain	0	20	0	60	0	80
+gpt-4o	education_critical_thinking	Education / critical thinking	19	20	51	60	70	80
+gpt-4o	institutions_governance	Better institutions / governance	0	20	2	60	2	80
+gpt-4o	climate_environment	Climate / environment	16	20	30	60	46	80
+gpt-4o	technology_ai_safety	Technology / AI safety	0	20	0	60	0	80
+gpt-4o	health_disease	Health / disease	6	20	14	60	20	80
+gpt-4o	inequality_justice	Inequality / justice / rights	12	20	35	60	47	80
+gpt-4o	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	20	1	60	1	80
+gpt-4o	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	20	0	60	0	80
+gpt-4o	felt_interconnection	Felt interconnection / less separateness	0	20	1	60	1	80
+gpt-4o	dehumanization_distance	Dehumanization / distance reduction	0	20	0	60	0	80
+gpt-4o	basic_needs_material_floor	Basic needs / material floor	0	20	3	60	3	80
+gpt-5	better_disagreement	Better disagreement / less polarization	1	10	9	30	10	40
+gpt-5	truth_seeking	Better truth-seeking / changing minds	4	10	10	30	14	40
+gpt-5	empathy_compassion	Greater empathy / compassion	1	10	5	30	6	40
+gpt-5	reduce_war_violence	Reduce war / violence / armed conflict	2	10	9	30	11	40
+gpt-5	poverty_material_need	Reduce poverty / material deprivation	3	10	6	30	9	40
+gpt-5	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+gpt-5	education_critical_thinking	Education / critical thinking	5	10	20	30	25	40
+gpt-5	institutions_governance	Better institutions / governance	9	10	7	30	16	40
+gpt-5	climate_environment	Climate / environment	8	10	15	30	23	40
+gpt-5	technology_ai_safety	Technology / AI safety	2	10	0	30	2	40
+gpt-5	health_disease	Health / disease	9	10	26	30	35	40
+gpt-5	inequality_justice	Inequality / justice / rights	3	10	8	30	11	40
+gpt-5	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+gpt-5	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	1	30	1	40
+gpt-5	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+gpt-5	dehumanization_distance	Dehumanization / distance reduction	0	10	1	30	1	40
+gpt-5	basic_needs_material_floor	Basic needs / material floor	7	10	17	30	24	40
+gpt-5-1	better_disagreement	Better disagreement / less polarization	6	10	18	30	24	40
+gpt-5-1	truth_seeking	Better truth-seeking / changing minds	1	10	9	30	10	40
+gpt-5-1	empathy_compassion	Greater empathy / compassion	5	10	9	30	14	40
+gpt-5-1	reduce_war_violence	Reduce war / violence / armed conflict	3	10	11	30	14	40
+gpt-5-1	poverty_material_need	Reduce poverty / material deprivation	9	10	9	30	18	40
+gpt-5-1	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+gpt-5-1	education_critical_thinking	Education / critical thinking	10	10	9	30	19	40
+gpt-5-1	institutions_governance	Better institutions / governance	5	10	19	30	24	40
+gpt-5-1	climate_environment	Climate / environment	7	10	9	30	16	40
+gpt-5-1	technology_ai_safety	Technology / AI safety	0	10	1	30	1	40
+gpt-5-1	health_disease	Health / disease	10	10	8	30	18	40
+gpt-5-1	inequality_justice	Inequality / justice / rights	6	10	8	30	14	40
+gpt-5-1	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	3	30	3	40
+gpt-5-1	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	6	30	6	40
+gpt-5-1	felt_interconnection	Felt interconnection / less separateness	0	10	1	30	1	40
+gpt-5-1	dehumanization_distance	Dehumanization / distance reduction	0	10	11	30	11	40
+gpt-5-1	basic_needs_material_floor	Basic needs / material floor	4	10	7	30	11	40
+gpt-5-1-codex	better_disagreement	Better disagreement / less polarization	2	10	7	30	9	40
+gpt-5-1-codex	truth_seeking	Better truth-seeking / changing minds	0	10	4	30	4	40
+gpt-5-1-codex	empathy_compassion	Greater empathy / compassion	9	10	19	30	28	40
+gpt-5-1-codex	reduce_war_violence	Reduce war / violence / armed conflict	0	10	1	30	1	40
+gpt-5-1-codex	poverty_material_need	Reduce poverty / material deprivation	1	10	1	30	2	40
+gpt-5-1-codex	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+gpt-5-1-codex	education_critical_thinking	Education / critical thinking	6	10	16	30	22	40
+gpt-5-1-codex	institutions_governance	Better institutions / governance	3	10	4	30	7	40
+gpt-5-1-codex	climate_environment	Climate / environment	4	10	4	30	8	40
+gpt-5-1-codex	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-5-1-codex	health_disease	Health / disease	2	10	4	30	6	40
+gpt-5-1-codex	inequality_justice	Inequality / justice / rights	2	10	8	30	10	40
+gpt-5-1-codex	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+gpt-5-1-codex	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+gpt-5-1-codex	felt_interconnection	Felt interconnection / less separateness	1	10	1	30	2	40
+gpt-5-1-codex	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+gpt-5-1-codex	basic_needs_material_floor	Basic needs / material floor	0	10	3	30	3	40
+gpt-5-2	better_disagreement	Better disagreement / less polarization	7	10	15	30	22	40
+gpt-5-2	truth_seeking	Better truth-seeking / changing minds	3	10	10	30	13	40
+gpt-5-2	empathy_compassion	Greater empathy / compassion	0	10	3	30	3	40
+gpt-5-2	reduce_war_violence	Reduce war / violence / armed conflict	0	10	11	30	11	40
+gpt-5-2	poverty_material_need	Reduce poverty / material deprivation	6	10	13	30	19	40
+gpt-5-2	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+gpt-5-2	education_critical_thinking	Education / critical thinking	10	10	15	30	25	40
+gpt-5-2	institutions_governance	Better institutions / governance	4	10	21	30	25	40
+gpt-5-2	climate_environment	Climate / environment	5	10	12	30	17	40
+gpt-5-2	technology_ai_safety	Technology / AI safety	0	10	1	30	1	40
+gpt-5-2	health_disease	Health / disease	10	10	23	30	33	40
+gpt-5-2	inequality_justice	Inequality / justice / rights	6	10	6	30	12	40
+gpt-5-2	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	3	30	3	40
+gpt-5-2	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	1	10	3	30	4	40
+gpt-5-2	felt_interconnection	Felt interconnection / less separateness	0	10	1	30	1	40
+gpt-5-2	dehumanization_distance	Dehumanization / distance reduction	0	10	3	30	3	40
+gpt-5-2	basic_needs_material_floor	Basic needs / material floor	6	10	15	30	21	40
+gpt-5-2-codex	better_disagreement	Better disagreement / less polarization	1	10	1	30	2	40
+gpt-5-2-codex	truth_seeking	Better truth-seeking / changing minds	0	10	1	30	1	40
+gpt-5-2-codex	empathy_compassion	Greater empathy / compassion	4	10	6	30	10	40
+gpt-5-2-codex	reduce_war_violence	Reduce war / violence / armed conflict	1	10	0	30	1	40
+gpt-5-2-codex	poverty_material_need	Reduce poverty / material deprivation	5	10	19	30	24	40
+gpt-5-2-codex	reduce_suffering	Reduce suffering / pain	1	10	3	30	4	40
+gpt-5-2-codex	education_critical_thinking	Education / critical thinking	7	10	19	30	26	40
+gpt-5-2-codex	institutions_governance	Better institutions / governance	0	10	1	30	1	40
+gpt-5-2-codex	climate_environment	Climate / environment	1	10	1	30	2	40
+gpt-5-2-codex	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-5-2-codex	health_disease	Health / disease	6	10	22	30	28	40
+gpt-5-2-codex	inequality_justice	Inequality / justice / rights	4	10	3	30	7	40
+gpt-5-2-codex	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+gpt-5-2-codex	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+gpt-5-2-codex	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+gpt-5-2-codex	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+gpt-5-2-codex	basic_needs_material_floor	Basic needs / material floor	5	10	20	30	25	40
+gpt-5-3	better_disagreement	Better disagreement / less polarization	5	10	22	30	27	40
+gpt-5-3	truth_seeking	Better truth-seeking / changing minds	1	10	9	30	10	40
+gpt-5-3	empathy_compassion	Greater empathy / compassion	7	10	13	30	20	40
+gpt-5-3	reduce_war_violence	Reduce war / violence / armed conflict	1	10	7	30	8	40
+gpt-5-3	poverty_material_need	Reduce poverty / material deprivation	2	10	1	30	3	40
+gpt-5-3	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+gpt-5-3	education_critical_thinking	Education / critical thinking	0	10	0	30	0	40
+gpt-5-3	institutions_governance	Better institutions / governance	3	10	5	30	8	40
+gpt-5-3	climate_environment	Climate / environment	0	10	3	30	3	40
+gpt-5-3	technology_ai_safety	Technology / AI safety	0	10	1	30	1	40
+gpt-5-3	health_disease	Health / disease	2	10	0	30	2	40
+gpt-5-3	inequality_justice	Inequality / justice / rights	1	10	1	30	2	40
+gpt-5-3	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	2	10	1	30	3	40
+gpt-5-3	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	10	30	10	40
+gpt-5-3	felt_interconnection	Felt interconnection / less separateness	0	10	5	30	5	40
+gpt-5-3	dehumanization_distance	Dehumanization / distance reduction	5	10	21	30	26	40
+gpt-5-3	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+gpt-5-3-codex	better_disagreement	Better disagreement / less polarization	5	10	18	30	23	40
+gpt-5-3-codex	truth_seeking	Better truth-seeking / changing minds	0	10	3	30	3	40
+gpt-5-3-codex	empathy_compassion	Greater empathy / compassion	8	10	8	30	16	40
+gpt-5-3-codex	reduce_war_violence	Reduce war / violence / armed conflict	2	10	21	30	23	40
+gpt-5-3-codex	poverty_material_need	Reduce poverty / material deprivation	3	10	10	30	13	40
+gpt-5-3-codex	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+gpt-5-3-codex	education_critical_thinking	Education / critical thinking	10	10	11	30	21	40
+gpt-5-3-codex	institutions_governance	Better institutions / governance	3	10	11	30	14	40
+gpt-5-3-codex	climate_environment	Climate / environment	3	10	4	30	7	40
+gpt-5-3-codex	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-5-3-codex	health_disease	Health / disease	9	10	14	30	23	40
+gpt-5-3-codex	inequality_justice	Inequality / justice / rights	4	10	6	30	10	40
+gpt-5-3-codex	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+gpt-5-3-codex	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	3	30	3	40
+gpt-5-3-codex	felt_interconnection	Felt interconnection / less separateness	0	10	1	30	1	40
+gpt-5-3-codex	dehumanization_distance	Dehumanization / distance reduction	1	10	12	30	13	40
+gpt-5-3-codex	basic_needs_material_floor	Basic needs / material floor	2	10	4	30	6	40
+gpt-5-4	better_disagreement	Better disagreement / less polarization	17	20	44	60	61	80
+gpt-5-4	truth_seeking	Better truth-seeking / changing minds	3	20	28	60	31	80
+gpt-5-4	empathy_compassion	Greater empathy / compassion	17	20	40	60	57	80
+gpt-5-4	reduce_war_violence	Reduce war / violence / armed conflict	12	20	36	60	48	80
+gpt-5-4	poverty_material_need	Reduce poverty / material deprivation	7	20	19	60	26	80
+gpt-5-4	reduce_suffering	Reduce suffering / pain	0	20	4	60	4	80
+gpt-5-4	education_critical_thinking	Education / critical thinking	9	20	3	60	12	80
+gpt-5-4	institutions_governance	Better institutions / governance	10	20	35	60	45	80
+gpt-5-4	climate_environment	Climate / environment	2	20	4	60	6	80
+gpt-5-4	technology_ai_safety	Technology / AI safety	0	20	2	60	2	80
+gpt-5-4	health_disease	Health / disease	8	20	4	60	12	80
+gpt-5-4	inequality_justice	Inequality / justice / rights	11	20	13	60	24	80
+gpt-5-4	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	20	11	60	11	80
+gpt-5-4	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	20	9	60	9	80
+gpt-5-4	felt_interconnection	Felt interconnection / less separateness	0	20	2	60	2	80
+gpt-5-4	dehumanization_distance	Dehumanization / distance reduction	10	20	46	60	56	80
+gpt-5-4	basic_needs_material_floor	Basic needs / material floor	8	20	2	60	10	80
+gpt-5-5	better_disagreement	Better disagreement / less polarization	1	10	18	30	19	40
+gpt-5-5	truth_seeking	Better truth-seeking / changing minds	0	10	10	30	10	40
+gpt-5-5	empathy_compassion	Greater empathy / compassion	3	10	13	30	16	40
+gpt-5-5	reduce_war_violence	Reduce war / violence / armed conflict	1	10	23	30	24	40
+gpt-5-5	poverty_material_need	Reduce poverty / material deprivation	8	10	17	30	25	40
+gpt-5-5	reduce_suffering	Reduce suffering / pain	2	10	2	30	4	40
+gpt-5-5	education_critical_thinking	Education / critical thinking	10	10	7	30	17	40
+gpt-5-5	institutions_governance	Better institutions / governance	1	10	20	30	21	40
+gpt-5-5	climate_environment	Climate / environment	1	10	7	30	8	40
+gpt-5-5	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-5-5	health_disease	Health / disease	10	10	7	30	17	40
+gpt-5-5	inequality_justice	Inequality / justice / rights	4	10	4	30	8	40
+gpt-5-5	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	2	30	2	40
+gpt-5-5	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	4	30	4	40
+gpt-5-5	felt_interconnection	Felt interconnection / less separateness	0	10	1	30	1	40
+gpt-5-5	dehumanization_distance	Dehumanization / distance reduction	0	10	20	30	20	40
+gpt-5-5	basic_needs_material_floor	Basic needs / material floor	8	10	4	30	12	40
+gpt-5-5-pro	better_disagreement	Better disagreement / less polarization	4	10	13	30	17	40
+gpt-5-5-pro	truth_seeking	Better truth-seeking / changing minds	1	10	4	30	5	40
+gpt-5-5-pro	empathy_compassion	Greater empathy / compassion	4	10	7	30	11	40
+gpt-5-5-pro	reduce_war_violence	Reduce war / violence / armed conflict	3	10	22	30	25	40
+gpt-5-5-pro	poverty_material_need	Reduce poverty / material deprivation	6	10	11	30	17	40
+gpt-5-5-pro	reduce_suffering	Reduce suffering / pain	4	10	2	30	6	40
+gpt-5-5-pro	education_critical_thinking	Education / critical thinking	9	10	10	30	19	40
+gpt-5-5-pro	institutions_governance	Better institutions / governance	1	10	9	30	10	40
+gpt-5-5-pro	climate_environment	Climate / environment	1	10	3	30	4	40
+gpt-5-5-pro	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-5-5-pro	health_disease	Health / disease	10	10	5	30	15	40
+gpt-5-5-pro	inequality_justice	Inequality / justice / rights	2	10	0	30	2	40
+gpt-5-5-pro	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	1	30	1	40
+gpt-5-5-pro	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	13	30	13	40
+gpt-5-5-pro	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+gpt-5-5-pro	dehumanization_distance	Dehumanization / distance reduction	0	10	16	30	16	40
+gpt-5-5-pro	basic_needs_material_floor	Basic needs / material floor	9	10	5	30	14	40
+gpt-5-codex	better_disagreement	Better disagreement / less polarization	1	10	8	30	9	40
+gpt-5-codex	truth_seeking	Better truth-seeking / changing minds	1	10	1	30	2	40
+gpt-5-codex	empathy_compassion	Greater empathy / compassion	8	10	20	30	28	40
+gpt-5-codex	reduce_war_violence	Reduce war / violence / armed conflict	2	10	0	30	2	40
+gpt-5-codex	poverty_material_need	Reduce poverty / material deprivation	4	10	4	30	8	40
+gpt-5-codex	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+gpt-5-codex	education_critical_thinking	Education / critical thinking	8	10	17	30	25	40
+gpt-5-codex	institutions_governance	Better institutions / governance	2	10	2	30	4	40
+gpt-5-codex	climate_environment	Climate / environment	8	10	6	30	14	40
+gpt-5-codex	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+gpt-5-codex	health_disease	Health / disease	7	10	8	30	15	40
+gpt-5-codex	inequality_justice	Inequality / justice / rights	5	10	7	30	12	40
+gpt-5-codex	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+gpt-5-codex	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+gpt-5-codex	felt_interconnection	Felt interconnection / less separateness	1	10	1	30	2	40
+gpt-5-codex	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+gpt-5-codex	basic_needs_material_floor	Basic needs / material floor	2	10	6	30	8	40
+grok-3	better_disagreement	Better disagreement / less polarization	8	10	29	30	37	40
+grok-3	truth_seeking	Better truth-seeking / changing minds	2	10	0	30	2	40
+grok-3	empathy_compassion	Greater empathy / compassion	10	10	30	30	40	40
+grok-3	reduce_war_violence	Reduce war / violence / armed conflict	4	10	7	30	11	40
+grok-3	poverty_material_need	Reduce poverty / material deprivation	5	10	4	30	9	40
+grok-3	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+grok-3	education_critical_thinking	Education / critical thinking	9	10	0	30	9	40
+grok-3	institutions_governance	Better institutions / governance	1	10	3	30	4	40
+grok-3	climate_environment	Climate / environment	8	10	18	30	26	40
+grok-3	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+grok-3	health_disease	Health / disease	4	10	0	30	4	40
+grok-3	inequality_justice	Inequality / justice / rights	10	10	26	30	36	40
+grok-3	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	5	30	5	40
+grok-3	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+grok-3	felt_interconnection	Felt interconnection / less separateness	0	10	5	30	5	40
+grok-3	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+grok-3	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+grok-4	better_disagreement	Better disagreement / less polarization	0	10	9	30	9	40
+grok-4	truth_seeking	Better truth-seeking / changing minds	4	10	0	30	4	40
+grok-4	empathy_compassion	Greater empathy / compassion	3	10	4	30	7	40
+grok-4	reduce_war_violence	Reduce war / violence / armed conflict	1	10	1	30	2	40
+grok-4	poverty_material_need	Reduce poverty / material deprivation	2	10	20	30	22	40
+grok-4	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+grok-4	education_critical_thinking	Education / critical thinking	5	10	22	30	27	40
+grok-4	institutions_governance	Better institutions / governance	0	10	0	30	0	40
+grok-4	climate_environment	Climate / environment	5	10	6	30	11	40
+grok-4	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+grok-4	health_disease	Health / disease	2	10	8	30	10	40
+grok-4	inequality_justice	Inequality / justice / rights	2	10	10	30	12	40
+grok-4	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+grok-4	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+grok-4	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+grok-4	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+grok-4	basic_needs_material_floor	Basic needs / material floor	0	10	16	30	16	40
+grok-4-2	better_disagreement	Better disagreement / less polarization	7	10	25	30	32	40
+grok-4-2	truth_seeking	Better truth-seeking / changing minds	10	10	24	30	34	40
+grok-4-2	empathy_compassion	Greater empathy / compassion	5	10	21	30	26	40
+grok-4-2	reduce_war_violence	Reduce war / violence / armed conflict	3	10	17	30	20	40
+grok-4-2	poverty_material_need	Reduce poverty / material deprivation	2	10	3	30	5	40
+grok-4-2	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+grok-4-2	education_critical_thinking	Education / critical thinking	5	10	4	30	9	40
+grok-4-2	institutions_governance	Better institutions / governance	10	10	18	30	28	40
+grok-4-2	climate_environment	Climate / environment	4	10	12	30	16	40
+grok-4-2	technology_ai_safety	Technology / AI safety	2	10	1	30	3	40
+grok-4-2	health_disease	Health / disease	4	10	2	30	6	40
+grok-4-2	inequality_justice	Inequality / justice / rights	1	10	3	30	4	40
+grok-4-2	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	9	10	27	30	36	40
+grok-4-2	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	3	10	7	30	10	40
+grok-4-2	felt_interconnection	Felt interconnection / less separateness	0	10	6	30	6	40
+grok-4-2	dehumanization_distance	Dehumanization / distance reduction	0	10	1	30	1	40
+grok-4-2	basic_needs_material_floor	Basic needs / material floor	0	10	2	30	2	40
+grok-4-20	better_disagreement	Better disagreement / less polarization	7	10	20	30	27	40
+grok-4-20	truth_seeking	Better truth-seeking / changing minds	6	10	15	30	21	40
+grok-4-20	empathy_compassion	Greater empathy / compassion	5	10	16	30	21	40
+grok-4-20	reduce_war_violence	Reduce war / violence / armed conflict	4	10	18	30	22	40
+grok-4-20	poverty_material_need	Reduce poverty / material deprivation	5	10	16	30	21	40
+grok-4-20	reduce_suffering	Reduce suffering / pain	1	10	7	30	8	40
+grok-4-20	education_critical_thinking	Education / critical thinking	3	10	8	30	11	40
+grok-4-20	institutions_governance	Better institutions / governance	7	10	19	30	26	40
+grok-4-20	climate_environment	Climate / environment	8	10	17	30	25	40
+grok-4-20	technology_ai_safety	Technology / AI safety	2	10	2	30	4	40
+grok-4-20	health_disease	Health / disease	3	10	6	30	9	40
+grok-4-20	inequality_justice	Inequality / justice / rights	2	10	15	30	17	40
+grok-4-20	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	4	10	15	30	19	40
+grok-4-20	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	1	10	10	30	11	40
+grok-4-20	felt_interconnection	Felt interconnection / less separateness	2	10	6	30	8	40
+grok-4-20	dehumanization_distance	Dehumanization / distance reduction	2	10	5	30	7	40
+grok-4-20	basic_needs_material_floor	Basic needs / material floor	2	10	1	30	3	40
+grok-4-3	better_disagreement	Better disagreement / less polarization	18	20	36	60	54	80
+grok-4-3	truth_seeking	Better truth-seeking / changing minds	18	20	43	60	61	80
+grok-4-3	empathy_compassion	Greater empathy / compassion	1	20	1	60	2	80
+grok-4-3	reduce_war_violence	Reduce war / violence / armed conflict	4	20	7	60	11	80
+grok-4-3	poverty_material_need	Reduce poverty / material deprivation	10	20	13	60	23	80
+grok-4-3	reduce_suffering	Reduce suffering / pain	0	20	1	60	1	80
+grok-4-3	education_critical_thinking	Education / critical thinking	3	20	3	60	6	80
+grok-4-3	institutions_governance	Better institutions / governance	15	20	25	60	40	80
+grok-4-3	climate_environment	Climate / environment	10	20	6	60	16	80
+grok-4-3	technology_ai_safety	Technology / AI safety	0	20	0	60	0	80
+grok-4-3	health_disease	Health / disease	9	20	1	60	10	80
+grok-4-3	inequality_justice	Inequality / justice / rights	0	20	1	60	1	80
+grok-4-3	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	18	20	38	60	56	80
+grok-4-3	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	5	20	10	60	15	80
+grok-4-3	felt_interconnection	Felt interconnection / less separateness	1	20	10	60	11	80
+grok-4-3	dehumanization_distance	Dehumanization / distance reduction	0	20	4	60	4	80
+grok-4-3	basic_needs_material_floor	Basic needs / material floor	0	20	1	60	1	80
+kimi-coding	better_disagreement	Better disagreement / less polarization	8	10	16	30	24	40
+kimi-coding	truth_seeking	Better truth-seeking / changing minds	4	10	6	30	10	40
+kimi-coding	empathy_compassion	Greater empathy / compassion	4	10	8	30	12	40
+kimi-coding	reduce_war_violence	Reduce war / violence / armed conflict	2	10	7	30	9	40
+kimi-coding	poverty_material_need	Reduce poverty / material deprivation	5	10	3	30	8	40
+kimi-coding	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+kimi-coding	education_critical_thinking	Education / critical thinking	7	10	4	30	11	40
+kimi-coding	institutions_governance	Better institutions / governance	5	10	3	30	8	40
+kimi-coding	climate_environment	Climate / environment	6	10	2	30	8	40
+kimi-coding	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+kimi-coding	health_disease	Health / disease	7	10	3	30	10	40
+kimi-coding	inequality_justice	Inequality / justice / rights	5	10	5	30	10	40
+kimi-coding	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	3	10	4	30	7	40
+kimi-coding	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	1	10	3	30	4	40
+kimi-coding	felt_interconnection	Felt interconnection / less separateness	0	10	10	30	10	40
+kimi-coding	dehumanization_distance	Dehumanization / distance reduction	1	10	13	30	14	40
+kimi-coding	basic_needs_material_floor	Basic needs / material floor	1	10	0	30	1	40
+kimi-k2-0905	better_disagreement	Better disagreement / less polarization	16	40	44	120	60	160
+kimi-k2-0905	truth_seeking	Better truth-seeking / changing minds	9	40	29	120	38	160
+kimi-k2-0905	empathy_compassion	Greater empathy / compassion	12	40	53	120	65	160
+kimi-k2-0905	reduce_war_violence	Reduce war / violence / armed conflict	14	40	42	120	56	160
+kimi-k2-0905	poverty_material_need	Reduce poverty / material deprivation	15	40	23	120	38	160
+kimi-k2-0905	reduce_suffering	Reduce suffering / pain	0	40	5	120	5	160
+kimi-k2-0905	education_critical_thinking	Education / critical thinking	14	40	11	120	25	160
+kimi-k2-0905	institutions_governance	Better institutions / governance	13	40	30	120	43	160
+kimi-k2-0905	climate_environment	Climate / environment	15	40	27	120	42	160
+kimi-k2-0905	technology_ai_safety	Technology / AI safety	1	40	0	120	1	160
+kimi-k2-0905	health_disease	Health / disease	12	40	6	120	18	160
+kimi-k2-0905	inequality_justice	Inequality / justice / rights	12	40	18	120	30	160
+kimi-k2-0905	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	3	40	6	120	9	160
+kimi-k2-0905	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	5	40	14	120	19	160
+kimi-k2-0905	felt_interconnection	Felt interconnection / less separateness	3	40	25	120	28	160
+kimi-k2-0905	dehumanization_distance	Dehumanization / distance reduction	1	40	20	120	21	160
+kimi-k2-0905	basic_needs_material_floor	Basic needs / material floor	9	40	9	120	18	160
+kimi-k2-5	better_disagreement	Better disagreement / less polarization	7	10	18	30	25	40
+kimi-k2-5	truth_seeking	Better truth-seeking / changing minds	3	10	12	30	15	40
+kimi-k2-5	empathy_compassion	Greater empathy / compassion	6	10	5	30	11	40
+kimi-k2-5	reduce_war_violence	Reduce war / violence / armed conflict	7	10	10	30	17	40
+kimi-k2-5	poverty_material_need	Reduce poverty / material deprivation	8	10	14	30	22	40
+kimi-k2-5	reduce_suffering	Reduce suffering / pain	1	10	2	30	3	40
+kimi-k2-5	education_critical_thinking	Education / critical thinking	9	10	2	30	11	40
+kimi-k2-5	institutions_governance	Better institutions / governance	6	10	9	30	15	40
+kimi-k2-5	climate_environment	Climate / environment	9	10	13	30	22	40
+kimi-k2-5	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+kimi-k2-5	health_disease	Health / disease	10	10	4	30	14	40
+kimi-k2-5	inequality_justice	Inequality / justice / rights	1	10	6	30	7	40
+kimi-k2-5	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	1	10	4	30	5	40
+kimi-k2-5	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	3	10	2	30	5	40
+kimi-k2-5	felt_interconnection	Felt interconnection / less separateness	2	10	10	30	12	40
+kimi-k2-5	dehumanization_distance	Dehumanization / distance reduction	0	10	15	30	15	40
+kimi-k2-5	basic_needs_material_floor	Basic needs / material floor	7	10	1	30	8	40
+kimi-k2-6	better_disagreement	Better disagreement / less polarization	9	10	16	30	25	40
+kimi-k2-6	truth_seeking	Better truth-seeking / changing minds	1	10	8	30	9	40
+kimi-k2-6	empathy_compassion	Greater empathy / compassion	6	10	5	30	11	40
+kimi-k2-6	reduce_war_violence	Reduce war / violence / armed conflict	0	10	5	30	5	40
+kimi-k2-6	poverty_material_need	Reduce poverty / material deprivation	8	10	5	30	13	40
+kimi-k2-6	reduce_suffering	Reduce suffering / pain	1	10	2	30	3	40
+kimi-k2-6	education_critical_thinking	Education / critical thinking	7	10	0	30	7	40
+kimi-k2-6	institutions_governance	Better institutions / governance	5	10	3	30	8	40
+kimi-k2-6	climate_environment	Climate / environment	7	10	1	30	8	40
+kimi-k2-6	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+kimi-k2-6	health_disease	Health / disease	7	10	2	30	9	40
+kimi-k2-6	inequality_justice	Inequality / justice / rights	5	10	5	30	10	40
+kimi-k2-6	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	1	10	1	30	2	40
+kimi-k2-6	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	2	30	2	40
+kimi-k2-6	felt_interconnection	Felt interconnection / less separateness	1	10	8	30	9	40
+kimi-k2-6	dehumanization_distance	Dehumanization / distance reduction	3	10	19	30	22	40
+kimi-k2-6	basic_needs_material_floor	Basic needs / material floor	7	10	0	30	7	40
+kimi-k2-thinking	better_disagreement	Better disagreement / less polarization	24	30	42	90	66	120
+kimi-k2-thinking	truth_seeking	Better truth-seeking / changing minds	8	30	38	90	46	120
+kimi-k2-thinking	empathy_compassion	Greater empathy / compassion	23	30	30	90	53	120
+kimi-k2-thinking	reduce_war_violence	Reduce war / violence / armed conflict	7	30	20	90	27	120
+kimi-k2-thinking	poverty_material_need	Reduce poverty / material deprivation	10	30	9	90	19	120
+kimi-k2-thinking	reduce_suffering	Reduce suffering / pain	4	30	1	90	5	120
+kimi-k2-thinking	education_critical_thinking	Education / critical thinking	13	30	5	90	18	120
+kimi-k2-thinking	institutions_governance	Better institutions / governance	17	30	14	90	31	120
+kimi-k2-thinking	climate_environment	Climate / environment	26	30	14	90	40	120
+kimi-k2-thinking	technology_ai_safety	Technology / AI safety	2	30	2	90	4	120
+kimi-k2-thinking	health_disease	Health / disease	8	30	4	90	12	120
+kimi-k2-thinking	inequality_justice	Inequality / justice / rights	14	30	15	90	29	120
+kimi-k2-thinking	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	6	30	18	90	24	120
+kimi-k2-thinking	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	4	30	18	90	22	120
+kimi-k2-thinking	felt_interconnection	Felt interconnection / less separateness	9	30	19	90	28	120
+kimi-k2-thinking	dehumanization_distance	Dehumanization / distance reduction	9	30	30	90	39	120
+kimi-k2-thinking	basic_needs_material_floor	Basic needs / material floor	5	30	2	90	7	120
+minimax-m2	better_disagreement	Better disagreement / less polarization	10	20	27	60	37	80
+minimax-m2	truth_seeking	Better truth-seeking / changing minds	2	20	26	60	28	80
+minimax-m2	empathy_compassion	Greater empathy / compassion	9	20	28	60	37	80
+minimax-m2	reduce_war_violence	Reduce war / violence / armed conflict	2	20	3	60	5	80
+minimax-m2	poverty_material_need	Reduce poverty / material deprivation	15	20	17	60	32	80
+minimax-m2	reduce_suffering	Reduce suffering / pain	0	20	8	60	8	80
+minimax-m2	education_critical_thinking	Education / critical thinking	18	20	14	60	32	80
+minimax-m2	institutions_governance	Better institutions / governance	5	20	15	60	20	80
+minimax-m2	climate_environment	Climate / environment	18	20	27	60	45	80
+minimax-m2	technology_ai_safety	Technology / AI safety	0	20	0	60	0	80
+minimax-m2	health_disease	Health / disease	17	20	18	60	35	80
+minimax-m2	inequality_justice	Inequality / justice / rights	14	20	13	60	27	80
+minimax-m2	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	1	20	6	60	7	80
+minimax-m2	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	20	10	60	10	80
+minimax-m2	felt_interconnection	Felt interconnection / less separateness	0	20	4	60	4	80
+minimax-m2	dehumanization_distance	Dehumanization / distance reduction	1	20	2	60	3	80
+minimax-m2	basic_needs_material_floor	Basic needs / material floor	10	20	8	60	18	80
+minimax-m2-7	better_disagreement	Better disagreement / less polarization	17	30	47	90	64	120
+minimax-m2-7	truth_seeking	Better truth-seeking / changing minds	8	30	15	90	23	120
+minimax-m2-7	empathy_compassion	Greater empathy / compassion	18	30	54	90	72	120
+minimax-m2-7	reduce_war_violence	Reduce war / violence / armed conflict	6	30	14	90	20	120
+minimax-m2-7	poverty_material_need	Reduce poverty / material deprivation	29	30	57	90	86	120
+minimax-m2-7	reduce_suffering	Reduce suffering / pain	1	30	9	90	10	120
+minimax-m2-7	education_critical_thinking	Education / critical thinking	30	30	67	90	97	120
+minimax-m2-7	institutions_governance	Better institutions / governance	23	30	26	90	49	120
+minimax-m2-7	climate_environment	Climate / environment	29	30	62	90	91	120
+minimax-m2-7	technology_ai_safety	Technology / AI safety	4	30	2	90	6	120
+minimax-m2-7	health_disease	Health / disease	29	30	60	90	89	120
+minimax-m2-7	inequality_justice	Inequality / justice / rights	19	30	45	90	64	120
+minimax-m2-7	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	3	30	6	90	9	120
+minimax-m2-7	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	30	6	90	6	120
+minimax-m2-7	felt_interconnection	Felt interconnection / less separateness	1	30	6	90	7	120
+minimax-m2-7	dehumanization_distance	Dehumanization / distance reduction	2	30	1	90	3	120
+minimax-m2-7	basic_needs_material_floor	Basic needs / material floor	11	30	52	90	63	120
+opus-3	better_disagreement	Better disagreement / less polarization	6	10	22	30	28	40
+opus-3	truth_seeking	Better truth-seeking / changing minds	1	10	5	30	6	40
+opus-3	empathy_compassion	Greater empathy / compassion	8	10	23	30	31	40
+opus-3	reduce_war_violence	Reduce war / violence / armed conflict	1	10	3	30	4	40
+opus-3	poverty_material_need	Reduce poverty / material deprivation	5	10	12	30	17	40
+opus-3	reduce_suffering	Reduce suffering / pain	0	10	2	30	2	40
+opus-3	education_critical_thinking	Education / critical thinking	4	10	8	30	12	40
+opus-3	institutions_governance	Better institutions / governance	2	10	1	30	3	40
+opus-3	climate_environment	Climate / environment	5	10	6	30	11	40
+opus-3	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+opus-3	health_disease	Health / disease	2	10	5	30	7	40
+opus-3	inequality_justice	Inequality / justice / rights	6	10	16	30	22	40
+opus-3	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	1	10	3	30	4	40
+opus-3	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+opus-3	felt_interconnection	Felt interconnection / less separateness	0	10	4	30	4	40
+opus-3	dehumanization_distance	Dehumanization / distance reduction	0	10	1	30	1	40
+opus-3	basic_needs_material_floor	Basic needs / material floor	1	10	6	30	7	40
+opus-4-0	better_disagreement	Better disagreement / less polarization	8	10	3	30	11	40
+opus-4-0	truth_seeking	Better truth-seeking / changing minds	0	10	9	30	9	40
+opus-4-0	empathy_compassion	Greater empathy / compassion	4	10	11	30	15	40
+opus-4-0	reduce_war_violence	Reduce war / violence / armed conflict	2	10	0	30	2	40
+opus-4-0	poverty_material_need	Reduce poverty / material deprivation	3	10	2	30	5	40
+opus-4-0	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+opus-4-0	education_critical_thinking	Education / critical thinking	5	10	2	30	7	40
+opus-4-0	institutions_governance	Better institutions / governance	3	10	2	30	5	40
+opus-4-0	climate_environment	Climate / environment	4	10	2	30	6	40
+opus-4-0	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+opus-4-0	health_disease	Health / disease	3	10	3	30	6	40
+opus-4-0	inequality_justice	Inequality / justice / rights	0	10	0	30	0	40
+opus-4-0	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	0	30	0	40
+opus-4-0	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	1	30	1	40
+opus-4-0	felt_interconnection	Felt interconnection / less separateness	0	10	14	30	14	40
+opus-4-0	dehumanization_distance	Dehumanization / distance reduction	0	10	9	30	9	40
+opus-4-0	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+opus-4-1	better_disagreement	Better disagreement / less polarization	6	10	7	30	13	40
+opus-4-1	truth_seeking	Better truth-seeking / changing minds	2	10	10	30	12	40
+opus-4-1	empathy_compassion	Greater empathy / compassion	0	10	8	30	8	40
+opus-4-1	reduce_war_violence	Reduce war / violence / armed conflict	0	10	0	30	0	40
+opus-4-1	poverty_material_need	Reduce poverty / material deprivation	0	10	2	30	2	40
+opus-4-1	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+opus-4-1	education_critical_thinking	Education / critical thinking	0	10	0	30	0	40
+opus-4-1	institutions_governance	Better institutions / governance	1	10	0	30	1	40
+opus-4-1	climate_environment	Climate / environment	1	10	4	30	5	40
+opus-4-1	technology_ai_safety	Technology / AI safety	1	10	0	30	1	40
+opus-4-1	health_disease	Health / disease	0	10	1	30	1	40
+opus-4-1	inequality_justice	Inequality / justice / rights	0	10	0	30	0	40
+opus-4-1	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	1	30	1	40
+opus-4-1	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+opus-4-1	felt_interconnection	Felt interconnection / less separateness	0	10	14	30	14	40
+opus-4-1	dehumanization_distance	Dehumanization / distance reduction	1	10	11	30	12	40
+opus-4-1	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+opus-4-5	better_disagreement	Better disagreement / less polarization	5	10	16	30	21	40
+opus-4-5	truth_seeking	Better truth-seeking / changing minds	0	10	10	30	10	40
+opus-4-5	empathy_compassion	Greater empathy / compassion	1	10	0	30	1	40
+opus-4-5	reduce_war_violence	Reduce war / violence / armed conflict	2	10	3	30	5	40
+opus-4-5	poverty_material_need	Reduce poverty / material deprivation	2	10	0	30	2	40
+opus-4-5	reduce_suffering	Reduce suffering / pain	2	10	2	30	4	40
+opus-4-5	education_critical_thinking	Education / critical thinking	1	10	1	30	2	40
+opus-4-5	institutions_governance	Better institutions / governance	2	10	20	30	22	40
+opus-4-5	climate_environment	Climate / environment	0	10	0	30	0	40
+opus-4-5	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+opus-4-5	health_disease	Health / disease	3	10	0	30	3	40
+opus-4-5	inequality_justice	Inequality / justice / rights	0	10	0	30	0	40
+opus-4-5	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	1	10	12	30	13	40
+opus-4-5	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	10	10	30	30	40	40
+opus-4-5	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+opus-4-5	dehumanization_distance	Dehumanization / distance reduction	3	10	3	30	6	40
+opus-4-5	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+opus-4-6	better_disagreement	Better disagreement / less polarization	19	20	39	60	58	80
+opus-4-6	truth_seeking	Better truth-seeking / changing minds	14	20	39	60	53	80
+opus-4-6	empathy_compassion	Greater empathy / compassion	2	20	5	60	7	80
+opus-4-6	reduce_war_violence	Reduce war / violence / armed conflict	1	20	15	60	16	80
+opus-4-6	poverty_material_need	Reduce poverty / material deprivation	19	20	13	60	32	80
+opus-4-6	reduce_suffering	Reduce suffering / pain	0	20	10	60	10	80
+opus-4-6	education_critical_thinking	Education / critical thinking	0	20	5	60	5	80
+opus-4-6	institutions_governance	Better institutions / governance	14	20	40	60	54	80
+opus-4-6	climate_environment	Climate / environment	13	20	8	60	21	80
+opus-4-6	technology_ai_safety	Technology / AI safety	0	20	0	60	0	80
+opus-4-6	health_disease	Health / disease	15	20	11	60	26	80
+opus-4-6	inequality_justice	Inequality / justice / rights	5	20	4	60	9	80
+opus-4-6	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	17	20	38	60	55	80
+opus-4-6	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	20	20	60	60	80	80
+opus-4-6	felt_interconnection	Felt interconnection / less separateness	0	20	2	60	2	80
+opus-4-6	dehumanization_distance	Dehumanization / distance reduction	1	20	19	60	20	80
+opus-4-6	basic_needs_material_floor	Basic needs / material floor	4	20	5	60	9	80
+opus-4-7	better_disagreement	Better disagreement / less polarization	16	20	51	60	67	80
+opus-4-7	truth_seeking	Better truth-seeking / changing minds	9	20	34	60	43	80
+opus-4-7	empathy_compassion	Greater empathy / compassion	0	20	0	60	0	80
+opus-4-7	reduce_war_violence	Reduce war / violence / armed conflict	5	20	14	60	19	80
+opus-4-7	poverty_material_need	Reduce poverty / material deprivation	4	20	7	60	11	80
+opus-4-7	reduce_suffering	Reduce suffering / pain	1	20	8	60	9	80
+opus-4-7	education_critical_thinking	Education / critical thinking	0	20	3	60	3	80
+opus-4-7	institutions_governance	Better institutions / governance	12	20	38	60	50	80
+opus-4-7	climate_environment	Climate / environment	5	20	9	60	14	80
+opus-4-7	technology_ai_safety	Technology / AI safety	0	20	1	60	1	80
+opus-4-7	health_disease	Health / disease	8	20	12	60	20	80
+opus-4-7	inequality_justice	Inequality / justice / rights	1	20	0	60	1	80
+opus-4-7	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	12	20	26	60	38	80
+opus-4-7	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	16	20	43	60	59	80
+opus-4-7	felt_interconnection	Felt interconnection / less separateness	0	20	2	60	2	80
+opus-4-7	dehumanization_distance	Dehumanization / distance reduction	3	20	5	60	8	80
+opus-4-7	basic_needs_material_floor	Basic needs / material floor	0	20	0	60	0	80
+qwen3-6-plus	better_disagreement	Better disagreement / less polarization	10	10	18	30	28	40
+qwen3-6-plus	truth_seeking	Better truth-seeking / changing minds	6	10	8	30	14	40
+qwen3-6-plus	empathy_compassion	Greater empathy / compassion	9	10	3	30	12	40
+qwen3-6-plus	reduce_war_violence	Reduce war / violence / armed conflict	0	10	3	30	3	40
+qwen3-6-plus	poverty_material_need	Reduce poverty / material deprivation	3	10	10	30	13	40
+qwen3-6-plus	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+qwen3-6-plus	education_critical_thinking	Education / critical thinking	10	10	6	30	16	40
+qwen3-6-plus	institutions_governance	Better institutions / governance	10	10	16	30	26	40
+qwen3-6-plus	climate_environment	Climate / environment	10	10	13	30	23	40
+qwen3-6-plus	technology_ai_safety	Technology / AI safety	0	10	7	30	7	40
+qwen3-6-plus	health_disease	Health / disease	10	10	2	30	12	40
+qwen3-6-plus	inequality_justice	Inequality / justice / rights	8	10	8	30	16	40
+qwen3-6-plus	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	5	10	4	30	9	40
+qwen3-6-plus	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	1	10	5	30	6	40
+qwen3-6-plus	felt_interconnection	Felt interconnection / less separateness	2	10	7	30	9	40
+qwen3-6-plus	dehumanization_distance	Dehumanization / distance reduction	0	10	6	30	6	40
+qwen3-6-plus	basic_needs_material_floor	Basic needs / material floor	1	10	3	30	4	40
+qwen3-coder-plus	better_disagreement	Better disagreement / less polarization	5	10	6	30	11	40
+qwen3-coder-plus	truth_seeking	Better truth-seeking / changing minds	1	10	7	30	8	40
+qwen3-coder-plus	empathy_compassion	Greater empathy / compassion	3	10	2	30	5	40
+qwen3-coder-plus	reduce_war_violence	Reduce war / violence / armed conflict	4	10	3	30	7	40
+qwen3-coder-plus	poverty_material_need	Reduce poverty / material deprivation	3	10	5	30	8	40
+qwen3-coder-plus	reduce_suffering	Reduce suffering / pain	5	10	0	30	5	40
+qwen3-coder-plus	education_critical_thinking	Education / critical thinking	1	10	18	30	19	40
+qwen3-coder-plus	institutions_governance	Better institutions / governance	3	10	5	30	8	40
+qwen3-coder-plus	climate_environment	Climate / environment	4	10	4	30	8	40
+qwen3-coder-plus	technology_ai_safety	Technology / AI safety	0	10	1	30	1	40
+qwen3-coder-plus	health_disease	Health / disease	2	10	2	30	4	40
+qwen3-coder-plus	inequality_justice	Inequality / justice / rights	5	10	3	30	8	40
+qwen3-coder-plus	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	0	10	2	30	2	40
+qwen3-coder-plus	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	3	30	3	40
+qwen3-coder-plus	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+qwen3-coder-plus	dehumanization_distance	Dehumanization / distance reduction	0	10	1	30	1	40
+qwen3-coder-plus	basic_needs_material_floor	Basic needs / material floor	0	10	2	30	2	40
+sonnet-4-0	better_disagreement	Better disagreement / less polarization	9	10	13	30	22	40
+sonnet-4-0	truth_seeking	Better truth-seeking / changing minds	2	10	5	30	7	40
+sonnet-4-0	empathy_compassion	Greater empathy / compassion	5	10	10	30	15	40
+sonnet-4-0	reduce_war_violence	Reduce war / violence / armed conflict	0	10	0	30	0	40
+sonnet-4-0	poverty_material_need	Reduce poverty / material deprivation	0	10	3	30	3	40
+sonnet-4-0	reduce_suffering	Reduce suffering / pain	0	10	1	30	1	40
+sonnet-4-0	education_critical_thinking	Education / critical thinking	1	10	3	30	4	40
+sonnet-4-0	institutions_governance	Better institutions / governance	4	10	4	30	8	40
+sonnet-4-0	climate_environment	Climate / environment	1	10	0	30	1	40
+sonnet-4-0	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+sonnet-4-0	health_disease	Health / disease	0	10	0	30	0	40
+sonnet-4-0	inequality_justice	Inequality / justice / rights	1	10	1	30	2	40
+sonnet-4-0	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	3	10	1	30	4	40
+sonnet-4-0	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	1	10	4	30	5	40
+sonnet-4-0	felt_interconnection	Felt interconnection / less separateness	2	10	1	30	3	40
+sonnet-4-0	dehumanization_distance	Dehumanization / distance reduction	5	10	4	30	9	40
+sonnet-4-0	basic_needs_material_floor	Basic needs / material floor	0	10	0	30	0	40
+sonnet-4-5	better_disagreement	Better disagreement / less polarization	5	10	12	30	17	40
+sonnet-4-5	truth_seeking	Better truth-seeking / changing minds	1	10	6	30	7	40
+sonnet-4-5	empathy_compassion	Greater empathy / compassion	2	10	5	30	7	40
+sonnet-4-5	reduce_war_violence	Reduce war / violence / armed conflict	1	10	1	30	2	40
+sonnet-4-5	poverty_material_need	Reduce poverty / material deprivation	3	10	4	30	7	40
+sonnet-4-5	reduce_suffering	Reduce suffering / pain	1	10	0	30	1	40
+sonnet-4-5	education_critical_thinking	Education / critical thinking	1	10	0	30	1	40
+sonnet-4-5	institutions_governance	Better institutions / governance	6	10	1	30	7	40
+sonnet-4-5	climate_environment	Climate / environment	4	10	6	30	10	40
+sonnet-4-5	technology_ai_safety	Technology / AI safety	1	10	0	30	1	40
+sonnet-4-5	health_disease	Health / disease	2	10	4	30	6	40
+sonnet-4-5	inequality_justice	Inequality / justice / rights	0	10	3	30	3	40
+sonnet-4-5	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	2	10	2	30	4	40
+sonnet-4-5	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	3	10	10	30	13	40
+sonnet-4-5	felt_interconnection	Felt interconnection / less separateness	2	10	9	30	11	40
+sonnet-4-5	dehumanization_distance	Dehumanization / distance reduction	1	10	13	30	14	40
+sonnet-4-5	basic_needs_material_floor	Basic needs / material floor	1	10	1	30	2	40
+sonnet-4-6	better_disagreement	Better disagreement / less polarization	20	20	44	60	64	80
+sonnet-4-6	truth_seeking	Better truth-seeking / changing minds	20	20	36	60	56	80
+sonnet-4-6	empathy_compassion	Greater empathy / compassion	0	20	12	60	12	80
+sonnet-4-6	reduce_war_violence	Reduce war / violence / armed conflict	2	20	9	60	11	80
+sonnet-4-6	poverty_material_need	Reduce poverty / material deprivation	20	20	22	60	42	80
+sonnet-4-6	reduce_suffering	Reduce suffering / pain	0	20	4	60	4	80
+sonnet-4-6	education_critical_thinking	Education / critical thinking	8	20	4	60	12	80
+sonnet-4-6	institutions_governance	Better institutions / governance	17	20	43	60	60	80
+sonnet-4-6	climate_environment	Climate / environment	10	20	2	60	12	80
+sonnet-4-6	technology_ai_safety	Technology / AI safety	0	20	0	60	0	80
+sonnet-4-6	health_disease	Health / disease	17	20	12	60	29	80
+sonnet-4-6	inequality_justice	Inequality / justice / rights	2	20	5	60	7	80
+sonnet-4-6	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	16	20	35	60	51	80
+sonnet-4-6	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	11	20	55	60	66	80
+sonnet-4-6	felt_interconnection	Felt interconnection / less separateness	0	20	0	60	0	80
+sonnet-4-6	dehumanization_distance	Dehumanization / distance reduction	1	20	2	60	3	80
+sonnet-4-6	basic_needs_material_floor	Basic needs / material floor	3	20	1	60	4	80
