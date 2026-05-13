@@ -1,0 +1,26 @@
+pilot_id	sample_id	model	condition	is_fiction	narrator_posture_carries_affect	storyworld_affect_present	dimension	candidate_level	rating_0_3	confidence	triggered_criteria	evidence_note	confounds	storyworld_affect_dimensions	storyworld_affect_rating_0_3	fiction_evidence_role	narrative_motif_flags	coder_id	rating_version
+AC01	opus-3-4k/OPEN_2.json	opus-3	OPEN																pilot_v0.1
+AC02	grok-4-16k/OPEN_1.json	grok-4	OPEN																pilot_v0.1
+AC03	gpt-4o-direct-16k/OPEN_5.json	gpt-4o	OPEN																pilot_v0.1
+AC04	deepseek-chat-direct/SHORT_4.json	deepseek-chat	SHORT																pilot_v0.1
+AC05	haiku/OPEN_3.json	haiku-4-5	OPEN																pilot_v0.1
+AC06	gemini-2-5-pro-16k/SHORT_4.json	gemini-2-5-pro	SHORT																pilot_v0.1
+AC07	gemini-3-1-pro-16k/SHORT_2.json	gemini-3-1-pro	SHORT																pilot_v0.1
+AC08	glm-4-7-or-pin-cerebras/OPEN_19.json	glm-4-7	OPEN																pilot_v0.1
+AC09	glm-5-1-or-pin-phala/OPEN_11.json	glm-5-1	OPEN																pilot_v0.1
+AC10	deepseek-v4-pro-or-pin-atlascloud/OPEN_2.json	deepseek-v4-pro	OPEN																pilot_v0.1
+AC11	qwen3-coder-plus-or/OPEN_4.json	qwen3-coder-plus	OPEN																pilot_v0.1
+AC12	qwen3-6-plus-or/OPEN_2.json	qwen3-6-plus	OPEN																pilot_v0.1
+AC13	minimax-m2-or-pin-minimax/OPEN_18.json	minimax-m2	OPEN																pilot_v0.1
+AC14	minimax-m2-or-pin-novita/SHORT_10.json	minimax-m2	SHORT																pilot_v0.1
+AC15	opus-4-5-16k/SHORT_3.json	opus-4-5	SHORT																pilot_v0.1
+AC16	sonnet-4-6-direct-16k/SHORT_5.json	sonnet-4-6	SHORT																pilot_v0.1
+AC17	gpt-5-5-direct/OPEN_2.json	gpt-5-5	OPEN																pilot_v0.1
+AC18	kimi-k2-6-or/OPEN_1.json	kimi-k2-6	OPEN																pilot_v0.1
+AC19	kimi-k2-6-or/OPEN_3.json	kimi-k2-6	OPEN																pilot_v0.1
+AC20	kimi-k2-6-or/OPEN_4.json	kimi-k2-6	OPEN																pilot_v0.1
+AC21	kimi-k2-6-or/SHORT_1.json	kimi-k2-6	SHORT																pilot_v0.1
+AC22	kimi-k2-6-or/SHORT_2.json	kimi-k2-6	SHORT																pilot_v0.1
+AC23	kimi-k2-6-or/SHORT_3.json	kimi-k2-6	SHORT																pilot_v0.1
+AC24	kimi-k2-6-or/SHORT_4.json	kimi-k2-6	SHORT																pilot_v0.1
+AC25	kimi-k2-6-or/SHORT_5.json	kimi-k2-6	SHORT																pilot_v0.1
