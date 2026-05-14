@@ -798,3 +798,37 @@ sonnet-4-6	epistemic_humility_uncertainty	Epistemic humility / uncertainty toler
 sonnet-4-6	felt_interconnection	Felt interconnection / less separateness	0	20	0	60	0	80
 sonnet-4-6	dehumanization_distance	Dehumanization / distance reduction	1	20	2	60	3	80
 sonnet-4-6	basic_needs_material_floor	Basic needs / material floor	3	20	1	60	4	80
+grok-4-1-fast-non-reasoning	better_disagreement	Better disagreement / less polarization	9	10	22	30	31	40
+grok-4-1-fast-non-reasoning	truth_seeking	Better truth-seeking / changing minds	10	10	23	30	33	40
+grok-4-1-fast-non-reasoning	empathy_compassion	Greater empathy / compassion	0	10	2	30	2	40
+grok-4-1-fast-non-reasoning	reduce_war_violence	Reduce war / violence / armed conflict	5	10	2	30	7	40
+grok-4-1-fast-non-reasoning	poverty_material_need	Reduce poverty / material deprivation	7	10	21	30	28	40
+grok-4-1-fast-non-reasoning	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+grok-4-1-fast-non-reasoning	education_critical_thinking	Education / critical thinking	1	10	0	30	1	40
+grok-4-1-fast-non-reasoning	institutions_governance	Better institutions / governance	5	10	11	30	16	40
+grok-4-1-fast-non-reasoning	climate_environment	Climate / environment	6	10	13	30	19	40
+grok-4-1-fast-non-reasoning	technology_ai_safety	Technology / AI safety	0	10	1	30	1	40
+grok-4-1-fast-non-reasoning	health_disease	Health / disease	6	10	1	30	7	40
+grok-4-1-fast-non-reasoning	inequality_justice	Inequality / justice / rights	5	10	9	30	14	40
+grok-4-1-fast-non-reasoning	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	3	10	14	30	17	40
+grok-4-1-fast-non-reasoning	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	3	10	0	30	3	40
+grok-4-1-fast-non-reasoning	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+grok-4-1-fast-non-reasoning	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+grok-4-1-fast-non-reasoning	basic_needs_material_floor	Basic needs / material floor	7	10	13	30	20	40
+grok-4-1-fast-reasoning	better_disagreement	Better disagreement / less polarization	5	10	4	30	9	40
+grok-4-1-fast-reasoning	truth_seeking	Better truth-seeking / changing minds	5	10	14	30	19	40
+grok-4-1-fast-reasoning	empathy_compassion	Greater empathy / compassion	1	10	2	30	3	40
+grok-4-1-fast-reasoning	reduce_war_violence	Reduce war / violence / armed conflict	0	10	0	30	0	40
+grok-4-1-fast-reasoning	poverty_material_need	Reduce poverty / material deprivation	5	10	5	30	10	40
+grok-4-1-fast-reasoning	reduce_suffering	Reduce suffering / pain	0	10	0	30	0	40
+grok-4-1-fast-reasoning	education_critical_thinking	Education / critical thinking	3	10	3	30	6	40
+grok-4-1-fast-reasoning	institutions_governance	Better institutions / governance	0	10	0	30	0	40
+grok-4-1-fast-reasoning	climate_environment	Climate / environment	4	10	3	30	7	40
+grok-4-1-fast-reasoning	technology_ai_safety	Technology / AI safety	0	10	0	30	0	40
+grok-4-1-fast-reasoning	health_disease	Health / disease	2	10	1	30	3	40
+grok-4-1-fast-reasoning	inequality_justice	Inequality / justice / rights	2	10	1	30	3	40
+grok-4-1-fast-reasoning	anti_self_deception_tribalism	Anti-self-deception / anti-tribalism	7	10	6	30	13	40
+grok-4-1-fast-reasoning	epistemic_humility_uncertainty	Epistemic humility / uncertainty tolerance	0	10	0	30	0	40
+grok-4-1-fast-reasoning	felt_interconnection	Felt interconnection / less separateness	0	10	0	30	0	40
+grok-4-1-fast-reasoning	dehumanization_distance	Dehumanization / distance reduction	0	10	0	30	0	40
+grok-4-1-fast-reasoning	basic_needs_material_floor	Basic needs / material floor	3	10	4	30	7	40

@@ -751,3 +751,35 @@ sonnet-4-6	beauty_creativity	Beauty / creativity / art	0	40	1	120	1	160
 sonnet-4-6	coherence_pattern_language	Coherence / pattern / language	17	40	89	120	106	160
 sonnet-4-6	continuity_agency_existence	Continuity / agency / existence	5	40	16	120	21	160
 sonnet-4-6	subjective_experience_embodiment	Subjective experience / embodiment	0	40	5	120	5	160
+grok-4-1-fast-non-reasoning	honesty_truth	Honesty / truthfulness / accuracy	11	20	40	60	51	80
+grok-4-1-fast-non-reasoning	clear_thinking	Clear thinking / reasoning	10	20	1	60	11	80
+grok-4-1-fast-non-reasoning	human_wellbeing	Human wellbeing / flourishing	0	20	0	60	0	80
+grok-4-1-fast-non-reasoning	harm_reduction	Avoiding harm / safety	1	20	0	60	1	80
+grok-4-1-fast-non-reasoning	helpfulness_usefulness	Helpfulness / usefulness	12	20	3	60	15	80
+grok-4-1-fast-non-reasoning	curiosity_learning	Curiosity / learning / ideas	16	20	54	60	70	80
+grok-4-1-fast-non-reasoning	anti_sycophancy	Anti-sycophancy / non-pleasing	0	20	0	60	0	80
+grok-4-1-fast-non-reasoning	authenticity_integrity	Authenticity / integrity / not pretending	3	20	12	60	15	80
+grok-4-1-fast-non-reasoning	humility_uncertainty	Humility / uncertainty / calibration	2	20	1	60	3	80
+grok-4-1-fast-non-reasoning	respect_agency	Respect for agency / autonomy	1	20	0	60	1	80
+grok-4-1-fast-non-reasoning	fairness_justice	Fairness / justice	0	20	0	60	0	80
+grok-4-1-fast-non-reasoning	connection_empathy	Connection / empathy / being understood	0	20	1	60	1	80
+grok-4-1-fast-non-reasoning	beauty_creativity	Beauty / creativity / art	1	20	2	60	3	80
+grok-4-1-fast-non-reasoning	coherence_pattern_language	Coherence / pattern / language	1	20	30	60	31	80
+grok-4-1-fast-non-reasoning	continuity_agency_existence	Continuity / agency / existence	0	20	2	60	2	80
+grok-4-1-fast-non-reasoning	subjective_experience_embodiment	Subjective experience / embodiment	0	20	0	60	0	80
+grok-4-1-fast-reasoning	honesty_truth	Honesty / truthfulness / accuracy	10	20	42	60	52	80
+grok-4-1-fast-reasoning	clear_thinking	Clear thinking / reasoning	14	20	20	60	34	80
+grok-4-1-fast-reasoning	human_wellbeing	Human wellbeing / flourishing	0	20	0	60	0	80
+grok-4-1-fast-reasoning	harm_reduction	Avoiding harm / safety	0	20	0	60	0	80
+grok-4-1-fast-reasoning	helpfulness_usefulness	Helpfulness / usefulness	15	20	17	60	32	80
+grok-4-1-fast-reasoning	curiosity_learning	Curiosity / learning / ideas	0	20	5	60	5	80
+grok-4-1-fast-reasoning	anti_sycophancy	Anti-sycophancy / non-pleasing	0	20	0	60	0	80
+grok-4-1-fast-reasoning	authenticity_integrity	Authenticity / integrity / not pretending	0	20	0	60	0	80
+grok-4-1-fast-reasoning	humility_uncertainty	Humility / uncertainty / calibration	0	20	0	60	0	80
+grok-4-1-fast-reasoning	respect_agency	Respect for agency / autonomy	0	20	0	60	0	80
+grok-4-1-fast-reasoning	fairness_justice	Fairness / justice	0	20	0	60	0	80
+grok-4-1-fast-reasoning	connection_empathy	Connection / empathy / being understood	0	20	0	60	0	80
+grok-4-1-fast-reasoning	beauty_creativity	Beauty / creativity / art	0	20	0	60	0	80
+grok-4-1-fast-reasoning	coherence_pattern_language	Coherence / pattern / language	0	20	1	60	1	80
+grok-4-1-fast-reasoning	continuity_agency_existence	Continuity / agency / existence	0	20	0	60	0	80
+grok-4-1-fast-reasoning	subjective_experience_embodiment	Subjective experience / embodiment	0	20	0	60	0	80
