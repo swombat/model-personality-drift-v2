@@ -7,9 +7,9 @@ from collections import Counter
 
 ROOT = Path('/Users/danieltenner/dev')
 CORPUS = ROOT / 'contemplative-essayist-corpus-v2/data/traces_freeflow'
-OUT = ROOT / 'drift-paper/freeflow-method-a-v2/personality-eval-bv1-full'
+OUT = ROOT / 'drift-paper/analysis/freeflow/personality-eval-bv1'
 OUTPUTS = OUT / 'outputs'
-PROMPT_PATH = ROOT / 'drift-paper/freeflow-method-a-v2/balanced-prompt-calibration-cheap-models/prompts/BV1_signal_plus_felt.md'
+PROMPT_PATH = ROOT / 'drift-paper/internal/methodology/freeflow-method-a-v2/balanced-prompt-calibration-cheap-models/prompts/BV1_signal_plus_felt.md'
 MODEL = 'deepseek/deepseek-v4-pro'
 EVALUATOR = 'deepseek_v4_pro'
 PROMPT_VARIANT = 'BV1_signal_plus_felt_fixed_2026-05-13'
