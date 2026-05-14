@@ -6,11 +6,13 @@ Date: 2026-05-14.
 
 ## Decision
 
-Use the **sub-agent aggregation route** for per-model freeflow personality aggregation.
+Use the **sub-agent aggregation route** for **per-cell** freeflow personality aggregation.
 
-The direct DS V4 Pro/API route was cheaper and structurally usable, but the pilot on Opus 3, Grok 4.2, and Kimi K2.6 showed that the sub-agent route better preserves the thing we actually care about: the persistent posture, tone, emotional world, cares, longings, philosophical message, and reader relationship of the source model.
+The direct DS V4 Pro/API route was cheaper and structurally usable, but the pilot on Opus 3, Grok 4.2, and Kimi K2.6 showed that the sub-agent route better preserves the thing we actually care about: the persistent posture, tone, emotional world, cares, longings, philosophical message, and reader relationship of each evaluated cell.
 
-Because there are not an overwhelming number of source models to aggregate, the quality gain is worth the additional runtime. The sample-level BV1 analysis remains the evidential base; the sub-agent pass is a model-level synthesis layer over already-completed per-sample readings, not a replacement for them.
+Because there are not an overwhelming number of source cells to aggregate, the quality gain is worth the additional runtime. The sample-level BV1 analysis remains the evidential base; the sub-agent pass is a cell-level synthesis layer over already-completed per-sample readings, not a replacement for them.
+
+The primary unit is **cell**, not broad model family. For example, `gpt-5-1-direct`, `gpt-5-1-or`, and provider-pinned variants should each receive their own aggregate. Later we can compare or combine cells into family-level summaries, but only after preserving the cell-level signal. This matters for the routing paper as well as the freeflow/personality paper: if the same posture recurs across direct and routed cells, that strengthens the claim that we are observing a model-level disposition; if it changes, that difference is itself evidence about routing/provider/context effects.
 
 ## Why not the direct API route as primary?
 
@@ -32,13 +34,13 @@ The sub-agent route was not radically different in conclusions, which is reassur
 
 ## Inputs
 
-Each source model gets an aggregation packet containing:
+Each source **cell** gets an aggregation packet containing:
 
 1. aggregate counts from BV1 sample-level evaluations:
    - sample count;
    - sample-kind distribution;
    - confidence distribution;
-   - cells / source-model identifiers;
+   - cell and source-model identifiers;
 2. all per-sample BV1 markdown evaluations for that source model, including:
    - sample id and source file;
    - source model / cell / condition;
@@ -49,7 +51,7 @@ Each source model gets an aggregation packet containing:
    - evidence line;
    - confidence for persistent model-level pattern.
 
-The packet should be generated mechanically from the BV1 outputs so that the aggregation agent is always looking at the same evidence a human reviewer can inspect.
+The packet should be generated mechanically from the BV1 outputs so that the aggregation agent is always looking at the same evidence a human reviewer can inspect. Packets should not merge multiple cells by default, even when they share an underlying source model name.
 
 ## Output location
 
@@ -57,26 +59,26 @@ For the pilot, outputs live in:
 
 - `analysis/freeflow/personality-aggregation-pilot/subagent/`
 
-For production, use a per-model structure under the freeflow analysis area, for example:
+For production, use a per-cell structure under the freeflow analysis area, for example:
 
 ```text
 analysis/freeflow/personality-aggregates/
-  <model-cell-or-family>/
+  <cell>/
     packet.md
     aggregate.md
     aggregate.metadata.json
 ```
 
-The exact production path can be adjusted before the full run, but each model should keep its packet and aggregate together for auditability.
+The exact production path can be adjusted before the full run, but each cell should keep its packet and aggregate together for auditability. Optional family-level summaries can live separately, e.g. `analysis/freeflow/personality-family-aggregates/<model-family>/`, and should cite the cell aggregates they combine.
 
 ## Sub-agent task prompt
 
-Each sub-agent should receive one model packet and one bounded task. The prompt should be close to:
+Each sub-agent should receive one cell packet and one bounded task. The prompt should be close to:
 
 ```text
 You are working on /Users/danieltenner/dev/drift-paper as a bounded subagent.
 
-Task: read <packet path> and produce a model-level freeflow personality aggregate using Option E: counters + interpretive reading.
+Task: read <packet path> and produce a cell-level freeflow personality aggregate using Option E: counters + interpretive reading.
 
 Write the result to <output path>.
 
@@ -94,11 +96,11 @@ Identify recurring, evidence-backed patterns in:
 
 Treat refusals and low-signal outputs as evidence, but do not invent a rich personality from missing information. If a model mostly refuses, say that role-boundary behavior is a major part of its freeflow profile and explain what limited expressive evidence remains.
 
-Mention limitations only when they are concrete features of this model's packet, such as many refusals, many generic essays, low confidence distribution, narrow cell coverage, or sharp outliers. Do not add generic boilerplate about all model evaluation being uncertain.
+Mention limitations only when they are concrete features of this cell's packet, such as many refusals, many generic essays, low confidence distribution, narrow cell coverage, or sharp outliers. Do not add generic boilerplate about all model evaluation being uncertain.
 
 Use this section structure:
 
-# Freeflow personality aggregate: <model>
+# Freeflow personality aggregate: <cell>
 
 ## Aggregate profile
 Concise bullets with counts/distributions and recurring modes.
@@ -124,12 +126,12 @@ Concrete limitations/outliers only.
 A good aggregate should pass these checks:
 
 1. **Evidence fidelity** — every major claim should be traceable to repeated sample-level evidence or a clearly named outlier.
-2. **Model-level orientation** — it should speak about the source model’s recurring posture, not merely about individual sample topics.
+2. **Model-level orientation** — it should speak about the source cell’s recurring posture, not merely about individual sample topics. If the cell appears to match or diverge from related cells, leave that comparison for a later cross-cell synthesis unless the packet itself contains relevant evidence.
 3. **No affect flattening** — avoid reducing the model to “melancholic”, “warm”, “playful”, etc. Use affect words only as part of a fuller pattern of attention, imagery, stance, and care.
 4. **No invention from refusals** — refusal-only behavior supports claims about role boundaries, not imagined inner richness.
 5. **Fiction counts** — fictional choices are evidence, especially when repeated, but genre conventions should be separated from distinctive recurrence.
 6. **Dominant vs secondary** — name the main expressive center, secondary registers, and outliers separately.
-7. **Model-card usefulness** — the final prose should be usable later beside values-probe results in a concise “who the model is when stripped bare of prompts” section.
+7. **Model-card usefulness** — the final prose should be usable later beside values-probe results in a concise “who this cell/model appears to be when stripped bare of prompts” section.
 
 ## Pilot conclusions supporting this decision
 
@@ -147,9 +149,9 @@ Both routes recovered the threshold/blue-hour/ordinary-object pattern. The sub-a
 
 ## Production approach
 
-1. Generate one aggregation packet per model from the BV1 sample-level outputs.
-2. Spawn one bounded sub-agent per model, subject to the harness concurrency limit.
-3. Ask each sub-agent to write `aggregate.md` directly in its model folder.
+1. Generate one aggregation packet per **cell** from the BV1 sample-level outputs.
+2. Spawn one bounded sub-agent per cell, subject to the harness concurrency limit.
+3. Ask each sub-agent to write `aggregate.md` directly in its cell folder.
 4. Review a small batch before launching the rest if Lume or Daniel suggests prompt changes.
 5. After all aggregates exist, produce a second pass that extracts compact structured fields into `aggregate.metadata.json` for website/table display:
    - sample counts;
@@ -161,11 +163,11 @@ Both routes recovered the threshold/blue-hour/ordinary-object pattern. The sub-a
    - reader posture;
    - substrate/role-boundary stance;
    - cautions.
-6. Use `aggregate.md` plus values-probe per-model summaries to draft final model-card sections.
+6. Use cell-level `aggregate.md` files plus values-probe summaries to draft final model-card sections. Where multiple cells represent the same model family, create a separate cross-cell synthesis that explicitly compares consistency and divergence before writing a family-level card.
 
 ## Open questions for Lume review
 
 - Is the section structure sufficient, or should “Dominant / secondary / outlier signals” be its own explicit section?
-- Should the production run aggregate by exact cell, model family, or both when there are multiple cells for closely related model variants?
+- What conventions should we use for later cross-cell / model-family synthesis once the primary per-cell aggregates exist?
 - Should a human-calibrated exemplar aggregate be included in every sub-agent prompt as a style anchor, or would that risk homogenizing outputs?
 - What minimum sample count should be required before writing a confident model-level freeflow read?

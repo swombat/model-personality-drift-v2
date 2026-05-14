@@ -11,7 +11,7 @@ Routes compared:
 
 Both routes are usable. The direct DS route is cheaper and structurally consistent; the subagent route is somewhat more cautious and, in places, better at preserving nuance from the packet.
 
-Given the pilot results and the manageable number of source models, the recommended production route is now **sub-agent aggregation as the primary method**. The DS outputs remain useful as a cheap comparison baseline, but the sub-agent outputs are better suited to the final goal: accurate, evidence-grounded, model-card-ready prose about persistent posture and tone.
+Given the pilot results and the manageable number of source cells, the recommended production route is now **sub-agent aggregation as the primary method**, performed **per cell** rather than only per broad model family. The DS outputs remain useful as a cheap comparison baseline, but the sub-agent outputs are better suited to the final goal: accurate, evidence-grounded, model-card-ready prose about persistent posture and tone.
 
 ## Opus 3
 
@@ -53,7 +53,7 @@ DS route is still good and probably acceptable; it produces a coherent “lyrica
 
 ## Recommendation for next step
 
-Use the sub-agent route for production aggregation. Preserve both the packet and the resulting markdown aggregate for each model, then optionally extract a compact machine-readable summary afterward for website/table use.
+Use the sub-agent route for production aggregation. Preserve both the packet and the resulting markdown aggregate for each cell, then optionally extract a compact machine-readable summary afterward for website/table use. Family-level summaries should be produced later from the cell aggregates, so direct/routed/provider-pinned variants can be compared rather than collapsed prematurely.
 
 Tune the aggregation prompt before full rollout:
 
@@ -62,7 +62,7 @@ Tune the aggregation prompt before full rollout:
 - ask for one final 2–3 paragraph “model-card-ready” synthesis in the warmer, more nuanced sub-agent style;
 - require the aggregate to distinguish **dominant profile**, **secondary tendencies**, and **low-signal/outlier material**.
 
-Suggested production shape per model:
+Suggested production shape per cell:
 
 - `aggregate.md` — readable Option E aggregate;
 - `aggregate.json` — counters and selected evidence ids extracted from the markdown or generated in a second deterministic pass;
