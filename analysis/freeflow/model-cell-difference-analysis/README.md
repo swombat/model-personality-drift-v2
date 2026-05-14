@@ -1,4 +1,4 @@
-# Freeflow personality routing divergence
+# Freeflow model-cell difference analysis
 
 This folder compares per-cell freeflow personality aggregates across routes/pins/repeats of the same underlying model, using only `analysis/freeflow/personality-aggregates/` as evidence.
 
@@ -9,6 +9,5 @@ This folder compares per-cell freeflow personality aggregates across routes/pins
 Outputs:
 
 - `group-packets/` — audit packets containing the independent cell aggregates for each model group.
-- `routing-divergence-reports/` — per-model route comparison and decision.
-- `model-personality-cards/` — copied report/card files for groups with no strong routing personality divergence.
+- `model-cell-difference-reports/` — per-model route comparison and decision.
 - `summary.md` and `decisions.json` — index of decisions.

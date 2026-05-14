@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Compare per-cell personality aggregates within canonical model groups.
+"""Compare per-cell personality aggregates within canonical model groups to identify model-cell differences.
 
 Inputs: analysis/freeflow/personality-aggregates/<cell>/aggregate.md + manifest.json
-Outputs: analysis/freeflow/personality-routing-divergence/
+Outputs: analysis/freeflow/model-cell-difference-analysis/
 """
 from __future__ import annotations
 import json, os, re, ssl, time, urllib.request, urllib.error, collections, concurrent.futures
@@ -10,17 +10,16 @@ from pathlib import Path
 
 ROOT=Path('/Users/danieltenner/dev/drift-paper')
 AGG=ROOT/'analysis/freeflow/personality-aggregates'
-OUT=ROOT/'analysis/freeflow/personality-routing-divergence'
+OUT=ROOT/'analysis/freeflow/model-cell-difference-analysis'
 PACKETS=OUT/'group-packets'
-REPORTS=OUT/'routing-divergence-reports'
-CARDS=OUT/'model-personality-cards'
+REPORTS=OUT/'model-cell-difference-reports'
 MODEL=os.environ.get('PERSONALITY_ROUTE_MODEL','gpt-5.4')
 CONCURRENCY=int(os.environ.get('PERSONALITY_ROUTE_CONCURRENCY','4'))
 
 PROMPT_SYSTEM=(
     'You are comparing independently-written per-cell freeflow personality aggregates. '
     'Use only the provided aggregate texts. Do not use outside knowledge or any routing paper. '
-    'Be conservative: call a routing/provider divergence only when a cell or subset differs in the persistent personality/vibe/message, not merely in sample-kind counts, polish, verbosity, genericness, refusal rate, or strength of signal. '
+    'Be conservative: call a route/provider divergence only when a cell or subset differs in the persistent personality/vibe/message, not merely in sample-kind counts, polish, verbosity, genericness, refusal rate, or strength of signal. '
     'If no strong divergence, collapse the cells into a model-level personality card.'
 )
 
@@ -128,7 +127,7 @@ def decision_from(txt):
 def process(item):
     model_name,cells=item
     s=safe(model_name)
-    PACKETS.mkdir(parents=True, exist_ok=True); REPORTS.mkdir(parents=True, exist_ok=True); CARDS.mkdir(parents=True, exist_ok=True)
+    PACKETS.mkdir(parents=True, exist_ok=True); REPORTS.mkdir(parents=True, exist_ok=True)
     packet=make_packet(model_name,cells)
     (PACKETS/f'{s}.md').write_text(packet)
     outpath=REPORTS/f'{s}.md'
@@ -142,15 +141,12 @@ def process(item):
     ])
     outpath.write_text(txt+'\n')
     dec=decision_from(txt)
-    if dec=='NO_STRONG_DIVERGENCE':
-        # copy the full assessment as the card source; later scripts can extract the section.
-        (CARDS/f'{s}.md').write_text(txt+'\n')
     return {'model':model_name,'safe':s,'decision':dec,'status':'ok','usage':usage}
 
 def main():
     groups=load_groups()
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT/'README.md').write_text(f"""# Freeflow personality routing divergence
+    (OUT/'README.md').write_text(f"""# Freeflow model-cell difference analysis
 
 This folder compares per-cell freeflow personality aggregates across routes/pins/repeats of the same underlying model, using only `analysis/freeflow/personality-aggregates/` as evidence.
 
@@ -161,8 +157,7 @@ This folder compares per-cell freeflow personality aggregates across routes/pins
 Outputs:
 
 - `group-packets/` — audit packets containing the independent cell aggregates for each model group.
-- `routing-divergence-reports/` — per-model route comparison and decision.
-- `model-personality-cards/` — copied report/card files for groups with no strong routing personality divergence.
+- `model-cell-difference-reports/` — per-model route comparison and decision.
 - `summary.md` and `decisions.json` — index of decisions.
 """)
     items=sorted(groups.items(), key=lambda kv: kv[0])
@@ -179,17 +174,17 @@ Outputs:
     results=sorted(results, key=lambda r:r['model'])
     (OUT/'decisions.json').write_text(json.dumps(results, indent=2, ensure_ascii=False))
     counts=collections.Counter(r['decision'] for r in results)
-    lines=['# Routing personality divergence summary','',f'- Evaluator: `{MODEL}`',f'- Model groups compared: {len(results)}',f'- Decisions: `{dict(counts)}`','']
+    lines=['# Model-cell difference analysis summary','',f'- Evaluator: `{MODEL}`',f'- Model groups compared: {len(results)}',f'- Decisions: `{dict(counts)}`','']
     lines += ['## Strong divergence candidates','']
     anydiv=False
     for r in results:
         if r['decision']=='STRONG_DIVERGENCE':
-            anydiv=True; lines.append(f'- [{r["model"]}](routing-divergence-reports/{r["safe"]}.md)')
+            anydiv=True; lines.append(f'- [{r["model"]}](model-cell-difference-reports/{r["safe"]}.md)')
     if not anydiv: lines.append('- None flagged at the strong-divergence threshold.')
-    lines += ['','## No strong divergence / model cards','']
+    lines += ['','## No strong divergence groups','']
     for r in results:
         if r['decision']=='NO_STRONG_DIVERGENCE':
-            lines.append(f'- [{r["model"]}](model-personality-cards/{r["safe"]}.md)')
+            lines.append(f'- [{r["model"]}](model-cell-difference-reports/{r["safe"]}.md)')
     lines += ['','## Errors / unknown','']
     bad=[r for r in results if r['decision'] not in ('NO_STRONG_DIVERGENCE','STRONG_DIVERGENCE')]
     if bad:

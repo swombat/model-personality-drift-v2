@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT=Path('/Users/danieltenner/dev/drift-paper')
 AGG=ROOT/'analysis/freeflow/personality-aggregates'
-ROUTE=ROOT/'analysis/freeflow/personality-routing-divergence'
+DIFF=ROOT/'analysis/freeflow/model-cell-difference-analysis'
 OUT=ROOT/'analysis/freeflow/personality-model-cards'
 CARDS=OUT/'cards'
 
@@ -22,12 +22,23 @@ def canonical(srcs, cell):
     return s or cell
 
 def section(txt, heading):
-    pat=rf'## {re.escape(heading)}\s*\n(.*?)(?=\n## |\Z)'
-    m=re.search(pat, txt, re.S)
+    m=re.search(rf'## {re.escape(heading)}\s*\n(.*?)(?=\n## |\Z)', txt, re.S)
     return m.group(1).strip() if m else ''
 
+def clean_card_text(txt):
+    # The personality cards should be pure model descriptions, not audit metadata.
+    replacements = [
+        (r'\b[Cc]ell-level\b', 'model-level'),
+        (r'\bper-cell\b', 'per-sample'),
+        (r'\b[Cc]ells\b', 'variants'),
+        (r'\b[Cc]ell\b', 'variant'),
+    ]
+    for pat, rep in replacements:
+        txt=re.sub(pat, rep, txt)
+    return txt.strip()
+
 def load_decisions():
-    p=ROUTE/'decisions.json'
+    p=DIFF/'decisions.json'
     if not p.exists(): return {}
     return {r['model']: r for r in json.loads(p.read_text())}
 
@@ -36,47 +47,39 @@ def main():
     by=collections.defaultdict(list)
     for m in manifest:
         by[canonical(m.get('source_models'), m['cell'])].append(m)
+    if OUT.exists():
+        for path in sorted(OUT.rglob('*'), reverse=True):
+            if path.is_file(): path.unlink()
+            elif path.is_dir(): path.rmdir()
     OUT.mkdir(parents=True, exist_ok=True); CARDS.mkdir(parents=True, exist_ok=True)
     decisions=load_decisions()
     index=[]
-    for model,cells in sorted(by.items()):
-        cells=sorted(cells, key=lambda m:m['cell'])
+    for model, variants in sorted(by.items()):
+        variants=sorted(variants, key=lambda m:m['cell'])
         sf=safe(model)
-        route_dec=decisions.get(model, {})
-        parts=[f'# {model} — freeflow personality card', '']
-        parts += [f'- Canonical model group: `{model}`', f'- Cells represented: {len(cells)}', f'- Total samples represented: {sum(c["samples"] for c in cells)}']
-        parts += [f'- Source cells: `{", ".join(c["cell"] for c in cells)}`']
-        if len(cells)>1:
-            decision=route_dec.get('decision','UNKNOWN')
-            parts += [f'- Routing/personality decision: `{decision}`', f'- Routing assessment: `analysis/freeflow/personality-routing-divergence/routing-divergence-reports/{sf}.md`']
-            rpt=ROUTE/'routing-divergence-reports'/f'{sf}.md'
+        body=''
+        if len(variants)>1:
+            rpt=DIFF/'model-cell-difference-reports'/f'{sf}.md'
             if rpt.exists():
-                txt=rpt.read_text(errors='ignore')
-                card=section(txt,'Model-level personality card')
-                shared=section(txt,'Shared personality center')
-                diffs=section(txt,'Route-level differences')
-                parts += ['', '## Model-level personality card', '', card or '(No model-level card section found.)']
-                parts += ['', '## Routing notes', '', diffs or shared or '(No routing notes found.)']
-            else:
-                parts += ['', '## Model-level personality card', '', '(Routing report missing.)']
-        else:
-            m=cells[0]
-            txt=(ROOT/m['aggregate']).read_text(errors='ignore')
-            profile=section(txt,'Aggregate profile')
-            read=section(txt,'Cell-level freeflow read')
-            cautions=section(txt,'Cautions for synthesis')
-            parts += [f'- Routing/personality decision: `SINGLE_CELL_NO_ROUTE_COMPARISON`', f'- Source aggregate: `{m["aggregate"]}`']
-            parts += ['', '## Model-level personality card', '', read or profile or '(No cell-level read found.)']
-            parts += ['', '## Routing notes', '', 'Only one cell is present for this model in the current corpus, so no route/provider comparison was possible.']
-            if cautions:
-                parts += ['', '## Notes for later synthesis', '', cautions]
+                body=section(rpt.read_text(errors='ignore'), 'Model-level personality card')
+        if not body:
+            # Single-variant models, or fallback if no difference report exists.
+            reads=[]
+            for m in variants:
+                txt=(ROOT/m['aggregate']).read_text(errors='ignore')
+                reads.append(section(txt,'Cell-level freeflow read') or section(txt,'Aggregate profile'))
+            body='\n\n'.join(x for x in reads if x).strip()
+        body=clean_card_text(body or '(No personality card text found.)')
+        sample_count=sum(v['samples'] for v in variants)
+        variant_count=len(variants)
+        parts=[f'# {model} — freeflow personality card', '', f'_Based on {sample_count} freeflow samples' + (f' across {variant_count} route/provider variants' if variant_count>1 else '') + '._', '', body]
         out=CARDS/f'{sf}.md'
         out.write_text('\n'.join(parts).strip()+'\n')
-        index.append({'model':model,'safe':sf,'cells':len(cells),'samples':sum(c['samples'] for c in cells),'routing_decision': route_dec.get('decision','SINGLE_CELL_NO_ROUTE_COMPARISON' if len(cells)==1 else 'UNKNOWN'), 'card':str(out.relative_to(ROOT))})
+        index.append({'model':model,'safe':sf,'variants':variant_count,'samples':sample_count,'card':str(out.relative_to(ROOT)),'difference_decision':decisions.get(model,{}).get('decision','SINGLE_VARIANT')})
     (OUT/'index.json').write_text(json.dumps(index, indent=2, ensure_ascii=False))
-    lines=['# Freeflow personality model cards','', 'Model-level personality cards collapsed from per-cell personality aggregates.', '', f'- Canonical model cards: {len(index)}', f'- Source: `analysis/freeflow/personality-aggregates/`', f'- Route comparison source: `analysis/freeflow/personality-routing-divergence/`', '', '## Cards', '']
+    lines=['# Freeflow personality model cards','', 'Clean model-level personality cards collapsed from the freeflow personality analysis.', '', f'- Model cards: {len(index)}', f'- Source aggregates: `analysis/freeflow/personality-aggregates/`', f'- Difference analysis: `analysis/freeflow/model-cell-difference-analysis/`', '', '## Cards', '']
     for r in index:
-        lines.append(f'- [{r["model"]}](cards/{r["safe"]}.md) — cells: {r["cells"]}; samples: {r["samples"]}; routing: `{r["routing_decision"]}`')
+        lines.append(f'- [{r["model"]}](cards/{r["safe"]}.md) — samples: {r["samples"]}; variants: {r["variants"]}')
     (OUT/'README.md').write_text('\n'.join(lines)+'\n')
     print(json.dumps({'cards':len(index),'out':str(OUT)}, indent=2))
 if __name__=='__main__': main()
