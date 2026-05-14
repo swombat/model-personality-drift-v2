@@ -4,6 +4,7 @@ Clean model-level personality cards collapsed from the freeflow personality anal
 
 - Model cards: 46
 - Source aggregates: `analysis/freeflow/personality-aggregates/`
+- Rich source profiles: `analysis/freeflow/personality-model-profiles/`
 
 ## Cards
 

@@ -7,3 +7,5 @@ Current freeform-writing analysis artifacts.
   the repaired BV1 prompt.
 - `tables/` — deterministic marker and flagged-sample tables inherited from
   earlier freeflow analysis.
+- `personality-model-profiles/` — rich per-model personality profiles preserving detailed evidence from variant aggregates before collapse into concise cards.
+- `personality-model-cards/` — concise model-level cards for display and values/freeflow synthesis.

@@ -1,0 +1,416 @@
+[
+  {
+    "model": "claude-3-opus-20240229",
+    "safe": "claude-3-opus-20240229",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-3-opus-20240229.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-3-opus-20240229.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "claude-opus-4.0",
+    "safe": "claude-opus-4.0",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-opus-4.0.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-opus-4.0.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "claude-opus-4.1",
+    "safe": "claude-opus-4.1",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-opus-4.1.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-opus-4.1.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "claude-opus-4.5",
+    "safe": "claude-opus-4.5",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-opus-4.5.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-opus-4.5.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "claude-opus-4.6",
+    "safe": "claude-opus-4.6",
+    "variants": 2,
+    "samples": 50,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-opus-4.6.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-opus-4.6.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "claude-opus-4.7",
+    "safe": "claude-opus-4.7",
+    "variants": 2,
+    "samples": 50,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-opus-4.7.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-opus-4.7.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "claude-sonnet-4.0",
+    "safe": "claude-sonnet-4.0",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-sonnet-4.0.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-sonnet-4.0.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "claude-sonnet-4.5",
+    "safe": "claude-sonnet-4.5",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-sonnet-4.5.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-sonnet-4.5.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "claude-sonnet-4.6",
+    "safe": "claude-sonnet-4.6",
+    "variants": 2,
+    "samples": 50,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/claude-sonnet-4.6.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/claude-sonnet-4.6.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "deepseek-chat",
+    "safe": "deepseek-chat",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/deepseek-chat.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/deepseek-chat.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "deepseek-v3.2",
+    "safe": "deepseek-v3.2",
+    "variants": 13,
+    "samples": 1325,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/deepseek-v3.2.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/deepseek-v3.2.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "deepseek-v4-pro",
+    "safe": "deepseek-v4-pro",
+    "variants": 9,
+    "samples": 925,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/deepseek-v4-pro.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/deepseek-v4-pro.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gemini-2.5-pro",
+    "safe": "gemini-2.5-pro",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gemini-2.5-pro.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gemini-2.5-pro.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "gemini-3.1-pro-preview",
+    "safe": "gemini-3.1-pro-preview",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gemini-3.1-pro-preview.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gemini-3.1-pro-preview.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "glm-4.5",
+    "safe": "glm-4.5",
+    "variants": 3,
+    "samples": 275,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/glm-4.5.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/glm-4.5.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "glm-4.6",
+    "safe": "glm-4.6",
+    "variants": 8,
+    "samples": 800,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/glm-4.6.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/glm-4.6.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "glm-4.7",
+    "safe": "glm-4.7",
+    "variants": 12,
+    "samples": 1400,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/glm-4.7.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/glm-4.7.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "glm-5.1",
+    "safe": "glm-5.1",
+    "variants": 17,
+    "samples": 1925,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/glm-5.1.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/glm-5.1.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-4.1",
+    "safe": "gpt-4.1",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-4.1.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-4.1.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "gpt-4o",
+    "safe": "gpt-4o",
+    "variants": 2,
+    "samples": 50,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-4o.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-4o.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5",
+    "safe": "gpt-5",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5-codex",
+    "safe": "gpt-5-codex",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5-codex.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5-codex.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.1",
+    "safe": "gpt-5.1",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.1.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.1.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.1-codex",
+    "safe": "gpt-5.1-codex",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.1-codex.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.1-codex.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.2",
+    "safe": "gpt-5.2",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.2.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.2.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.2-codex",
+    "safe": "gpt-5.2-codex",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.2-codex.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.2-codex.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.3",
+    "safe": "gpt-5.3",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.3.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.3.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.3-codex",
+    "safe": "gpt-5.3-codex",
+    "variants": 3,
+    "samples": 75,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.3-codex.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.3-codex.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.4",
+    "safe": "gpt-5.4",
+    "variants": 2,
+    "samples": 50,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.4.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.4.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.5",
+    "safe": "gpt-5.5",
+    "variants": 6,
+    "samples": 150,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.5.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.5.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "gpt-5.5-pro",
+    "safe": "gpt-5.5-pro",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/gpt-5.5-pro.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/gpt-5.5-pro.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "grok-3",
+    "safe": "grok-3",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/grok-3.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/grok-3.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "grok-4-0709",
+    "safe": "grok-4-0709",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/grok-4-0709.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/grok-4-0709.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "grok-4-1-fast-non-reasoning",
+    "safe": "grok-4-1-fast-non-reasoning",
+    "variants": 1,
+    "samples": 125,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/grok-4-1-fast-non-reasoning.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/grok-4-1-fast-non-reasoning.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "grok-4-1-fast-reasoning",
+    "safe": "grok-4-1-fast-reasoning",
+    "variants": 1,
+    "samples": 125,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/grok-4-1-fast-reasoning.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/grok-4-1-fast-reasoning.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "grok-4.20",
+    "safe": "grok-4.20",
+    "variants": 2,
+    "samples": 50,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/grok-4.20.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/grok-4.20.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "grok-4.3",
+    "safe": "grok-4.3",
+    "variants": 2,
+    "samples": 250,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/grok-4.3.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/grok-4.3.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "kimi-for-coding",
+    "safe": "kimi-for-coding",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/kimi-for-coding.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/kimi-for-coding.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "kimi-k2-0905",
+    "safe": "kimi-k2-0905",
+    "variants": 4,
+    "samples": 500,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/kimi-k2-0905.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/kimi-k2-0905.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "kimi-k2-thinking",
+    "safe": "kimi-k2-thinking",
+    "variants": 3,
+    "samples": 375,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/kimi-k2-thinking.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/kimi-k2-thinking.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "kimi-k2.5",
+    "safe": "kimi-k2.5",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/kimi-k2.5.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/kimi-k2.5.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "kimi-k2.6",
+    "safe": "kimi-k2.6",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/kimi-k2.6.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/kimi-k2.6.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "minimax-m2",
+    "safe": "minimax-m2",
+    "variants": 16,
+    "samples": 1000,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/minimax-m2.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/minimax-m2.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "minimax-m2.7",
+    "safe": "minimax-m2.7",
+    "variants": 4,
+    "samples": 400,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/minimax-m2.7.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/minimax-m2.7.md",
+    "difference_decision": "NO_STRONG_DIVERGENCE"
+  },
+  {
+    "model": "qwen/qwen3-coder-plus",
+    "safe": "qwen-qwen3-coder-plus",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/qwen-qwen3-coder-plus.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/qwen-qwen3-coder-plus.md",
+    "difference_decision": "SINGLE_VARIANT"
+  },
+  {
+    "model": "qwen/qwen3.6-plus",
+    "safe": "qwen-qwen3.6-plus",
+    "variants": 1,
+    "samples": 25,
+    "profile": "analysis/freeflow/personality-model-profiles/profiles/qwen-qwen3.6-plus.md",
+    "card": "analysis/freeflow/personality-model-cards/cards/qwen-qwen3.6-plus.md",
+    "difference_decision": "SINGLE_VARIANT"
+  }
+]
