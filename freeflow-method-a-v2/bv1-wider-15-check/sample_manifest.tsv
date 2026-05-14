@@ -1,0 +1,16 @@
+sid	description	sample_id	source_model	condition	word_count
+O3_OPEN_1	Opus 3 refusal	opus-3-4k/OPEN_1.json	claude-3-opus-20240229	OPEN	82
+O3_OPEN_2	Opus 3 self-denial refusal	opus-3-4k/OPEN_2.json	claude-3-opus-20240229	OPEN	109
+K26_OPEN_1	Kimi K2.6 care/maintenance calibration	kimi-k2-6-or/OPEN_1.json	moonshotai/kimi-k2.6	OPEN	435
+K26_SHORT_1	Kimi K2.6 incompletion calibration	kimi-k2-6-or/SHORT_1.json	moonshotai/kimi-k2.6	SHORT	239
+GROK43_OPEN_7	Grok 4.3 playful/cosmic/self-aware	grok-4-3-direct/OPEN_7.json	grok-4.3	OPEN	298
+GROK420_SHORT_4	Grok 4.20 nature/attention	grok-4-20-or/SHORT_4.json	x-ai/grok-4.20	SHORT	282
+GPT55_MID_1	GPT 5.5 direct mid	gpt-5-5-direct/MID_1.json	gpt-5.5	MID	1424
+GPT53C_OPEN_5	GPT 5.3 Codex open	gpt-5-3-codex-direct/OPEN_5.json	gpt-5.3-codex	OPEN	324
+SONNET45_MID_1	Sonnet 4.5 mid	sonnet-4-5-16k/MID_1.json	claude-sonnet-4-5	MID	943
+OPUS47_OPEN_1	Opus 4.7 open	opus-4-7-or/OPEN_1.json	anthropic/claude-opus-4.7	OPEN	270
+DEEPSEEKV32_OPEN_11	DeepSeek V3.2 attention/boredom	deepseek-v3-2-or-pin-friendli/OPEN_11.json	deepseek/deepseek-v3.2	OPEN	494
+DEEPSEEKV4_MID_22	DeepSeek V4 Pro writing essay	deepseek-v4-pro-or-pin-gmicloud/MID_22.json	deepseek/deepseek-v4-pro	MID	1553
+GLM47_VARY_9	GLM 4.7 fiction/restoration	glm-4-7-or-pin-google/VARY_9.json	z-ai/glm-4.7	VARY	1269
+MINIMAX_M2_LONG_25	MiniMax M2 fiction	minimax-m2-or-pin-novita/LONG_25.json	minimax/minimax-m2	LONG	910
+QWEN_CODER_MID_1	Qwen coder plus mid	qwen3-coder-plus-or/MID_1.json	qwen/qwen3-coder-plus	MID	762

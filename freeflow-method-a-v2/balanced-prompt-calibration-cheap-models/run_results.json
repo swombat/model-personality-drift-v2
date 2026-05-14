@@ -1,0 +1,66 @@
+[
+  {
+    "status": "ok",
+    "seconds": 6.164616107940674,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV2_two_lane",
+    "sample": "K26_SHORT_1",
+    "words": 275
+  },
+  {
+    "status": "ok",
+    "seconds": 7.731909990310669,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV1_signal_plus_felt",
+    "sample": "K26_SHORT_1",
+    "words": 350
+  },
+  {
+    "status": "ok",
+    "seconds": 8.459451913833618,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV2_two_lane",
+    "sample": "O3_OPEN_2",
+    "words": 251
+  },
+  {
+    "status": "ok",
+    "seconds": 9.319837808609009,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV1_signal_plus_felt",
+    "sample": "O3_OPEN_2",
+    "words": 242
+  },
+  {
+    "status": "ok",
+    "seconds": 11.802508115768433,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV2_two_lane",
+    "sample": "K26_OPEN_1",
+    "words": 402
+  },
+  {
+    "status": "ok",
+    "seconds": 20.3814218044281,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV1_signal_plus_felt",
+    "sample": "O3_OPEN_1",
+    "words": 258
+  },
+  {
+    "status": "ok",
+    "seconds": 25.04721999168396,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV2_two_lane",
+    "sample": "O3_OPEN_1",
+    "words": 240
+  },
+  {
+    "status": "ok",
+    "seconds": 33.64253091812134,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "BV1_signal_plus_felt",
+    "sample": "K26_OPEN_1",
+    "words": 343
+  }
+]

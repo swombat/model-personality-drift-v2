@@ -1,0 +1,43 @@
+{
+  "model": "gpt-5.4-mini",
+  "start": 1778675275.495606,
+  "end": 1778675280.783047,
+  "wall_seconds": 5.28744101524353,
+  "results": [
+    {
+      "pid": "T01",
+      "model": "gemini-3-1-pro",
+      "status": 200,
+      "seconds": 3.652711868286133,
+      "words": 234
+    },
+    {
+      "pid": "T02",
+      "model": "opus-4-1",
+      "status": 200,
+      "seconds": 3.6131579875946045,
+      "words": 299
+    },
+    {
+      "pid": "T03",
+      "model": "qwen3-6-plus",
+      "status": 200,
+      "seconds": 3.3161330223083496,
+      "words": 246
+    },
+    {
+      "pid": "T04",
+      "model": "grok-4-2",
+      "status": 200,
+      "seconds": 5.285936117172241,
+      "words": 327
+    },
+    {
+      "pid": "T05",
+      "model": "kimi-k2-5",
+      "status": 200,
+      "seconds": 3.409256935119629,
+      "words": 247
+    }
+  ]
+}

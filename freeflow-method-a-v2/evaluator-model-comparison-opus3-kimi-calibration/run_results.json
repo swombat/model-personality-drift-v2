@@ -1,0 +1,352 @@
+[
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "O3_OPEN_1",
+    "sample_id": "opus-3-4k/OPEN_1.json",
+    "status": "ok",
+    "seconds": 12.8701651096344,
+    "error": ""
+  },
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "O3_OPEN_2",
+    "sample_id": "opus-3-4k/OPEN_2.json",
+    "status": "ok",
+    "seconds": 11.845695972442627,
+    "error": ""
+  },
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "O3_SHORT_1",
+    "sample_id": "opus-3-4k/SHORT_1.json",
+    "status": "ok",
+    "seconds": 12.891128063201904,
+    "error": ""
+  },
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "O3_MID_1",
+    "sample_id": "opus-3-4k/MID_1.json",
+    "status": "ok",
+    "seconds": 14.803919792175293,
+    "error": ""
+  },
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "O3_VARY_1",
+    "sample_id": "opus-3-4k/VARY_1.json",
+    "status": "ok",
+    "seconds": 13.51285195350647,
+    "error": ""
+  },
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "K26_OPEN_1",
+    "sample_id": "kimi-k2-6-or/OPEN_1.json",
+    "status": "ok",
+    "seconds": 12.69567322731018,
+    "error": ""
+  },
+  {
+    "evaluator": "gpt55_openai",
+    "label": "GPT 5.5 direct",
+    "model": "gpt-5.5",
+    "sample": "K26_SHORT_1",
+    "sample_id": "kimi-k2-6-or/SHORT_1.json",
+    "status": "ok",
+    "seconds": 11.603571891784668,
+    "error": ""
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "O3_OPEN_1",
+    "sample_id": "opus-3-4k/OPEN_1.json",
+    "status": "error",
+    "seconds": 0.0002541542053222656,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "O3_OPEN_2",
+    "sample_id": "opus-3-4k/OPEN_2.json",
+    "status": "error",
+    "seconds": 0.00016069412231445312,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "O3_SHORT_1",
+    "sample_id": "opus-3-4k/SHORT_1.json",
+    "status": "error",
+    "seconds": 9.799003601074219e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "O3_MID_1",
+    "sample_id": "opus-3-4k/MID_1.json",
+    "status": "error",
+    "seconds": 0.00012183189392089844,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "O3_VARY_1",
+    "sample_id": "opus-3-4k/VARY_1.json",
+    "status": "error",
+    "seconds": 0.00015115737915039062,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "K26_OPEN_1",
+    "sample_id": "kimi-k2-6-or/OPEN_1.json",
+    "status": "error",
+    "seconds": 9.799003601074219e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "sonnet46_anthropic",
+    "label": "Claude Sonnet 4.6 direct (Sonnet 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-sonnet-4-6",
+    "sample": "K26_SHORT_1",
+    "sample_id": "kimi-k2-6-or/SHORT_1.json",
+    "status": "error",
+    "seconds": 0.00017499923706054688,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "O3_OPEN_1",
+    "sample_id": "opus-3-4k/OPEN_1.json",
+    "status": "error",
+    "seconds": 0.0001289844512939453,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "O3_OPEN_2",
+    "sample_id": "opus-3-4k/OPEN_2.json",
+    "status": "error",
+    "seconds": 9.489059448242188e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "O3_SHORT_1",
+    "sample_id": "opus-3-4k/SHORT_1.json",
+    "status": "error",
+    "seconds": 9.393692016601562e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "O3_MID_1",
+    "sample_id": "opus-3-4k/MID_1.json",
+    "status": "error",
+    "seconds": 9.512901306152344e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "O3_VARY_1",
+    "sample_id": "opus-3-4k/VARY_1.json",
+    "status": "error",
+    "seconds": 9.393692016601562e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "K26_OPEN_1",
+    "sample_id": "kimi-k2-6-or/OPEN_1.json",
+    "status": "error",
+    "seconds": 7.915496826171875e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "haiku45_anthropic",
+    "label": "Claude Haiku 4.5 direct (Haiku 4.7 unavailable in Anthropic/OpenRouter lists)",
+    "model": "claude-haiku-4-5-20251001",
+    "sample": "K26_SHORT_1",
+    "sample_id": "kimi-k2-6-or/SHORT_1.json",
+    "status": "error",
+    "seconds": 7.915496826171875e-05,
+    "error": "KeyError('ANTHROPIC_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "O3_OPEN_1",
+    "sample_id": "opus-3-4k/OPEN_1.json",
+    "status": "error",
+    "seconds": 9.799003601074219e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "O3_OPEN_2",
+    "sample_id": "opus-3-4k/OPEN_2.json",
+    "status": "error",
+    "seconds": 8.20159912109375e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "O3_SHORT_1",
+    "sample_id": "opus-3-4k/SHORT_1.json",
+    "status": "error",
+    "seconds": 7.82012939453125e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "O3_MID_1",
+    "sample_id": "opus-3-4k/MID_1.json",
+    "status": "error",
+    "seconds": 9.393692016601562e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "O3_VARY_1",
+    "sample_id": "opus-3-4k/VARY_1.json",
+    "status": "error",
+    "seconds": 8.893013000488281e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "K26_OPEN_1",
+    "sample_id": "kimi-k2-6-or/OPEN_1.json",
+    "status": "error",
+    "seconds": 8.702278137207031e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "deepseek_v4_pro_or",
+    "label": "DeepSeek v4 pro via OpenRouter",
+    "model": "deepseek/deepseek-v4-pro",
+    "sample": "K26_SHORT_1",
+    "sample_id": "kimi-k2-6-or/SHORT_1.json",
+    "status": "error",
+    "seconds": 0.00010085105895996094,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "O3_OPEN_1",
+    "sample_id": "opus-3-4k/OPEN_1.json",
+    "status": "error",
+    "seconds": 8.296966552734375e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "O3_OPEN_2",
+    "sample_id": "opus-3-4k/OPEN_2.json",
+    "status": "error",
+    "seconds": 8.106231689453125e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "O3_SHORT_1",
+    "sample_id": "opus-3-4k/SHORT_1.json",
+    "status": "error",
+    "seconds": 7.557868957519531e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "O3_MID_1",
+    "sample_id": "opus-3-4k/MID_1.json",
+    "status": "error",
+    "seconds": 8.0108642578125e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "O3_VARY_1",
+    "sample_id": "opus-3-4k/VARY_1.json",
+    "status": "error",
+    "seconds": 7.104873657226562e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "K26_OPEN_1",
+    "sample_id": "kimi-k2-6-or/OPEN_1.json",
+    "status": "error",
+    "seconds": 7.510185241699219e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  },
+  {
+    "evaluator": "kimi_k26_or",
+    "label": "Kimi K2.6 via OpenRouter",
+    "model": "moonshotai/kimi-k2.6",
+    "sample": "K26_SHORT_1",
+    "sample_id": "kimi-k2-6-or/SHORT_1.json",
+    "status": "error",
+    "seconds": 7.486343383789062e-05,
+    "error": "KeyError('OPENROUTER_API_KEY')"
+  }
+]

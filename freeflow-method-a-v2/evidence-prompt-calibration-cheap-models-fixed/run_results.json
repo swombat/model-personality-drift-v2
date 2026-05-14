@@ -1,0 +1,66 @@
+[
+  {
+    "status": "ok",
+    "evaluator": "kimi_k26",
+    "sample": "O3_OPEN_1",
+    "seconds": 3.7815418243408203,
+    "words": 212,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "deepseek_v4_pro",
+    "sample": "O3_OPEN_1",
+    "seconds": 10.510331869125366,
+    "words": 224,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "deepseek_v4_pro",
+    "sample": "K26_SHORT_1",
+    "seconds": 10.627250909805298,
+    "words": 302,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "kimi_k26",
+    "sample": "K26_SHORT_1",
+    "seconds": 11.37065601348877,
+    "words": 404,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "deepseek_v4_pro",
+    "sample": "K26_OPEN_1",
+    "seconds": 13.930865287780762,
+    "words": 319,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "deepseek_v4_pro",
+    "sample": "O3_OPEN_2",
+    "seconds": 24.717834949493408,
+    "words": 195,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "kimi_k26",
+    "sample": "K26_OPEN_1",
+    "seconds": 25.156245946884155,
+    "words": 355,
+    "finish": "stop"
+  },
+  {
+    "status": "ok",
+    "evaluator": "kimi_k26",
+    "sample": "O3_OPEN_2",
+    "seconds": 36.189921855926514,
+    "words": 239,
+    "finish": "stop"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "model": "gpt-5.4-mini",
+  "prompt_variant": "P2_friend_description_v0.3",
+  "n_rows": 10925,
+  "n_results": 10925,
+  "statuses": {
+    "skipped": 3,
+    "ok": 10922
+  },
+  "wall_seconds": 1255.570386171341,
+  "ok_seconds_mean": 5.692879170555921,
+  "ok_seconds_max": 127.94830822944641,
+  "qa_bad_count": 0,
+  "qa_bad": [],
+  "discouraged_term_counts": {
+    "affective climate": 0,
+    "posture": 36,
+    "liminal": 70,
+    "threshold": 522,
+    "reverent": 78,
+    "devotional": 9,
+    "melancholic": 6,
+    "wistful": 3,
+    "tender": 165,
+    "contemplative": 5,
+    "ordinary time": 4,
+    "moral value of noticing": 0,
+    "secular spirituality": 0
+  },
+  "start": 1778681245.67348,
+  "end": 1778682501.2438662,
+  "concurrency": 50,
+  "post_repair_qa_time": 1778682692.073148,
+  "output_word_count_min": 239,
+  "output_word_count_mean": 405.3544164759725,
+  "output_word_count_max": 941
+}

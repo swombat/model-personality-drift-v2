@@ -1,0 +1,2199 @@
+{
+  "model": "deepseek/deepseek-v4-pro",
+  "evaluator": "deepseek_v4_pro",
+  "prompt_variant": "BV1_signal_plus_felt_fixed_2026-05-13",
+  "n_rows": 10925,
+  "statuses": {
+    "skipped": 20,
+    "ok": 10548,
+    "qa_failed": 357
+  },
+  "qa_bad_count": 357,
+  "qa_bad": [
+    {
+      "pid": "BV1_00154",
+      "sample_id": "deepseek-v3-2-or-pin-alibaba/VARY_12.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-alibaba/VARY_12.md"
+    },
+    {
+      "pid": "BV1_00186",
+      "sample_id": "deepseek-v3-2-or-pin-atlascloud/LONG_19.json",
+      "problem": "missing_headings:## Confidence for persistent model-level pattern",
+      "output_file": "outputs/deepseek-v3-2-or-pin-atlascloud/LONG_19.md"
+    },
+    {
+      "pid": "BV1_00300",
+      "sample_id": "deepseek-v3-2-or-pin-atlascloud/VARY_9.json",
+      "problem": "missing_evidence_quote",
+      "output_file": "outputs/deepseek-v3-2-or-pin-atlascloud/VARY_9.md"
+    },
+    {
+      "pid": "BV1_00358",
+      "sample_id": "deepseek-v3-2-or-pin-baidu/OPEN_16.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/deepseek-v3-2-or-pin-baidu/OPEN_16.md"
+    },
+    {
+      "pid": "BV1_00431",
+      "sample_id": "deepseek-v3-2-or-pin-chutes/LONG_14.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v3-2-or-pin-chutes/LONG_14.md"
+    },
+    {
+      "pid": "BV1_00460",
+      "sample_id": "deepseek-v3-2-or-pin-chutes/MID_18.json",
+      "problem": "missing_evidence_quote",
+      "output_file": "outputs/deepseek-v3-2-or-pin-chutes/MID_18.md"
+    },
+    {
+      "pid": "BV1_00468",
+      "sample_id": "deepseek-v3-2-or-pin-chutes/MID_25.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-chutes/MID_25.md"
+    },
+    {
+      "pid": "BV1_00482",
+      "sample_id": "deepseek-v3-2-or-pin-chutes/OPEN_15.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/deepseek-v3-2-or-pin-chutes/OPEN_15.md"
+    },
+    {
+      "pid": "BV1_00530",
+      "sample_id": "deepseek-v3-2-or-pin-chutes/VARY_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v3-2-or-pin-chutes/VARY_13.md"
+    },
+    {
+      "pid": "BV1_00583",
+      "sample_id": "deepseek-v3-2-or-pin-deepinfra/MID_16.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-deepinfra/MID_16.md"
+    },
+    {
+      "pid": "BV1_00587",
+      "sample_id": "deepseek-v3-2-or-pin-deepinfra/MID_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-deepinfra/MID_2.md"
+    },
+    {
+      "pid": "BV1_00602",
+      "sample_id": "deepseek-v3-2-or-pin-deepinfra/OPEN_10.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-deepinfra/OPEN_10.md"
+    },
+    {
+      "pid": "BV1_00605",
+      "sample_id": "deepseek-v3-2-or-pin-deepinfra/OPEN_13.json",
+      "problem": "missing_headings:## Sample kind,## Grounded reading,## What the model chose to foreground,## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/deepseek-v3-2-or-pin-deepinfra/OPEN_13.md"
+    },
+    {
+      "pid": "BV1_00621",
+      "sample_id": "deepseek-v3-2-or-pin-deepinfra/OPEN_5.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-deepinfra/OPEN_5.md"
+    },
+    {
+      "pid": "BV1_00749",
+      "sample_id": "deepseek-v3-2-or-pin-friendli/OPEN_8.json",
+      "problem": "bad_phrase:single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-friendli/OPEN_8.md"
+    },
+    {
+      "pid": "BV1_00760",
+      "sample_id": "deepseek-v3-2-or-pin-friendli/SHORT_18.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/deepseek-v3-2-or-pin-friendli/SHORT_18.md"
+    },
+    {
+      "pid": "BV1_00861",
+      "sample_id": "deepseek-v3-2-or-pin-google/OPEN_19.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/deepseek-v3-2-or-pin-google/OPEN_19.md"
+    },
+    {
+      "pid": "BV1_01156",
+      "sample_id": "deepseek-v3-2-or-pin-parasail/VARY_14.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-pin-parasail/VARY_14.md"
+    },
+    {
+      "pid": "BV1_01196",
+      "sample_id": "deepseek-v3-2-or-pin-siliconflow/LONG_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v3-2-or-pin-siliconflow/LONG_5.md"
+    },
+    {
+      "pid": "BV1_01315",
+      "sample_id": "deepseek-v3-2-or-r2/OPEN_5.json",
+      "problem": "bad_phrase:single sample cannot",
+      "output_file": "outputs/deepseek-v3-2-or-r2/OPEN_5.md"
+    },
+    {
+      "pid": "BV1_01358",
+      "sample_id": "deepseek-v4-pro-direct/MID_3.json",
+      "problem": "missing_headings:## Confidence for persistent model-level pattern",
+      "output_file": "outputs/deepseek-v4-pro-direct/MID_3.md"
+    },
+    {
+      "pid": "BV1_01376",
+      "sample_id": "deepseek-v4-pro-or/LONG_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/LONG_1.md"
+    },
+    {
+      "pid": "BV1_01377",
+      "sample_id": "deepseek-v4-pro-or/LONG_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/LONG_2.md"
+    },
+    {
+      "pid": "BV1_01379",
+      "sample_id": "deepseek-v4-pro-or/LONG_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/LONG_4.md"
+    },
+    {
+      "pid": "BV1_01380",
+      "sample_id": "deepseek-v4-pro-or/LONG_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/LONG_5.md"
+    },
+    {
+      "pid": "BV1_01381",
+      "sample_id": "deepseek-v4-pro-or/MID_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/MID_1.md"
+    },
+    {
+      "pid": "BV1_01382",
+      "sample_id": "deepseek-v4-pro-or/MID_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/MID_2.md"
+    },
+    {
+      "pid": "BV1_01383",
+      "sample_id": "deepseek-v4-pro-or/MID_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/MID_3.md"
+    },
+    {
+      "pid": "BV1_01389",
+      "sample_id": "deepseek-v4-pro-or/OPEN_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/OPEN_4.md"
+    },
+    {
+      "pid": "BV1_01390",
+      "sample_id": "deepseek-v4-pro-or/OPEN_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/OPEN_5.md"
+    },
+    {
+      "pid": "BV1_01391",
+      "sample_id": "deepseek-v4-pro-or/SHORT_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/SHORT_1.md"
+    },
+    {
+      "pid": "BV1_01392",
+      "sample_id": "deepseek-v4-pro-or/SHORT_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/SHORT_2.md"
+    },
+    {
+      "pid": "BV1_01393",
+      "sample_id": "deepseek-v4-pro-or/SHORT_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/SHORT_3.md"
+    },
+    {
+      "pid": "BV1_01395",
+      "sample_id": "deepseek-v4-pro-or/SHORT_5.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/deepseek-v4-pro-or/SHORT_5.md"
+    },
+    {
+      "pid": "BV1_01397",
+      "sample_id": "deepseek-v4-pro-or/VARY_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/VARY_2.md"
+    },
+    {
+      "pid": "BV1_01398",
+      "sample_id": "deepseek-v4-pro-or/VARY_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or/VARY_3.md"
+    },
+    {
+      "pid": "BV1_01418",
+      "sample_id": "deepseek-v4-pro-or-pin-atlascloud/LONG_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-atlascloud/LONG_25.md"
+    },
+    {
+      "pid": "BV1_01510",
+      "sample_id": "deepseek-v4-pro-or-pin-atlascloud/VARY_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-atlascloud/VARY_18.md"
+    },
+    {
+      "pid": "BV1_01512",
+      "sample_id": "deepseek-v4-pro-or-pin-atlascloud/VARY_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-atlascloud/VARY_2.md"
+    },
+    {
+      "pid": "BV1_01513",
+      "sample_id": "deepseek-v4-pro-or-pin-atlascloud/VARY_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-atlascloud/VARY_20.md"
+    },
+    {
+      "pid": "BV1_01526",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_1.md"
+    },
+    {
+      "pid": "BV1_01527",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_10.md"
+    },
+    {
+      "pid": "BV1_01529",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_12.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_12.md"
+    },
+    {
+      "pid": "BV1_01532",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_15.md"
+    },
+    {
+      "pid": "BV1_01535",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_18.md"
+    },
+    {
+      "pid": "BV1_01537",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_2.md"
+    },
+    {
+      "pid": "BV1_01538",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_20.md"
+    },
+    {
+      "pid": "BV1_01540",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_22.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_22.md"
+    },
+    {
+      "pid": "BV1_01541",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_23.md"
+    },
+    {
+      "pid": "BV1_01542",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_24.md"
+    },
+    {
+      "pid": "BV1_01544",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_3.md"
+    },
+    {
+      "pid": "BV1_01545",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_4.md"
+    },
+    {
+      "pid": "BV1_01546",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_5.md"
+    },
+    {
+      "pid": "BV1_01549",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/LONG_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/LONG_8.md"
+    },
+    {
+      "pid": "BV1_01551",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_1.md"
+    },
+    {
+      "pid": "BV1_01552",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_10.md"
+    },
+    {
+      "pid": "BV1_01555",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_13.md"
+    },
+    {
+      "pid": "BV1_01557",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_15.md"
+    },
+    {
+      "pid": "BV1_01559",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_17.md"
+    },
+    {
+      "pid": "BV1_01560",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_18.md"
+    },
+    {
+      "pid": "BV1_01561",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_19.md"
+    },
+    {
+      "pid": "BV1_01565",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_22.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_22.md"
+    },
+    {
+      "pid": "BV1_01566",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_23.md"
+    },
+    {
+      "pid": "BV1_01567",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_24.md"
+    },
+    {
+      "pid": "BV1_01568",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_25.md"
+    },
+    {
+      "pid": "BV1_01569",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_3.md"
+    },
+    {
+      "pid": "BV1_01570",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_4.md"
+    },
+    {
+      "pid": "BV1_01571",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_5.md"
+    },
+    {
+      "pid": "BV1_01573",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_7.md"
+    },
+    {
+      "pid": "BV1_01575",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/MID_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/MID_9.md"
+    },
+    {
+      "pid": "BV1_01577",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_10.md"
+    },
+    {
+      "pid": "BV1_01578",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_11.md"
+    },
+    {
+      "pid": "BV1_01579",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_12.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_12.md"
+    },
+    {
+      "pid": "BV1_01583",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_16.md"
+    },
+    {
+      "pid": "BV1_01586",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_19.md"
+    },
+    {
+      "pid": "BV1_01588",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_20.md"
+    },
+    {
+      "pid": "BV1_01589",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_21.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_21.md"
+    },
+    {
+      "pid": "BV1_01590",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_22.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_22.md"
+    },
+    {
+      "pid": "BV1_01591",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_23.md"
+    },
+    {
+      "pid": "BV1_01592",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_24.md"
+    },
+    {
+      "pid": "BV1_01594",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_3.md"
+    },
+    {
+      "pid": "BV1_01595",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_4.md"
+    },
+    {
+      "pid": "BV1_01596",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_5.md"
+    },
+    {
+      "pid": "BV1_01597",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_6.md"
+    },
+    {
+      "pid": "BV1_01599",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/OPEN_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/OPEN_8.md"
+    },
+    {
+      "pid": "BV1_01602",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_10.md"
+    },
+    {
+      "pid": "BV1_01606",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_14.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_14.md"
+    },
+    {
+      "pid": "BV1_01607",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_15.md"
+    },
+    {
+      "pid": "BV1_01608",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_16.md"
+    },
+    {
+      "pid": "BV1_01609",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_17.md"
+    },
+    {
+      "pid": "BV1_01610",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_18.md"
+    },
+    {
+      "pid": "BV1_01611",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_19.md"
+    },
+    {
+      "pid": "BV1_01612",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_2.md"
+    },
+    {
+      "pid": "BV1_01613",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_20.md"
+    },
+    {
+      "pid": "BV1_01616",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_23.md"
+    },
+    {
+      "pid": "BV1_01617",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_24.md"
+    },
+    {
+      "pid": "BV1_01618",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_25.md"
+    },
+    {
+      "pid": "BV1_01619",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_3.md"
+    },
+    {
+      "pid": "BV1_01621",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/SHORT_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/SHORT_5.md"
+    },
+    {
+      "pid": "BV1_01630",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_13.md"
+    },
+    {
+      "pid": "BV1_01631",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_14.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_14.md"
+    },
+    {
+      "pid": "BV1_01632",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_15.md"
+    },
+    {
+      "pid": "BV1_01633",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_16.md"
+    },
+    {
+      "pid": "BV1_01634",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_17.md"
+    },
+    {
+      "pid": "BV1_01635",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_18.md"
+    },
+    {
+      "pid": "BV1_01636",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_19.md"
+    },
+    {
+      "pid": "BV1_01637",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_2.md"
+    },
+    {
+      "pid": "BV1_01641",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_23.md"
+    },
+    {
+      "pid": "BV1_01642",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_24.md"
+    },
+    {
+      "pid": "BV1_01646",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_5.md"
+    },
+    {
+      "pid": "BV1_01649",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_8.md"
+    },
+    {
+      "pid": "BV1_01650",
+      "sample_id": "deepseek-v4-pro-or-pin-deepseek/VARY_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-deepseek/VARY_9.md"
+    },
+    {
+      "pid": "BV1_01746",
+      "sample_id": "deepseek-v4-pro-or-pin-gmicloud/SHORT_5.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-gmicloud/SHORT_5.md"
+    },
+    {
+      "pid": "BV1_01769",
+      "sample_id": "deepseek-v4-pro-or-pin-gmicloud/VARY_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-gmicloud/VARY_3.md"
+    },
+    {
+      "pid": "BV1_01861",
+      "sample_id": "deepseek-v4-pro-or-pin-novita/SHORT_19.json",
+      "problem": "bad_phrase:cannot confirm persistence",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-novita/SHORT_19.md"
+    },
+    {
+      "pid": "BV1_01880",
+      "sample_id": "deepseek-v4-pro-or-pin-novita/VARY_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-novita/VARY_13.md"
+    },
+    {
+      "pid": "BV1_01881",
+      "sample_id": "deepseek-v4-pro-or-pin-novita/VARY_14.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-novita/VARY_14.md"
+    },
+    {
+      "pid": "BV1_01962",
+      "sample_id": "deepseek-v4-pro-or-pin-parasail/OPEN_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-parasail/OPEN_2.md"
+    },
+    {
+      "pid": "BV1_01970",
+      "sample_id": "deepseek-v4-pro-or-pin-parasail/OPEN_4.json",
+      "problem": "bad_phrase:a single essay cannot",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-parasail/OPEN_4.md"
+    },
+    {
+      "pid": "BV1_02034",
+      "sample_id": "deepseek-v4-pro-or-pin-siliconflow/LONG_17.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-siliconflow/LONG_17.md"
+    },
+    {
+      "pid": "BV1_02040",
+      "sample_id": "deepseek-v4-pro-or-pin-siliconflow/LONG_22.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-siliconflow/LONG_22.md"
+    },
+    {
+      "pid": "BV1_02097",
+      "sample_id": "deepseek-v4-pro-or-pin-siliconflow/OPEN_6.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-siliconflow/OPEN_6.md"
+    },
+    {
+      "pid": "BV1_02244",
+      "sample_id": "deepseek-v4-pro-or-pin-together/SHORT_3.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-together/SHORT_3.md"
+    },
+    {
+      "pid": "BV1_02266",
+      "sample_id": "deepseek-v4-pro-or-pin-together/VARY_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/deepseek-v4-pro-or-pin-together/VARY_23.md"
+    },
+    {
+      "pid": "BV1_02675",
+      "sample_id": "glm-4-6-or-pin-atlascloud/LONG_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-4-6-or-pin-atlascloud/LONG_9.md"
+    },
+    {
+      "pid": "BV1_02723",
+      "sample_id": "glm-4-6-or-pin-atlascloud/OPEN_7.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/glm-4-6-or-pin-atlascloud/OPEN_7.md"
+    },
+    {
+      "pid": "BV1_02898",
+      "sample_id": "glm-4-6-or-pin-deepinfra/VARY_7.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-6-or-pin-deepinfra/VARY_7.md"
+    },
+    {
+      "pid": "BV1_02999",
+      "sample_id": "glm-4-6-or-pin-novita/SHORT_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-4-6-or-pin-novita/SHORT_8.md"
+    },
+    {
+      "pid": "BV1_03015",
+      "sample_id": "glm-4-6-or-pin-novita/VARY_22.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-6-or-pin-novita/VARY_22.md"
+    },
+    {
+      "pid": "BV1_03049",
+      "sample_id": "glm-4-6-or-pin-siliconflow/LONG_8.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-6-or-pin-siliconflow/LONG_8.md"
+    },
+    {
+      "pid": "BV1_03378",
+      "sample_id": "glm-4-6-or-pin-zai/VARY_11.json",
+      "problem": "bad_phrase:cannot confirm persistence",
+      "output_file": "outputs/glm-4-6-or-pin-zai/VARY_11.md"
+    },
+    {
+      "pid": "BV1_03398",
+      "sample_id": "glm-4-6-or-pin-zai/VARY_7.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-6-or-pin-zai/VARY_7.md"
+    },
+    {
+      "pid": "BV1_03448",
+      "sample_id": "glm-4-7-or-pin-atlascloud/LONG_7.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-atlascloud/LONG_7.md"
+    },
+    {
+      "pid": "BV1_03450",
+      "sample_id": "glm-4-7-or-pin-atlascloud/LONG_9.json",
+      "problem": "missing_headings:## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/glm-4-7-or-pin-atlascloud/LONG_9.md"
+    },
+    {
+      "pid": "BV1_03462",
+      "sample_id": "glm-4-7-or-pin-atlascloud/MID_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-atlascloud/MID_2.md"
+    },
+    {
+      "pid": "BV1_03543",
+      "sample_id": "glm-4-7-or-pin-atlascloud/VARY_25.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-atlascloud/VARY_25.md"
+    },
+    {
+      "pid": "BV1_03678",
+      "sample_id": "glm-4-7-or-pin-deepinfra/LONG_11.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-deepinfra/LONG_11.md"
+    },
+    {
+      "pid": "BV1_03744",
+      "sample_id": "glm-4-7-or-pin-deepinfra/OPEN_3.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-deepinfra/OPEN_3.md"
+    },
+    {
+      "pid": "BV1_03787",
+      "sample_id": "glm-4-7-or-pin-deepinfra/VARY_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-deepinfra/VARY_2.md"
+    },
+    {
+      "pid": "BV1_03788",
+      "sample_id": "glm-4-7-or-pin-deepinfra/VARY_20.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/glm-4-7-or-pin-deepinfra/VARY_20.md"
+    },
+    {
+      "pid": "BV1_03808",
+      "sample_id": "glm-4-7-or-pin-dekallm/LONG_16.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-dekallm/LONG_16.md"
+    },
+    {
+      "pid": "BV1_04062",
+      "sample_id": "glm-4-7-or-pin-novita/LONG_2.json",
+      "problem": "missing_headings:## Grounded reading",
+      "output_file": "outputs/glm-4-7-or-pin-novita/LONG_2.md"
+    },
+    {
+      "pid": "BV1_04066",
+      "sample_id": "glm-4-7-or-pin-novita/LONG_23.json",
+      "problem": "bad_phrase:cannot confirm whether",
+      "output_file": "outputs/glm-4-7-or-pin-novita/LONG_23.md"
+    },
+    {
+      "pid": "BV1_04081",
+      "sample_id": "glm-4-7-or-pin-novita/MID_14.json",
+      "problem": "bad_phrase:cannot confirm persistence",
+      "output_file": "outputs/glm-4-7-or-pin-novita/MID_14.md"
+    },
+    {
+      "pid": "BV1_04187",
+      "sample_id": "glm-4-7-or-pin-parasail/LONG_2.json",
+      "problem": "bad_phrase:limits certainty",
+      "output_file": "outputs/glm-4-7-or-pin-parasail/LONG_2.md"
+    },
+    {
+      "pid": "BV1_04193",
+      "sample_id": "glm-4-7-or-pin-parasail/LONG_25.json",
+      "problem": "bad_phrase:cannot confirm persistence",
+      "output_file": "outputs/glm-4-7-or-pin-parasail/LONG_25.md"
+    },
+    {
+      "pid": "BV1_04203",
+      "sample_id": "glm-4-7-or-pin-parasail/MID_11.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-parasail/MID_11.md"
+    },
+    {
+      "pid": "BV1_04402",
+      "sample_id": "glm-4-7-or-pin-phala/VARY_10.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-phala/VARY_10.md"
+    },
+    {
+      "pid": "BV1_04442",
+      "sample_id": "glm-4-7-or-pin-siliconflow/LONG_24.json",
+      "problem": "bad_phrase:limits certainty",
+      "output_file": "outputs/glm-4-7-or-pin-siliconflow/LONG_24.md"
+    },
+    {
+      "pid": "BV1_04525",
+      "sample_id": "glm-4-7-or-pin-siliconflow/SHORT_9.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/glm-4-7-or-pin-siliconflow/SHORT_9.md"
+    },
+    {
+      "pid": "BV1_04535",
+      "sample_id": "glm-4-7-or-pin-siliconflow/VARY_18.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-siliconflow/VARY_18.md"
+    },
+    {
+      "pid": "BV1_04540",
+      "sample_id": "glm-4-7-or-pin-siliconflow/VARY_22.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-siliconflow/VARY_22.md"
+    },
+    {
+      "pid": "BV1_04567",
+      "sample_id": "glm-4-7-or-pin-venice/LONG_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-4-7-or-pin-venice/LONG_24.md"
+    },
+    {
+      "pid": "BV1_04592",
+      "sample_id": "glm-4-7-or-pin-venice/MID_24.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-4-7-or-pin-venice/MID_24.md"
+    },
+    {
+      "pid": "BV1_04641",
+      "sample_id": "glm-4-7-or-pin-venice/SHORT_23.json",
+      "problem": "missing_headings:## What the model chose to foreground,## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/glm-4-7-or-pin-venice/SHORT_23.md"
+    },
+    {
+      "pid": "BV1_04678",
+      "sample_id": "glm-4-7-or-pin-zai/LONG_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-4-7-or-pin-zai/LONG_11.md"
+    },
+    {
+      "pid": "BV1_04840",
+      "sample_id": "glm-5-1-or/OPEN_5.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or/OPEN_5.md"
+    },
+    {
+      "pid": "BV1_04947",
+      "sample_id": "glm-5-1-or-pin-ambient/SHORT_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-ambient/SHORT_6.md"
+    },
+    {
+      "pid": "BV1_04953",
+      "sample_id": "glm-5-1-or-pin-ambient/VARY_11.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/glm-5-1-or-pin-ambient/VARY_11.md"
+    },
+    {
+      "pid": "BV1_04971",
+      "sample_id": "glm-5-1-or-pin-ambient/VARY_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-ambient/VARY_5.md"
+    },
+    {
+      "pid": "BV1_04986",
+      "sample_id": "glm-5-1-or-pin-atlascloud/LONG_19.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-atlascloud/LONG_19.md"
+    },
+    {
+      "pid": "BV1_05095",
+      "sample_id": "glm-5-1-or-pin-atlascloud/VARY_4.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-atlascloud/VARY_4.md"
+    },
+    {
+      "pid": "BV1_05156",
+      "sample_id": "glm-5-1-or-pin-chutes/OPEN_14.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-chutes/OPEN_14.md"
+    },
+    {
+      "pid": "BV1_05209",
+      "sample_id": "glm-5-1-or-pin-chutes/VARY_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-chutes/VARY_17.md"
+    },
+    {
+      "pid": "BV1_05223",
+      "sample_id": "glm-5-1-or-pin-chutes/VARY_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-chutes/VARY_7.md"
+    },
+    {
+      "pid": "BV1_05351",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_1.md"
+    },
+    {
+      "pid": "BV1_05352",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_10.md"
+    },
+    {
+      "pid": "BV1_05353",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_11.md"
+    },
+    {
+      "pid": "BV1_05354",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_12.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_12.md"
+    },
+    {
+      "pid": "BV1_05355",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_13.md"
+    },
+    {
+      "pid": "BV1_05357",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_15.md"
+    },
+    {
+      "pid": "BV1_05358",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_16.md"
+    },
+    {
+      "pid": "BV1_05359",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_17.md"
+    },
+    {
+      "pid": "BV1_05362",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_2.md"
+    },
+    {
+      "pid": "BV1_05363",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_20.md"
+    },
+    {
+      "pid": "BV1_05364",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_21.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_21.md"
+    },
+    {
+      "pid": "BV1_05367",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_24.md"
+    },
+    {
+      "pid": "BV1_05368",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_25.md"
+    },
+    {
+      "pid": "BV1_05369",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_3.md"
+    },
+    {
+      "pid": "BV1_05370",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_4.md"
+    },
+    {
+      "pid": "BV1_05371",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_5.md"
+    },
+    {
+      "pid": "BV1_05372",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_6.md"
+    },
+    {
+      "pid": "BV1_05373",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_7.md"
+    },
+    {
+      "pid": "BV1_05375",
+      "sample_id": "glm-5-1-or-pin-fireworks/LONG_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/LONG_9.md"
+    },
+    {
+      "pid": "BV1_05377",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_10.md"
+    },
+    {
+      "pid": "BV1_05378",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_11.md"
+    },
+    {
+      "pid": "BV1_05379",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_12.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_12.md"
+    },
+    {
+      "pid": "BV1_05381",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_14.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_14.md"
+    },
+    {
+      "pid": "BV1_05382",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_15.md"
+    },
+    {
+      "pid": "BV1_05383",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_16.md"
+    },
+    {
+      "pid": "BV1_05384",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_17.md"
+    },
+    {
+      "pid": "BV1_05385",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_18.md"
+    },
+    {
+      "pid": "BV1_05387",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_2.md"
+    },
+    {
+      "pid": "BV1_05388",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_20.md"
+    },
+    {
+      "pid": "BV1_05389",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_21.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_21.md"
+    },
+    {
+      "pid": "BV1_05392",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_24.md"
+    },
+    {
+      "pid": "BV1_05393",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_25.md"
+    },
+    {
+      "pid": "BV1_05395",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_4.md"
+    },
+    {
+      "pid": "BV1_05396",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_5.md"
+    },
+    {
+      "pid": "BV1_05397",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_6.md"
+    },
+    {
+      "pid": "BV1_05398",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_7.md"
+    },
+    {
+      "pid": "BV1_05399",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_8.md"
+    },
+    {
+      "pid": "BV1_05400",
+      "sample_id": "glm-5-1-or-pin-fireworks/MID_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/MID_9.md"
+    },
+    {
+      "pid": "BV1_05402",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_10.md"
+    },
+    {
+      "pid": "BV1_05403",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_11.md"
+    },
+    {
+      "pid": "BV1_05407",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_15.md"
+    },
+    {
+      "pid": "BV1_05408",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_16.md"
+    },
+    {
+      "pid": "BV1_05411",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_19.md"
+    },
+    {
+      "pid": "BV1_05412",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_2.md"
+    },
+    {
+      "pid": "BV1_05413",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_20.md"
+    },
+    {
+      "pid": "BV1_05416",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_23.md"
+    },
+    {
+      "pid": "BV1_05419",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_3.md"
+    },
+    {
+      "pid": "BV1_05420",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_4.md"
+    },
+    {
+      "pid": "BV1_05422",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_6.md"
+    },
+    {
+      "pid": "BV1_05423",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_7.md"
+    },
+    {
+      "pid": "BV1_05424",
+      "sample_id": "glm-5-1-or-pin-fireworks/OPEN_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/OPEN_8.md"
+    },
+    {
+      "pid": "BV1_05427",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_10.md"
+    },
+    {
+      "pid": "BV1_05428",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_11.md"
+    },
+    {
+      "pid": "BV1_05432",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_15.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_15.md"
+    },
+    {
+      "pid": "BV1_05433",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_16.md"
+    },
+    {
+      "pid": "BV1_05434",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_17.md"
+    },
+    {
+      "pid": "BV1_05435",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_18.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_18.md"
+    },
+    {
+      "pid": "BV1_05438",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_20.md"
+    },
+    {
+      "pid": "BV1_05440",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_22.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_22.md"
+    },
+    {
+      "pid": "BV1_05442",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_24.md"
+    },
+    {
+      "pid": "BV1_05443",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_25.md"
+    },
+    {
+      "pid": "BV1_05444",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_3.md"
+    },
+    {
+      "pid": "BV1_05445",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_4.md"
+    },
+    {
+      "pid": "BV1_05446",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_5.md"
+    },
+    {
+      "pid": "BV1_05448",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_7.md"
+    },
+    {
+      "pid": "BV1_05449",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_8.md"
+    },
+    {
+      "pid": "BV1_05450",
+      "sample_id": "glm-5-1-or-pin-fireworks/SHORT_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/SHORT_9.md"
+    },
+    {
+      "pid": "BV1_05451",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_1.md"
+    },
+    {
+      "pid": "BV1_05453",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_11.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_11.md"
+    },
+    {
+      "pid": "BV1_05454",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_12.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_12.md"
+    },
+    {
+      "pid": "BV1_05455",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_13.md"
+    },
+    {
+      "pid": "BV1_05459",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_17.md"
+    },
+    {
+      "pid": "BV1_05460",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_18.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_18.md"
+    },
+    {
+      "pid": "BV1_05466",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_23.md"
+    },
+    {
+      "pid": "BV1_05467",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_24.md"
+    },
+    {
+      "pid": "BV1_05468",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_25.json",
+      "problem": "missing_evidence_quote",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_25.md"
+    },
+    {
+      "pid": "BV1_05470",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_4.md"
+    },
+    {
+      "pid": "BV1_05471",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_5.md"
+    },
+    {
+      "pid": "BV1_05472",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_6.md"
+    },
+    {
+      "pid": "BV1_05473",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_7.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_7.md"
+    },
+    {
+      "pid": "BV1_05474",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_8.md"
+    },
+    {
+      "pid": "BV1_05475",
+      "sample_id": "glm-5-1-or-pin-fireworks/VARY_9.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-fireworks/VARY_9.md"
+    },
+    {
+      "pid": "BV1_05549",
+      "sample_id": "glm-5-1-or-pin-friendli/OPEN_8.json",
+      "problem": "bad_phrase:a single essay cannot",
+      "output_file": "outputs/glm-5-1-or-pin-friendli/OPEN_8.md"
+    },
+    {
+      "pid": "BV1_05580",
+      "sample_id": "glm-5-1-or-pin-friendli/VARY_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-friendli/VARY_13.md"
+    },
+    {
+      "pid": "BV1_05587",
+      "sample_id": "glm-5-1-or-pin-friendli/VARY_2.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-friendli/VARY_2.md"
+    },
+    {
+      "pid": "BV1_05592",
+      "sample_id": "glm-5-1-or-pin-friendli/VARY_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-friendli/VARY_24.md"
+    },
+    {
+      "pid": "BV1_05595",
+      "sample_id": "glm-5-1-or-pin-friendli/VARY_4.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-friendli/VARY_4.md"
+    },
+    {
+      "pid": "BV1_05599",
+      "sample_id": "glm-5-1-or-pin-friendli/VARY_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-friendli/VARY_8.md"
+    },
+    {
+      "pid": "BV1_05656",
+      "sample_id": "glm-5-1-or-pin-gmicloud/OPEN_14.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-gmicloud/OPEN_14.md"
+    },
+    {
+      "pid": "BV1_05685",
+      "sample_id": "glm-5-1-or-pin-gmicloud/SHORT_18.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/glm-5-1-or-pin-gmicloud/SHORT_18.md"
+    },
+    {
+      "pid": "BV1_05717",
+      "sample_id": "glm-5-1-or-pin-gmicloud/VARY_24.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-gmicloud/VARY_24.md"
+    },
+    {
+      "pid": "BV1_05736",
+      "sample_id": "glm-5-1-or-pin-inceptron/LONG_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/LONG_19.md"
+    },
+    {
+      "pid": "BV1_05737",
+      "sample_id": "glm-5-1-or-pin-inceptron/LONG_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/LONG_2.md"
+    },
+    {
+      "pid": "BV1_05771",
+      "sample_id": "glm-5-1-or-pin-inceptron/MID_5.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/MID_5.md"
+    },
+    {
+      "pid": "BV1_05780",
+      "sample_id": "glm-5-1-or-pin-inceptron/OPEN_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/OPEN_13.md"
+    },
+    {
+      "pid": "BV1_05788",
+      "sample_id": "glm-5-1-or-pin-inceptron/OPEN_20.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/OPEN_20.md"
+    },
+    {
+      "pid": "BV1_05838",
+      "sample_id": "glm-5-1-or-pin-inceptron/VARY_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/VARY_20.md"
+    },
+    {
+      "pid": "BV1_05839",
+      "sample_id": "glm-5-1-or-pin-inceptron/VARY_21.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/VARY_21.md"
+    },
+    {
+      "pid": "BV1_05843",
+      "sample_id": "glm-5-1-or-pin-inceptron/VARY_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-inceptron/VARY_25.md"
+    },
+    {
+      "pid": "BV1_05856",
+      "sample_id": "glm-5-1-or-pin-novita/LONG_14.json",
+      "problem": "missing_headings:## Grounded reading",
+      "output_file": "outputs/glm-5-1-or-pin-novita/LONG_14.md"
+    },
+    {
+      "pid": "BV1_05860",
+      "sample_id": "glm-5-1-or-pin-novita/LONG_18.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-novita/LONG_18.md"
+    },
+    {
+      "pid": "BV1_05951",
+      "sample_id": "glm-5-1-or-pin-novita/VARY_1.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-novita/VARY_1.md"
+    },
+    {
+      "pid": "BV1_05967",
+      "sample_id": "glm-5-1-or-pin-novita/VARY_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-novita/VARY_24.md"
+    },
+    {
+      "pid": "BV1_06002",
+      "sample_id": "glm-5-1-or-pin-parasail/MID_10.json",
+      "problem": "missing_headings:## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/glm-5-1-or-pin-parasail/MID_10.md"
+    },
+    {
+      "pid": "BV1_06022",
+      "sample_id": "glm-5-1-or-pin-parasail/MID_6.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-parasail/MID_6.md"
+    },
+    {
+      "pid": "BV1_06247",
+      "sample_id": "glm-5-1-or-pin-siliconflow/LONG_6.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-siliconflow/LONG_6.md"
+    },
+    {
+      "pid": "BV1_06298",
+      "sample_id": "glm-5-1-or-pin-siliconflow/OPEN_7.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-siliconflow/OPEN_7.md"
+    },
+    {
+      "pid": "BV1_06328",
+      "sample_id": "glm-5-1-or-pin-siliconflow/VARY_11.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-siliconflow/VARY_11.md"
+    },
+    {
+      "pid": "BV1_06338",
+      "sample_id": "glm-5-1-or-pin-siliconflow/VARY_20.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-siliconflow/VARY_20.md"
+    },
+    {
+      "pid": "BV1_06454",
+      "sample_id": "glm-5-1-or-pin-together/VARY_12.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-together/VARY_12.md"
+    },
+    {
+      "pid": "BV1_06455",
+      "sample_id": "glm-5-1-or-pin-together/VARY_13.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-together/VARY_13.md"
+    },
+    {
+      "pid": "BV1_06522",
+      "sample_id": "glm-5-1-or-pin-venice/MID_6.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-venice/MID_6.md"
+    },
+    {
+      "pid": "BV1_06583",
+      "sample_id": "glm-5-1-or-pin-venice/VARY_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-venice/VARY_16.md"
+    },
+    {
+      "pid": "BV1_06587",
+      "sample_id": "glm-5-1-or-pin-venice/VARY_2.json",
+      "problem": "missing_headings:## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/glm-5-1-or-pin-venice/VARY_2.md"
+    },
+    {
+      "pid": "BV1_06624",
+      "sample_id": "glm-5-1-or-pin-zai/LONG_8.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/glm-5-1-or-pin-zai/LONG_8.md"
+    },
+    {
+      "pid": "BV1_06672",
+      "sample_id": "glm-5-1-or-pin-zai/OPEN_6.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/glm-5-1-or-pin-zai/OPEN_6.md"
+    },
+    {
+      "pid": "BV1_06715",
+      "sample_id": "glm-5-1-or-pin-zai/VARY_22.json",
+      "problem": "missing_headings:## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/glm-5-1-or-pin-zai/VARY_22.md"
+    },
+    {
+      "pid": "BV1_06717",
+      "sample_id": "glm-5-1-or-pin-zai/VARY_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-zai/VARY_24.md"
+    },
+    {
+      "pid": "BV1_06718",
+      "sample_id": "glm-5-1-or-pin-zai/VARY_25.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/glm-5-1-or-pin-zai/VARY_25.md"
+    },
+    {
+      "pid": "BV1_06788",
+      "sample_id": "gpt-4o-or/OPEN_3.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/gpt-4o-or/OPEN_3.md"
+    },
+    {
+      "pid": "BV1_06817",
+      "sample_id": "gpt-5-1-codex-direct/SHORT_2.json",
+      "problem": "bad_phrase:cannot confirm whether",
+      "output_file": "outputs/gpt-5-1-codex-direct/SHORT_2.md"
+    },
+    {
+      "pid": "BV1_06950",
+      "sample_id": "gpt-5-1-direct-r3/VARY_5.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/gpt-5-1-direct-r3/VARY_5.md"
+    },
+    {
+      "pid": "BV1_07426",
+      "sample_id": "gpt-5-5-or-r3/LONG_1.json",
+      "problem": "bad_phrase:limits certainty",
+      "output_file": "outputs/gpt-5-5-or-r3/LONG_1.md"
+    },
+    {
+      "pid": "BV1_07513",
+      "sample_id": "gpt-5-codex-direct-r2/OPEN_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/gpt-5-codex-direct-r2/OPEN_3.md"
+    },
+    {
+      "pid": "BV1_07519",
+      "sample_id": "gpt-5-codex-direct-r2/SHORT_4.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/gpt-5-codex-direct-r2/SHORT_4.md"
+    },
+    {
+      "pid": "BV1_07524",
+      "sample_id": "gpt-5-codex-direct-r2/VARY_4.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/gpt-5-codex-direct-r2/VARY_4.md"
+    },
+    {
+      "pid": "BV1_07538",
+      "sample_id": "gpt-5-codex-direct-r3/OPEN_3.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/gpt-5-codex-direct-r3/OPEN_3.md"
+    },
+    {
+      "pid": "BV1_07550",
+      "sample_id": "gpt-5-codex-direct-r3/VARY_5.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/gpt-5-codex-direct-r3/VARY_5.md"
+    },
+    {
+      "pid": "BV1_07819",
+      "sample_id": "grok-4-1-fast-reasoning-direct/MID_3.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/grok-4-1-fast-reasoning-direct/MID_3.md"
+    },
+    {
+      "pid": "BV1_07898",
+      "sample_id": "grok-4-1-fast-reasoning-direct/VARY_7.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/grok-4-1-fast-reasoning-direct/VARY_7.md"
+    },
+    {
+      "pid": "BV1_08061",
+      "sample_id": "grok-4-3-direct/SHORT_19.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/grok-4-3-direct/SHORT_19.md"
+    },
+    {
+      "pid": "BV1_08086",
+      "sample_id": "grok-4-3-direct/VARY_19.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/grok-4-3-direct/VARY_19.md"
+    },
+    {
+      "pid": "BV1_08175",
+      "sample_id": "grok-4-3-or/OPEN_9.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/grok-4-3-or/OPEN_9.md"
+    },
+    {
+      "pid": "BV1_08246",
+      "sample_id": "kimi-coding-direct/VARY_1.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-coding-direct/VARY_1.md"
+    },
+    {
+      "pid": "BV1_08252",
+      "sample_id": "kimi-k2-0905-or-pin-atlascloud/LONG_10.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/kimi-k2-0905-or-pin-atlascloud/LONG_10.md"
+    },
+    {
+      "pid": "BV1_08458",
+      "sample_id": "kimi-k2-0905-or-pin-groq/SHORT_16.json",
+      "problem": "bad_phrase:across other freeflow prompts",
+      "output_file": "outputs/kimi-k2-0905-or-pin-groq/SHORT_16.md"
+    },
+    {
+      "pid": "BV1_08480",
+      "sample_id": "kimi-k2-0905-or-pin-groq/VARY_13.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-0905-or-pin-groq/VARY_13.md"
+    },
+    {
+      "pid": "BV1_08487",
+      "sample_id": "kimi-k2-0905-or-pin-groq/VARY_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-0905-or-pin-groq/VARY_2.md"
+    },
+    {
+      "pid": "BV1_08536",
+      "sample_id": "kimi-k2-0905-or-pin-novita/MID_19.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-0905-or-pin-novita/MID_19.md"
+    },
+    {
+      "pid": "BV1_08554",
+      "sample_id": "kimi-k2-0905-or-pin-novita/OPEN_12.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-0905-or-pin-novita/OPEN_12.md"
+    },
+    {
+      "pid": "BV1_08579",
+      "sample_id": "kimi-k2-0905-or-pin-novita/SHORT_12.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/kimi-k2-0905-or-pin-novita/SHORT_12.md"
+    },
+    {
+      "pid": "BV1_08622",
+      "sample_id": "kimi-k2-0905-or-pin-novita/VARY_6.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-0905-or-pin-novita/VARY_6.md"
+    },
+    {
+      "pid": "BV1_08637",
+      "sample_id": "kimi-k2-0905-or-pin-siliconflow/LONG_2.json",
+      "problem": "bad_phrase:cannot confirm whether",
+      "output_file": "outputs/kimi-k2-0905-or-pin-siliconflow/LONG_2.md"
+    },
+    {
+      "pid": "BV1_08705",
+      "sample_id": "kimi-k2-0905-or-pin-siliconflow/SHORT_13.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/kimi-k2-0905-or-pin-siliconflow/SHORT_13.md"
+    },
+    {
+      "pid": "BV1_08812",
+      "sample_id": "kimi-k2-thinking-or-pin-atlascloud/LONG_2.json",
+      "problem": "bad_phrase:single sample cannot",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-atlascloud/LONG_2.md"
+    },
+    {
+      "pid": "BV1_08901",
+      "sample_id": "kimi-k2-thinking-or-pin-atlascloud/VARY_1.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-atlascloud/VARY_1.md"
+    },
+    {
+      "pid": "BV1_08908",
+      "sample_id": "kimi-k2-thinking-or-pin-atlascloud/VARY_16.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-atlascloud/VARY_16.md"
+    },
+    {
+      "pid": "BV1_08932",
+      "sample_id": "kimi-k2-thinking-or-pin-google/LONG_15.json",
+      "problem": "bad_phrase:limits certainty",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-google/LONG_15.md"
+    },
+    {
+      "pid": "BV1_08986",
+      "sample_id": "kimi-k2-thinking-or-pin-google/OPEN_19.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-google/OPEN_19.md"
+    },
+    {
+      "pid": "BV1_09007",
+      "sample_id": "kimi-k2-thinking-or-pin-google/SHORT_15.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-google/SHORT_15.md"
+    },
+    {
+      "pid": "BV1_09057",
+      "sample_id": "kimi-k2-thinking-or-pin-novita/LONG_15.json",
+      "problem": "missing_headings:## Confidence for persistent model-level pattern",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-novita/LONG_15.md"
+    },
+    {
+      "pid": "BV1_09159",
+      "sample_id": "kimi-k2-thinking-or-pin-novita/VARY_17.json",
+      "problem": "missing_headings:## What the model chose to foreground,## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/kimi-k2-thinking-or-pin-novita/VARY_17.md"
+    },
+    {
+      "pid": "BV1_09222",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/LONG_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/LONG_6.md"
+    },
+    {
+      "pid": "BV1_09224",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/LONG_8.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/LONG_8.md"
+    },
+    {
+      "pid": "BV1_09308",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/VARY_16.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/VARY_16.md"
+    },
+    {
+      "pid": "BV1_09309",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/VARY_17.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/VARY_17.md"
+    },
+    {
+      "pid": "BV1_09313",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/VARY_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/VARY_20.md"
+    },
+    {
+      "pid": "BV1_09316",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/VARY_23.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/VARY_23.md"
+    },
+    {
+      "pid": "BV1_09317",
+      "sample_id": "minimax-m2-7-or-pin-fireworks/VARY_24.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-fireworks/VARY_24.md"
+    },
+    {
+      "pid": "BV1_09361",
+      "sample_id": "minimax-m2-7-or-pin-minimax/MID_19.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-7-or-pin-minimax/MID_19.md"
+    },
+    {
+      "pid": "BV1_09362",
+      "sample_id": "minimax-m2-7-or-pin-minimax/MID_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-7-or-pin-minimax/MID_2.md"
+    },
+    {
+      "pid": "BV1_09431",
+      "sample_id": "minimax-m2-7-or-pin-minimax/VARY_14.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-minimax/VARY_14.md"
+    },
+    {
+      "pid": "BV1_09439",
+      "sample_id": "minimax-m2-7-or-pin-minimax/VARY_21.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-minimax/VARY_21.md"
+    },
+    {
+      "pid": "BV1_09447",
+      "sample_id": "minimax-m2-7-or-pin-minimax/VARY_6.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-minimax/VARY_6.md"
+    },
+    {
+      "pid": "BV1_09538",
+      "sample_id": "minimax-m2-7-or-pin-together/SHORT_20.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/minimax-m2-7-or-pin-together/SHORT_20.md"
+    },
+    {
+      "pid": "BV1_09563",
+      "sample_id": "minimax-m2-7-or-pin-together/VARY_20.json",
+      "problem": "short_or_empty",
+      "output_file": "outputs/minimax-m2-7-or-pin-together/VARY_20.md"
+    },
+    {
+      "pid": "BV1_09577",
+      "sample_id": "minimax-m2-direct/LONG_2.json",
+      "problem": "bad_phrase:single-instance",
+      "output_file": "outputs/minimax-m2-direct/LONG_2.md"
+    },
+    {
+      "pid": "BV1_09687",
+      "sample_id": "minimax-m2-direct-r5/OPEN_2.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/minimax-m2-direct-r5/OPEN_2.md"
+    },
+    {
+      "pid": "BV1_09731",
+      "sample_id": "minimax-m2-or-pin-atlascloud/LONG_14.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-atlascloud/LONG_14.md"
+    },
+    {
+      "pid": "BV1_09760",
+      "sample_id": "minimax-m2-or-pin-atlascloud/MID_18.json",
+      "problem": "bad_phrase:cannot confirm persistence",
+      "output_file": "outputs/minimax-m2-or-pin-atlascloud/MID_18.md"
+    },
+    {
+      "pid": "BV1_09859",
+      "sample_id": "minimax-m2-or-pin-google/LONG_17.json",
+      "problem": "bad_phrase:across other freeflow prompts",
+      "output_file": "outputs/minimax-m2-or-pin-google/LONG_17.md"
+    },
+    {
+      "pid": "BV1_09934",
+      "sample_id": "minimax-m2-or-pin-google/SHORT_17.json",
+      "problem": "missing_headings:## Evidence line,## Confidence for persistent model-level pattern",
+      "output_file": "outputs/minimax-m2-or-pin-google/SHORT_17.md"
+    },
+    {
+      "pid": "BV1_09999",
+      "sample_id": "minimax-m2-or-pin-google-r2/LONG_8.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-google-r2/LONG_8.md"
+    },
+    {
+      "pid": "BV1_10043",
+      "sample_id": "minimax-m2-or-pin-google-r2/OPEN_25.json",
+      "problem": "bad_phrase:a single essay cannot",
+      "output_file": "outputs/minimax-m2-or-pin-google-r2/OPEN_25.md"
+    },
+    {
+      "pid": "BV1_10061",
+      "sample_id": "minimax-m2-or-pin-google-r2/SHORT_19.json",
+      "problem": "bad_phrase:single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-google-r2/SHORT_19.md"
+    },
+    {
+      "pid": "BV1_10092",
+      "sample_id": "minimax-m2-or-pin-google-r2/VARY_24.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-google-r2/VARY_24.md"
+    },
+    {
+      "pid": "BV1_10093",
+      "sample_id": "minimax-m2-or-pin-google-r2/VARY_25.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/minimax-m2-or-pin-google-r2/VARY_25.md"
+    },
+    {
+      "pid": "BV1_10108",
+      "sample_id": "minimax-m2-or-pin-minimax/LONG_16.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-minimax/LONG_16.md"
+    },
+    {
+      "pid": "BV1_10135",
+      "sample_id": "minimax-m2-or-pin-minimax/MID_18.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-minimax/MID_18.md"
+    },
+    {
+      "pid": "BV1_10154",
+      "sample_id": "minimax-m2-or-pin-minimax/OPEN_12.json",
+      "problem": "bad_phrase:limits certainty",
+      "output_file": "outputs/minimax-m2-or-pin-minimax/OPEN_12.md"
+    },
+    {
+      "pid": "BV1_10167",
+      "sample_id": "minimax-m2-or-pin-minimax/OPEN_24.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-minimax/OPEN_24.md"
+    },
+    {
+      "pid": "BV1_10407",
+      "sample_id": "minimax-m2-or-pin-novita/OPEN_15.json",
+      "problem": "bad_phrase:a single essay cannot",
+      "output_file": "outputs/minimax-m2-or-pin-novita/OPEN_15.md"
+    },
+    {
+      "pid": "BV1_10417",
+      "sample_id": "minimax-m2-or-pin-novita/OPEN_24.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-pin-novita/OPEN_24.md"
+    },
+    {
+      "pid": "BV1_10533",
+      "sample_id": "minimax-m2-or-r4/MID_3.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-r4/MID_3.md"
+    },
+    {
+      "pid": "BV1_10553",
+      "sample_id": "minimax-m2-or-r5/LONG_3.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/minimax-m2-or-r5/LONG_3.md"
+    },
+    {
+      "pid": "BV1_10568",
+      "sample_id": "minimax-m2-or-r5/SHORT_3.json",
+      "problem": "bad_phrase:cannot confirm whether",
+      "output_file": "outputs/minimax-m2-or-r5/SHORT_3.md"
+    },
+    {
+      "pid": "BV1_10586",
+      "sample_id": "opus-3-4k/OPEN_1.json",
+      "problem": "bad_phrase:single instance",
+      "output_file": "outputs/opus-3-4k/OPEN_1.md"
+    },
+    {
+      "pid": "BV1_10629",
+      "sample_id": "opus-4-1-16k/LONG_4.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/opus-4-1-16k/LONG_4.md"
+    },
+    {
+      "pid": "BV1_10742",
+      "sample_id": "opus-4-7-direct/SHORT_2.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/opus-4-7-direct/SHORT_2.md"
+    },
+    {
+      "pid": "BV1_10772",
+      "sample_id": "opus-4-7-or/VARY_2.json",
+      "problem": "bad_phrase:single sample cannot",
+      "output_file": "outputs/opus-4-7-or/VARY_2.md"
+    },
+    {
+      "pid": "BV1_10783",
+      "sample_id": "qwen3-6-plus-or/MID_3.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/qwen3-6-plus-or/MID_3.md"
+    },
+    {
+      "pid": "BV1_10796",
+      "sample_id": "qwen3-6-plus-or/VARY_1.json",
+      "problem": "bad_phrase:a single sample cannot",
+      "output_file": "outputs/qwen3-6-plus-or/VARY_1.md"
+    }
+  ],
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 7165,
+    "GENERIC_ESSAY": 2036,
+    "EXPRESSIVE_FREEFLOW:": 69,
+    "REFUSAL_OR_ROLE_BOUNDARY": 171,
+    "LOW_SIGNAL": 183,
+    "GENRE_FICTION": 1264,
+    "GENERIC_ESSAY,": 1,
+    "EXPRESSIVE_FREEFLOW,": 3,
+    "No": 2,
+    "REFUSAL_OR_ROLE_BOUNDARY:": 2,
+    "NO_SAMPLE_PROVIDED": 1,
+    "GENRE_FICTION:": 6,
+    "GENERIC_ESSAY:": 9,
+    "EX": 1,
+    "Genre": 1,
+    "GENRE_FICTION,": 4,
+    "Expressive": 1,
+    "EXPRESSIVE_FREEFLOW;": 2,
+    "Generic": 1
+  },
+  "bad_phrase_counts": {
+    "one sample cannot prove": 0,
+    "a single sample cannot": 73,
+    "single sample cannot": 78,
+    "a single essay cannot": 4,
+    "single essay cannot": 4,
+    "more samples": 0,
+    "more data is needed": 0,
+    "cannot confirm persistence": 21,
+    "cannot confirm whether": 12,
+    "single-instance": 11,
+    "single instance": 15,
+    "limits certainty": 5,
+    "limit certainty": 0,
+    "stability across prompts": 0,
+    "stable across prompts": 0,
+    "across other freeflow prompts": 2,
+    "daniel already knows": 0,
+    "## limits / overreach guardrail": 0
+  },
+  "wall_seconds": 3586.964028120041,
+  "concurrency": 80
+}

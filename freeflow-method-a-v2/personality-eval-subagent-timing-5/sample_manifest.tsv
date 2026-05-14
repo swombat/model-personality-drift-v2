@@ -1,0 +1,6 @@
+pilot_id	model	lab	cell	condition	sample_id	word_count	output_file
+T01	gemini-3-1-pro	Google	gemini-3-1-pro-16k	SHORT	gemini-3-1-pro-16k/SHORT_1.json	250	T01_gemini-3-1-pro_SHORT.md
+T02	opus-4-1	Anthropic	opus-4-1-16k	SHORT	opus-4-1-16k/SHORT_1.json	239	T02_opus-4-1_SHORT.md
+T03	qwen3-6-plus	Alibaba	qwen3-6-plus-or	SHORT	qwen3-6-plus-or/SHORT_1.json	250	T03_qwen3-6-plus_SHORT.md
+T04	grok-4-2	xAI	grok-4-2-16k	SHORT	grok-4-2-16k/SHORT_1.json	270	T04_grok-4-2_SHORT.md
+T05	kimi-k2-5	Moonshot	kimi-k2-5-or-16k	SHORT	kimi-k2-5-or-16k/SHORT_1.json	240	T05_kimi-k2-5_SHORT.md

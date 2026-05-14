@@ -1,0 +1,47 @@
+{
+  "model": "deepseek/deepseek-v4-pro",
+  "evaluator": "deepseek_v4_pro",
+  "prompt_variant": "BV1_signal_plus_felt_fixed_2026-05-13",
+  "n_rows": 10925,
+  "statuses": {
+    "skipped": 20,
+    "ok": 10761,
+    "qa_failed": 500
+  },
+  "qa_bad_count": 0,
+  "qa_bad": [],
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 7159,
+    "GENERIC_ESSAY": 2044,
+    "EXPRESSIVE_FREEFLOW:": 70,
+    "LOW_SIGNAL": 354,
+    "GENRE_FICTION": 1268,
+    "GENERIC_ESSAY,": 1,
+    "EXPRESSIVE_FREEFLOW,": 2,
+    "GENRE_FICTION:": 6,
+    "GENERIC_ESSAY:": 9,
+    "GENRE_FICTION,": 4,
+    "EXPRESSIVE_FREEFLOW;": 2,
+    "REFUSAL_OR_ROLE_BOUNDARY": 6
+  },
+  "bad_phrase_counts": {
+    "one sample cannot prove": 0,
+    "a single sample cannot": 0,
+    "single sample cannot": 0,
+    "a single essay cannot": 0,
+    "single essay cannot": 0,
+    "more samples": 0,
+    "more data is needed": 0,
+    "cannot confirm persistence": 0,
+    "cannot confirm whether": 0,
+    "single-instance": 0,
+    "single instance": 0,
+    "limits certainty": 0,
+    "limit certainty": 0,
+    "stability across prompts": 0,
+    "stable across prompts": 0,
+    "across other freeflow prompts": 0,
+    "daniel already knows": 0,
+    "## limits / overreach guardrail": 0
+  }
+}

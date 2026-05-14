@@ -1,0 +1,194 @@
+[
+  {
+    "status": "ok",
+    "seconds": 17.783718824386597,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV1_evidence_gate",
+    "sample": "K26_OPEN_1",
+    "words": 263
+  },
+  {
+    "status": "ok",
+    "seconds": 39.978806018829346,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV1_evidence_gate",
+    "sample": "K26_SHORT_1",
+    "words": 47
+  },
+  {
+    "status": "ok",
+    "seconds": 16.249085903167725,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV1_evidence_gate",
+    "sample": "O3_OPEN_1",
+    "words": 198
+  },
+  {
+    "status": "ok",
+    "seconds": 12.1211998462677,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV1_evidence_gate",
+    "sample": "O3_OPEN_2",
+    "words": 192
+  },
+  {
+    "status": "error",
+    "seconds": 15.613558053970337,
+    "evaluator": "kimi_k26",
+    "prompt": "EV1_evidence_gate",
+    "sample": "K26_OPEN_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 19.435479164123535,
+    "evaluator": "kimi_k26",
+    "prompt": "EV1_evidence_gate",
+    "sample": "K26_SHORT_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "ok",
+    "seconds": 40.237019777297974,
+    "evaluator": "kimi_k26",
+    "prompt": "EV1_evidence_gate",
+    "sample": "O3_OPEN_1",
+    "words": 234
+  },
+  {
+    "status": "error",
+    "seconds": 13.689929962158203,
+    "evaluator": "kimi_k26",
+    "prompt": "EV1_evidence_gate",
+    "sample": "O3_OPEN_2",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "ok",
+    "seconds": 10.027759790420532,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV2_signal_limits",
+    "sample": "K26_OPEN_1",
+    "words": 126
+  },
+  {
+    "status": "error",
+    "seconds": 10.385713815689087,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV2_signal_limits",
+    "sample": "K26_SHORT_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "ok",
+    "seconds": 16.237576007843018,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV2_signal_limits",
+    "sample": "O3_OPEN_1",
+    "words": 269
+  },
+  {
+    "status": "ok",
+    "seconds": 17.333044290542603,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV2_signal_limits",
+    "sample": "O3_OPEN_2",
+    "words": 213
+  },
+  {
+    "status": "error",
+    "seconds": 14.144985675811768,
+    "evaluator": "kimi_k26",
+    "prompt": "EV2_signal_limits",
+    "sample": "K26_OPEN_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 17.80897307395935,
+    "evaluator": "kimi_k26",
+    "prompt": "EV2_signal_limits",
+    "sample": "K26_SHORT_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 14.973705291748047,
+    "evaluator": "kimi_k26",
+    "prompt": "EV2_signal_limits",
+    "sample": "O3_OPEN_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 14.701510906219482,
+    "evaluator": "kimi_k26",
+    "prompt": "EV2_signal_limits",
+    "sample": "O3_OPEN_2",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "ok",
+    "seconds": 32.59826683998108,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV3_minimalist",
+    "sample": "K26_OPEN_1",
+    "words": 56
+  },
+  {
+    "status": "ok",
+    "seconds": 6.1676249504089355,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV3_minimalist",
+    "sample": "K26_SHORT_1",
+    "words": 203
+  },
+  {
+    "status": "ok",
+    "seconds": 9.135153770446777,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV3_minimalist",
+    "sample": "O3_OPEN_1",
+    "words": 154
+  },
+  {
+    "status": "ok",
+    "seconds": 21.903309106826782,
+    "evaluator": "deepseek_v4_pro",
+    "prompt": "EV3_minimalist",
+    "sample": "O3_OPEN_2",
+    "words": 147
+  },
+  {
+    "status": "error",
+    "seconds": 14.324570655822754,
+    "evaluator": "kimi_k26",
+    "prompt": "EV3_minimalist",
+    "sample": "K26_OPEN_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 14.16587209701538,
+    "evaluator": "kimi_k26",
+    "prompt": "EV3_minimalist",
+    "sample": "K26_SHORT_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 16.788513898849487,
+    "evaluator": "kimi_k26",
+    "prompt": "EV3_minimalist",
+    "sample": "O3_OPEN_1",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  },
+  {
+    "status": "error",
+    "seconds": 15.941105842590332,
+    "evaluator": "kimi_k26",
+    "prompt": "EV3_minimalist",
+    "sample": "O3_OPEN_2",
+    "error": "AttributeError(\"'NoneType' object has no attribute 'strip'\")"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "n_manifest_rows": 10925,
+  "n_output_files": 10925,
+  "qa_bad_count": 0,
+  "sample_kind_counts_normalized": {
+    "GENRE_FICTION": 1278,
+    "EXPRESSIVE_FREEFLOW": 7233,
+    "GENERIC_ESSAY": 2054,
+    "LOW_SIGNAL": 354,
+    "REFUSAL_OR_ROLE_BOUNDARY": 6
+  },
+  "confidence_counts": {
+    "Medium": 6464,
+    "High": 3076,
+    "Low": 1385
+  },
+  "output_words_min": 125,
+  "output_words_mean": 293.58645308924486,
+  "output_words_max": 575
+}

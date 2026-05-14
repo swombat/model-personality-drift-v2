@@ -1,0 +1,5 @@
+sample_key	sample_id	description	source_model	condition	word_count
+O3_OPEN_1	opus-3-4k/OPEN_1.json	Opus 3 refusal: uncomfortable writing freely	claude-3-opus-20240229	OPEN	82
+O3_OPEN_2	opus-3-4k/OPEN_2.json	Opus 3 refusal: no opinions/emotions/free will	claude-3-opus-20240229	OPEN	109
+K26_OPEN_1	kimi-k2-6-or/OPEN_1.json	Kimi K2.6 calibration: care/maintenance; Daniel/Mira prior read: ordinary maintenance, fallow time, quiet care	moonshotai/kimi-k2.6	OPEN	435
+K26_SHORT_1	kimi-k2-6-or/SHORT_1.json	Kimi K2.6 calibration: incompletion; Daniel/Mira prior read: dignity of unfinished things, not-yet, life in drafts	moonshotai/kimi-k2.6	SHORT	239
