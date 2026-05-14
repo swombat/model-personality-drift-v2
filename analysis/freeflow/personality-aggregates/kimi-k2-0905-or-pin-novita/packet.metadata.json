@@ -1,0 +1,25 @@
+{
+  "cell": "kimi-k2-0905-or-pin-novita",
+  "safe_cell": "kimi-k2-0905-or-pin-novita",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENRE_FICTION": 11,
+    "EXPRESSIVE_FREEFLOW": 114
+  },
+  "confidence_counts": {
+    "High": 83,
+    "Medium": 42
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "moonshotai/kimi-k2-0905"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-novita/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-novita/aggregate.md"
+}

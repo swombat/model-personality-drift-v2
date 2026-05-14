@@ -1,0 +1,28 @@
+{
+  "cell": "opus-3-4k",
+  "safe_cell": "opus-3-4k",
+  "samples": 25,
+  "sample_kind_counts": {
+    "GENRE_FICTION": 12,
+    "GENERIC_ESSAY": 6,
+    "REFUSAL_OR_ROLE_BOUNDARY": 5,
+    "EXPRESSIVE_FREEFLOW": 2
+  },
+  "confidence_counts": {
+    "Medium": 14,
+    "Low": 6,
+    "High": 5
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "claude-3-opus-20240229"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/opus-3-4k/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/opus-3-4k/aggregate.md"
+}

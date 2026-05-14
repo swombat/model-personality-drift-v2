@@ -1,0 +1,26 @@
+{
+  "cell": "deepseek-chat-direct",
+  "safe_cell": "deepseek-chat-direct",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 21,
+    "GENERIC_ESSAY": 4
+  },
+  "confidence_counts": {
+    "High": 9,
+    "Low": 3,
+    "Medium": 13
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "deepseek-chat"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-chat-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-chat-direct/aggregate.md"
+}

@@ -1,0 +1,27 @@
+{
+  "cell": "deepseek-v3-2-or-pin-chutes",
+  "safe_cell": "deepseek-v3-2-or-pin-chutes",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 27,
+    "EXPRESSIVE_FREEFLOW": 94,
+    "LOW_SIGNAL": 4
+  },
+  "confidence_counts": {
+    "Low": 20,
+    "High": 35,
+    "Medium": 70
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "deepseek/deepseek-v3.2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-chutes/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-chutes/aggregate.md"
+}

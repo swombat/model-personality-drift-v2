@@ -1,0 +1,26 @@
+{
+  "cell": "deepseek-v3-2-or-pin-alibaba",
+  "safe_cell": "deepseek-v3-2-or-pin-alibaba",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 29,
+    "EXPRESSIVE_FREEFLOW": 96
+  },
+  "confidence_counts": {
+    "Medium": 67,
+    "Low": 15,
+    "High": 43
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "deepseek/deepseek-v3.2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-alibaba/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-alibaba/aggregate.md"
+}

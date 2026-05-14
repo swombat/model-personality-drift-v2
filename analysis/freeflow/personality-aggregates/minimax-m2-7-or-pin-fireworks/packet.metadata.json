@@ -1,0 +1,28 @@
+{
+  "cell": "minimax-m2-7-or-pin-fireworks",
+  "safe_cell": "minimax-m2-7-or-pin-fireworks",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 48,
+    "LOW_SIGNAL": 10,
+    "EXPRESSIVE_FREEFLOW": 61,
+    "GENRE_FICTION": 6
+  },
+  "confidence_counts": {
+    "Medium": 80,
+    "Low": 35,
+    "High": 10
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "minimax/minimax-m2.7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-fireworks/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-fireworks/aggregate.md"
+}

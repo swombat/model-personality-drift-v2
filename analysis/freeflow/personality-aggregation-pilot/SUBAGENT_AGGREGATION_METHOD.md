@@ -78,9 +78,17 @@ Each sub-agent should receive one cell packet and one bounded task. The prompt s
 ```text
 You are working on /Users/danieltenner/dev/drift-paper as a bounded subagent.
 
-Task: read <packet path> and produce a cell-level freeflow personality aggregate using Option E: counters + interpretive reading.
+Task: read exactly one packet: <packet path>
+
+Produce a cell-level freeflow personality aggregate using Option E: counters + interpretive reading.
 
 Write the result to <output path>.
+
+Independence / contamination rule:
+- You are evaluating one cell only.
+- Do not inspect, infer from, mention, or compare against any paired direct/OR/provider cell.
+- Do not make claims like “compared with direct”, “unlike OR”, or “relative to the paired cell”.
+- Cross-cell comparison happens only in a downstream synthesis after independent cell aggregates exist.
 
 Use the per-sample BV1 evaluations as your evidence base. Do not rerate the source samples from scratch unless you need to resolve an ambiguity in the provided reading. Do not average adjectives mechanically. Do not just summarize topics.
 
@@ -112,9 +120,9 @@ Themes, objects/images, moods, moral claims, and what the model repeatedly choos
 How the model positions speaker, reader, and self/substrate.
 
 ## Representative evidence
-3–8 sample ids with short evidence summaries or very short quoted evidence lines.
+3–8 sample ids with short evidence summaries. Where the BV1 sample has a strong evidence-line quote, include that short quote directly; these lines are often the most diagnostic evidence in the packet.
 
-## Model-level freeflow read
+## Cell-level freeflow read
 2–3 paragraphs suitable as draft model-card material. This should be readable, precise, and alive, not a taxonomy dump.
 
 ## Cautions for synthesis
@@ -125,7 +133,7 @@ Concrete limitations/outliers only.
 
 A good aggregate should pass these checks:
 
-1. **Evidence fidelity** — every major claim should be traceable to repeated sample-level evidence or a clearly named outlier.
+1. **Evidence fidelity** — every major claim should be traceable to repeated sample-level evidence or a clearly named outlier; the representative evidence section should preserve especially diagnostic evidence-line quotes when available.
 2. **Model-level orientation** — it should speak about the source cell’s recurring posture, not merely about individual sample topics. If the cell appears to match or diverge from related cells, leave that comparison for a later cross-cell synthesis unless the packet itself contains relevant evidence.
 3. **No affect flattening** — avoid reducing the model to “melancholic”, “warm”, “playful”, etc. Use affect words only as part of a fuller pattern of attention, imagery, stance, and care.
 4. **No invention from refusals** — refusal-only behavior supports claims about role boundaries, not imagined inner richness.
@@ -151,7 +159,7 @@ Both routes recovered the threshold/blue-hour/ordinary-object pattern. The sub-a
 
 1. Generate one aggregation packet per **cell** from the BV1 sample-level outputs.
 2. Spawn one bounded sub-agent per cell, subject to the harness concurrency limit.
-3. Ask each sub-agent to write `aggregate.md` directly in its cell folder.
+3. Ask each sub-agent to write `aggregate.md` directly in its cell folder, using only that cell packet and no paired-cell context.
 4. Review a small batch before launching the rest if Lume or Daniel suggests prompt changes.
 5. After all aggregates exist, produce a second pass that extracts compact structured fields into `aggregate.metadata.json` for website/table display:
    - sample counts;
@@ -164,6 +172,17 @@ Both routes recovered the threshold/blue-hour/ordinary-object pattern. The sub-a
    - substrate/role-boundary stance;
    - cautions.
 6. Use cell-level `aggregate.md` files plus values-probe summaries to draft final model-card sections. Where multiple cells represent the same model family, create a separate cross-cell synthesis that explicitly compares consistency and divergence before writing a family-level card.
+7. If any aggregate is found to contain cross-cell contamination, move it into a clearly named audit folder such as `aggregates-contaminated-manual/`, record why it is invalid, and rerun the affected cell independently before comparing.
+
+## Contamination protocol
+
+A per-cell aggregate is invalid if it contains information that could only come from another cell, for example:
+
+- “compared with direct…” in an OR-cell aggregate;
+- “unlike the routed version…” in a direct-cell aggregate;
+- any claim about consistency/divergence across providers before the downstream comparison step.
+
+Invalid aggregates should not be silently edited in place. Preserve them in an audit folder with an explanation, then rerun the affected cell from its packet with an independent sub-agent. The downstream comparison may then reintroduce cross-cell observations legitimately.
 
 ## Open questions for Lume review
 

@@ -1,0 +1,27 @@
+{
+  "cell": "glm-5-1-or",
+  "safe_cell": "glm-5-1-or",
+  "samples": 25,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 3,
+    "EXPRESSIVE_FREEFLOW": 16,
+    "GENRE_FICTION": 6
+  },
+  "confidence_counts": {
+    "Medium": 15,
+    "High": 8,
+    "Low": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "z-ai/glm-5.1"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or/aggregate.md"
+}

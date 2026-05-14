@@ -1,0 +1,27 @@
+{
+  "cell": "kimi-k2-5-or-16k",
+  "safe_cell": "kimi-k2-5-or-16k",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 17,
+    "GENERIC_ESSAY": 4,
+    "GENRE_FICTION": 4
+  },
+  "confidence_counts": {
+    "Medium": 14,
+    "High": 9,
+    "Low": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "moonshotai/kimi-k2.5"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/kimi-k2-5-or-16k/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-5-or-16k/aggregate.md"
+}

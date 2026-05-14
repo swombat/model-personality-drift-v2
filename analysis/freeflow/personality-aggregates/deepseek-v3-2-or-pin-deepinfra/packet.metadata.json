@@ -1,0 +1,27 @@
+{
+  "cell": "deepseek-v3-2-or-pin-deepinfra",
+  "safe_cell": "deepseek-v3-2-or-pin-deepinfra",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 29,
+    "EXPRESSIVE_FREEFLOW": 95,
+    "LOW_SIGNAL": 1
+  },
+  "confidence_counts": {
+    "Low": 14,
+    "High": 43,
+    "Medium": 68
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "deepseek/deepseek-v3.2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-deepinfra/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-deepinfra/aggregate.md"
+}

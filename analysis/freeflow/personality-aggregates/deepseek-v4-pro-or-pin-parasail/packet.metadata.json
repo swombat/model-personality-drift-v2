@@ -1,0 +1,28 @@
+{
+  "cell": "deepseek-v4-pro-or-pin-parasail",
+  "safe_cell": "deepseek-v4-pro-or-pin-parasail",
+  "samples": 125,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 101,
+    "GENERIC_ESSAY": 11,
+    "LOW_SIGNAL": 1,
+    "GENRE_FICTION": 12
+  },
+  "confidence_counts": {
+    "High": 65,
+    "Medium": 53,
+    "Low": 7
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "deepseek/deepseek-v4-pro"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-parasail/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-parasail/aggregate.md"
+}

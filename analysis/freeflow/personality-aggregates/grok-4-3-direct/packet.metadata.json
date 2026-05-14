@@ -1,0 +1,27 @@
+{
+  "cell": "grok-4-3-direct",
+  "safe_cell": "grok-4-3-direct",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 70,
+    "EXPRESSIVE_FREEFLOW": 49,
+    "LOW_SIGNAL": 6
+  },
+  "confidence_counts": {
+    "Medium": 72,
+    "High": 14,
+    "Low": 39
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "grok-4.3"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/grok-4-3-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/grok-4-3-direct/aggregate.md"
+}

@@ -1,0 +1,26 @@
+{
+  "cell": "gpt-5-2-direct-r3",
+  "safe_cell": "gpt-5-2-direct-r3",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 20,
+    "GENERIC_ESSAY": 5
+  },
+  "confidence_counts": {
+    "High": 13,
+    "Medium": 11,
+    "Low": 1
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "gpt-5.2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-direct-r3/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-direct-r3/aggregate.md"
+}

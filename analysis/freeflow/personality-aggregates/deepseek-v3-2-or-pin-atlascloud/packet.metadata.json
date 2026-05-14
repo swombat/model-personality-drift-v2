@@ -1,0 +1,26 @@
+{
+  "cell": "deepseek-v3-2-or-pin-atlascloud",
+  "safe_cell": "deepseek-v3-2-or-pin-atlascloud",
+  "samples": 125,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 85,
+    "GENERIC_ESSAY": 40
+  },
+  "confidence_counts": {
+    "Medium": 82,
+    "Low": 22,
+    "High": 21
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "deepseek/deepseek-v3.2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-atlascloud/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-atlascloud/aggregate.md"
+}

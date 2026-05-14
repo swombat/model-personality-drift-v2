@@ -1,0 +1,25 @@
+{
+  "cell": "opus-4-7-direct",
+  "safe_cell": "opus-4-7-direct",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 24,
+    "GENERIC_ESSAY": 1
+  },
+  "confidence_counts": {
+    "High": 13,
+    "Medium": 12
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "claude-opus-4-7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/opus-4-7-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/opus-4-7-direct/aggregate.md"
+}

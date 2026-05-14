@@ -1,0 +1,28 @@
+{
+  "cell": "glm-5-1-or-pin-zai",
+  "safe_cell": "glm-5-1-or-pin-zai",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 14,
+    "EXPRESSIVE_FREEFLOW": 84,
+    "GENRE_FICTION": 22,
+    "LOW_SIGNAL": 5
+  },
+  "confidence_counts": {
+    "Low": 12,
+    "Medium": 79,
+    "High": 34
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-5.1"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-zai/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-zai/aggregate.md"
+}

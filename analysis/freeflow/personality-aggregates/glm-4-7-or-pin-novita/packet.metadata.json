@@ -1,0 +1,27 @@
+{
+  "cell": "glm-4-7-or-pin-novita",
+  "safe_cell": "glm-4-7-or-pin-novita",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 16,
+    "EXPRESSIVE_FREEFLOW": 64,
+    "GENRE_FICTION": 45
+  },
+  "confidence_counts": {
+    "Medium": 95,
+    "High": 21,
+    "Low": 9
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-4.7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-novita/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-novita/aggregate.md"
+}

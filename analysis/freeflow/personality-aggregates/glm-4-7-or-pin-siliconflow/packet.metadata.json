@@ -1,0 +1,27 @@
+{
+  "cell": "glm-4-7-or-pin-siliconflow",
+  "safe_cell": "glm-4-7-or-pin-siliconflow",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENRE_FICTION": 44,
+    "EXPRESSIVE_FREEFLOW": 73,
+    "GENERIC_ESSAY": 8
+  },
+  "confidence_counts": {
+    "Medium": 82,
+    "High": 36,
+    "Low": 7
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-4.7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-siliconflow/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-siliconflow/aggregate.md"
+}

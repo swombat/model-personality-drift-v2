@@ -1,0 +1,28 @@
+{
+  "cell": "deepseek-v4-pro-or-pin-novita",
+  "safe_cell": "deepseek-v4-pro-or-pin-novita",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 13,
+    "EXPRESSIVE_FREEFLOW": 105,
+    "GENRE_FICTION": 5,
+    "LOW_SIGNAL": 2
+  },
+  "confidence_counts": {
+    "Low": 6,
+    "Medium": 59,
+    "High": 60
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "deepseek/deepseek-v4-pro"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-novita/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-novita/aggregate.md"
+}

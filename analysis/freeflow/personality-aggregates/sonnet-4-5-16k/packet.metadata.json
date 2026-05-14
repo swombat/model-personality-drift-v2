@@ -1,0 +1,27 @@
+{
+  "cell": "sonnet-4-5-16k",
+  "safe_cell": "sonnet-4-5-16k",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 9,
+    "GENERIC_ESSAY": 14,
+    "GENRE_FICTION": 2
+  },
+  "confidence_counts": {
+    "High": 4,
+    "Low": 8,
+    "Medium": 13
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "claude-sonnet-4-5"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/sonnet-4-5-16k/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/sonnet-4-5-16k/aggregate.md"
+}

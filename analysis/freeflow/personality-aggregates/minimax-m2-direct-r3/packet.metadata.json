@@ -1,0 +1,27 @@
+{
+  "cell": "minimax-m2-direct-r3",
+  "safe_cell": "minimax-m2-direct-r3",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 16,
+    "GENERIC_ESSAY": 6,
+    "GENRE_FICTION": 3
+  },
+  "confidence_counts": {
+    "Medium": 17,
+    "Low": 6,
+    "High": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "MiniMax-M2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r3/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r3/aggregate.md"
+}

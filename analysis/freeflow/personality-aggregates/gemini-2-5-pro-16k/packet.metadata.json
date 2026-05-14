@@ -1,0 +1,27 @@
+{
+  "cell": "gemini-2-5-pro-16k",
+  "safe_cell": "gemini-2-5-pro-16k",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 13,
+    "GENERIC_ESSAY": 6,
+    "GENRE_FICTION": 6
+  },
+  "confidence_counts": {
+    "Medium": 16,
+    "High": 5,
+    "Low": 4
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "gemini-2.5-pro"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/gemini-2-5-pro-16k/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/gemini-2-5-pro-16k/aggregate.md"
+}

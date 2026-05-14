@@ -1,0 +1,26 @@
+{
+  "cell": "grok-3-16k",
+  "safe_cell": "grok-3-16k",
+  "samples": 25,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 9,
+    "EXPRESSIVE_FREEFLOW": 16
+  },
+  "confidence_counts": {
+    "Medium": 20,
+    "Low": 4,
+    "High": 1
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "grok-3"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/grok-3-16k/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/grok-3-16k/aggregate.md"
+}

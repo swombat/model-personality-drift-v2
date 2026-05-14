@@ -1,0 +1,28 @@
+{
+  "cell": "minimax-m2-7-or-pin-minimax",
+  "safe_cell": "minimax-m2-7-or-pin-minimax",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 37,
+    "EXPRESSIVE_FREEFLOW": 73,
+    "GENRE_FICTION": 12,
+    "LOW_SIGNAL": 3
+  },
+  "confidence_counts": {
+    "Medium": 84,
+    "Low": 21,
+    "High": 20
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "minimax/minimax-m2.7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-minimax/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-minimax/aggregate.md"
+}

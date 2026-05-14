@@ -1,0 +1,28 @@
+{
+  "cell": "minimax-m2-or-pin-novita",
+  "safe_cell": "minimax-m2-or-pin-novita",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 51,
+    "EXPRESSIVE_FREEFLOW": 64,
+    "GENRE_FICTION": 9,
+    "LOW_SIGNAL": 1
+  },
+  "confidence_counts": {
+    "Medium": 86,
+    "Low": 29,
+    "High": 10
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "minimax/minimax-m2"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-novita/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-novita/aggregate.md"
+}

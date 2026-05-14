@@ -1,0 +1,27 @@
+{
+  "cell": "kimi-coding-direct",
+  "safe_cell": "kimi-coding-direct",
+  "samples": 25,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 2,
+    "GENRE_FICTION": 4,
+    "EXPRESSIVE_FREEFLOW": 19
+  },
+  "confidence_counts": {
+    "Low": 2,
+    "Medium": 14,
+    "High": 9
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "kimi-for-coding"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/kimi-coding-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/kimi-coding-direct/aggregate.md"
+}

@@ -1,0 +1,27 @@
+{
+  "cell": "kimi-k2-thinking-or-pin-atlascloud",
+  "safe_cell": "kimi-k2-thinking-or-pin-atlascloud",
+  "samples": 125,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 102,
+    "GENERIC_ESSAY": 19,
+    "GENRE_FICTION": 4
+  },
+  "confidence_counts": {
+    "High": 47,
+    "Medium": 71,
+    "Low": 7
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "moonshotai/kimi-k2-thinking"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-atlascloud/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-atlascloud/aggregate.md"
+}

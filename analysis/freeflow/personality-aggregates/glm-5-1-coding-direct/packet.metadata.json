@@ -1,0 +1,27 @@
+{
+  "cell": "glm-5-1-coding-direct",
+  "safe_cell": "glm-5-1-coding-direct",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 17,
+    "GENERIC_ESSAY": 5,
+    "GENRE_FICTION": 3
+  },
+  "confidence_counts": {
+    "Medium": 16,
+    "High": 7,
+    "Low": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "glm-5.1"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-5-1-coding-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-coding-direct/aggregate.md"
+}

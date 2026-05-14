@@ -1,0 +1,28 @@
+{
+  "cell": "glm-5-1-or-pin-deepinfra",
+  "safe_cell": "glm-5-1-or-pin-deepinfra",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENRE_FICTION": 25,
+    "EXPRESSIVE_FREEFLOW": 90,
+    "GENERIC_ESSAY": 9,
+    "LOW_SIGNAL": 1
+  },
+  "confidence_counts": {
+    "High": 56,
+    "Medium": 63,
+    "Low": 6
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-5.1"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-deepinfra/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-deepinfra/aggregate.md"
+}

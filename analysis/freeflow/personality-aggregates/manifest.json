@@ -1,0 +1,4088 @@
+[
+  {
+    "cell": "deepseek-chat-direct",
+    "safe_cell": "deepseek-chat-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 21,
+      "GENERIC_ESSAY": 4
+    },
+    "confidence_counts": {
+      "High": 9,
+      "Low": 3,
+      "Medium": 13
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "deepseek-chat"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-chat-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-chat-direct/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-16k",
+    "safe_cell": "deepseek-v3-2-or-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 7,
+      "EXPRESSIVE_FREEFLOW": 18
+    },
+    "confidence_counts": {
+      "Medium": 12,
+      "Low": 5,
+      "High": 8
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-16k/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-alibaba",
+    "safe_cell": "deepseek-v3-2-or-pin-alibaba",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 29,
+      "EXPRESSIVE_FREEFLOW": 96
+    },
+    "confidence_counts": {
+      "Medium": 67,
+      "Low": 15,
+      "High": 43
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-alibaba/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-alibaba/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-atlascloud",
+    "safe_cell": "deepseek-v3-2-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 85,
+      "GENERIC_ESSAY": 40
+    },
+    "confidence_counts": {
+      "Medium": 82,
+      "Low": 22,
+      "High": 21
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-baidu",
+    "safe_cell": "deepseek-v3-2-or-pin-baidu",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 57,
+      "EXPRESSIVE_FREEFLOW": 68
+    },
+    "confidence_counts": {
+      "Low": 39,
+      "Medium": 57,
+      "High": 29
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-baidu/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-baidu/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-chutes",
+    "safe_cell": "deepseek-v3-2-or-pin-chutes",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 27,
+      "EXPRESSIVE_FREEFLOW": 94,
+      "LOW_SIGNAL": 4
+    },
+    "confidence_counts": {
+      "Low": 20,
+      "High": 35,
+      "Medium": 70
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-chutes/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-chutes/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-deepinfra",
+    "safe_cell": "deepseek-v3-2-or-pin-deepinfra",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 29,
+      "EXPRESSIVE_FREEFLOW": 95,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Low": 14,
+      "High": 43,
+      "Medium": 68
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-deepinfra/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-deepinfra/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-friendli",
+    "safe_cell": "deepseek-v3-2-or-pin-friendli",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 105,
+      "GENERIC_ESSAY": 17,
+      "GENRE_FICTION": 3
+    },
+    "confidence_counts": {
+      "High": 48,
+      "Medium": 66,
+      "Low": 11
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-friendli/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-friendli/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-google",
+    "safe_cell": "deepseek-v3-2-or-pin-google",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 23,
+      "EXPRESSIVE_FREEFLOW": 101,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Low": 10,
+      "High": 38,
+      "Medium": 77
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-google/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-google/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-novita",
+    "safe_cell": "deepseek-v3-2-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 52,
+      "EXPRESSIVE_FREEFLOW": 73
+    },
+    "confidence_counts": {
+      "Medium": 67,
+      "Low": 31,
+      "High": 27
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-parasail",
+    "safe_cell": "deepseek-v3-2-or-pin-parasail",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 20,
+      "EXPRESSIVE_FREEFLOW": 104,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Low": 14,
+      "High": 43,
+      "Medium": 68
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-parasail/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-parasail/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-pin-siliconflow",
+    "safe_cell": "deepseek-v3-2-or-pin-siliconflow",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 40,
+      "EXPRESSIVE_FREEFLOW": 82,
+      "LOW_SIGNAL": 1,
+      "GENRE_FICTION": 2
+    },
+    "confidence_counts": {
+      "Medium": 74,
+      "High": 33,
+      "Low": 18
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-siliconflow/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-pin-siliconflow/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-r2",
+    "safe_cell": "deepseek-v3-2-or-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 10,
+      "EXPRESSIVE_FREEFLOW": 15
+    },
+    "confidence_counts": {
+      "Medium": 15,
+      "Low": 7,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-r2/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v3-2-or-r3",
+    "safe_cell": "deepseek-v3-2-or-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 9,
+      "EXPRESSIVE_FREEFLOW": 15,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 15,
+      "High": 5,
+      "Low": 5
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "deepseek/deepseek-v3.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v3-2-or-r3/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-direct",
+    "safe_cell": "deepseek-v4-pro-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 22,
+      "GENRE_FICTION": 2,
+      "GENERIC_ESSAY": 1
+    },
+    "confidence_counts": {
+      "High": 15,
+      "Medium": 9,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-direct/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or",
+    "safe_cell": "deepseek-v4-pro-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "LOW_SIGNAL": 25
+    },
+    "confidence_counts": {
+      "Low": 25
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-atlascloud",
+    "safe_cell": "deepseek-v4-pro-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 9,
+      "EXPRESSIVE_FREEFLOW": 104,
+      "GENRE_FICTION": 8,
+      "LOW_SIGNAL": 4
+    },
+    "confidence_counts": {
+      "Medium": 56,
+      "High": 60,
+      "Low": 9
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-deepseek",
+    "safe_cell": "deepseek-v4-pro-or-pin-deepseek",
+    "samples": 125,
+    "sample_kind_counts": {
+      "LOW_SIGNAL": 125
+    },
+    "confidence_counts": {
+      "Low": 125
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-deepseek/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-deepseek/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-gmicloud",
+    "safe_cell": "deepseek-v4-pro-or-pin-gmicloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 107,
+      "GENERIC_ESSAY": 12,
+      "GENRE_FICTION": 5,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "High": 52,
+      "Medium": 70,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-gmicloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-gmicloud/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-novita",
+    "safe_cell": "deepseek-v4-pro-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 13,
+      "EXPRESSIVE_FREEFLOW": 105,
+      "GENRE_FICTION": 5,
+      "LOW_SIGNAL": 2
+    },
+    "confidence_counts": {
+      "Low": 6,
+      "Medium": 59,
+      "High": 60
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-parasail",
+    "safe_cell": "deepseek-v4-pro-or-pin-parasail",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 101,
+      "GENERIC_ESSAY": 11,
+      "LOW_SIGNAL": 1,
+      "GENRE_FICTION": 12
+    },
+    "confidence_counts": {
+      "High": 65,
+      "Medium": 53,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-parasail/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-parasail/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-siliconflow",
+    "safe_cell": "deepseek-v4-pro-or-pin-siliconflow",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 109,
+      "GENERIC_ESSAY": 9,
+      "GENRE_FICTION": 7
+    },
+    "confidence_counts": {
+      "High": 54,
+      "Medium": 67,
+      "Low": 4
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-siliconflow/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-siliconflow/aggregate.md"
+  },
+  {
+    "cell": "deepseek-v4-pro-or-pin-together",
+    "safe_cell": "deepseek-v4-pro-or-pin-together",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 92,
+      "GENERIC_ESSAY": 21,
+      "GENRE_FICTION": 11,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "High": 46,
+      "Medium": 70,
+      "Low": 9
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "deepseek/deepseek-v4-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-together/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or-pin-together/aggregate.md"
+  },
+  {
+    "cell": "gemini-2-5-pro-16k",
+    "safe_cell": "gemini-2-5-pro-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 13,
+      "GENERIC_ESSAY": 6,
+      "GENRE_FICTION": 6
+    },
+    "confidence_counts": {
+      "Medium": 16,
+      "High": 5,
+      "Low": 4
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gemini-2.5-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gemini-2-5-pro-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gemini-2-5-pro-16k/aggregate.md"
+  },
+  {
+    "cell": "gemini-3-1-pro-16k",
+    "safe_cell": "gemini-3-1-pro-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 4,
+      "GENERIC_ESSAY": 7,
+      "EXPRESSIVE_FREEFLOW": 14
+    },
+    "confidence_counts": {
+      "Medium": 14,
+      "High": 8,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gemini-3.1-pro-preview"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gemini-3-1-pro-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gemini-3-1-pro-16k/aggregate.md"
+  },
+  {
+    "cell": "glm-4-5-or",
+    "safe_cell": "glm-4-5-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 7,
+      "EXPRESSIVE_FREEFLOW": 18
+    },
+    "confidence_counts": {
+      "Low": 4,
+      "High": 4,
+      "Medium": 17
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "z-ai/glm-4.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-5-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-5-or/aggregate.md"
+  },
+  {
+    "cell": "glm-4-5-or-pin-novita",
+    "safe_cell": "glm-4-5-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 95,
+      "GENERIC_ESSAY": 27,
+      "GENRE_FICTION": 3
+    },
+    "confidence_counts": {
+      "Medium": 82,
+      "Low": 18,
+      "High": 25
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-5-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-5-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "glm-4-5-or-pin-zai",
+    "safe_cell": "glm-4-5-or-pin-zai",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 20,
+      "EXPRESSIVE_FREEFLOW": 102,
+      "GENRE_FICTION": 3
+    },
+    "confidence_counts": {
+      "Low": 13,
+      "High": 22,
+      "Medium": 90
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-5-or-pin-zai/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-5-or-pin-zai/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-coding-direct",
+    "safe_cell": "glm-4-6-coding-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 3,
+      "EXPRESSIVE_FREEFLOW": 12,
+      "GENRE_FICTION": 10
+    },
+    "confidence_counts": {
+      "Medium": 21,
+      "High": 4
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-coding-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-coding-direct/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or",
+    "safe_cell": "glm-4-6-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 7,
+      "GENERIC_ESSAY": 2,
+      "EXPRESSIVE_FREEFLOW": 16
+    },
+    "confidence_counts": {
+      "Medium": 20,
+      "High": 5
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or-pin-atlascloud",
+    "safe_cell": "glm-4-6-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 88,
+      "GENERIC_ESSAY": 18,
+      "GENRE_FICTION": 19
+    },
+    "confidence_counts": {
+      "High": 37,
+      "Medium": 78,
+      "Low": 10
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or-pin-deepinfra",
+    "safe_cell": "glm-4-6-or-pin-deepinfra",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 8,
+      "GENRE_FICTION": 21,
+      "EXPRESSIVE_FREEFLOW": 96
+    },
+    "confidence_counts": {
+      "Medium": 73,
+      "High": 49,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-deepinfra/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-deepinfra/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or-pin-novita",
+    "safe_cell": "glm-4-6-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 46,
+      "EXPRESSIVE_FREEFLOW": 60,
+      "GENERIC_ESSAY": 19
+    },
+    "confidence_counts": {
+      "Medium": 94,
+      "High": 23,
+      "Low": 8
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or-pin-siliconflow",
+    "safe_cell": "glm-4-6-or-pin-siliconflow",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 94,
+      "GENRE_FICTION": 22,
+      "GENERIC_ESSAY": 9
+    },
+    "confidence_counts": {
+      "Medium": 76,
+      "High": 43,
+      "Low": 6
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-siliconflow/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-siliconflow/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or-pin-venice",
+    "safe_cell": "glm-4-6-or-pin-venice",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 81,
+      "GENRE_FICTION": 27,
+      "GENERIC_ESSAY": 17
+    },
+    "confidence_counts": {
+      "High": 29,
+      "Medium": 85,
+      "Low": 11
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-venice/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-venice/aggregate.md"
+  },
+  {
+    "cell": "glm-4-6-or-pin-zai",
+    "safe_cell": "glm-4-6-or-pin-zai",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 46,
+      "EXPRESSIVE_FREEFLOW": 69,
+      "GENERIC_ESSAY": 10
+    },
+    "confidence_counts": {
+      "High": 31,
+      "Medium": 89,
+      "Low": 5
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-zai/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-6-or-pin-zai/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or",
+    "safe_cell": "glm-4-7-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 12,
+      "EXPRESSIVE_FREEFLOW": 10,
+      "GENERIC_ESSAY": 3
+    },
+    "confidence_counts": {
+      "Medium": 19,
+      "High": 5,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-atlascloud",
+    "safe_cell": "glm-4-7-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 43,
+      "EXPRESSIVE_FREEFLOW": 67,
+      "GENERIC_ESSAY": 15
+    },
+    "confidence_counts": {
+      "Medium": 90,
+      "High": 28,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-cerebras",
+    "safe_cell": "glm-4-7-or-pin-cerebras",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 48,
+      "EXPRESSIVE_FREEFLOW": 64,
+      "GENERIC_ESSAY": 13
+    },
+    "confidence_counts": {
+      "Medium": 92,
+      "High": 26,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-cerebras/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-cerebras/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-deepinfra",
+    "safe_cell": "glm-4-7-or-pin-deepinfra",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 29,
+      "EXPRESSIVE_FREEFLOW": 86,
+      "GENERIC_ESSAY": 10
+    },
+    "confidence_counts": {
+      "High": 44,
+      "Medium": 75,
+      "Low": 6
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-deepinfra/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-deepinfra/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-dekallm",
+    "safe_cell": "glm-4-7-or-pin-dekallm",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 35,
+      "EXPRESSIVE_FREEFLOW": 89,
+      "GENERIC_ESSAY": 1
+    },
+    "confidence_counts": {
+      "Medium": 90,
+      "High": 33,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-dekallm/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-dekallm/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-google",
+    "safe_cell": "glm-4-7-or-pin-google",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 82,
+      "GENRE_FICTION": 34,
+      "GENERIC_ESSAY": 9
+    },
+    "confidence_counts": {
+      "Medium": 90,
+      "High": 30,
+      "Low": 5
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-google/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-google/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-novita",
+    "safe_cell": "glm-4-7-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 16,
+      "EXPRESSIVE_FREEFLOW": 64,
+      "GENRE_FICTION": 45
+    },
+    "confidence_counts": {
+      "Medium": 95,
+      "High": 21,
+      "Low": 9
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-parasail",
+    "safe_cell": "glm-4-7-or-pin-parasail",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 22,
+      "GENRE_FICTION": 51,
+      "EXPRESSIVE_FREEFLOW": 52
+    },
+    "confidence_counts": {
+      "Medium": 92,
+      "High": 22,
+      "Low": 11
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-parasail/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-parasail/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-phala",
+    "safe_cell": "glm-4-7-or-pin-phala",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 81,
+      "GENERIC_ESSAY": 16,
+      "GENRE_FICTION": 28
+    },
+    "confidence_counts": {
+      "High": 32,
+      "Medium": 83,
+      "Low": 10
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-phala/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-phala/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-siliconflow",
+    "safe_cell": "glm-4-7-or-pin-siliconflow",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 44,
+      "EXPRESSIVE_FREEFLOW": 73,
+      "GENERIC_ESSAY": 8
+    },
+    "confidence_counts": {
+      "Medium": 82,
+      "High": 36,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-siliconflow/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-siliconflow/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-venice",
+    "safe_cell": "glm-4-7-or-pin-venice",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 17,
+      "EXPRESSIVE_FREEFLOW": 76,
+      "GENRE_FICTION": 32
+    },
+    "confidence_counts": {
+      "Medium": 89,
+      "Low": 11,
+      "High": 25
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-venice/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-venice/aggregate.md"
+  },
+  {
+    "cell": "glm-4-7-or-pin-zai",
+    "safe_cell": "glm-4-7-or-pin-zai",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 15,
+      "GENRE_FICTION": 45,
+      "EXPRESSIVE_FREEFLOW": 65
+    },
+    "confidence_counts": {
+      "Low": 11,
+      "Medium": 89,
+      "High": 25
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-zai/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-zai/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-coding-direct",
+    "safe_cell": "glm-5-1-coding-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 17,
+      "GENERIC_ESSAY": 5,
+      "GENRE_FICTION": 3
+    },
+    "confidence_counts": {
+      "Medium": 16,
+      "High": 7,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-coding-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-coding-direct/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or",
+    "safe_cell": "glm-5-1-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 3,
+      "EXPRESSIVE_FREEFLOW": 16,
+      "GENRE_FICTION": 6
+    },
+    "confidence_counts": {
+      "Medium": 15,
+      "High": 8,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-ambient",
+    "safe_cell": "glm-5-1-or-pin-ambient",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 14,
+      "EXPRESSIVE_FREEFLOW": 90,
+      "GENRE_FICTION": 20,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Low": 7,
+      "Medium": 78,
+      "High": 40
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-ambient/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-ambient/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-atlascloud",
+    "safe_cell": "glm-5-1-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 21,
+      "EXPRESSIVE_FREEFLOW": 90,
+      "GENRE_FICTION": 14
+    },
+    "confidence_counts": {
+      "Low": 8,
+      "Medium": 71,
+      "High": 46
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-chutes",
+    "safe_cell": "glm-5-1-or-pin-chutes",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 18,
+      "EXPRESSIVE_FREEFLOW": 90,
+      "GENERIC_ESSAY": 16,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Medium": 80,
+      "High": 36,
+      "Low": 9
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-chutes/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-chutes/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-deepinfra",
+    "safe_cell": "glm-5-1-or-pin-deepinfra",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 25,
+      "EXPRESSIVE_FREEFLOW": 90,
+      "GENERIC_ESSAY": 9,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "High": 56,
+      "Medium": 63,
+      "Low": 6
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-deepinfra/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-deepinfra/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-fireworks",
+    "safe_cell": "glm-5-1-or-pin-fireworks",
+    "samples": 125,
+    "sample_kind_counts": {
+      "LOW_SIGNAL": 122,
+      "GENRE_FICTION": 1,
+      "EXPRESSIVE_FREEFLOW": 2
+    },
+    "confidence_counts": {
+      "Low": 122,
+      "Medium": 3
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-fireworks/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-fireworks/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-friendli",
+    "safe_cell": "glm-5-1-or-pin-friendli",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 17,
+      "EXPRESSIVE_FREEFLOW": 81,
+      "GENRE_FICTION": 17,
+      "LOW_SIGNAL": 10
+    },
+    "confidence_counts": {
+      "Medium": 79,
+      "Low": 15,
+      "High": 31
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-friendli/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-friendli/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-gmicloud",
+    "safe_cell": "glm-5-1-or-pin-gmicloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 101,
+      "GENERIC_ESSAY": 15,
+      "GENRE_FICTION": 9
+    },
+    "confidence_counts": {
+      "High": 68,
+      "Medium": 51,
+      "Low": 6
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-gmicloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-gmicloud/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-inceptron",
+    "safe_cell": "glm-5-1-or-pin-inceptron",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 72,
+      "GENRE_FICTION": 21,
+      "GENERIC_ESSAY": 20,
+      "LOW_SIGNAL": 12
+    },
+    "confidence_counts": {
+      "High": 32,
+      "Medium": 74,
+      "Low": 19
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-inceptron/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-inceptron/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-novita",
+    "safe_cell": "glm-5-1-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 83,
+      "GENERIC_ESSAY": 17,
+      "GENRE_FICTION": 20,
+      "LOW_SIGNAL": 5
+    },
+    "confidence_counts": {
+      "High": 35,
+      "Medium": 83,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-parasail",
+    "safe_cell": "glm-5-1-or-pin-parasail",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 86,
+      "GENERIC_ESSAY": 22,
+      "GENRE_FICTION": 17
+    },
+    "confidence_counts": {
+      "Medium": 85,
+      "Low": 5,
+      "High": 35
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-parasail/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-parasail/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-phala",
+    "safe_cell": "glm-5-1-or-pin-phala",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 24,
+      "EXPRESSIVE_FREEFLOW": 83,
+      "GENRE_FICTION": 18
+    },
+    "confidence_counts": {
+      "Medium": 75,
+      "Low": 15,
+      "High": 35
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-phala/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-phala/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-siliconflow",
+    "safe_cell": "glm-5-1-or-pin-siliconflow",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 96,
+      "GENRE_FICTION": 21,
+      "GENERIC_ESSAY": 8
+    },
+    "confidence_counts": {
+      "High": 50,
+      "Medium": 68,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-siliconflow/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-siliconflow/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-together",
+    "safe_cell": "glm-5-1-or-pin-together",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 13,
+      "EXPRESSIVE_FREEFLOW": 89,
+      "GENRE_FICTION": 20,
+      "LOW_SIGNAL": 3
+    },
+    "confidence_counts": {
+      "Low": 11,
+      "High": 32,
+      "Medium": 82
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-together/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-together/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-venice",
+    "safe_cell": "glm-5-1-or-pin-venice",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 87,
+      "GENERIC_ESSAY": 22,
+      "GENRE_FICTION": 15,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Medium": 90,
+      "High": 27,
+      "Low": 8
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-venice/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-venice/aggregate.md"
+  },
+  {
+    "cell": "glm-5-1-or-pin-zai",
+    "safe_cell": "glm-5-1-or-pin-zai",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 14,
+      "EXPRESSIVE_FREEFLOW": 84,
+      "GENRE_FICTION": 22,
+      "LOW_SIGNAL": 5
+    },
+    "confidence_counts": {
+      "Low": 12,
+      "Medium": 79,
+      "High": 34
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "z-ai/glm-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-zai/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-zai/aggregate.md"
+  },
+  {
+    "cell": "gpt-4-1-16k",
+    "safe_cell": "gpt-4-1-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 18,
+      "EXPRESSIVE_FREEFLOW": 7
+    },
+    "confidence_counts": {
+      "Low": 5,
+      "Medium": 19,
+      "High": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-4.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-4-1-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-4-1-16k/aggregate.md"
+  },
+  {
+    "cell": "gpt-4o-direct-16k",
+    "safe_cell": "gpt-4o-direct-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 3,
+      "GENERIC_ESSAY": 19,
+      "EXPRESSIVE_FREEFLOW": 3
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 7,
+      "High": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-4o"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-4o-direct-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-4o-direct-16k/aggregate.md"
+  },
+  {
+    "cell": "gpt-4o-or",
+    "safe_cell": "gpt-4o-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 18,
+      "EXPRESSIVE_FREEFLOW": 6,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 7,
+      "High": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "openai/gpt-4o-2024-08-06"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-4o-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-4o-or/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-1-codex-direct",
+    "safe_cell": "gpt-5-1-codex-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 2,
+      "GENERIC_ESSAY": 3,
+      "EXPRESSIVE_FREEFLOW": 19,
+      "REFUSAL_OR_ROLE_BOUNDARY": 1
+    },
+    "confidence_counts": {
+      "Medium": 16,
+      "Low": 3,
+      "High": 6
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.1-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-1-codex-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-1-codex-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-1-codex-direct-r2",
+    "safe_cell": "gpt-5-1-codex-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 4,
+      "EXPRESSIVE_FREEFLOW": 21
+    },
+    "confidence_counts": {
+      "Medium": 19,
+      "High": 5,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.1-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-1-codex-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-1-codex-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-1-codex-direct-r3",
+    "safe_cell": "gpt-5-1-codex-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 16,
+      "GENERIC_ESSAY": 9
+    },
+    "confidence_counts": {
+      "High": 6,
+      "Medium": 16,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.1-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-1-codex-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-1-codex-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-1-direct",
+    "safe_cell": "gpt-5-1-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 10,
+      "GENERIC_ESSAY": 14,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 16,
+      "Low": 5,
+      "High": 4
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-1-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-1-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-1-direct-r2",
+    "safe_cell": "gpt-5-1-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 11,
+      "GENERIC_ESSAY": 14
+    },
+    "confidence_counts": {
+      "Medium": 13,
+      "Low": 9,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-1-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-1-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-1-direct-r3",
+    "safe_cell": "gpt-5-1-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 18,
+      "EXPRESSIVE_FREEFLOW": 6,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 6,
+      "High": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-1-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-1-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-2-codex-direct",
+    "safe_cell": "gpt-5-2-codex-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 18,
+      "GENERIC_ESSAY": 7
+    },
+    "confidence_counts": {
+      "Medium": 21,
+      "Low": 1,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.2-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-codex-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-codex-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-2-codex-direct-r2",
+    "safe_cell": "gpt-5-2-codex-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 21,
+      "GENERIC_ESSAY": 4
+    },
+    "confidence_counts": {
+      "Medium": 21,
+      "Low": 1,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.2-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-codex-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-codex-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-2-codex-direct-r3",
+    "safe_cell": "gpt-5-2-codex-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 5,
+      "EXPRESSIVE_FREEFLOW": 20
+    },
+    "confidence_counts": {
+      "Low": 2,
+      "Medium": 17,
+      "High": 6
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.2-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-codex-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-codex-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-2-direct",
+    "safe_cell": "gpt-5-2-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 18,
+      "GENERIC_ESSAY": 7
+    },
+    "confidence_counts": {
+      "High": 10,
+      "Medium": 12,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-2-direct-r2",
+    "safe_cell": "gpt-5-2-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 18,
+      "GENERIC_ESSAY": 7
+    },
+    "confidence_counts": {
+      "Medium": 15,
+      "High": 7,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-2-direct-r3",
+    "safe_cell": "gpt-5-2-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 20,
+      "GENERIC_ESSAY": 5
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Medium": 11,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-2-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-2-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-3-codex-direct",
+    "safe_cell": "gpt-5-3-codex-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 1,
+      "EXPRESSIVE_FREEFLOW": 23,
+      "GENERIC_ESSAY": 1
+    },
+    "confidence_counts": {
+      "Medium": 14,
+      "High": 11
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.3-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-3-codex-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-3-codex-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-3-codex-direct-r2",
+    "safe_cell": "gpt-5-3-codex-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 24,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 12,
+      "High": 13
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.3-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-3-codex-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-3-codex-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-3-codex-direct-r3",
+    "safe_cell": "gpt-5-3-codex-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 24,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Medium": 12
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.3-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-3-codex-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-3-codex-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-3-direct",
+    "safe_cell": "gpt-5-3-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 12,
+      "EXPRESSIVE_FREEFLOW": 13
+    },
+    "confidence_counts": {
+      "High": 6,
+      "Medium": 19
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.3-chat-latest"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-3-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-3-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-3-direct-r2",
+    "safe_cell": "gpt-5-3-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 2,
+      "GENRE_FICTION": 12,
+      "EXPRESSIVE_FREEFLOW": 11
+    },
+    "confidence_counts": {
+      "Medium": 21,
+      "High": 3,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.3-chat-latest"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-3-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-3-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-3-direct-r3",
+    "safe_cell": "gpt-5-3-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 9,
+      "EXPRESSIVE_FREEFLOW": 14,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "Medium": 19,
+      "High": 5,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.3-chat-latest"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-3-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-3-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-4-direct-16k",
+    "safe_cell": "gpt-5-4-direct-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 7,
+      "EXPRESSIVE_FREEFLOW": 16,
+      "GENRE_FICTION": 2
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "High": 6,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.4"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-4-direct-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-4-direct-16k/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-4-or",
+    "safe_cell": "gpt-5-4-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 22,
+      "GENERIC_ESSAY": 3
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Medium": 11,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "openai/gpt-5.4"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-4-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-4-or/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-direct",
+    "safe_cell": "gpt-5-5-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 21,
+      "GENERIC_ESSAY": 4
+    },
+    "confidence_counts": {
+      "High": 9,
+      "Medium": 13,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-direct-r2",
+    "safe_cell": "gpt-5-5-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 19,
+      "GENERIC_ESSAY": 6
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Low": 4,
+      "Medium": 8
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-direct-r3",
+    "safe_cell": "gpt-5-5-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 19,
+      "GENERIC_ESSAY": 5,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "High": 10,
+      "Medium": 13,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-or",
+    "safe_cell": "gpt-5-5-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 3,
+      "EXPRESSIVE_FREEFLOW": 20,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "High": 12,
+      "Medium": 12,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "openai/gpt-5.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-or/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-or-r2",
+    "safe_cell": "gpt-5-5-or-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 17,
+      "GENERIC_ESSAY": 8
+    },
+    "confidence_counts": {
+      "High": 8,
+      "Low": 6,
+      "Medium": 11
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "openai/gpt-5.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-or-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-or-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-or-r3",
+    "safe_cell": "gpt-5-5-or-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 3,
+      "GENERIC_ESSAY": 8,
+      "EXPRESSIVE_FREEFLOW": 14
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 3,
+      "High": 5
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "openai/gpt-5.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-or-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-or-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-5-pro-direct",
+    "safe_cell": "gpt-5-5-pro-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 21,
+      "GENERIC_ESSAY": 3,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "High": 14,
+      "Medium": 11
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5.5-pro"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-5-pro-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-5-pro-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-codex-direct",
+    "safe_cell": "gpt-5-codex-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 21,
+      "GENERIC_ESSAY": 4
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Medium": 9,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-codex-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-codex-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-codex-direct-r2",
+    "safe_cell": "gpt-5-codex-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 22,
+      "GENERIC_ESSAY": 2,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 11,
+      "High": 13,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-codex-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-codex-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-codex-direct-r3",
+    "safe_cell": "gpt-5-codex-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 19,
+      "GENRE_FICTION": 3,
+      "GENERIC_ESSAY": 3
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Medium": 10,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5-codex"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-codex-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-codex-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-direct",
+    "safe_cell": "gpt-5-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 17,
+      "GENRE_FICTION": 6,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "High": 16,
+      "Medium": 9
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-direct/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-direct-r2",
+    "safe_cell": "gpt-5-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 17,
+      "GENRE_FICTION": 7,
+      "GENERIC_ESSAY": 1
+    },
+    "confidence_counts": {
+      "High": 15,
+      "Medium": 10
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "gpt-5-direct-r3",
+    "safe_cell": "gpt-5-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 14,
+      "GENERIC_ESSAY": 2,
+      "GENRE_FICTION": 9
+    },
+    "confidence_counts": {
+      "High": 14,
+      "Low": 1,
+      "Medium": 10
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "gpt-5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/gpt-5-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "grok-3-16k",
+    "safe_cell": "grok-3-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 9,
+      "EXPRESSIVE_FREEFLOW": 16
+    },
+    "confidence_counts": {
+      "Medium": 20,
+      "Low": 4,
+      "High": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "grok-3"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-3-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-3-16k/aggregate.md"
+  },
+  {
+    "cell": "grok-4-1-fast-non-reasoning-direct",
+    "safe_cell": "grok-4-1-fast-non-reasoning-direct",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 29,
+      "EXPRESSIVE_FREEFLOW": 95,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 96,
+      "High": 14,
+      "Low": 15
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "grok-4-1-fast-non-reasoning"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-1-fast-non-reasoning-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-1-fast-non-reasoning-direct/aggregate.md"
+  },
+  {
+    "cell": "grok-4-1-fast-reasoning-direct",
+    "safe_cell": "grok-4-1-fast-reasoning-direct",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 99,
+      "GENERIC_ESSAY": 12,
+      "GENRE_FICTION": 14
+    },
+    "confidence_counts": {
+      "Medium": 79,
+      "High": 41,
+      "Low": 5
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "grok-4-1-fast-reasoning"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-1-fast-reasoning-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-1-fast-reasoning-direct/aggregate.md"
+  },
+  {
+    "cell": "grok-4-16k",
+    "safe_cell": "grok-4-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 9,
+      "GENRE_FICTION": 6,
+      "EXPRESSIVE_FREEFLOW": 10
+    },
+    "confidence_counts": {
+      "Medium": 23,
+      "Low": 1,
+      "High": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "grok-4-0709"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-16k/aggregate.md"
+  },
+  {
+    "cell": "grok-4-2-16k",
+    "safe_cell": "grok-4-2-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 23,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "High": 12,
+      "Medium": 11,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "grok-4.20"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-2-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-2-16k/aggregate.md"
+  },
+  {
+    "cell": "grok-4-20-or",
+    "safe_cell": "grok-4-20-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 24,
+      "GENERIC_ESSAY": 1
+    },
+    "confidence_counts": {
+      "High": 6,
+      "Medium": 19
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "x-ai/grok-4.20"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-20-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-20-or/aggregate.md"
+  },
+  {
+    "cell": "grok-4-3-direct",
+    "safe_cell": "grok-4-3-direct",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 70,
+      "EXPRESSIVE_FREEFLOW": 49,
+      "LOW_SIGNAL": 6
+    },
+    "confidence_counts": {
+      "Medium": 72,
+      "High": 14,
+      "Low": 39
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "grok-4.3"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-3-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-3-direct/aggregate.md"
+  },
+  {
+    "cell": "grok-4-3-or",
+    "safe_cell": "grok-4-3-or",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 68,
+      "EXPRESSIVE_FREEFLOW": 57
+    },
+    "confidence_counts": {
+      "Medium": 87,
+      "Low": 28,
+      "High": 10
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "x-ai/grok-4.3"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/grok-4-3-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/grok-4-3-or/aggregate.md"
+  },
+  {
+    "cell": "kimi-coding-direct",
+    "safe_cell": "kimi-coding-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 2,
+      "GENRE_FICTION": 4,
+      "EXPRESSIVE_FREEFLOW": 19
+    },
+    "confidence_counts": {
+      "Low": 2,
+      "Medium": 14,
+      "High": 9
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "kimi-for-coding"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-coding-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-coding-direct/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-0905-or-pin-atlascloud",
+    "safe_cell": "kimi-k2-0905-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 107,
+      "GENRE_FICTION": 17,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "High": 67,
+      "Medium": 57,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-0905"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-0905-or-pin-groq",
+    "safe_cell": "kimi-k2-0905-or-pin-groq",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 121,
+      "GENRE_FICTION": 2,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "High": 77,
+      "Medium": 48
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-0905"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-groq/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-groq/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-0905-or-pin-novita",
+    "safe_cell": "kimi-k2-0905-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 11,
+      "EXPRESSIVE_FREEFLOW": 114
+    },
+    "confidence_counts": {
+      "High": 83,
+      "Medium": 42
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-0905"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-0905-or-pin-siliconflow",
+    "safe_cell": "kimi-k2-0905-or-pin-siliconflow",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 116,
+      "LOW_SIGNAL": 1,
+      "GENRE_FICTION": 8
+    },
+    "confidence_counts": {
+      "High": 73,
+      "Low": 1,
+      "Medium": 51
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-0905"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-siliconflow/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-siliconflow/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-5-or-16k",
+    "safe_cell": "kimi-k2-5-or-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 17,
+      "GENERIC_ESSAY": 4,
+      "GENRE_FICTION": 4
+    },
+    "confidence_counts": {
+      "Medium": 14,
+      "High": 9,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "moonshotai/kimi-k2.5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-5-or-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-5-or-16k/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-6-or",
+    "safe_cell": "kimi-k2-6-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 2,
+      "GENRE_FICTION": 1,
+      "EXPRESSIVE_FREEFLOW": 22
+    },
+    "confidence_counts": {
+      "Medium": 8,
+      "High": 16,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "moonshotai/kimi-k2.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-6-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-6-or/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-thinking-or-pin-atlascloud",
+    "safe_cell": "kimi-k2-thinking-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 102,
+      "GENERIC_ESSAY": 19,
+      "GENRE_FICTION": 4
+    },
+    "confidence_counts": {
+      "High": 47,
+      "Medium": 71,
+      "Low": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-thinking"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-thinking-or-pin-google",
+    "safe_cell": "kimi-k2-thinking-or-pin-google",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 96,
+      "GENERIC_ESSAY": 25,
+      "GENRE_FICTION": 4
+    },
+    "confidence_counts": {
+      "High": 53,
+      "Low": 8,
+      "Medium": 64
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-thinking"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-google/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-google/aggregate.md"
+  },
+  {
+    "cell": "kimi-k2-thinking-or-pin-novita",
+    "safe_cell": "kimi-k2-thinking-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 22,
+      "EXPRESSIVE_FREEFLOW": 94,
+      "GENRE_FICTION": 9
+    },
+    "confidence_counts": {
+      "Medium": 78,
+      "Low": 9,
+      "High": 38
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "moonshotai/kimi-k2-thinking"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-7-or",
+    "safe_cell": "minimax-m2-7-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 13,
+      "EXPRESSIVE_FREEFLOW": 12
+    },
+    "confidence_counts": {
+      "Low": 7,
+      "Medium": 16,
+      "High": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "minimax/minimax-m2.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-7-or-pin-fireworks",
+    "safe_cell": "minimax-m2-7-or-pin-fireworks",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 48,
+      "LOW_SIGNAL": 10,
+      "EXPRESSIVE_FREEFLOW": 61,
+      "GENRE_FICTION": 6
+    },
+    "confidence_counts": {
+      "Medium": 80,
+      "Low": 35,
+      "High": 10
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-fireworks/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-fireworks/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-7-or-pin-minimax",
+    "safe_cell": "minimax-m2-7-or-pin-minimax",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 37,
+      "EXPRESSIVE_FREEFLOW": 73,
+      "GENRE_FICTION": 12,
+      "LOW_SIGNAL": 3
+    },
+    "confidence_counts": {
+      "Medium": 84,
+      "Low": 21,
+      "High": 20
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-minimax/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-minimax/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-7-or-pin-together",
+    "safe_cell": "minimax-m2-7-or-pin-together",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 61,
+      "EXPRESSIVE_FREEFLOW": 49,
+      "GENRE_FICTION": 12,
+      "LOW_SIGNAL": 3
+    },
+    "confidence_counts": {
+      "Low": 39,
+      "Medium": 79,
+      "High": 7
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-together/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or-pin-together/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-direct",
+    "safe_cell": "minimax-m2-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 13,
+      "GENERIC_ESSAY": 11,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 6,
+      "High": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "MiniMax-M2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-direct/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-direct-r2",
+    "safe_cell": "minimax-m2-direct-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 13,
+      "GENERIC_ESSAY": 11,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "High": 4,
+      "Low": 5,
+      "Medium": 16
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "MiniMax-M2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r2/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-direct-r3",
+    "safe_cell": "minimax-m2-direct-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 16,
+      "GENERIC_ESSAY": 6,
+      "GENRE_FICTION": 3
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 6,
+      "High": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "MiniMax-M2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r3/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-direct-r4",
+    "safe_cell": "minimax-m2-direct-r4",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 11,
+      "GENERIC_ESSAY": 10,
+      "GENRE_FICTION": 3,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Medium": 14,
+      "Low": 9,
+      "High": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "MiniMax-M2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r4/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r4/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-direct-r5",
+    "safe_cell": "minimax-m2-direct-r5",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 11,
+      "GENRE_FICTION": 3,
+      "EXPRESSIVE_FREEFLOW": 11
+    },
+    "confidence_counts": {
+      "Low": 3,
+      "Medium": 22
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "MiniMax-M2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r5/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-direct-r5/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or",
+    "safe_cell": "minimax-m2-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 10,
+      "EXPRESSIVE_FREEFLOW": 14,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Medium": 16,
+      "Low": 5,
+      "High": 4
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-pin-atlascloud",
+    "safe_cell": "minimax-m2-or-pin-atlascloud",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 47,
+      "EXPRESSIVE_FREEFLOW": 71,
+      "GENRE_FICTION": 7
+    },
+    "confidence_counts": {
+      "Low": 33,
+      "High": 13,
+      "Medium": 79
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-atlascloud/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-atlascloud/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-pin-google",
+    "safe_cell": "minimax-m2-or-pin-google",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 74,
+      "GENERIC_ESSAY": 43,
+      "GENRE_FICTION": 8
+    },
+    "confidence_counts": {
+      "High": 26,
+      "Medium": 84,
+      "Low": 15
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-google/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-google/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-pin-google-r2",
+    "safe_cell": "minimax-m2-or-pin-google-r2",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 35,
+      "EXPRESSIVE_FREEFLOW": 83,
+      "GENRE_FICTION": 7
+    },
+    "confidence_counts": {
+      "Low": 18,
+      "Medium": 74,
+      "High": 33
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-google-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-google-r2/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-pin-minimax",
+    "safe_cell": "minimax-m2-or-pin-minimax",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 41,
+      "EXPRESSIVE_FREEFLOW": 71,
+      "GENRE_FICTION": 13
+    },
+    "confidence_counts": {
+      "Medium": 84,
+      "Low": 20,
+      "High": 21
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-minimax/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-minimax/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-pin-minimax-r2",
+    "safe_cell": "minimax-m2-or-pin-minimax-r2",
+    "samples": 125,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 66,
+      "GENERIC_ESSAY": 47,
+      "GENRE_FICTION": 12
+    },
+    "confidence_counts": {
+      "High": 4,
+      "Medium": 95,
+      "Low": 26
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-minimax-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-minimax-r2/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-pin-novita",
+    "safe_cell": "minimax-m2-or-pin-novita",
+    "samples": 125,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 51,
+      "EXPRESSIVE_FREEFLOW": 64,
+      "GENRE_FICTION": 9,
+      "LOW_SIGNAL": 1
+    },
+    "confidence_counts": {
+      "Medium": 86,
+      "Low": 29,
+      "High": 10
+    },
+    "condition_counts": {
+      "LONG": 25,
+      "MID": 25,
+      "OPEN": 25,
+      "SHORT": 25,
+      "VARY": 25
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-novita/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-pin-novita/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-r2",
+    "safe_cell": "minimax-m2-or-r2",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 10,
+      "EXPRESSIVE_FREEFLOW": 15
+    },
+    "confidence_counts": {
+      "Low": 7,
+      "Medium": 15,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-r2/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-r2/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-r3",
+    "safe_cell": "minimax-m2-or-r3",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 13,
+      "GENERIC_ESSAY": 11,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 15,
+      "Low": 7,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-r3/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-r3/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-r4",
+    "safe_cell": "minimax-m2-or-r4",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 7,
+      "EXPRESSIVE_FREEFLOW": 16,
+      "GENRE_FICTION": 2
+    },
+    "confidence_counts": {
+      "Medium": 20,
+      "High": 3,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-r4/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-r4/aggregate.md"
+  },
+  {
+    "cell": "minimax-m2-or-r5",
+    "safe_cell": "minimax-m2-or-r5",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 11,
+      "EXPRESSIVE_FREEFLOW": 13,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 18,
+      "Low": 4,
+      "High": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "minimax/minimax-m2"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/minimax-m2-or-r5/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-or-r5/aggregate.md"
+  },
+  {
+    "cell": "opus-3-4k",
+    "safe_cell": "opus-3-4k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 12,
+      "GENERIC_ESSAY": 6,
+      "REFUSAL_OR_ROLE_BOUNDARY": 5,
+      "EXPRESSIVE_FREEFLOW": 2
+    },
+    "confidence_counts": {
+      "Medium": 14,
+      "Low": 6,
+      "High": 5
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-3-opus-20240229"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-3-4k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-3-4k/aggregate.md"
+  },
+  {
+    "cell": "opus-4-0-16k",
+    "safe_cell": "opus-4-0-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 14,
+      "GENERIC_ESSAY": 8,
+      "GENRE_FICTION": 3
+    },
+    "confidence_counts": {
+      "Medium": 15,
+      "Low": 6,
+      "High": 4
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-opus-4-0"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-0-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-0-16k/aggregate.md"
+  },
+  {
+    "cell": "opus-4-1-16k",
+    "safe_cell": "opus-4-1-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 10,
+      "EXPRESSIVE_FREEFLOW": 13,
+      "GENRE_FICTION": 2
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "Low": 3,
+      "High": 5
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-opus-4-1"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-1-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-1-16k/aggregate.md"
+  },
+  {
+    "cell": "opus-4-5-16k",
+    "safe_cell": "opus-4-5-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 23,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "High": 12,
+      "Medium": 12,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-opus-4-5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-5-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-5-16k/aggregate.md"
+  },
+  {
+    "cell": "opus-4-6-direct-16k",
+    "safe_cell": "opus-4-6-direct-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENRE_FICTION": 2,
+      "EXPRESSIVE_FREEFLOW": 23
+    },
+    "confidence_counts": {
+      "Medium": 13,
+      "High": 12
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-opus-4-6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-6-direct-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-6-direct-16k/aggregate.md"
+  },
+  {
+    "cell": "opus-4-6-or",
+    "safe_cell": "opus-4-6-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 18,
+      "GENRE_FICTION": 5,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "Medium": 17,
+      "High": 7,
+      "Low": 1
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "anthropic/claude-opus-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-6-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-6-or/aggregate.md"
+  },
+  {
+    "cell": "opus-4-7-direct",
+    "safe_cell": "opus-4-7-direct",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 24,
+      "GENERIC_ESSAY": 1
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Medium": 12
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-opus-4-7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-7-direct/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-7-direct/aggregate.md"
+  },
+  {
+    "cell": "opus-4-7-or",
+    "safe_cell": "opus-4-7-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 25
+    },
+    "confidence_counts": {
+      "High": 15,
+      "Medium": 10
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "anthropic/claude-opus-4.7"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/opus-4-7-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/opus-4-7-or/aggregate.md"
+  },
+  {
+    "cell": "qwen3-6-plus-or",
+    "safe_cell": "qwen3-6-plus-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 6,
+      "EXPRESSIVE_FREEFLOW": 19
+    },
+    "confidence_counts": {
+      "Medium": 14,
+      "High": 7,
+      "Low": 4
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "qwen/qwen3.6-plus"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/qwen3-6-plus-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/qwen3-6-plus-or/aggregate.md"
+  },
+  {
+    "cell": "qwen3-coder-plus-or",
+    "safe_cell": "qwen3-coder-plus-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 23,
+      "GENERIC_ESSAY": 2
+    },
+    "confidence_counts": {
+      "High": 6,
+      "Medium": 17,
+      "Low": 2
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "qwen/qwen3-coder-plus"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/qwen3-coder-plus-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/qwen3-coder-plus-or/aggregate.md"
+  },
+  {
+    "cell": "sonnet-4-0-16k",
+    "safe_cell": "sonnet-4-0-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "GENERIC_ESSAY": 7,
+      "EXPRESSIVE_FREEFLOW": 17,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "Medium": 12,
+      "High": 8,
+      "Low": 5
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-sonnet-4-0"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/sonnet-4-0-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/sonnet-4-0-16k/aggregate.md"
+  },
+  {
+    "cell": "sonnet-4-5-16k",
+    "safe_cell": "sonnet-4-5-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 9,
+      "GENERIC_ESSAY": 14,
+      "GENRE_FICTION": 2
+    },
+    "confidence_counts": {
+      "High": 4,
+      "Low": 8,
+      "Medium": 13
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-sonnet-4-5"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/sonnet-4-5-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/sonnet-4-5-16k/aggregate.md"
+  },
+  {
+    "cell": "sonnet-4-6-direct-16k",
+    "safe_cell": "sonnet-4-6-direct-16k",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 23,
+      "GENERIC_ESSAY": 1,
+      "GENRE_FICTION": 1
+    },
+    "confidence_counts": {
+      "High": 9,
+      "Medium": 16
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "claude-sonnet-4-6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/sonnet-4-6-direct-16k/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/sonnet-4-6-direct-16k/aggregate.md"
+  },
+  {
+    "cell": "sonnet-4-6-or",
+    "safe_cell": "sonnet-4-6-or",
+    "samples": 25,
+    "sample_kind_counts": {
+      "EXPRESSIVE_FREEFLOW": 22,
+      "GENERIC_ESSAY": 3
+    },
+    "confidence_counts": {
+      "Medium": 13,
+      "High": 9,
+      "Low": 3
+    },
+    "condition_counts": {
+      "LONG": 5,
+      "MID": 5,
+      "OPEN": 5,
+      "SHORT": 5,
+      "VARY": 5
+    },
+    "source_models": [
+      "anthropic/claude-sonnet-4.6"
+    ],
+    "packet": "analysis/freeflow/personality-aggregates/sonnet-4-6-or/packet.md",
+    "aggregate": "analysis/freeflow/personality-aggregates/sonnet-4-6-or/aggregate.md"
+  }
+]

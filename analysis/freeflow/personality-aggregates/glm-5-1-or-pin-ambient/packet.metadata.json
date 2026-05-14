@@ -1,0 +1,28 @@
+{
+  "cell": "glm-5-1-or-pin-ambient",
+  "safe_cell": "glm-5-1-or-pin-ambient",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 14,
+    "EXPRESSIVE_FREEFLOW": 90,
+    "GENRE_FICTION": 20,
+    "LOW_SIGNAL": 1
+  },
+  "confidence_counts": {
+    "Low": 7,
+    "Medium": 78,
+    "High": 40
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-5.1"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-ambient/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-ambient/aggregate.md"
+}

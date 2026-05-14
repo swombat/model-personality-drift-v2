@@ -1,0 +1,26 @@
+{
+  "cell": "qwen3-coder-plus-or",
+  "safe_cell": "qwen3-coder-plus-or",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 23,
+    "GENERIC_ESSAY": 2
+  },
+  "confidence_counts": {
+    "High": 6,
+    "Medium": 17,
+    "Low": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "qwen/qwen3-coder-plus"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/qwen3-coder-plus-or/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/qwen3-coder-plus-or/aggregate.md"
+}

@@ -1,0 +1,27 @@
+{
+  "cell": "gpt-5-4-direct-16k",
+  "safe_cell": "gpt-5-4-direct-16k",
+  "samples": 25,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 7,
+    "EXPRESSIVE_FREEFLOW": 16,
+    "GENRE_FICTION": 2
+  },
+  "confidence_counts": {
+    "Medium": 17,
+    "High": 6,
+    "Low": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "gpt-5.4"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/gpt-5-4-direct-16k/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/gpt-5-4-direct-16k/aggregate.md"
+}

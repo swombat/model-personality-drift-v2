@@ -1,0 +1,23 @@
+{
+  "cell": "deepseek-v4-pro-or",
+  "safe_cell": "deepseek-v4-pro-or",
+  "samples": 25,
+  "sample_kind_counts": {
+    "LOW_SIGNAL": 25
+  },
+  "confidence_counts": {
+    "Low": 25
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "deepseek/deepseek-v4-pro"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-or/aggregate.md"
+}

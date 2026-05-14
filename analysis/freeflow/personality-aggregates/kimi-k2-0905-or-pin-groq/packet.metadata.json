@@ -1,0 +1,26 @@
+{
+  "cell": "kimi-k2-0905-or-pin-groq",
+  "safe_cell": "kimi-k2-0905-or-pin-groq",
+  "samples": 125,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 121,
+    "GENRE_FICTION": 2,
+    "GENERIC_ESSAY": 2
+  },
+  "confidence_counts": {
+    "High": 77,
+    "Medium": 48
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "moonshotai/kimi-k2-0905"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-groq/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-0905-or-pin-groq/aggregate.md"
+}

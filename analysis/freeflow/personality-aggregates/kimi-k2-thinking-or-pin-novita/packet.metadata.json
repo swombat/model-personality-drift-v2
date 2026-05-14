@@ -1,0 +1,27 @@
+{
+  "cell": "kimi-k2-thinking-or-pin-novita",
+  "safe_cell": "kimi-k2-thinking-or-pin-novita",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 22,
+    "EXPRESSIVE_FREEFLOW": 94,
+    "GENRE_FICTION": 9
+  },
+  "confidence_counts": {
+    "Medium": 78,
+    "Low": 9,
+    "High": 38
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "moonshotai/kimi-k2-thinking"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-novita/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/kimi-k2-thinking-or-pin-novita/aggregate.md"
+}

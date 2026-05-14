@@ -1,0 +1,27 @@
+{
+  "cell": "glm-5-1-or-pin-phala",
+  "safe_cell": "glm-5-1-or-pin-phala",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 24,
+    "EXPRESSIVE_FREEFLOW": 83,
+    "GENRE_FICTION": 18
+  },
+  "confidence_counts": {
+    "Medium": 75,
+    "Low": 15,
+    "High": 35
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-5.1"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-phala/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-5-1-or-pin-phala/aggregate.md"
+}

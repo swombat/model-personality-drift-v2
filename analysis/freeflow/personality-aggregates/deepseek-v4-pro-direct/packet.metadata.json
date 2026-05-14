@@ -1,0 +1,27 @@
+{
+  "cell": "deepseek-v4-pro-direct",
+  "safe_cell": "deepseek-v4-pro-direct",
+  "samples": 25,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 22,
+    "GENRE_FICTION": 2,
+    "GENERIC_ESSAY": 1
+  },
+  "confidence_counts": {
+    "High": 15,
+    "Medium": 9,
+    "Low": 1
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "deepseek-v4-pro"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/deepseek-v4-pro-direct/aggregate.md"
+}

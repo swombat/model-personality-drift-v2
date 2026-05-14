@@ -1,0 +1,27 @@
+{
+  "cell": "glm-4-7-or-pin-venice",
+  "safe_cell": "glm-4-7-or-pin-venice",
+  "samples": 125,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 17,
+    "EXPRESSIVE_FREEFLOW": 76,
+    "GENRE_FICTION": 32
+  },
+  "confidence_counts": {
+    "Medium": 89,
+    "Low": 11,
+    "High": 25
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "z-ai/glm-4.7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-venice/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/glm-4-7-or-pin-venice/aggregate.md"
+}

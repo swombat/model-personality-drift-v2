@@ -1,0 +1,27 @@
+{
+  "cell": "grok-4-1-fast-reasoning-direct",
+  "safe_cell": "grok-4-1-fast-reasoning-direct",
+  "samples": 125,
+  "sample_kind_counts": {
+    "EXPRESSIVE_FREEFLOW": 99,
+    "GENERIC_ESSAY": 12,
+    "GENRE_FICTION": 14
+  },
+  "confidence_counts": {
+    "Medium": 79,
+    "High": 41,
+    "Low": 5
+  },
+  "condition_counts": {
+    "LONG": 25,
+    "MID": 25,
+    "OPEN": 25,
+    "SHORT": 25,
+    "VARY": 25
+  },
+  "source_models": [
+    "grok-4-1-fast-reasoning"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/grok-4-1-fast-reasoning-direct/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/grok-4-1-fast-reasoning-direct/aggregate.md"
+}

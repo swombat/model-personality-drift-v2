@@ -1,0 +1,26 @@
+{
+  "cell": "minimax-m2-7-or",
+  "safe_cell": "minimax-m2-7-or",
+  "samples": 25,
+  "sample_kind_counts": {
+    "GENERIC_ESSAY": 13,
+    "EXPRESSIVE_FREEFLOW": 12
+  },
+  "confidence_counts": {
+    "Low": 7,
+    "Medium": 16,
+    "High": 2
+  },
+  "condition_counts": {
+    "LONG": 5,
+    "MID": 5,
+    "OPEN": 5,
+    "SHORT": 5,
+    "VARY": 5
+  },
+  "source_models": [
+    "minimax/minimax-m2.7"
+  ],
+  "packet": "analysis/freeflow/personality-aggregates/minimax-m2-7-or/packet.md",
+  "aggregate": "analysis/freeflow/personality-aggregates/minimax-m2-7-or/aggregate.md"
+}
