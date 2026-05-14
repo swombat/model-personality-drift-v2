@@ -439,6 +439,8 @@ def main() -> None:
             old_by_slug = {m["model"]: m for m in json.loads(old_models_path.read_text())}
         except Exception:
             old_by_slug = {}
+    summaries_path = GENERATED / "model-summaries.json"
+    summaries = json.loads(summaries_path.read_text()) if summaries_path.exists() else {}
     release_dates_path = GENERATED / "model-release-dates.json"
     release_dates = json.loads(release_dates_path.read_text()) if release_dates_path.exists() else {}
     benchmarks_path = GENERATED / "model-benchmarks.json"
@@ -460,7 +462,8 @@ def main() -> None:
         values_markdown = markdown_without_title(values_path.read_text(errors="ignore")) if values_path.exists() else ""
         old = old_by_slug.get(slug, {})
         openrouter = old.get("openrouter") or openrouter_for_model(slug)
-        model_summary = plain_summary(card_markdown or markdown_section(profile_markdown, "Core personality synthesis"))
+        generated_summary = plain_summary(card_markdown or markdown_section(profile_markdown, "Core personality synthesis"))
+        model_summary = summaries.get(slug) or generated_summary
         models.append({
             "model": slug,
             "display_name": display_name,

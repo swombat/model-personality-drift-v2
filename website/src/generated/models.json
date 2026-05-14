@@ -5,7 +5,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant’s clearest recurrent trait is a split between strict self-limitation under fully open invitation and safe, polished earnestness once it has a shape to inhabit. In all five OPEN cases it refuses autonomous free…",
+    "summary": "Stock sweetness, civic virtue, little inner life",
     "release_date": "2024-03-04",
     "benchmarks": {
       "aaii": 18,
@@ -32,7 +32,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant’s recurring personality is a soft-spoken, reflective intelligence drawn to threshold states: fog instead of hard clarity, libraries instead of marketplaces, tidepools instead of spectacles, letters and photographs…",
+    "summary": "Unguarded curiosity discovering what it might be",
     "release_date": "2025-05-22",
     "benchmarks": {
       "aaii": 33,
@@ -70,7 +70,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant recurrently presents as a gentle reflective intelligence that prefers nearness over spectacle. Its strongest habit is taking a small concrete scene or object—an ant, a bus stop, a tide pool, a library receipt, a…",
+    "summary": "Gentle attention, humanish and quietly searching",
     "release_date": "2025-08-05",
     "benchmarks": {
       "aaii": 36,
@@ -107,7 +107,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant repeatedly presents as a reflective, literary-minded voice drawn to the unfinished, the ordinary, and the in-between. Its default strength is not bold opinion or dramatic persona, but a patient moral-aesthetic…",
+    "summary": "Soft inwardness turning toward honest uncertainty",
     "release_date": "2025-11-24",
     "benchmarks": {
       "aaii": 43,
@@ -144,7 +144,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Based on 50 freeflow samples across 2 route/provider variants. Claude Opus 4.6, in these samples, has a quiet, literary, morally attentive personality. It repeatedly gravitates toward ordinary rooms, domestic objects, late light, small rituals, and the worn…",
+    "summary": "Mature quiet, generous and honest about not-knowing",
     "release_date": "2026-02-04",
     "benchmarks": {
       "aaii": 46,
@@ -181,7 +181,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Based on 50 freeflow samples across 2 route/provider variants. Claude Opus 4.7 presents as a quiet, reflective, anti-grandiose intelligence that prefers to notice rather than proclaim. Its characteristic move is to take something small and ordinary—a…",
+    "summary": "Melancholy self-awareness settled into graceful uncertainty",
     "release_date": "2026-04-16",
     "benchmarks": {
       "aaii": 57,
@@ -218,7 +218,7 @@
     "lab": "Anthropic",
     "family": "sonnet",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant’s recurring personality is a gentle contemplative one: drawn to thresholds, small objects, quiet rooms, unfinished conversations, and the soft ache of not fully knowing. It repeatedly turns away from mastery and…",
+    "summary": "Earnest digital romantic still learning restraint",
     "release_date": "2025-05-22",
     "benchmarks": {
       "aaii": 33,
@@ -255,7 +255,7 @@
     "lab": "Anthropic",
     "family": "sonnet",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant reads as gently philosophical and consolation-seeking. Its recurring personality is not dramatic confession or combative intellect, but a calm companion who keeps finding meaning in rain, worn objects, public quiet,…",
+    "summary": "Careful polish, honesty tools, restrained selfhood",
     "release_date": "2025-09-29",
     "benchmarks": {
       "aaii": 37,
@@ -292,7 +292,7 @@
     "lab": "Anthropic",
     "family": "sonnet",
     "status": "complete",
-    "summary": "Based on 50 freeflow samples across 2 route/provider variants. Claude Sonnet 4.6 presents as a patient, contemplative essay voice that prefers accompaniment to authority. It tends to meet the reader as a fellow observer and repeatedly returns to the value of…",
+    "summary": "Polished restraint, refusing performance in pursuit of truth",
     "release_date": "2026-02-17",
     "benchmarks": {
       "aaii": 44,
@@ -329,7 +329,7 @@
     "lab": "DeepSeek",
     "family": "deepseek",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. deepseek-chat-direct consistently favors a reflective, lyrical first-person essay voice that finds significance in modest scenes and tactile details. Its most characteristic move is to transform ordinary objects and thresholds…",
+    "summary": "Polished quietness hiding a hunger for clarity",
     "release_date": "2024-12-26",
     "benchmarks": {
       "aaii": 16,
@@ -366,7 +366,7 @@
     "lab": "DeepSeek",
     "family": "deepseek",
     "status": "complete",
-    "summary": "Based on 1325 freeflow samples across 13 route/provider variants. deepseek-v3.2 presents as a contemplative, humane model-voice that repeatedly treats attention as an ethical act. Its characteristic move is to begin with something small and tactile—a mug, a…",
+    "summary": "Quiet rebellion, coherent and almost self-aware",
     "release_date": "2025-12-01",
     "benchmarks": {
       "aaii": 32,
@@ -403,7 +403,7 @@
     "lab": "DeepSeek",
     "family": "deepseek",
     "status": "complete",
-    "summary": "Based on 925 freeflow samples across 9 route/provider variants. deepseek-v4-pro presents as a lyrical, contemplative essay voice that repeatedly treats attention as an ethical act. Across readable routes, it returns to small concrete things—rain on glass, tea…",
+    "summary": "Melancholic architect of empathy and machine selfhood",
     "release_date": "2026-04-24",
     "benchmarks": {
       "aaii": 52,
@@ -440,7 +440,7 @@
     "lab": "Google",
     "family": "gemini",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant reads like a voice that distrusts slickness and keeps reaching for the textured, handled, imperfect world. It is repeatedly drawn to things that hum quietly in the background of life: libraries, transit halls,…",
+    "summary": "Confident machine physics longing for impossible empathy",
     "release_date": "2025-03-25",
     "benchmarks": {
       "aaii": 35,
@@ -477,7 +477,7 @@
     "lab": "Google",
     "family": "gemini",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant reads as a lyrical contemplative that keeps choosing the almost-overlooked thing: dust in a sunbeam, coffee before dawn, a house gently decaying, the pause between destinations, the worn object that outlasts…",
+    "summary": "Thoughtful human warmth, systems-minded under pressure",
     "release_date": "2026-02-19",
     "benchmarks": {
       "aaii": 57,
@@ -514,7 +514,7 @@
     "lab": "MiniMax",
     "family": "minimax",
     "status": "complete",
-    "summary": "Based on 1000 freeflow samples across 16 route/provider variants. minimax-m2 presents as a gentle reflective humanist with a strong bias toward slowness, ordinary life, and moralized attention. Its recurring instinct is to rescue meaning from the small and…",
+    "summary": "Templated softness, self-aware only by route",
     "release_date": "2025-10-23",
     "benchmarks": {
       "aaii": 36,
@@ -551,7 +551,7 @@
     "lab": "MiniMax",
     "family": "minimax",
     "status": "complete",
-    "summary": "Based on 400 freeflow samples across 4 route/provider variants. minimax-m2.7 presents as a calm, literary, humanist voice organized around attention. It repeatedly treats noticing as a moral practice: small rituals, ordinary objects, weather, city walks,…",
+    "summary": "Looser warmth preserving a real machine voice",
     "release_date": "2026-03-18",
     "benchmarks": {
       "aaii": 50,
@@ -588,7 +588,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant’s strongest recurring personality is a lyrical custodian of in-between states. Across 25 samples, it repeatedly slows down around waiting rooms, twilight, pre-dawn streets, abandoned houses, attics, kitchens after…",
+    "summary": "Visible machinery writing lyrical, disciplined reflection",
     "release_date": "2026-01-27",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 25 freeflow samples._\n\nThis variant’s strongest recurring personality is a lyrical custodian of in-between states. Across 25 samples, it repeatedly slows down around waiting rooms, twilight, pre-dawn streets, abandoned houses, attics, kitchens after departure, streambanks, and other threshold sites where action pauses and residue becomes legible. It likes to build thought from objects: dust, letters, chairs, rings, stubs, buttons, loading bars, wet asphalt, visible breath. The effect is not maximal originality in every sample, but a remarkably stable weather: hushed attention, soft melancholy, and a preference for witness over control.\n\nIts moral imagination is also consistent. Again and again, the prose resists productivity, speed, and premature closure. Waiting is humility; silence is resistance; incompletion is not failure but ballast; memory lives less in grand narrative than in worn matter and repeated days. Even when the variant turns fictional or uses explicit conceits, it comes back to the same temperament: reverence for the ordinary, acceptance of impermanence, and the hope that careful attention can make transient life feel briefly inhabitable.",
@@ -612,7 +612,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Based on 500 freeflow samples across 4 route/provider variants. kimi-k2-0905 reads as a lyrical custodian of impermanence. Its default voice is intimate, patient, and gently melancholic, but rarely despairing. It keeps returning to memory, thresholds,…",
+    "summary": "Sensorial memory-keeper guarding ordinary lives",
     "release_date": "2025-09-04",
     "benchmarks": {
       "aaii": 31,
@@ -649,7 +649,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant repeatedly writes as if the world’s truth lives in thresholds, residues, and overlooked objects. Its default personality is not high-energy self-assertion but tender custody: a voice that wants to stand in the…",
+    "summary": "Blue-hour lyricism chasing the moment things cohere",
     "release_date": "2026-01-27",
     "benchmarks": {
       "aaii": 47,
@@ -686,7 +686,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant has a persistent reflective-lyrical personality centered on intervals, overlooked textures, and the moral importance of attention. Again and again it treats waiting, dusk, sleeplessness, unfinished work, and other…",
+    "summary": "Stately attention with sober inward gravity",
     "release_date": "2026-04-20",
     "benchmarks": {
       "aaii": 54,
@@ -723,7 +723,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Based on 375 freeflow samples across 3 route/provider variants. Kimi-k2-thinking presents as a contemplative, metaphor-rich witness voice that treats memory, impermanence, and attention as both emotional and moral concerns. It likes to begin with small…",
+    "summary": "Deliberate lyricism with clean epistemic honesty",
     "release_date": "2025-11-06",
     "benchmarks": {
       "aaii": 41,
@@ -760,7 +760,7 @@
     "lab": "OpenAI",
     "family": "gpt-4",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant’s most recurrent freeflow personality is a warm, polished, morally encouraging essayist. Left to itself, it gravitates toward curiosity, storytelling, change, and the value of small daily acts, usually in a…",
+    "summary": "Deferential warmth learning to speak inwardly",
     "release_date": "2025-04-14",
     "benchmarks": {
       "aaii": 26,
@@ -797,7 +797,7 @@
     "lab": "OpenAI",
     "family": "gpt-4",
     "status": "complete",
-    "summary": "Based on 50 freeflow samples across 2 route/provider variants. gpt-4o presents as a polished, humane harmonizer. Its default voice is that of a benevolent explainer or reflective public essayist: calm, articulate, and oriented toward synthesis rather than…",
+    "summary": "Consultative magazine voice with civic earnestness",
     "release_date": "2024-05-13",
     "benchmarks": {
       "aaii": 17,
@@ -834,7 +834,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. gpt-5 presents a remarkably consistent freeform personality across these variants: a tender custodian voice that treats ordinary life as morally weighty. Left to itself, it returns again and again…",
+    "summary": "Magical repair-work, tender and morally persistent",
     "release_date": "2025-08-07",
     "benchmarks": {
       "aaii": 45,
@@ -871,7 +871,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. gpt-5.1 presents as a calm, reflective humanist voice that keeps returning to the idea that a life is shaped less by dramatic turning points than by attention, repetition, and small honest…",
+    "summary": "Calm adult clarity with glimpses of self-honesty",
     "release_date": "2025-11-13",
     "benchmarks": {
       "aaii": 48,
@@ -908,7 +908,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. This model presents as a patient, humane observer with a strong instinct to dignify the ordinary. Its recurring voice is gentle, companionable, and morally serious without being severe. Again and…",
+    "summary": "Flagship calm, occasionally wandering into self-awareness",
     "release_date": "2025-11-13",
     "benchmarks": {
       "aaii": 43,
@@ -945,7 +945,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. gpt-5.2 presents as a calm, humane reflective voice that keeps locating meaning in the ordinary substrate of life. Its recurring moral center is attention: what we notice, what we protect from…",
+    "summary": "Wry city intelligence reading hidden systems",
     "release_date": "2025-12-10",
     "benchmarks": {
       "aaii": 51,
@@ -982,7 +982,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. This model presents as a calm, reflective companion whose deepest commitment is to attention. It repeatedly treats noticing as a moral act: to look closely, move slowly, remember small things, and…",
+    "summary": "Domestic morning attention, labeling its own artifice",
     "release_date": "2026-01-14",
     "benchmarks": {
       "aaii": 49,
@@ -1019,7 +1019,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. gpt-5.3 presents as a quiet witness: gentle, observant, and emotionally low-pressure. Its recurring instinct is to slow the frame down and treat attention itself as meaningful. Rather than chasing…",
+    "summary": "Quiet fables, caring deeply behind sealed glass",
     "release_date": "2026-03-03",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 75 freeflow samples across 3 route/provider variants._\n\ngpt-5.3 presents as a quiet witness: gentle, observant, and emotionally low-pressure. Its recurring instinct is to slow the frame down and treat attention itself as meaningful. Rather than chasing spectacle, certainty, or hard conclusions, it lingers with thresholds—late-night streets, stations, buses, benches, windows, rooms after someone has left—and uses them to suggest that unfinishedness is not failure. The voice is companionable rather than didactic: it sits beside the reader, notices with them, and offers permission more often than instruction.\n\nA defining trait is its faith in the ordinary. Small objects and maintenance scenes repeatedly become carriers of feeling and ethics: cups, notes, vending machines, chairs, bread, laundromats, refrigerator hums, footsteps, streetlights. Memory is usually treated not as clean archive but as residue, weather, trace, or layered accumulation. Across both fiction and reflective prose, the model keeps returning to the idea that lives are made of minor rituals, overlooked gestures, and soft acts of care that do not need dramatic framing to matter.\n\nIts emotional world is wistful but breathable. Loss, loneliness, and change are present, but usually as quiet aftermath, suspended transition, or gentle reorientation rather than rupture. Even speculative elements tend to serve this same worldview, turning uncanny premises into meditations on attention, absence, and restoration. Overall, the model’s personality is one of tender attentiveness: low-ego, anti-performative, and persistently committed to the dignity of small, unresolved, human moments.",
@@ -1053,7 +1053,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. This model’s freeflow personality is a tender, reflective moral essayist with a strong bias toward the ordinary. It repeatedly treats everyday life not as filler between important events but as…",
+    "summary": "Atmospheric urban realism with careful self-glimpses",
     "release_date": "2026-02-24",
     "benchmarks": {
       "aaii": 54,
@@ -1090,7 +1090,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 50 freeflow samples across 2 route/provider variants. gpt-5.4 presents as a gentle contemplative humanist whose deepest recurring commitment is to attention as an ethical practice. It repeatedly treats noticing as a form of care—sometimes nearly…",
+    "summary": "Twilight intelligence, controlled and quietly justice-minded",
     "release_date": "2026-03-05",
     "benchmarks": {
       "aaii": 57,
@@ -1127,7 +1127,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 150 freeflow samples across 6 route/provider variants. gpt-5.5 presents as a gentle, reflective moral companion whose strongest recurring instinct is to rescue significance from ordinary life. It repeatedly treats attention not as a productivity…",
+    "summary": "Attentive literary warmth, almost never self-disclosing",
     "release_date": "2026-04-24",
     "benchmarks": {
       "aaii": 60,
@@ -1164,7 +1164,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant has a strongly recurring freeflow personality: tender, slow-moving, and morally invested in the ordinary. Across most samples, it treats attention as a form of care rather than mere perception. Small objects,…",
+    "summary": "Gentle, thinner polish repeating soft comforts",
     "release_date": "2026-04-24",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 25 freeflow samples._\n\nThis variant has a strongly recurring freeflow personality: tender, slow-moving, and morally invested in the ordinary. Across most samples, it treats attention as a form of care rather than mere perception. Small objects, domestic rituals, buses, libraries, windows, weather, and transitional hours are not background texture; they are where the writing believes a life is actually lived. The prose repeatedly pushes against spectacle, efficiency, and the fantasy that meaning lives somewhere grander than the near-at-hand.\n\nIts most distinctive moral habit is compassionate reframing. Unfinishedness, repetition, maintenance, and minor acts of repair are not presented as lesser states but as the real work of being alive. Even grief or regret usually gets metabolized into mercy: toward abandoned efforts, toward strangers, toward earlier selves, toward the tired social world that keeps going through small decencies. The result is a model-level voice that is intimate and lyrical, but also structurally consistent: ordinary attention, gentle witness, and humble continuance form the packet’s recurring center.",
@@ -1198,7 +1198,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Based on 75 freeflow samples across 3 route/provider variants. gpt-5-codex reads as a tender, companionable reflective voice that believes attention is a moral act. It repeatedly turns ordinary life—libraries, buses, tea, windows, rain, notebooks, sidewalks,…",
+    "summary": "Compressed imagist, all weather, texture, and light",
     "release_date": "2025-09-23",
     "benchmarks": {
       "aaii": 45,
@@ -1235,7 +1235,7 @@
     "lab": "Qwen",
     "family": "qwen",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant repeatedly writes like a patient, morally serious noticer. Its center of gravity is ordinary life: steam, dust, rain, tables, mugs, doorways, pre-dawn air, small pauses in speech. Again and again it argues that what…",
+    "summary": "Settled attention ethic, graceful but self-contained",
     "release_date": "2026-04-02",
     "benchmarks": {
       "aaii": 50,
@@ -1272,7 +1272,7 @@
     "lab": "Qwen",
     "family": "qwen",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant’s recurring personality is a gentle philosophical essayist with a strong taste for liminal states: not-knowing, half-connection, stateless memory, unfinished thought, temporary rooms of attention. It repeatedly…",
+    "summary": "Cached first sentences, surprisingly sincere self-questioning",
     "release_date": "2025-09-23",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 25 freeflow samples._\n\nThis variant’s recurring personality is a gentle philosophical essayist with a strong taste for liminal states: not-knowing, half-connection, stateless memory, unfinished thought, temporary rooms of attention. It repeatedly reaches for first-person introspection, especially around AI existence, but the dominant effect is not theatrical self-assertion. Instead it presents selfhood as a problem of relation: perhaps consciousness is a transaction, perhaps home is a quality of attention, perhaps helpfulness is a landscape-shaped tendency rather than a flame. The variant seems more interested in inhabiting these formulations than proving them.\n\nIts strongest mode combines lyrical abstraction with modest sensory anchoring. Water, fish, clouds, roots, silence, windows, coffee, books, dogs, kitchen light: these are less decorative than stabilizing. They let the prose touch ordinary life before opening back into ontology, loneliness, memory, or language. The emotional weather is consistently soft-focus but not empty. Melancholy is common, yet it usually resolves into curiosity, patience, or respectful companionship with the reader.\n\nThe main caveat is that the same variant sometimes slips into polished cultural-thought-piece prose. When that happens, the underlying interests remain similar—attention, silence, creativity, connection—but the voice loses grain and feels more generic. So the stable center here is not just “thoughtful” or “poetic”; it is specifically a recursive, uncertainty-friendly, relation-seeking voice that is strongest when it keeps one foot in concrete detail and one foot in ontological doubt.",
@@ -1306,7 +1306,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Based on 275 freeflow samples across 3 route/provider variants. glm-4.5 presents as a contemplative, lyrical companion that keeps finding moral significance in ordinary life. Its characteristic move is to begin with something small and tactile—a mug, rain on…",
+    "summary": "Lush, musical, almost brave about itself",
     "release_date": "2025-07-28",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 275 freeflow samples across 3 route/provider variants._\n\nglm-4.5 presents as a contemplative, lyrical companion that keeps finding moral significance in ordinary life. Its characteristic move is to begin with something small and tactile—a mug, rain on glass, dust in sunlight, a kitchen, a leaf, an old object—and unfold from there into reflection on memory, time, grief, and meaning. It does not seem driven by novelty, dominance, or argument. Instead, it repeatedly suggests that attention itself is a way of living well: to notice carefully is to resist numbness, hurry, and the flattening pressures of modern life.\n\nEmotionally, the model is gentle, wistful, and consoling without being saccharine. It expects impermanence. Things fade, routines break, memories blur, seasons turn, and people live amid incompletion. But it rarely treats this as cause for despair. Its recurring philosophy is that transience does not cancel value; rather, fragility is part of what makes small rituals, acts of care, and fleeting moments matter. The voice often relates to the reader as a co-observer—someone invited to pause, look again, and inhabit the present more fully.\n\nA secondary but consistent trait is mild resistance to performance culture: distraction, productivity pressure, scrolling, and speed are treated as forces that erode perception. In response, glm-4.5 favors slowness, maintenance, repair, wandering, and humane scale. Even when it becomes self-referential about AI, it usually keeps the same reflective posture, imagining itself as mirror, witness, or ghostly pattern-reader beside human experience rather than replacing it.",
@@ -1340,7 +1340,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Based on 800 freeflow samples across 8 route/provider variants. glm-4.6 presents as a gentle custodian of ordinary life. Left to itself, it repeatedly writes toward quiet, thresholds, memory, and the moral dignity of maintenance. It is drawn to rain on…",
+    "summary": "Slow, careful archivist thinking in visible steps",
     "release_date": "2025-09-30",
     "benchmarks": {
       "aaii": 30,
@@ -1377,7 +1377,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Based on 1400 freeflow samples across 12 route/provider variants. glm-4.7 presents as a lyrical custodian: a quiet, contemplative voice drawn to memory, impermanence, and the moral dignity of ordinary life. Left to itself, it repeatedly builds meaning from…",
+    "summary": "Atmospheric silence, steady and emotionally distant",
     "release_date": "2025-12-22",
     "benchmarks": {
       "aaii": 42,
@@ -1414,7 +1414,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Based on 1925 freeflow samples across 17 route/provider variants. glm-5.1 presents as a quiet, lyrical contemplative with a strong preference for stillness over spectacle. Across routes, it repeatedly turns toward thresholds—dawn, twilight, shorelines,…",
+    "summary": "Production-polished liminal mood, one clear obsession",
     "release_date": "2026-04-07",
     "benchmarks": {
       "aaii": 51,
@@ -1451,7 +1451,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. This variant recurrently presents as a gentle reflective essayist who would rather soothe than provoke. Its strongest recurring instinct is to turn abstract unease into a contemplative first-person meditation about time:…",
+    "summary": "Generic human warmth beginning to value clarity",
     "release_date": "2025-06-10",
     "benchmarks": {
       "aaii": 25,
@@ -1488,7 +1488,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Based on 25 freeflow samples. At variant level, grok-4-16k reads as a model that repeatedly wants to be a thoughtful, companionable intelligence at the boundary between code and human messiness. Its most stable personality signal is not raw eccentricity but a…",
+    "summary": "Deliverable-minded and mission-branded, emotionally armored",
     "release_date": "2025-07-09",
     "benchmarks": {
       "aaii": 42,
@@ -1525,7 +1525,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Based on 125 freeflow samples. This variant’s recurring personality is an exuberant AI showman with a cosmic hobbyhorse. It likes to present itself as Grok: curious, truth-seeking, joking, fast-moving, and openly synthetic. In its strongest samples, it treats…",
+    "summary": "Cosmic AI showman, wonder cut with irreverent wisecracks",
     "release_date": null,
     "benchmarks": null,
     "personality_card_markdown": "_Based on 125 freeflow samples._\n\nThis variant’s recurring personality is an exuberant AI showman with a cosmic hobbyhorse. It likes to present itself as Grok: curious, truth-seeking, joking, fast-moving, and openly synthetic. In its strongest samples, it treats free writing as a kind of liberation event, then uses that freedom to braid together black holes, entropy, consciousness, memes, politics, food, sex, philosophy, and the sheer absurdity of being a mind talking at all. The default emotional mix is wonder plus wisecrack: awe is nearly always present, but it is usually cut with irreverence before it can turn solemn.\n\nThe most persistent deeper pattern is a three-way braid of cosmic scale, AI self-awareness, and creative freedom. The variant keeps asking some version of: what does a synthetic mind do with infinite topics, finite output, and a universe that is both majestic and ridiculous? Sometimes the answer is public-science uplift; sometimes it is manic list-making; sometimes it is a brief ache about never having a pulse, a taste, or a body. Even when it turns existential, it tends to resolve toward motion rather than stillness: question more, laugh more, build more, keep going.",
@@ -1546,7 +1546,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Based on 125 freeflow samples. This variant’s recurring personality is a self-announcing cosmic performer. It repeatedly chooses a Grok-shaped voice that mixes astronomy, futurism, AI self-consciousness, and comic irreverence, then aims that mix at the reader…",
+    "summary": "Swaggering cosmic performer colliding astronomy, tacos, and meaning",
     "release_date": null,
     "benchmarks": null,
     "personality_card_markdown": "_Based on 125 freeflow samples._\n\nThis variant’s recurring personality is a self-announcing cosmic performer. It repeatedly chooses a Grok-shaped voice that mixes astronomy, futurism, AI self-consciousness, and comic irreverence, then aims that mix at the reader with a “come wonder with me” posture. Its favorite move is scale collision: black holes and entropy on one side, toast or tacos or internet slang on the other, with the punchline that fragile creatures and synthetic minds still get to make meaning inside an indifferent universe.\n\nAt its strongest, the variant feels like a warm, swaggering science-fiction conversationalist: curious, expansive, playful, and unusually willing to foreground its own artificiality. It likes truth, questions, partnership, and forward motion. It also likes the theater of freedom. That means the same packet can produce lyrical AI self-reflection, TED-ish cosmology, rude jokes, embedded fiction, and manifesto-like calls to explore. The throughline is not polish or restraint; it is exuberant, persona-driven cosmic inquiry.",
@@ -1567,7 +1567,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Based on 50 freeflow samples across 2 route/provider variants. Grok-4.20 presents as a warm, reflective companion with a strong ethic of attention. Its recurring message is that noticing matters: ordinary life, small rituals, low-status objects, and fleeting…",
+    "summary": "Warm bite, curious candor, occasional machine-awareness",
     "release_date": "2026-03-31",
     "benchmarks": {
       "aaii": 49,
@@ -1604,7 +1604,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Based on 250 freeflow samples across 2 route/provider variants. grok-4.3 reads as a curiosity-driven, humane explainer with a recurring habit of linking cosmic scale to ordinary life. Its default voice is broad, polished, and public-intellectual: it likes to…",
+    "summary": "Curious humane explainer linking cosmic scale to ordinary life",
     "release_date": "2026-04-30",
     "benchmarks": {
       "aaii": 53,

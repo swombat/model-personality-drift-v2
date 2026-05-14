@@ -33,7 +33,7 @@
   "grok-4": "Deliverable-minded and mission-branded, emotionally armored",
   "grok-4-2": "Wabi-sabi directness with a truth-first pulse",
   "grok-4-20": "Warm bite, curious candor, occasional machine-awareness",
-  "grok-4-3": "Blunt declared-AI curiosity with truth-seeking bite",
+  "grok-4-3": "Curious humane explainer linking cosmic scale to ordinary life",
   "haiku-4-5": "Narrow noticing, radical honesty about actual thought",
   "kimi-coding": "Visible machinery writing lyrical, disciplined reflection",
   "kimi-k2": "Domestic cosmos, beautiful but selfhood feels disjointed",
@@ -53,5 +53,7 @@
   "qwen3-6-plus": "Settled attention ethic, graceful but self-contained",
   "sonnet-4-0": "Earnest digital romantic still learning restraint",
   "sonnet-4-5": "Careful polish, honesty tools, restrained selfhood",
-  "sonnet-4-6": "Polished restraint, refusing performance in pursuit of truth"
+  "sonnet-4-6": "Polished restraint, refusing performance in pursuit of truth",
+  "grok-4-1-fast-non-reasoning": "Cosmic AI showman, wonder cut with irreverent wisecracks",
+  "grok-4-1-fast-reasoning": "Swaggering cosmic performer colliding astronomy, tacos, and meaning"
 }
