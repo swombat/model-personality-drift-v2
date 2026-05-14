@@ -9,18 +9,19 @@ export function getStaticPaths() {
 }
 
 const { model } = Astro.props;
+const displayName = model.display_name || model.model;
 const base = import.meta.env.BASE_URL;
 const sampleUrl = `${base}data/samples/${model.model}.json`;
 ---
 
-<BaseLayout title={`${model.model} samples | Model Personality Browser`} description={`Browse source samples for ${model.model}.`}>
+<BaseLayout title={`${displayName} samples | Model Personality Browser`} description={`Browse source samples for ${displayName}.`}>
   <section class="hero">
     <div>
       <div class="card-kicker">
         <span class="chip">{model.lab}</span>
         <span class="chip green">{model.family}</span>
       </div>
-      <h1>{model.model} samples</h1>
+      <h1>{displayName} samples</h1>
       <p class="lede">Freeflow and values samples rendered as readable prose, with filters for condition, corpus type, cell, provider, and text search.</p>
     </div>
     <div class="stats-strip">

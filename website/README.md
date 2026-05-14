@@ -12,10 +12,12 @@ python3 website/scripts/generate_data.py
 
 The generator reads:
 
-- `analyses/*.md`
-- `website/src/generated/model-summaries.json`
-- local corpus paths from `scripts/_corpus_paths.py`
-- OpenRouter endpoint metadata where available
+- `analysis/freeflow/personality-model-profiles/`
+- `analysis/freeflow/personality-model-cards/`
+- `analysis/values-probe/per-model/`
+- `website/src/generated/model-release-dates.json` and `model-benchmarks.json`
+- local corpus paths from `internal/scripts/analysis-scripts/_corpus_paths.py`
+- cached/OpenRouter endpoint metadata where available
 
 It writes:
 

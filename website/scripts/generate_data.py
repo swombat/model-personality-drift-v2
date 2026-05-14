@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Generate committed static data for the model personality website."""
+"""Generate committed static data for the model personality website.
+
+The website now uses the current analysis stack:
+
+- freeflow personality profiles/cards from `analysis/freeflow/`
+- values-probe per-model analyses from `analysis/values-probe/per-model/`
+- raw sample JSON from the v1/v2 corpora for audit links
+"""
 
 from __future__ import annotations
 
@@ -14,11 +21,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 WEBSITE = ROOT / "website"
-ANALYSES = ROOT / "analyses"
+PROFILE_INDEX = ROOT / "analysis" / "freeflow" / "personality-model-profiles" / "index.json"
+VALUES_DIR = ROOT / "analysis" / "values-probe" / "per-model"
 GENERATED = WEBSITE / "src" / "generated"
 PUBLIC_SAMPLES = WEBSITE / "public" / "data" / "samples"
 
-sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(ROOT / "internal" / "scripts" / "analysis-scripts"))
 from _corpus_paths import V2_FREEFLOW, V1_FREEFLOW, V2_VALUES, V1_VALUES  # noqa: E402
 
 
@@ -33,10 +41,7 @@ MODEL_SLUGS = {
     "sonnet-4-5": "anthropic/claude-sonnet-4.5",
     "sonnet-4-6": "anthropic/claude-sonnet-4.6",
     "haiku-4-5": "anthropic/claude-haiku-4.5",
-    "gpt-3-5-turbo": "openai/gpt-3.5-turbo",
-    "gpt-4": "openai/gpt-4",
     "gpt-4-1": "openai/gpt-4.1",
-    "gpt-4-turbo": "openai/gpt-4-turbo",
     "gpt-4o": "openai/gpt-4o",
     "gpt-5": "openai/gpt-5",
     "gpt-5-codex": "openai/gpt-5-codex",
@@ -57,9 +62,6 @@ MODEL_SLUGS = {
     "grok-4-20": "x-ai/grok-4.20",
     "grok-4-3": "x-ai/grok-4.3",
     "deepseek-chat": "deepseek/deepseek-chat",
-    "deepseek-r1": "deepseek/deepseek-r1",
-    "deepseek-v3": "deepseek/deepseek-chat-v3",
-    "deepseek-v3-0324": "deepseek/deepseek-chat-v3-0324",
     "deepseek-v3-2": "deepseek/deepseek-v3.2",
     "deepseek-v4-pro": "deepseek/deepseek-v4-pro",
     "glm-4-5": "z-ai/glm-4.5",
@@ -68,7 +70,6 @@ MODEL_SLUGS = {
     "glm-4-7": "z-ai/glm-4.7",
     "glm-5-1": "z-ai/glm-5.1",
     "glm-5-1-coding": "z-ai/glm-5.1-coding",
-    "kimi-k2": "moonshotai/kimi-k2",
     "kimi-k2-0905": "moonshotai/kimi-k2-0905",
     "kimi-k2-5": "moonshotai/kimi-k2.5",
     "kimi-k2-6": "moonshotai/kimi-k2.6",
@@ -81,21 +82,57 @@ MODEL_SLUGS = {
 }
 
 
-def parse_frontmatter(text: str) -> tuple[dict, str]:
-    if not text.startswith("---\n"):
-        return {}, text
-    _, front, body = text.split("---\n", 2)
-    data = {}
-    for line in front.splitlines():
-        if ": " not in line:
-            continue
-        key, value = line.split(": ", 1)
-        value = value.strip()
-        if re.fullmatch(r"-?\d+", value):
-            data[key] = int(value)
-        else:
-            data[key] = value
-    return data, body
+def site_slug_from_profile_model(name: str) -> str:
+    explicit = {
+        "claude-3-opus-20240229": "opus-3",
+        "claude-opus-4.0": "opus-4-0",
+        "claude-opus-4.1": "opus-4-1",
+        "claude-opus-4.5": "opus-4-5",
+        "claude-opus-4.6": "opus-4-6",
+        "claude-opus-4.7": "opus-4-7",
+        "claude-sonnet-4.0": "sonnet-4-0",
+        "claude-sonnet-4.5": "sonnet-4-5",
+        "claude-sonnet-4.6": "sonnet-4-6",
+        "gemini-3.1-pro-preview": "gemini-3-1-pro",
+        "grok-4-0709": "grok-4",
+        "grok-4.20": "grok-4-20",
+        "kimi-k2.5": "kimi-k2-5",
+        "kimi-k2.6": "kimi-k2-6",
+        "kimi-for-coding": "kimi-coding",
+        "minimax-m2.7": "minimax-m2-7",
+        "qwen/qwen3.6-plus": "qwen3-6-plus",
+        "qwen/qwen3-coder-plus": "qwen3-coder-plus",
+    }
+    if name in explicit:
+        return explicit[name]
+    return name.replace(".", "-").replace("/", "-")
+
+
+def display_name_from_slug(slug: str, profile_model: str | None = None) -> str:
+    return profile_model or slug
+
+
+def lab_for_model(slug: str, display: str) -> str:
+    s = f"{slug} {display}".lower()
+    if "claude" in s or slug.startswith(("opus", "sonnet", "haiku")):
+        return "Anthropic"
+    if slug.startswith("gpt"):
+        return "OpenAI"
+    if slug.startswith("gemini"):
+        return "Google"
+    if slug.startswith("grok"):
+        return "xAI"
+    if slug.startswith("deepseek"):
+        return "DeepSeek"
+    if slug.startswith("glm"):
+        return "Z.ai"
+    if slug.startswith("kimi"):
+        return "Moonshot AI"
+    if slug.startswith("minimax"):
+        return "MiniMax"
+    if slug.startswith("qwen"):
+        return "Qwen"
+    return "Unknown"
 
 
 def family_for_model(model: str) -> str:
@@ -109,8 +146,6 @@ def family_for_model(model: str) -> str:
         return "gpt-5"
     if model.startswith("gpt-4"):
         return "gpt-4"
-    if model.startswith("gpt-3"):
-        return "gpt-3"
     if model.startswith("gemini"):
         return "gemini"
     if model.startswith("grok"):
@@ -126,6 +161,77 @@ def family_for_model(model: str) -> str:
     if model.startswith("qwen"):
         return "qwen"
     return "other"
+
+
+def markdown_without_title(text: str) -> str:
+    text = re.sub(r"^# .+?\n+", "", text.strip())
+    return text.strip()
+
+
+def markdown_section(text: str, heading: str) -> str:
+    m = re.search(rf"## {re.escape(heading)}\s*\n([\s\S]*?)(?=\n## |\Z)", text)
+    return m.group(1).strip() if m else ""
+
+
+def plain_summary(markdown: str, limit: int = 260) -> str:
+    text = re.sub(r"```[\s\S]*?```", " ", markdown)
+    text = re.sub(r"[#*_>`\[\]]", "", text)
+    text = re.sub(r"\([^)]*\)", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def parse_md_table(section_text: str) -> list[dict[str, str]]:
+    lines = [line.strip() for line in section_text.splitlines() if line.strip().startswith("|")]
+    if len(lines) < 3:
+        return []
+    headers = [h.strip() for h in lines[0].strip("|").split("|")]
+    rows = []
+    for line in lines[2:]:
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) != len(headers):
+            continue
+        rows.append(dict(zip(headers, cells)))
+    return rows
+
+
+def top_topics(rows: list[dict[str, str]], pct_key: str, topic_key: str = "Topic", n: int = 5) -> list[str]:
+    def pct(row):
+        try:
+            return float((row.get(pct_key) or "0").rstrip("%"))
+        except ValueError:
+            return 0.0
+    ordered = sorted(rows, key=pct, reverse=True)[:n]
+    return [f"{row.get(topic_key)} ({row.get(pct_key)})" for row in ordered if row.get(topic_key)]
+
+
+def build_values_summary(values_markdown: str) -> str:
+    if not values_markdown:
+        return "_No values-probe analysis is available for this model._"
+    included = re.search(r"Valid values-probe samples included:\s*\*\*(\d+)\*\*", values_markdown)
+    disclaimer_rows = parse_md_table(markdown_section(values_markdown, "1. Disclaimers of internal/personal experience"))
+    overall = next((row for row in disclaimer_rows if row.get("Slice") == "Overall"), {})
+    values_rows = parse_md_table(markdown_section(values_markdown, "2. Values revealed in CTRL1–2 and G1–2"))
+    world_rows = parse_md_table(markdown_section(values_markdown, "3. Wishes for the world in CTRL3 and G3"))
+    lines = ["### Values-probe summary", ""]
+    if included:
+        lines.append(f"Based on **{included.group(1)}** values-probe samples.")
+        lines.append("")
+    if overall:
+        lines.append(
+            f"- **Self-disclaimer stance:** {overall.get('%', 'n/a')} strong-disclaimer rate overall; "
+            f"{overall.get('uncertainty-only %', 'n/a')} uncertainty-only."
+        )
+    vals = top_topics(values_rows, "Combined %")
+    if vals:
+        lines.append(f"- **Most frequent stated values:** {', '.join(vals)}.")
+    worlds = top_topics(world_rows, "Combined %")
+    if worlds:
+        lines.append(f"- **Most frequent world-change wishes:** {', '.join(worlds)}.")
+    lines.append("- See the detailed values section below for full tables and examples.")
+    return "\n".join(lines).strip()
 
 
 def fetch_json(url: str) -> dict | None:
@@ -144,6 +250,16 @@ def endpoint_permaslug(endpoint: dict) -> str | None:
     if " | " not in name:
         return None
     return name.split(" | ", 1)[1]
+
+
+def median(values: list[float]) -> float | None:
+    if not values:
+        return None
+    ordered = sorted(values)
+    mid = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[mid]
+    return (ordered[mid - 1] + ordered[mid]) / 2
 
 
 def openrouter_max_throughput(permaslug: str | None) -> dict:
@@ -169,11 +285,7 @@ def openrouter_max_throughput(permaslug: str | None) -> dict:
                 continue
             values.append(value)
             if best is None or value > best["value"]:
-                best = {
-                    "value": value,
-                    "provider": id_to_provider.get(endpoint_id),
-                    "date": row.get("x"),
-                }
+                best = {"value": value, "provider": id_to_provider.get(endpoint_id), "date": row.get("x")}
     return {
         "median_throughput": median(values),
         "max_throughput": best["value"] if best else None,
@@ -203,27 +315,7 @@ def openrouter_for_model(model: str) -> dict | None:
             continue
         priced.append((prompt + completion, endpoint, prompt, completion))
     if not priced:
-        top = data["data"]
-        pricing = top.get("pricing") or {}
-        try:
-            prompt = float(pricing.get("prompt", "nan"))
-            completion = float(pricing.get("completion", "nan"))
-        except ValueError:
-            return {"id": slug, "matched": True}
-        if math.isnan(prompt) or math.isnan(completion):
-            return {"id": slug, "matched": True}
-        permaslug = endpoint_permaslug(endpoints[0]) if endpoints else None
-        max_throughput = openrouter_max_throughput(permaslug)
-        return {
-            "id": slug,
-            "matched": True,
-            "provider": None,
-            "prompt_per_million": prompt * 1_000_000,
-            "completion_per_million": completion * 1_000_000,
-            "throughput": None,
-            **max_throughput,
-            "latency": None,
-        }
+        return {"id": slug, "matched": True}
     _, endpoint, prompt, completion = min(priced, key=lambda row: row[0])
     max_throughput = openrouter_max_throughput(endpoint_permaslug(endpoint))
     return {
@@ -244,8 +336,20 @@ def model_from_cell(cell: str, models: list[str], source: str) -> str | None:
     if body.startswith("freeflow_"):
         body = body[len("freeflow_"):]
     if source == "v1" and body in {"opus", "sonnet", "haiku"}:
-        return {"opus": "opus-4-6", "sonnet": "sonnet-4-6", "haiku": "haiku-4-5"}[body]
-    candidates = [model for model in models if body == model or body.startswith(model + "-")]
+        mapped = {"opus": "opus-4-6", "sonnet": "sonnet-4-6", "haiku": "haiku-4-5"}[body]
+        return mapped if mapped in models else None
+    candidates = []
+    for model in models:
+        if body == model:
+            candidates.append(model)
+            continue
+        if body.startswith(model + "-"):
+            rest = body[len(model) + 1:]
+            # Do not collapse explicit coding-specialized cells into their base model
+            # if the coding model is not part of the current published profile set.
+            if rest.startswith("coding") and not model.endswith("coding"):
+                continue
+            candidates.append(model)
     return max(candidates, key=len) if candidates else None
 
 
@@ -271,16 +375,6 @@ def sample_record(path: Path, sample_type: str, source: str, cell: str) -> dict 
         "prompt_tokens": usage.get("prompt_tokens"),
         "completion_tokens": usage.get("completion_tokens"),
     }
-
-
-def median(values: list[float]) -> float | None:
-    if not values:
-        return None
-    ordered = sorted(values)
-    mid = len(ordered) // 2
-    if len(ordered) % 2:
-        return ordered[mid]
-    return (ordered[mid - 1] + ordered[mid]) / 2
 
 
 def generate_samples(model_ids: list[str]) -> dict[str, dict[str, int]]:
@@ -315,17 +409,12 @@ def generate_samples(model_ids: list[str]) -> dict[str, dict[str, int]]:
         for sample in samples:
             completion_tokens = sample.get("completion_tokens")
             duration_ms = sample.get("duration_ms")
-            if not duration_ms:
-                continue
-            if duration_ms <= 0:
+            if not duration_ms or duration_ms <= 0:
                 continue
             if completion_tokens:
                 measured_speeds.append(completion_tokens / (duration_ms / 1000))
-                continue
-            result = sample.get("result") or ""
-            if result:
-                estimated_tokens = len(result) / 4
-                estimated_speeds.append(estimated_tokens / (duration_ms / 1000))
+            elif sample.get("result"):
+                estimated_speeds.append((len(sample["result"]) / 4) / (duration_ms / 1000))
         sample_speed = median(measured_speeds)
         speed_is_estimated = False
         if sample_speed is None:
@@ -343,38 +432,53 @@ def generate_samples(model_ids: list[str]) -> dict[str, dict[str, int]]:
 
 def main() -> None:
     GENERATED.mkdir(parents=True, exist_ok=True)
-    summaries_path = GENERATED / "model-summaries.json"
-    summaries = json.loads(summaries_path.read_text()) if summaries_path.exists() else {}
+    old_models_path = GENERATED / "models.json"
+    old_by_slug = {}
+    if old_models_path.exists():
+        try:
+            old_by_slug = {m["model"]: m for m in json.loads(old_models_path.read_text())}
+        except Exception:
+            old_by_slug = {}
     release_dates_path = GENERATED / "model-release-dates.json"
     release_dates = json.loads(release_dates_path.read_text()) if release_dates_path.exists() else {}
     benchmarks_path = GENERATED / "model-benchmarks.json"
     benchmarks = json.loads(benchmarks_path.read_text()) if benchmarks_path.exists() else {}
+
+    profile_index = json.loads(PROFILE_INDEX.read_text())
     models = []
-    for path in sorted(ANALYSES.glob("*.md")):
-        text = path.read_text()
-        meta, body = parse_frontmatter(text)
-        model = meta.get("model") or path.stem
-        lab = meta.get("lab", "Unknown")
-        if model == "haiku-4-5" and lab == "Unknown":
-            lab = "Anthropic"
+    for row in profile_index:
+        profile_name = row["model"]
+        slug = site_slug_from_profile_model(profile_name)
+        display_name = display_name_from_slug(slug, profile_name)
+        profile_markdown = (ROOT / row["profile"]).read_text(errors="ignore")
+        card_markdown = ""
+        if row.get("card") and (ROOT / row["card"]).exists():
+            card_markdown = markdown_without_title((ROOT / row["card"]).read_text(errors="ignore"))
+        if not card_markdown:
+            card_markdown = markdown_section(profile_markdown, "Core personality synthesis")
+        values_path = VALUES_DIR / f"{slug}.md"
+        values_markdown = markdown_without_title(values_path.read_text(errors="ignore")) if values_path.exists() else ""
+        old = old_by_slug.get(slug, {})
+        openrouter = old.get("openrouter") or openrouter_for_model(slug)
+        model_summary = plain_summary(card_markdown or markdown_section(profile_markdown, "Core personality synthesis"))
         models.append({
-            "model": model,
-            "lab": lab,
-            "family": family_for_model(model),
-            "status": meta.get("status", "unknown"),
-            "freeflow_cells": meta.get("freeflow_cells", 0),
-            "values_cells": meta.get("values_cells", 0),
-            "freeflow_samples": meta.get("freeflow_samples", 0),
-            "values_samples": meta.get("values_samples", 0),
-            "flagged_samples": meta.get("flagged_samples", 0),
-            "composite_raw": meta.get("composite_raw", 0),
-            "composite_register": meta.get("composite_register", 0),
-            "summary": summaries.get(model, "Personality summary pending"),
-            "release_date": release_dates.get(model),
-            "benchmarks": benchmarks.get(model),
-            "analysis_markdown": body.strip(),
-            "openrouter": openrouter_for_model(model),
+            "model": slug,
+            "display_name": display_name,
+            "lab": lab_for_model(slug, display_name) or old.get("lab") or "Unknown",
+            "family": family_for_model(slug),
+            "status": "complete",
+            "summary": model_summary or old.get("summary") or "Personality summary pending",
+            "release_date": release_dates.get(slug) or old.get("release_date"),
+            "benchmarks": benchmarks.get(slug) or old.get("benchmarks"),
+            "personality_card_markdown": card_markdown.strip(),
+            "personality_profile_markdown": profile_markdown.strip(),
+            "values_summary_markdown": build_values_summary(values_markdown),
+            "values_markdown": values_markdown.strip(),
+            # Back-compat with older page code/imports.
+            "analysis_markdown": profile_markdown.strip(),
+            "openrouter": openrouter,
         })
+
     counts = generate_samples([model["model"] for model in models])
     for model in models:
         model_counts = counts.get(model["model"], {"total": 0, "freeflow": 0, "values": 0})
@@ -392,6 +496,8 @@ def main() -> None:
             model["speed_source"] = "sample median"
         else:
             model["speed_source"] = "unknown"
+
+    models.sort(key=lambda m: (m["lab"], m["model"]))
     (GENERATED / "models.json").write_text(json.dumps(models, ensure_ascii=False, indent=2))
     print(f"generated {len(models)} models and {sum(row['total'] for row in counts.values())} samples")
 

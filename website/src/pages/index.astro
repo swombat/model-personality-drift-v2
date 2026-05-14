@@ -4,7 +4,7 @@ import models from '../generated/models.json';
 
 const completeModels = models
   .filter((model) => model.status !== 'redirect')
-  .sort((a, b) => (b.release_date || '').localeCompare(a.release_date || '') || a.model.localeCompare(b.model));
+  .sort((a, b) => (b.release_date || '').localeCompare(a.release_date || '') || (a.display_name || a.model).localeCompare(b.display_name || b.model));
 const labs = [...new Set(completeModels.map((model) => model.lab))].sort();
 const families = [...new Set(completeModels.map((model) => model.family))].sort();
 const statuses = [...new Set(completeModels.map((model) => model.status))].sort();
@@ -114,7 +114,7 @@ function benchmarkTitle(model) {
         data-lab={model.lab}
         data-family={model.family}
         data-status={model.status}
-        data-search={`${model.model} ${model.lab} ${model.family} ${model.summary}`.toLowerCase()}
+        data-search={`${model.model} ${model.display_name || ''} ${model.lab} ${model.family} ${model.summary}`.toLowerCase()}
         data-release={model.release_date || ''}
         data-price={model.openrouter?.prompt_per_million ?? 999999}
         data-speed={model.speed_tokens_per_second ?? -1}
@@ -139,7 +139,7 @@ function benchmarkTitle(model) {
               <span class="chip green">{model.family}</span>
               <span class="chip amber">{model.status}</span>
             </div>
-            <h2>{model.model}</h2>
+            <h2>{model.display_name || model.model}</h2>
             <p class="summary">{model.summary}</p>
             <p class="release-date">Released {releaseLabel(model.release_date)}</p>
           </div>

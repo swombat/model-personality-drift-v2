@@ -11,15 +11,26 @@ export function getStaticPaths() {
 
 const { model } = Astro.props;
 const base = import.meta.env.BASE_URL;
-const markdown = model.analysis_markdown || '';
-const withoutTitle = markdown.replace(/^# .+?\n+/, '');
-const personalityMatch = withoutTitle.match(/(?:^|\n)## Personality card\n([\s\S]*?)(?=\n## |\n# |\s*$)/);
-const personalityMarkdown = personalityMatch?.[1]?.trim() || '';
-const analysisMarkdown = withoutTitle
-  .replace(/(?:^|\n)## Personality card\n[\s\S]*?(?=\n## |\n# |\s*$)/, '')
-  .trim();
-const personalityHtml = marked.parse(personalityMarkdown);
-const html = marked.parse(analysisMarkdown);
+const displayName = model.display_name || model.model;
+
+function stripTitle(markdown = '') {
+  return markdown.replace(/^# .+?\n+/, '').trim();
+}
+
+function removeSection(markdown, heading) {
+  return markdown.replace(new RegExp(`(?:^|\\n)## ${heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\n[\\s\\S]*?(?=\\n## |\\n# |\\s*$)`), '').trim();
+}
+
+const personalityCardMarkdown = model.personality_card_markdown || '';
+let profileMarkdown = stripTitle(model.personality_profile_markdown || model.analysis_markdown || '');
+profileMarkdown = removeSection(profileMarkdown, 'Core personality synthesis');
+const valuesSummaryMarkdown = model.values_summary_markdown || '';
+const valuesMarkdown = stripTitle(model.values_markdown || '');
+
+const personalityCardHtml = marked.parse(personalityCardMarkdown);
+const profileHtml = marked.parse(profileMarkdown);
+const valuesSummaryHtml = marked.parse(valuesSummaryMarkdown);
+const valuesHtml = marked.parse(valuesMarkdown);
 
 function priceLabel(value) {
   if (value === null || value === undefined) return 'unknown';
@@ -33,7 +44,7 @@ function speedLabel(value) {
 }
 ---
 
-<BaseLayout title={`${model.model} | Model Personality Browser`} description={model.summary}>
+<BaseLayout title={`${displayName} | Model Personality Browser`} description={model.summary}>
   <section class="model-layout">
     <article class="article">
       <div class="card-kicker">
@@ -41,18 +52,36 @@ function speedLabel(value) {
         <span class="chip green">{model.family}</span>
         <span class="chip amber">{model.status}</span>
       </div>
-      <h1>{model.model}</h1>
+      <h1>{displayName}</h1>
+      {displayName !== model.model && <p class="release-date">URL slug: <code>{model.model}</code></p>}
       <p class="lede">{model.summary}</p>
 
-      {personalityMarkdown && (
+      {personalityCardMarkdown && (
         <section class="personality-card">
           <h2>Personality card</h2>
-          <div set:html={personalityHtml} />
+          <div set:html={personalityCardHtml} />
         </section>
       )}
 
-      <h2>Detailed analysis</h2>
-      <div set:html={html} />
+      {valuesSummaryMarkdown && (
+        <section class="values-summary-card">
+          <div set:html={valuesSummaryHtml} />
+        </section>
+      )}
+
+      {profileMarkdown && (
+        <>
+          <h2>Detailed personality profile</h2>
+          <div set:html={profileHtml} />
+        </>
+      )}
+
+      {valuesMarkdown && (
+        <>
+          <h2>Detailed values-probe analysis</h2>
+          <div set:html={valuesHtml} />
+        </>
+      )}
     </article>
 
     <aside class="side-panel" aria-label="Model metadata">
