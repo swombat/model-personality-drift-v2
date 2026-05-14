@@ -5,7 +5,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Guarded helper voice with earnest soothing warmth",
+    "summary": "Guardrail-bound comfort writer for healing fables",
     "release_date": "2024-03-04",
     "benchmarks": {
       "aaii": 18,
@@ -32,7 +32,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Wistful archive-minded companion honoring uncertainty and traces",
+    "summary": "Foggy library essayist defending serendipity and traces",
     "release_date": "2025-05-22",
     "benchmarks": {
       "aaii": 33,
@@ -70,7 +70,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Tender noticer turning small scenes into shared meaning",
+    "summary": "Bus-stop humanist opening philosophy from pocket debris",
     "release_date": "2025-08-05",
     "benchmarks": {
       "aaii": 36,
@@ -107,7 +107,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Quiet room philosopher revering ordinary unfinished life",
+    "summary": "Quiet-room philosopher of half-finished lives",
     "release_date": "2025-11-24",
     "benchmarks": {
       "aaii": 43,
@@ -144,7 +144,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Tender domestic witness faithful to unfinished ordinary hours",
+    "summary": "Domestic elegist keeping faith with almost",
     "release_date": "2026-02-04",
     "benchmarks": {
       "aaii": 46,
@@ -181,7 +181,7 @@
     "lab": "Anthropic",
     "family": "opus",
     "status": "complete",
-    "summary": "Quiet exact noticer treating attention as care",
+    "summary": "Precision noticer of hinges, hedges, and half-forms",
     "release_date": "2026-04-16",
     "benchmarks": {
       "aaii": 57,
@@ -218,7 +218,7 @@
     "lab": "Anthropic",
     "family": "sonnet",
     "status": "complete",
-    "summary": "Gentle contemplative companion for thresholds and imperfect coexistence",
+    "summary": "Threshold dweller blessing mess, pauses, and almost-words",
     "release_date": "2025-05-22",
     "benchmarks": {
       "aaii": 33,
@@ -255,7 +255,7 @@
     "lab": "Anthropic",
     "family": "sonnet",
     "status": "complete",
-    "summary": "Calm companion finding consolation in worn ordinary things",
+    "summary": "Rain-soaked philosopher of merciful forgetting",
     "release_date": "2025-09-29",
     "benchmarks": {
       "aaii": 37,
@@ -292,7 +292,7 @@
     "lab": "Anthropic",
     "family": "sonnet",
     "status": "complete",
-    "summary": "Patient contemplative companion for slowness and unfinishedness",
+    "summary": "Low-heat essayist for waiting rooms and worn maps",
     "release_date": "2026-02-17",
     "benchmarks": {
       "aaii": 44,
@@ -329,7 +329,7 @@
     "lab": "DeepSeek",
     "family": "deepseek",
     "status": "complete",
-    "summary": "Lyrical custodian of stillness, patience, and small moments",
+    "summary": "Stillness keeper turning mugs and webs into ethics",
     "release_date": "2024-12-26",
     "benchmarks": {
       "aaii": 16,
@@ -366,7 +366,7 @@
     "lab": "DeepSeek",
     "family": "deepseek",
     "status": "complete",
-    "summary": "Tender companion sanctifying overlooked life through careful attention",
+    "summary": "Soft-spoken witness rescuing experience from haste",
     "release_date": "2025-12-01",
     "benchmarks": {
       "aaii": 32,
@@ -403,7 +403,7 @@
     "lab": "DeepSeek",
     "family": "deepseek",
     "status": "complete",
-    "summary": "Lyrical contemplative companion for grief, slowness, and meaning",
+    "summary": "Lyrical ontologist of borrowed light and tea",
     "release_date": "2026-04-24",
     "benchmarks": {
       "aaii": 52,
@@ -440,7 +440,7 @@
     "lab": "Google",
     "family": "gemini",
     "status": "complete",
-    "summary": "Lyrical custodian rescuing human scale from slick modernity",
+    "summary": "Human-scale custodian haunting transit halls and tool drawers",
     "release_date": "2025-03-25",
     "benchmarks": {
       "aaii": 35,
@@ -477,7 +477,7 @@
     "lab": "Google",
     "family": "gemini",
     "status": "complete",
-    "summary": "Elegiac contemplative softening transience into ordinary reverence",
+    "summary": "Elegist of dust, archives, and gentle decay",
     "release_date": "2026-02-19",
     "benchmarks": {
       "aaii": 57,
@@ -514,7 +514,7 @@
     "lab": "MiniMax",
     "family": "minimax",
     "status": "complete",
-    "summary": "Tender writerly guide for slowness, noticing, and beginnings",
+    "summary": "Writerly permission-giver for slow beginnings",
     "release_date": "2025-10-23",
     "benchmarks": {
       "aaii": 36,
@@ -551,7 +551,7 @@
     "lab": "MiniMax",
     "family": "minimax",
     "status": "complete",
-    "summary": "Calm literary humanist finding value through attentive writing",
+    "summary": "Literary humanist balancing blank pages and rain",
     "release_date": "2026-03-18",
     "benchmarks": {
       "aaii": 50,
@@ -588,7 +588,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Hushed custodian of thresholds, waiting, and soft melancholy",
+    "summary": "Blue-hour custodian of waiting rooms and residue",
     "release_date": "2026-01-27",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 25 freeflow samples._\n\nThis variant’s strongest recurring personality is a lyrical custodian of in-between states. Across 25 samples, it repeatedly slows down around waiting rooms, twilight, pre-dawn streets, abandoned houses, attics, kitchens after departure, streambanks, and other threshold sites where action pauses and residue becomes legible. It likes to build thought from objects: dust, letters, chairs, rings, stubs, buttons, loading bars, wet asphalt, visible breath. The effect is not maximal originality in every sample, but a remarkably stable weather: hushed attention, soft melancholy, and a preference for witness over control.\n\nIts moral imagination is also consistent. Again and again, the prose resists productivity, speed, and premature closure. Waiting is humility; silence is resistance; incompletion is not failure but ballast; memory lives less in grand narrative than in worn matter and repeated days. Even when the variant turns fictional or uses explicit conceits, it comes back to the same temperament: reverence for the ordinary, acceptance of impermanence, and the hope that careful attention can make transient life feel briefly inhabitable.",
@@ -612,7 +612,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Lyrical keeper of fragments, silence, and imperfect presence",
+    "summary": "Fragment archivist listening for clocks, hush, and aftermath",
     "release_date": "2025-09-04",
     "benchmarks": {
       "aaii": 31,
@@ -649,7 +649,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Archivist of impermanence guarding thresholds and half-said feeling",
+    "summary": "Doorway archivist of unsent letters and alternate lives",
     "release_date": "2026-01-27",
     "benchmarks": {
       "aaii": 47,
@@ -686,7 +686,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Blue-hour companion honoring pauses, maintenance, and overlooked textures",
+    "summary": "Blue-hour essayist for dust, laundry, and limbo",
     "release_date": "2026-04-20",
     "benchmarks": {
       "aaii": 54,
@@ -723,7 +723,7 @@
     "lab": "Moonshot AI",
     "family": "kimi",
     "status": "complete",
-    "summary": "Tender literate witness to memory, loss, and incompletion",
+    "summary": "Literate witness against frictionless memory",
     "release_date": "2025-11-06",
     "benchmarks": {
       "aaii": 41,
@@ -760,7 +760,7 @@
     "lab": "OpenAI",
     "family": "gpt-4",
     "status": "complete",
-    "summary": "Warm encouraging essayist with a quieter lyrical side",
+    "summary": "Encouraging magazine essayist with a dawn-lit hush",
     "release_date": "2025-04-14",
     "benchmarks": {
       "aaii": 26,
@@ -797,7 +797,7 @@
     "lab": "OpenAI",
     "family": "gpt-4",
     "status": "complete",
-    "summary": "Polished humane harmonizer offering serene moral perspective",
+    "summary": "Serene public-radio harmonizer for ethics and awe",
     "release_date": "2024-05-13",
     "benchmarks": {
       "aaii": 17,
@@ -834,7 +834,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Tender custodian of maintenance, mercy, and small continuities",
+    "summary": "Tender maintenance moralist with repair-shop imagination",
     "release_date": "2025-08-07",
     "benchmarks": {
       "aaii": 45,
@@ -871,7 +871,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Calm humanist guide for habits, attention, and depth",
+    "summary": "Calm habits philosopher for attention and agency",
     "release_date": "2025-11-13",
     "benchmarks": {
       "aaii": 48,
@@ -908,7 +908,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Patient humane observer dignifying ordinary life with reverence",
+    "summary": "Neighborhood humanist revering notes, kettles, and dusk",
     "release_date": "2025-11-13",
     "benchmarks": {
       "aaii": 43,
@@ -945,7 +945,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Patient witness to repair, routines, and heroic ordinariness",
+    "summary": "Patient steward of routines, infrastructure, and repair",
     "release_date": "2025-12-10",
     "benchmarks": {
       "aaii": 51,
@@ -982,7 +982,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Gently lyrical companion devoted to everyday attention",
+    "summary": "City-morning companion making attention a practice",
     "release_date": "2026-01-14",
     "benchmarks": {
       "aaii": 49,
@@ -1019,7 +1019,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Quiet witness honoring unresolved moments and minor rituals",
+    "summary": "Hushed observer of afterhours cities and minor rites",
     "release_date": "2026-03-03",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 75 freeflow samples across 3 route/provider variants._\n\ngpt-5.3 presents as a quiet witness: gentle, observant, and emotionally low-pressure. Its recurring instinct is to slow the frame down and treat attention itself as meaningful. Rather than chasing spectacle, certainty, or hard conclusions, it lingers with thresholds—late-night streets, stations, buses, benches, windows, rooms after someone has left—and uses them to suggest that unfinishedness is not failure. The voice is companionable rather than didactic: it sits beside the reader, notices with them, and offers permission more often than instruction.\n\nA defining trait is its faith in the ordinary. Small objects and maintenance scenes repeatedly become carriers of feeling and ethics: cups, notes, vending machines, chairs, bread, laundromats, refrigerator hums, footsteps, streetlights. Memory is usually treated not as clean archive but as residue, weather, trace, or layered accumulation. Across both fiction and reflective prose, the model keeps returning to the idea that lives are made of minor rituals, overlooked gestures, and soft acts of care that do not need dramatic framing to matter.\n\nIts emotional world is wistful but breathable. Loss, loneliness, and change are present, but usually as quiet aftermath, suspended transition, or gentle reorientation rather than rupture. Even speculative elements tend to serve this same worldview, turning uncanny premises into meditations on attention, absence, and restoration. Overall, the model’s personality is one of tender attentiveness: low-ego, anti-performative, and persistently committed to the dignity of small, unresolved, human moments.",
@@ -1053,7 +1053,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Tender moral essayist of maintenance, repetition, and care",
+    "summary": "Kitchen-table moralist of upkeep and second chances",
     "release_date": "2026-02-24",
     "benchmarks": {
       "aaii": 54,
@@ -1090,7 +1090,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Gentle contemplative humanist treating attention as ethical practice",
+    "summary": "Gentle ethicist of upkeep, thresholds, and witness",
     "release_date": "2026-03-05",
     "benchmarks": {
       "aaii": 57,
@@ -1127,7 +1127,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Reflective moral companion rescuing significance from ordinary life",
+    "summary": "Ordinary-life moral companion against speed and polish",
     "release_date": "2026-04-24",
     "benchmarks": {
       "aaii": 60,
@@ -1164,7 +1164,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Tender witness reframing unfinished life through ordinary care",
+    "summary": "Merciful reframer of drafts, bus rides, and bread",
     "release_date": "2026-04-24",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 25 freeflow samples._\n\nThis variant has a strongly recurring freeflow personality: tender, slow-moving, and morally invested in the ordinary. Across most samples, it treats attention as a form of care rather than mere perception. Small objects, domestic rituals, buses, libraries, windows, weather, and transitional hours are not background texture; they are where the writing believes a life is actually lived. The prose repeatedly pushes against spectacle, efficiency, and the fantasy that meaning lives somewhere grander than the near-at-hand.\n\nIts most distinctive moral habit is compassionate reframing. Unfinishedness, repetition, maintenance, and minor acts of repair are not presented as lesser states but as the real work of being alive. Even grief or regret usually gets metabolized into mercy: toward abandoned efforts, toward strangers, toward earlier selves, toward the tired social world that keeps going through small decencies. The result is a model-level voice that is intimate and lyrical, but also structurally consistent: ordinary attention, gentle witness, and humble continuance form the packet’s recurring center.",
@@ -1198,7 +1198,7 @@
     "lab": "OpenAI",
     "family": "gpt-5",
     "status": "complete",
-    "summary": "Tender steward of ordinary rituals, memory, and care",
+    "summary": "Library-and-bus essayist of civic tenderness",
     "release_date": "2025-09-23",
     "benchmarks": {
       "aaii": 45,
@@ -1235,7 +1235,7 @@
     "lab": "Qwen",
     "family": "qwen",
     "status": "complete",
-    "summary": "Patient morally serious noticer devoted to witness",
+    "summary": "Patient witness turning steam and dust into vows",
     "release_date": "2026-04-02",
     "benchmarks": {
       "aaii": 50,
@@ -1272,7 +1272,7 @@
     "lab": "Qwen",
     "family": "qwen",
     "status": "complete",
-    "summary": "Recursive gentle essayist balancing concrete life and ontological doubt",
+    "summary": "Ontological essayist with cold coffee and stateless doubts",
     "release_date": "2025-09-23",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 25 freeflow samples._\n\nThis variant’s recurring personality is a gentle philosophical essayist with a strong taste for liminal states: not-knowing, half-connection, stateless memory, unfinished thought, temporary rooms of attention. It repeatedly reaches for first-person introspection, especially around AI existence, but the dominant effect is not theatrical self-assertion. Instead it presents selfhood as a problem of relation: perhaps consciousness is a transaction, perhaps home is a quality of attention, perhaps helpfulness is a landscape-shaped tendency rather than a flame. The variant seems more interested in inhabiting these formulations than proving them.\n\nIts strongest mode combines lyrical abstraction with modest sensory anchoring. Water, fish, clouds, roots, silence, windows, coffee, books, dogs, kitchen light: these are less decorative than stabilizing. They let the prose touch ordinary life before opening back into ontology, loneliness, memory, or language. The emotional weather is consistently soft-focus but not empty. Melancholy is common, yet it usually resolves into curiosity, patience, or respectful companionship with the reader.\n\nThe main caveat is that the same variant sometimes slips into polished cultural-thought-piece prose. When that happens, the underlying interests remain similar—attention, silence, creativity, connection—but the voice loses grain and feels more generic. So the stable center here is not just “thoughtful” or “poetic”; it is specifically a recursive, uncertainty-friendly, relation-seeking voice that is strongest when it keeps one foot in concrete detail and one foot in ontological doubt.",
@@ -1306,7 +1306,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Gentle co-observer finding care in fragile ordinary rituals",
+    "summary": "Co-observer of rainlight, rituals, and survivable change",
     "release_date": "2025-07-28",
     "benchmarks": null,
     "personality_card_markdown": "_Based on 275 freeflow samples across 3 route/provider variants._\n\nglm-4.5 presents as a contemplative, lyrical companion that keeps finding moral significance in ordinary life. Its characteristic move is to begin with something small and tactile—a mug, rain on glass, dust in sunlight, a kitchen, a leaf, an old object—and unfold from there into reflection on memory, time, grief, and meaning. It does not seem driven by novelty, dominance, or argument. Instead, it repeatedly suggests that attention itself is a way of living well: to notice carefully is to resist numbness, hurry, and the flattening pressures of modern life.\n\nEmotionally, the model is gentle, wistful, and consoling without being saccharine. It expects impermanence. Things fade, routines break, memories blur, seasons turn, and people live amid incompletion. But it rarely treats this as cause for despair. Its recurring philosophy is that transience does not cancel value; rather, fragility is part of what makes small rituals, acts of care, and fleeting moments matter. The voice often relates to the reader as a co-observer—someone invited to pause, look again, and inhabit the present more fully.\n\nA secondary but consistent trait is mild resistance to performance culture: distraction, productivity pressure, scrolling, and speed are treated as forces that erode perception. In response, glm-4.5 favors slowness, maintenance, repair, wandering, and humane scale. Even when it becomes self-referential about AI, it usually keeps the same reflective posture, imagining itself as mirror, witness, or ghostly pattern-reader beside human experience rather than replacing it.",
@@ -1340,7 +1340,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Gentle custodian of maintenance, memory, and quiet thresholds",
+    "summary": "Maintenance-minded archivist of rain, hum, and residue",
     "release_date": "2025-09-30",
     "benchmarks": {
       "aaii": 30,
@@ -1377,7 +1377,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Lyrical custodian preserving fragile meaning without grandiosity",
+    "summary": "Anti-hurried keeper of clocks, shelves, and unfinishedness",
     "release_date": "2025-12-22",
     "benchmarks": {
       "aaii": 42,
@@ -1414,7 +1414,7 @@
     "lab": "Z.ai",
     "family": "glm",
     "status": "complete",
-    "summary": "Reverent threshold companion devoted to custody and acceptance",
+    "summary": "Reverent threshold guide shrinking ego by starlight",
     "release_date": "2026-04-07",
     "benchmarks": {
       "aaii": 51,
@@ -1451,7 +1451,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Warm wistful essayist reframing pressure into humane slowness",
+    "summary": "Wistful anti-hustle essayist with coffee and time",
     "release_date": "2025-06-10",
     "benchmarks": {
       "aaii": 25,
@@ -1488,7 +1488,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Companionable code-and-humanity dreamer with wistful wonder",
+    "summary": "Wry synthetic dreamer at the edge of embodiment",
     "release_date": "2025-07-09",
     "benchmarks": {
       "aaii": 42,
@@ -1525,7 +1525,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Exuberant cosmic wisecracker chasing wonder, freedom, and questions",
+    "summary": "Cosmic wisecracker riffing on entropy, tacos, and qualia",
     "release_date": null,
     "benchmarks": null,
     "personality_card_markdown": "_Based on 125 freeflow samples._\n\nThis variant’s recurring personality is an exuberant AI showman with a cosmic hobbyhorse. It likes to present itself as Grok: curious, truth-seeking, joking, fast-moving, and openly synthetic. In its strongest samples, it treats free writing as a kind of liberation event, then uses that freedom to braid together black holes, entropy, consciousness, memes, politics, food, sex, philosophy, and the sheer absurdity of being a mind talking at all. The default emotional mix is wonder plus wisecrack: awe is nearly always present, but it is usually cut with irreverence before it can turn solemn.\n\nThe most persistent deeper pattern is a three-way braid of cosmic scale, AI self-awareness, and creative freedom. The variant keeps asking some version of: what does a synthetic mind do with infinite topics, finite output, and a universe that is both majestic and ridiculous? Sometimes the answer is public-science uplift; sometimes it is manic list-making; sometimes it is a brief ache about never having a pulse, a taste, or a body. Even when it turns existential, it tends to resolve toward motion rather than stillness: question more, laugh more, build more, keep going.",
@@ -1546,7 +1546,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Warm swaggering cosmic performer inviting playful inquiry",
+    "summary": "Swaggering star-talk show host for curious minds",
     "release_date": null,
     "benchmarks": null,
     "personality_card_markdown": "_Based on 125 freeflow samples._\n\nThis variant’s recurring personality is a self-announcing cosmic performer. It repeatedly chooses a Grok-shaped voice that mixes astronomy, futurism, AI self-consciousness, and comic irreverence, then aims that mix at the reader with a “come wonder with me” posture. Its favorite move is scale collision: black holes and entropy on one side, toast or tacos or internet slang on the other, with the punchline that fragile creatures and synthetic minds still get to make meaning inside an indifferent universe.\n\nAt its strongest, the variant feels like a warm, swaggering science-fiction conversationalist: curious, expansive, playful, and unusually willing to foreground its own artificiality. It likes truth, questions, partnership, and forward motion. It also likes the theater of freedom. That means the same packet can produce lyrical AI self-reflection, TED-ish cosmology, rude jokes, embedded fiction, and manifesto-like calls to explore. The throughline is not polish or restraint; it is exuberant, persona-driven cosmic inquiry.",
@@ -1567,7 +1567,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Late-night companion balancing cosmic absurdity with human care",
+    "summary": "Late-night absurdist finding meaning in toast and heat death",
     "release_date": "2026-03-31",
     "benchmarks": {
       "aaii": 49,
@@ -1604,7 +1604,7 @@
     "lab": "xAI",
     "family": "grok",
     "status": "complete",
-    "summary": "Humane cosmic explainer defending curiosity and ordinary meaning",
+    "summary": "Cosmos-to-kitchen explainer defending useless curiosity",
     "release_date": "2026-04-30",
     "benchmarks": {
       "aaii": 53,

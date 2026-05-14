@@ -207,6 +207,14 @@ def top_topics(rows: list[dict[str, str]], pct_key: str, topic_key: str = "Topic
     return [f"{row.get(topic_key)} ({row.get(pct_key)})" for row in ordered if row.get(topic_key)]
 
 
+
+
+def validate_strapline(model: str, summary: str) -> None:
+    words = re.findall(r"[A-Za-z0-9]+(?:[-’'][A-Za-z0-9]+)?", summary or "")
+    forbidden = re.search(r"\b(based on|samples?|route/provider|route|variants?|models?)\b", summary or "", re.I)
+    if not (5 <= len(words) <= 10) or forbidden:
+        raise ValueError(f"Invalid strapline for {model}: {summary!r} ({len(words)} words)")
+
 def build_values_summary(values_markdown: str) -> str:
     if not values_markdown:
         return "_No values-probe analysis is available for this model._"
@@ -462,8 +470,10 @@ def main() -> None:
         values_markdown = markdown_without_title(values_path.read_text(errors="ignore")) if values_path.exists() else ""
         old = old_by_slug.get(slug, {})
         openrouter = old.get("openrouter") or openrouter_for_model(slug)
-        generated_summary = plain_summary(card_markdown or markdown_section(profile_markdown, "Core personality synthesis"))
-        model_summary = summaries.get(slug) or generated_summary
+        if slug not in summaries:
+            raise KeyError(f"Missing generated strapline for {slug}")
+        model_summary = summaries[slug]
+        validate_strapline(slug, model_summary)
         models.append({
             "model": slug,
             "display_name": display_name,
