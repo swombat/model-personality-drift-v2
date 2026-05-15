@@ -25,6 +25,24 @@ PROFILE_INDEX = ROOT / "analysis" / "freeflow" / "personality-model-profiles" / 
 VALUES_DIR = ROOT / "analysis" / "values-probe" / "per-model"
 GENERATED = WEBSITE / "src" / "generated"
 PUBLIC_SAMPLES = WEBSITE / "public" / "data" / "samples"
+PUBLIC_MODEL_IMAGES = WEBSITE / "public" / "images" / "models"
+
+
+def model_images(slug: str) -> dict[str, str]:
+    """Attach banner image paths when renders exist in public/images/models/.
+
+    Images are produced out-of-band by
+    internal/scripts/generate_model_images.py; this just wires whatever is
+    present so regenerating data never drops them.
+    """
+    result: dict[str, str] = {}
+    full = PUBLIC_MODEL_IMAGES / f"{slug}.webp"
+    thumb = PUBLIC_MODEL_IMAGES / f"{slug}-thumb.webp"
+    if full.exists():
+        result["image"] = f"images/models/{slug}.webp"
+    if thumb.exists():
+        result["image_thumb"] = f"images/models/{slug}-thumb.webp"
+    return result
 
 sys.path.insert(0, str(ROOT / "internal" / "scripts" / "analysis-scripts"))
 from _corpus_paths import V2_FREEFLOW, V1_FREEFLOW, V2_VALUES, V1_VALUES  # noqa: E402
@@ -490,6 +508,7 @@ def main() -> None:
             # Back-compat with older page code/imports.
             "analysis_markdown": profile_markdown.strip(),
             "openrouter": openrouter,
+            **model_images(slug),
         })
 
     counts = generate_samples([model["model"] for model in models])

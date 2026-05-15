@@ -203,9 +203,23 @@ select {
   text-decoration: none;
 }
 
+.card-thumb {
+  display: block;
+  width: calc(100% + 32px);
+  margin: -16px -16px 14px;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
 .model-card:hover {
   border-color: var(--accent);
   transform: translateY(-1px);
+}
+
+.model-card .benchmark-score {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  color: #fff;
 }
 
 .card-kicker,
@@ -352,6 +366,21 @@ select {
   background: var(--paper);
   padding: 12px;
   text-decoration: none;
+}
+
+.model-banner {
+  margin: 0 0 24px;
+}
+
+.model-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .model-layout {

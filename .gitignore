@@ -26,6 +26,9 @@ Thumbs.db
 __pycache__/
 *.pyc
 
+# Model-card image raw renders (regenerable via internal/scripts/generate_model_images.py)
+internal/model-card-images/raw/
+
 # Website build artifacts
 website/node_modules/
 website/dist/

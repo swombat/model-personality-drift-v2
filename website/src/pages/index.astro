@@ -133,6 +133,16 @@ function benchmarkTitle(model) {
           </a>
         )}
         <a class="card-link" href={`${base}models/${model.model}/`}>
+          {model.image_thumb && (
+            <img
+              class="card-thumb"
+              src={`${base}${model.image_thumb}`}
+              alt={`Painterly portrait evoking the personality of ${model.display_name || model.model}`}
+              width="600"
+              height="200"
+              loading="lazy"
+            />
+          )}
           <div>
             <div class="card-kicker">
               <span class="chip">{model.lab}</span>

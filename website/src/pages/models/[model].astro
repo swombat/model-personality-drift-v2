@@ -45,6 +45,17 @@ function speedLabel(value) {
 ---
 
 <BaseLayout title={`${displayName} | Model Personality Browser`} description={model.summary}>
+  {model.image && (
+    <div class="model-banner">
+      <img
+        src={`${base}${model.image}`}
+        alt={`Painterly portrait evoking the personality of ${displayName}`}
+        width="1500"
+        height="500"
+        loading="eager"
+      />
+    </div>
+  )}
   <section class="model-layout">
     <article class="article">
       <div class="card-kicker">

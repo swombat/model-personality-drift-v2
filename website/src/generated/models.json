@@ -428,6 +428,8 @@
       "max_throughput_date": "2026-05-07 00:00:00",
       "latency": null
     },
+    "image": "images/models/deepseek-v4-pro.webp",
+    "image_thumb": "images/models/deepseek-v4-pro-thumb.webp",
     "published_samples": 1765,
     "published_freeflow_samples": 925,
     "published_values_samples": 840,
@@ -1152,6 +1154,8 @@
       "max_throughput_date": "2026-05-03 00:00:00",
       "latency": null
     },
+    "image": "images/models/gpt-5-5.webp",
+    "image_thumb": "images/models/gpt-5-5-thumb.webp",
     "published_samples": 270,
     "published_freeflow_samples": 150,
     "published_values_samples": 120,
@@ -1629,6 +1633,8 @@
       "max_throughput_date": "2026-05-10 00:00:00",
       "latency": null
     },
+    "image": "images/models/grok-4-3.webp",
+    "image_thumb": "images/models/grok-4-3-thumb.webp",
     "published_samples": 490,
     "published_freeflow_samples": 250,
     "published_values_samples": 240,
