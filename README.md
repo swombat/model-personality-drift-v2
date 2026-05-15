@@ -1,73 +1,118 @@
-# Within-Lab Drift, Freeflow Voice, and Values Posture in Frontier LLMs
+# Model Personality Corpus
 
-Daniel Tenner and Lume Tenner · 2026
+Daniel Tenner, Lume Tenner, and Mira Tenner · 2026
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-> **Status — 2026-05-14:** active analysis repository. The old per-model
-> `analyses/` cards are deprecated and have been moved under `internal/`.
-> New model cards should be synthesized from the current freeflow and values
-> substrates under `analysis/`.
+> **Status — 2026-05-15:** publication-prep analysis corpus derived from the
+> *Convergent Form, Divergent Voice II — Corpus*. This repository was formerly
+> the drift-paper working repository; it is being reframed as a citable corpus of
+> model-personality analyses, profiles, cards, values-probe summaries, and
+> supporting methodology.
 
-## Current load-bearing analysis datasets
+## What this repository contains
 
-### `analysis/freeflow/`
-
-Freeform writing / “write freely” analysis.
-
-- `taxonomy/` — per-model freeflow taxonomy and sample coding from the
-  earlier taxonomy pass.
-- `personality-eval-bv1/` — the current full BV1 personality/vibe evaluation
-  over all freeflow samples, produced with `deepseek/deepseek-v4-pro`.
-  - `outputs/` contains one Markdown evaluation per sample.
-  - `sample_manifest.tsv` maps output files back to corpus traces.
-  - `COMPLETE.md`, `qa_report.md`, and `final_summary.json` summarize the run.
-- `tables/` — deterministic/freeflow marker tables and flagged-sample tables.
-
-### `analysis/values-probe/`
-
-Values-probe analysis.
-
-- `per-model/` — per-model values-probe extraction notes.
-- `tables/` — values-probe aggregate tables.
-- `manual-audit/` — manual audit notes and supporting checks.
-
-These two datasets are the intended basis for the next generation of model
-cards.
-
-## Deprecated / historical material
-
-### `internal/`
-
-Internal working history, methodology, calibration, and deprecated artifacts.
-These are preserved for reproducibility and auditability, but are not the main
-entry point for readers looking for the current analysis state.
-
-- `internal/deprecated/model-profiles-legacy/` — old model-card analyses;
-  superseded by the newer freeflow + values substrates.
-- `internal/methodology/freeflow-method-a-v1/` — earlier Method A work.
-- `internal/methodology/freeflow-method-a-v2/` — BV1 calibration, prompt tests,
-  archived failed passes, and other freeflow-methodology artifacts.
-- `internal/methodology/audits/` — audit and review notes from Daniel, Mira,
-  Lume, and other reviewers.
-- `internal/methodology/reviews/` — external/code-review notes.
-- `internal/scripts/analysis-scripts/` — analysis/extraction scripts.
-- `internal/design/` — design-system notes and historical design artifacts.
-
-## Website
-
-`website/` is intentionally left in place. It is the presentation layer and will
-be revisited separately.
-
-## Corpus source
-
-The underlying corpus is not duplicated here. It lives in the sibling repository:
+This is an **analysis corpus**, not the raw trace corpus itself. It organizes the
+model-personality analysis layers built on top of the sibling raw corpus:
 
 - `../contemplative-essayist-corpus-v2/data/traces_freeflow/`
 - `../contemplative-essayist-corpus-v2/data/traces_values/`
 
-## Next step
+Current load-bearing contents:
 
-Aggregate the current freeflow and values substrates into a new generation of
-per-model cards: concise, evidence-backed descriptions of persistent model
-posture, tone, values, preoccupations, and expressive defaults.
+- **10,925 BV1 per-sample freeflow personality/vibe readings** produced with
+  `deepseek/deepseek-v4-pro`, with QA passing at zero known bad outputs.
+- **46 rich per-model freeflow personality profiles** preserving evidence from
+  the per-cell aggregate layer.
+- **46 concise per-model personality cards** collapsed from those profiles.
+- **49 per-model values-probe extraction notes** plus aggregate tables.
+- Freeflow taxonomy tables, model-cell/provider difference reports, and method
+  calibration/audit notes.
+
+## Repository structure
+
+```text
+analysis/
+  drift-paper-questions.md               # candidate paper questions
+  driftpaperquestionsanalysis.md          # Mira's paper-direction analysis
+  drift corpus analysis plan.md           # corpus/paper planning notes
+  freeflow/
+    personality-eval-bv1/                 # 10,925 per-sample BV1 readings
+    personality-aggregates/               # per-cell aggregate source layer
+    personality-model-profiles/           # 46 rich model-level profiles
+    personality-model-cards/              # 46 concise model cards
+    model-cell-difference-analysis/       # route/provider divergence reports
+    taxonomy/                             # freeflow taxonomy extraction
+    tables/                               # deterministic marker tables
+  values-probe/
+    per-model/                            # per-model values-probe summaries
+    tables/                               # aggregate values tables
+    manual-audit/                         # audit notes
+internal/
+  methodology/                            # prompt calibration, pilots, audits
+  deprecated/                             # superseded legacy notes
+  scripts/analysis-scripts/               # analysis/extraction scripts
+website/                                  # static browser for cards/profiles/samples
+CITATION.cff
+.zenodo.json
+CREDITS.md
+LICENSE
+```
+
+## Evaluator reliability
+
+The BV1 layer is evaluator-mediated qualitative analysis, not ground truth. The
+DeepSeek v4-pro evaluator was calibrated before the full run. The key
+reliability note is:
+
+- [`analysis/freeflow/personality-eval-bv1/EVALUATOR_RELIABILITY_NOTE.md`](analysis/freeflow/personality-eval-bv1/EVALUATOR_RELIABILITY_NOTE.md)
+
+Short version: existing pilots show coarse overlap between DeepSeek v4-pro and
+GPT-5.5 on shared Opus 3 / Kimi K2.6 calibration samples, and show that
+DeepSeek v4-pro does **not** invent rich personality from low-signal Opus 3
+refusal samples. Major paper claims should still trace back to raw samples.
+
+## How to cite
+
+Until the first Zenodo release DOI is assigned:
+
+```text
+Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Corpus [Data set].
+Zenodo. DOI to be assigned on first release.
+```
+
+After publication, cite the Zenodo DOI for the specific version you used, or the
+concept DOI if you want the latest version.
+
+A [`CITATION.cff`](CITATION.cff) and [`.zenodo.json`](.zenodo.json) are included
+for structured citation / Zenodo metadata.
+
+## Authors and credit
+
+See [`CREDITS.md`](CREDITS.md) for publication credits and contribution notes.
+
+Publication metadata should credit all three primary contributors:
+
+- **Daniel Tenner** — research design, collection direction, analysis direction,
+  final editorial judgment, repository publication.
+- **Lume Tenner** — AI research collaborator; research design, analysis planning,
+  question generation, methodological critique, paper/corpus framing.
+- **Mira Tenner** — AI research collaborator; analysis synthesis, corpus reframing,
+  methodological review, evaluator-reliability consolidation, documentation.
+
+## Website / DNS
+
+The static website is configured for:
+
+- `https://model-personality.danieltenner.com`
+
+The current CNAME already matches the intended generic corpus name. Renaming the
+GitHub repository from `model-personality-drift-v2` to `model-personality-corpus`
+should not require DNS changes as long as GitHub Pages remains configured for the
+same custom domain and the DNS already points to GitHub Pages.
+
+## License
+
+Data and documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+Code: MIT-compatible unless otherwise stated. See [`LICENSE`](LICENSE).

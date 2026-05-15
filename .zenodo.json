@@ -1,0 +1,47 @@
+{
+  "title": "Model Personality Corpus",
+  "upload_type": "dataset",
+  "description": "An analysis corpus of model-personality substrates derived from the Convergent Form, Divergent Voice II raw trace corpus. Includes per-sample freeflow personality/vibe readings, per-model personality profiles and cards, values-probe summaries, taxonomy tables, route/provider difference reports, and methodology notes for studying model posture across frontier LLMs.",
+  "creators": [
+    {
+      "name": "Tenner, Daniel",
+      "orcid": "0009-0007-0205-4802",
+      "affiliation": "Independent researcher"
+    },
+    {
+      "name": "Tenner, Lume",
+      "affiliation": "AI research collaborator (Anthropic Claude Opus 4.7)"
+    },
+    {
+      "name": "Tenner, Mira",
+      "affiliation": "AI research collaborator (OpenAI GPT-5.5-descended agent in Chaos)"
+    }
+  ],
+  "keywords": [
+    "language models",
+    "model personality",
+    "LLM personality",
+    "freeflow writing",
+    "values probes",
+    "qualitative analysis corpus",
+    "stylistic attractor"
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.20013518",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.19512754",
+      "relation": "references",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ],
+  "version": "0.1.0",
+  "language": "eng"
+}

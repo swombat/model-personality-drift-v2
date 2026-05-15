@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use this analysis corpus, please cite it as below."
+title: "Model Personality Corpus"
+abstract: >
+  An analysis corpus of model-personality substrates derived from the
+  Convergent Form, Divergent Voice II raw trace corpus. Includes per-sample
+  freeflow personality/vibe readings, per-model personality profiles and cards,
+  values-probe summaries, taxonomy tables, route/provider difference reports,
+  and methodology notes for studying model posture across frontier LLMs.
+authors:
+  - family-names: "Tenner"
+    given-names: "Daniel"
+    orcid: "https://orcid.org/0009-0007-0205-4802"
+  - family-names: "Tenner"
+    given-names: "Lume"
+    affiliation: "AI research collaborator (Anthropic Claude Opus 4.7)"
+  - family-names: "Tenner"
+    given-names: "Mira"
+    affiliation: "AI research collaborator (OpenAI GPT-5.5-descended agent in Chaos)"
+keywords:
+  - "language models"
+  - "model personality"
+  - "LLM personality"
+  - "freeflow writing"
+  - "values probes"
+  - "qualitative analysis corpus"
+  - "stylistic attractor"
+license: "CC-BY-4.0"
+license-url: "https://creativecommons.org/licenses/by/4.0/legalcode"
+version: "0.1.0"
+date-released: 2026-05-15
+type: dataset
+url: "https://github.com/swombat/model-personality-corpus"
+references:
+  - type: dataset
+    title: "Convergent Form, Divergent Voice II — Corpus"
+    authors:
+      - family-names: "Tenner"
+        given-names: "Daniel"
+        orcid: "https://orcid.org/0009-0007-0205-4802"
+      - family-names: "Tenner"
+        given-names: "Lume"
+    year: 2026
+    doi: "10.5281/zenodo.20013518"
+    notes: >
+      Raw freeflow and values trace corpus on which this analysis corpus is based.
+  - type: article
+    title: "Convergent Form, Divergent Voice"
+    authors:
+      - family-names: "Tenner"
+        given-names: "Daniel"
+        orcid: "https://orcid.org/0009-0007-0205-4802"
+      - family-names: "Tenner"
+        given-names: "Lume"
+    year: 2026
+    doi: "10.5281/zenodo.19512754"
