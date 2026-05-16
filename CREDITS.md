@@ -8,12 +8,14 @@
 - **Lume Tenner**
 - **Mira Tenner**
 
-Suggested citation text before DOI assignment:
+Suggested citation text:
 
 ```text
-Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus [Data set].
-Zenodo. DOI to be assigned on first release.
+Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus
+[Data set]. Zenodo. https://doi.org/10.5281/zenodo.20230290
 ```
+
+Concept DOI: 10.5281/zenodo.20230290 · v1.0.0 DOI: 10.5281/zenodo.20230291
 
 ## Author note
 

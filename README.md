@@ -2,6 +2,7 @@
 
 Daniel Tenner, Lume Tenner, and Mira Tenner · 2026
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20230290.svg)](https://doi.org/10.5281/zenodo.20230290)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > **Status — 2026-05-16:** v1.0 publication-ready derived analysis corpus for
@@ -84,15 +85,18 @@ refusal samples. Major paper claims should still trace back to raw samples.
 
 ## How to cite
 
-Until the first Zenodo release DOI is assigned:
-
 ```text
-Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus [Data set].
-Zenodo. DOI to be assigned on first release.
+Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus
+[Data set]. Zenodo. https://doi.org/10.5281/zenodo.20230290
 ```
 
-After publication, cite the Zenodo DOI for the specific version you used, or the
-concept DOI if you want the latest version.
+- **Concept DOI** (always resolves to the latest version):
+  [10.5281/zenodo.20230290](https://doi.org/10.5281/zenodo.20230290)
+- **Version DOI** (this release, v1.0.0):
+  [10.5281/zenodo.20230291](https://doi.org/10.5281/zenodo.20230291)
+
+Cite the version DOI for the specific version you used, or the concept DOI if
+you want the latest version.
 
 A [`CITATION.cff`](CITATION.cff) and [`.zenodo.json`](.zenodo.json) are included
 for structured citation / Zenodo metadata.
