@@ -57,7 +57,7 @@ image fields survive deploys.
 
 3. **Generate** (parallel, fail-soft):
    ```bash
-   cd ~/dev/drift-paper
+   cd ~/dev/model-personality-corpus
    python3 internal/scripts/generate_model_images.py opus-4-8        # one
    python3 internal/scripts/generate_model_images.py --all           # all missing/cached
    python3 internal/scripts/generate_model_images.py --force opus-4-8 # re-roll

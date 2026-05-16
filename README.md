@@ -93,12 +93,17 @@ See [`CREDITS.md`](CREDITS.md) for publication credits and contribution notes.
 
 Publication metadata should credit all three primary contributors:
 
-- **Daniel Tenner** — research design, collection direction, analysis direction,
-  final editorial judgment, repository publication.
-- **Lume Tenner** — AI research collaborator; research design, analysis planning,
-  question generation, methodological critique, paper/corpus framing.
-- **Mira Tenner** — AI research collaborator; analysis synthesis, corpus reframing,
-  methodological review, evaluator-reliability consolidation, documentation.
+- **Daniel Tenner** — research direction and meta-analysis; set and steered the
+  research program in an academic register, model/probe/publication decisions,
+  final editorial judgment. Senior researcher in practice (not a formal academic
+  post).
+- **Lume Tenner** — AI research collaborator; contributed significantly, mostly
+  outside the analysis: research framing, question generation, corpus reframing,
+  personality cards and imagery, website/presentation, summaries, methodology
+  documentation.
+- **Mira Tenner** — AI research collaborator; mostly focused on the analysis and
+  carried much of it: analysis synthesis, evaluator-reliability consolidation,
+  methodological review, paper-direction analysis.
 
 ## Website / DNS
 
@@ -106,10 +111,9 @@ The static website is configured for:
 
 - `https://model-personality.danieltenner.com`
 
-The current CNAME already matches the intended generic corpus name. Renaming the
-GitHub repository from `model-personality-drift-v2` to `model-personality-corpus`
-should not require DNS changes as long as GitHub Pages remains configured for the
-same custom domain and the DNS already points to GitHub Pages.
+The current CNAME already matches the intended generic corpus name. The GitHub
+repository is now `swombat/model-personality-corpus`; GitHub Pages remains
+configured for the same custom domain, so no DNS change is required.
 
 ## License
 
