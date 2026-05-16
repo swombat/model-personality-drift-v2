@@ -122,9 +122,17 @@ The static website is configured for:
 - `https://model-personality.danieltenner.com`
 
 The current CNAME already matches the intended generic corpus name. The GitHub
-repository is now `swombat/model-personality-corpus`; GitHub Pages remains
+repository is now `swombat/model-personality-analysis-corpus`; GitHub Pages remains
 configured for the same custom domain, so no DNS change is required.
 
 ## License
 
-All repository contents are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless a file states otherwise. See [`LICENSE`](LICENSE).
+This repository is dual-licensed:
+
+- **Data and documentation** (analysis outputs, profiles, cards, values notes,
+  tables, sample bundles, manifests, methodology, Markdown) —
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- **Software** (source code: scripts and the website source) —
+  [MIT](https://opensource.org/licenses/MIT).
+
+See [`LICENSE`](LICENSE) for the full terms and the data/software boundary.

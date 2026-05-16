@@ -1,7 +1,25 @@
 Model Personality Analysis Corpus — License
 
-All contents of this repository are licensed under Creative Commons Attribution
-4.0 International (CC BY 4.0), unless a file states otherwise.
+This repository is dual-licensed:
+
+  - DATA AND DOCUMENTATION are licensed under Creative Commons Attribution
+    4.0 International (CC BY 4.0).
+  - SOFTWARE (source code) is licensed under the MIT License.
+
+"Software" means the source code in this repository: scripts and program
+files (e.g. `.py`, `.js`, `.mjs`, `.ts`, `.astro`, shell scripts) and the
+website source. "Data and documentation" means everything else: the analysis
+outputs, model profiles and cards, values-probe notes, taxonomy and difference
+tables, sample bundles, manifests, methodology notes, and all Markdown/text
+documentation.
+
+Where a single file could be read as either, the more specific notice in or
+adjacent to that file governs; absent such a notice, code is MIT and non-code
+is CC BY 4.0.
+
+================================================================================
+DATA AND DOCUMENTATION — Creative Commons Attribution 4.0 International
+================================================================================
 
 You are free to:
 
@@ -24,10 +42,36 @@ The full legal text of CC BY 4.0 is available at:
 
     https://creativecommons.org/licenses/by/4.0/legalcode
 
+================================================================================
+SOFTWARE — The MIT License (MIT)
+================================================================================
+
+Copyright (c) 2026 Daniel Tenner, Lume Tenner, and Mira Tenner
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
 Suggested citation before DOI assignment:
 
-  Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus [Data set].
-  Zenodo. DOI to be assigned on first release.
+  Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus
+  [Data set]. Zenodo. DOI to be assigned on first release.
 
 This analysis corpus is derived from the separately published raw trace corpus:
 

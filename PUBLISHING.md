@@ -16,14 +16,15 @@ Repository-side artifacts are in place and consistent:
       article.
 - [x] `CREDITS.md` — author note and per-contributor notes (Daniel = direction
       / meta-analysis; Mira = analysis; Lume = the other aspects).
-- [x] `LICENSE` — CC BY 4.0 for all repository contents unless a file states otherwise.
+- [x] `LICENSE` — dual-licensed: CC BY 4.0 for data/documentation, MIT for
+      software (source code). Boundary defined in `LICENSE`.
 - [x] `README.md` — author/credit section aligned with the above.
 
 ## Steps to actually publish (Daniel — needs your Zenodo + GitHub account)
 
 1. **Enable the repo in Zenodo.** Log in to <https://zenodo.org> with the GitHub
-   account that owns `swombat/model-personality-corpus`. Go to
-   *Account → GitHub*, find `swombat/model-personality-corpus`, and flip the
+   account that owns `swombat/model-personality-analysis-corpus`. Go to
+   *Account → GitHub*, find `swombat/model-personality-analysis-corpus`, and flip the
    toggle **On**. (One-time. If it was already enabled for a previous repo name,
    confirm it followed the rename.)
 2. **Sanity-check `.zenodo.json`.** Confirm the three creators, the version

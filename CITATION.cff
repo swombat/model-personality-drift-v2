@@ -32,7 +32,7 @@ license-url: "https://creativecommons.org/licenses/by/4.0/legalcode"
 version: "1.0.0"
 date-released: 2026-05-16
 type: dataset
-url: "https://github.com/swombat/model-personality-corpus"
+url: "https://github.com/swombat/model-personality-analysis-corpus"
 references:
   - type: dataset
     title: "Convergent Form, Divergent Voice II — Corpus"
