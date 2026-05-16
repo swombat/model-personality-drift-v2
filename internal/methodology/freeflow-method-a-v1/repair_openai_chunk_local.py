@@ -1,8 +1,8 @@
 import csv, json, re
 from pathlib import Path
 
-ROOT=Path('/Users/danieltenner/dev/drift-paper')
-CORPUS=Path('/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow')
+ROOT = Path(__file__).resolve().parents[3]
+CORPUS=Path('../contemplative-essayist-corpus-v2/data/traces_freeflow')
 OUT=ROOT/'freeflow-method-a/chunks/method_a_openai_a.jsonl'
 NOTES=ROOT/'freeflow-method-a/chunks/method_a_openai_a_notes.md'
 MODELS={'gpt-4-1','gpt-4o','gpt-5','gpt-5-1','gpt-5-2','gpt-5-3','gpt-5-4','gpt-5-5','gpt-5-5-pro'}

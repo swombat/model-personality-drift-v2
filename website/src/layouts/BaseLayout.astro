@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-const { title = 'Model Personality Corpus', description = 'Browse model personality analyses, cards, profiles, and source samples.' } = Astro.props;
+const { title = 'Model Personality Analysis Corpus', description = 'Browse model personality analyses, cards, profiles, and source samples from the derived analysis corpus.' } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -18,7 +18,7 @@ const base = import.meta.env.BASE_URL;
       <header class="topbar">
         <div class="topbar-inner">
           <a class="brand" href={base}>
-            <strong>Model Personality Corpus</strong>
+            <strong>Model Personality Analysis Corpus</strong>
             <span>Analysis corpus and model cards</span>
           </a>
           <nav class="nav" aria-label="Primary">

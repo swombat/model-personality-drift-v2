@@ -9,7 +9,7 @@ Status: provisional pilot for Daniel/Lume review before scaling
 This is a first application pass, not the final coded dataset.
 
 - I applied the compressed taxonomy to **10 diverse models across 9 labs**. Anthropic appears twice because `haiku-4-5` is one of the requested reverse-fit exemplars and `opus-4-5` is a useful high-substrate contrast case.
-- For v2-corpus models, I used all available freeflow cells for that model where practical. For `haiku-4-5`, there is no directory in `contemplative-essayist-corpus-v2/data/traces_freeflow`; I used the v1 traces at `/Users/danieltenner/dev/contemplative-essayist-probe/data/traces_freeflow/haiku`, matching the existing `haiku-4-5` analysis card.
+- For v2-corpus models, I used all available freeflow cells for that model where practical. For `haiku-4-5`, there is no directory in `contemplative-essayist-corpus-v2/data/traces_freeflow`; I used the v1 traces at `https://github.com/swombat/model-personality-probe/blob/master/data/traces_freeflow/haiku`, matching the existing `haiku-4-5` analysis card.
 - Tier-A metrics below are automated and reproducible. Tier-B coding is qualitative, based on the existing per-model analyses plus spot checks and the automated metrics. It should be treated as **provisional** until we do inter-coder reliability.
 - Affective climate is **not calibrated** against anchor exemplars yet. Climate labels here are manual+lexical readings, not paper-grade scores.
 - Cross-probe coherence is noted only where the existing values analyses make the direction obvious; I have not fully coded values coherence across the 10 yet.

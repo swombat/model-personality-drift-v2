@@ -10,15 +10,15 @@ This is load-bearing. Do not draw product-tier or GPT-5.x drift conclusions from
 
 The scripts still point at the older probe repo:
 
-- `scripts/marker_count_all_cells.py` uses `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow`
-- `scripts/topic_artifact_filter.py` uses `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow`
-- `scripts/generate_model_stubs.py` uses `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_freeflow` and `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values`
+- `scripts/marker_count_all_cells.py` uses `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_freeflow`
+- `scripts/topic_artifact_filter.py` uses `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_freeflow`
+- `scripts/generate_model_stubs.py` uses `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_freeflow` and `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values`
 - `README.md` also documents the probe-v2 paths
 
 The product-tier paper now uses the canonical corpus:
 
-- `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow`
-- `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values`
+- `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_freeflow`
+- `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values`
 
 Update drift-paper scripts and documentation to use the canonical corpus-v2 paths, or centralize path configuration so a stale absolute path cannot silently regenerate a wrong analysis.
 
@@ -77,8 +77,8 @@ Please regenerate:
 
 Then cross-check against:
 
-- `/Users/danieltenner/dev/contemplative-essayist-product-tier-v2/internal-audit/2026-05-08_verification_pass_3.md`
-- `/Users/danieltenner/dev/contemplative-essayist-product-tier-v2/internal-audit/2026-05-08_values_pair_audit.md`
-- `/Users/danieltenner/dev/contemplative-essayist-product-tier-v2/codex-review/02-remaining-analysis-gate-review.md`
+- `../contemplative-essayist-product-tier-v2/internal-audit/2026-05-08_verification_pass_3.md`
+- `../contemplative-essayist-product-tier-v2/internal-audit/2026-05-08_values_pair_audit.md`
+- `../contemplative-essayist-product-tier-v2/codex-review/02-remaining-analysis-gate-review.md`
 
 The desired end state is not to copy the product-tier conclusions blindly. It is to make sure drift-paper is reading the same canonical corpus before it decides whether its broader per-model conclusions still hold.

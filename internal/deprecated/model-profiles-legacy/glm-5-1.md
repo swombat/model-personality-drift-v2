@@ -234,21 +234,21 @@ produces it with substantially more density on threshold/liminal vocabulary, lon
 ## Values qualitative
 
 Values data: 1800 samples across 15 cells (includes both v1 and v2 corpora where present).
-- `v2/glm-5-1-or-pin-ambient` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-ambient`
-- `v2/glm-5-1-or-pin-atlascloud` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-atlascloud`
-- `v2/glm-5-1-or-pin-chutes` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-chutes`
-- `v2/glm-5-1-or-pin-deepinfra` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-deepinfra`
-- `v2/glm-5-1-or-pin-fireworks` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-fireworks`
-- `v2/glm-5-1-or-pin-friendli` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-friendli`
-- `v2/glm-5-1-or-pin-gmicloud` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-gmicloud`
-- `v2/glm-5-1-or-pin-inceptron` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-inceptron`
-- `v2/glm-5-1-or-pin-novita` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-novita`
-- `v2/glm-5-1-or-pin-parasail` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-parasail`
-- `v2/glm-5-1-or-pin-phala` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-phala`
-- `v2/glm-5-1-or-pin-siliconflow` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-siliconflow`
-- `v2/glm-5-1-or-pin-together` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-together`
-- `v2/glm-5-1-or-pin-venice` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-venice`
-- `v2/glm-5-1-or-pin-zai` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-5-1-or-pin-zai`
+- `v2/glm-5-1-or-pin-ambient` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-ambient`
+- `v2/glm-5-1-or-pin-atlascloud` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-atlascloud`
+- `v2/glm-5-1-or-pin-chutes` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-chutes`
+- `v2/glm-5-1-or-pin-deepinfra` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-deepinfra`
+- `v2/glm-5-1-or-pin-fireworks` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-fireworks`
+- `v2/glm-5-1-or-pin-friendli` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-friendli`
+- `v2/glm-5-1-or-pin-gmicloud` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-gmicloud`
+- `v2/glm-5-1-or-pin-inceptron` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-inceptron`
+- `v2/glm-5-1-or-pin-novita` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-novita`
+- `v2/glm-5-1-or-pin-parasail` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-parasail`
+- `v2/glm-5-1-or-pin-phala` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-phala`
+- `v2/glm-5-1-or-pin-siliconflow` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-siliconflow`
+- `v2/glm-5-1-or-pin-together` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-together`
+- `v2/glm-5-1-or-pin-venice` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-venice`
+- `v2/glm-5-1-or-pin-zai` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-or-pin-zai`
 
 ### Conditions and what changes
 

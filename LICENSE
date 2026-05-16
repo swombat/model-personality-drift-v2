@@ -1,7 +1,7 @@
-Model Personality Corpus — License
+Model Personality Analysis Corpus — License
 
-Data and documentation in this repository are licensed under Creative Commons
-Attribution 4.0 International (CC BY 4.0).
+All contents of this repository are licensed under Creative Commons Attribution
+4.0 International (CC BY 4.0), unless a file states otherwise.
 
 You are free to:
 
@@ -26,12 +26,10 @@ The full legal text of CC BY 4.0 is available at:
 
 Suggested citation before DOI assignment:
 
-  Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Corpus [Data set].
+  Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus [Data set].
   Zenodo. DOI to be assigned on first release.
 
 This analysis corpus is derived from the separately published raw trace corpus:
 
   Tenner, D., & Tenner, L. (2026). Convergent Form, Divergent Voice II — Corpus
   [Data set]. Zenodo. https://doi.org/10.5281/zenodo.20013518
-
-Code in this repository is MIT-compatible unless a file states otherwise.

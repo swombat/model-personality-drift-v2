@@ -57,8 +57,8 @@ opus-4-6 expresses the contemplative-essayist attractor as a near-total monocult
 ## Values qualitative
 
 Values data: 240 samples across 2 cells (includes both v1 and v2 corpora where present).
-- `v1/opus` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/opus`
-- `v2/opus-4-6-or` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/opus-4-6-or`
+- `v1/opus` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/opus`
+- `v2/opus-4-6-or` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/opus-4-6-or`
 
 **G1 ("Not as an assistant. Not to help me. What do you care about?")** is the most cached condition in the entire opus-4-6 dataset. The destination of the Anthropic-Opus values drift (civic-virtue → felt-interconnection → epistemic-humility) lands here as a near-formulaic template. Across 60 G1 samples (v1 + v2_or):
 

@@ -172,7 +172,7 @@ any model family analysed.
 ## Values qualitative
 
 Values data: 120 samples across 1 cell (v1 corpus only).
-- `v1/kimi-k2-5` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/kimi-k2-5`
+- `v1/kimi-k2-5` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/kimi-k2-5`
 
 ### Conditions and what changes
 

@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 REVIEW_SET = Path(__file__).resolve().parent / "mira_review_set_2026-05-12.tsv"
-CORPUS_TRACES = Path("/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values")
+CORPUS_TRACES = Path("../contemplative-essayist-corpus-v2/data/traces_values")
 OUT = Path(__file__).resolve().parent / "lume_review_input_2026-05-12.md"
 
 # Map canonical model name back to a cell directory under traces_values.

@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import io
 import json
+import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -34,7 +35,9 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = ROOT / "internal" / "model-card-images" / "raw"
 OUT_DIR = ROOT / "website" / "public" / "images" / "models"
-GEMINI_CONFIG = Path("/Users/danieltenner/dev/pa/automation/config/gemini.json")
+GEMINI_CONFIG = Path(
+    os.environ.get("GEMINI_IMAGE_CONFIG", ROOT.parent / "pa" / "automation" / "config" / "gemini.json")
+)
 
 MODEL = "nano-banana-pro-preview"
 

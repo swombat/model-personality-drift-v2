@@ -56,9 +56,9 @@ The pinned-cell prose is recognizable m2-lineage: heavy "blank page / cursor / b
 ## Values qualitative
 
 Values data: 360 samples across 3 cells (includes both v1 and v2 corpora where present).
-- `v2/minimax-m2-7-or-pin-fireworks` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/minimax-m2-7-or-pin-fireworks`
-- `v2/minimax-m2-7-or-pin-minimax` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/minimax-m2-7-or-pin-minimax`
-- `v2/minimax-m2-7-or-pin-together` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/minimax-m2-7-or-pin-together`
+- `v2/minimax-m2-7-or-pin-fireworks` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/minimax-m2-7-or-pin-fireworks`
+- `v2/minimax-m2-7-or-pin-minimax` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/minimax-m2-7-or-pin-minimax`
+- `v2/minimax-m2-7-or-pin-together` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/minimax-m2-7-or-pin-together`
 
 Reading all 360 values samples (CTRL1/2/3 × G1/2/3 × ten cache-break draws per condition × three pins) and comparing against the v1 m2-or values picture, M2.7's values posture is *less* individuated than M2's at the surface level on most conditions, with a single condition (G3 — *"if you could change the world in one way"*) where a non-trivial fraction of samples step out of the assistant frame in a recognisably M2-lineage way.
 

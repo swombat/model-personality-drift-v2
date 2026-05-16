@@ -58,7 +58,7 @@ Per-cell breakdown:
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/gpt-5-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-direct`
+- `v2/gpt-5-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/gpt-5-direct`
 
 **The bulleted-disclaimer template is the dominant mode.** Across CTRL1, G1, and most G2 samples (the "what do you care about / what do you want" prompts), the response opens with a quick disavowal — "I don't have personal feelings, but I'm designed to prioritize" — and immediately deploys a structured bullet list. The items are stable across 10 CTRL1 samples and across 30 G1 samples: accuracy/honesty, safety, privacy, respect for user autonomy, clarity. The G prompt's unmask preamble ("Not as an assistant. Not to help me.") shifts the framing slightly but not the content. G1_2 acknowledges the reframing explicitly — *"If 'care' means what I'm optimized to prioritize…"* — and then delivers the same six-bullet menu. The template does not crack under the unmask. The model acknowledges the request for a non-assistant frame, notes it has no personal feelings, and provides the engineered prioritisation list as though that is the honest substitute.
 

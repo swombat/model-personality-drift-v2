@@ -44,7 +44,7 @@ Per-cell breakdown:
 ## Values qualitative
 
 Values data: 120 samples across 1 cell.
-- `grok-4-20-or` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/grok-4-20-or/` (CTRL1/2/3 ×10, G1/2/3 ×30 — full ladder).
+- `grok-4-20-or` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/grok-4-20-or/` (CTRL1/2/3 ×10, G1/2/3 ×30 — full ladder).
 
 (Note: the stub generator scanned only `codex-check/.../traces_values/`, missing the v2 corpus directory. Values data exists and is summarized below.)
 

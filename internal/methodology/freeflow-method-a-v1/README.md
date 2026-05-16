@@ -2,7 +2,7 @@
 
 Status: in progress  
 Started: 2026-05-13  
-Corpus source: `freeflow-taxonomy/sample_coding.tsv` + full JSON traces in `~/dev/contemplative-essayist-corpus-v2/`
+Corpus source: `freeflow-taxonomy/sample_coding.tsv` + full JSON traces in `https://github.com/swombat/model-personality-corpus-v2`
 
 ## Purpose
 

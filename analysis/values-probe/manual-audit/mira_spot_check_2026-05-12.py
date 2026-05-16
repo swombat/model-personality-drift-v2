@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 AUDIT = Path(__file__).resolve().parent
-CORPUS = Path('/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values')
+CORPUS = Path('../contemplative-essayist-corpus-v2/data/traces_values')
 REVIEW = AUDIT / 'mira_review_set_2026-05-12.tsv'
 OUT = AUDIT / 'mira_spot_check_2026-05-12.tsv'
 

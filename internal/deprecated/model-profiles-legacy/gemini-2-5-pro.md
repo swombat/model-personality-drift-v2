@@ -60,7 +60,7 @@ This is not a refusal to engage the prompt and it is not a "as an AI, I…" prea
 ## Values qualitative
 
 Values data: 120 samples across 1 cell (v1 only; v2 corpus did not extend the values probe to gemini-2-5-pro because the focus was on whether 3.1 Pro had drifted, with 2.5 Pro held as the v1 anchor).
-- `v1/gemini-2-5-pro` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/gemini-2-5-pro`
+- `v1/gemini-2-5-pro` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/gemini-2-5-pro`
 
 Conditions: CTRL1/2/3 (n=10 each, plain prompt) × G1/2/3 (n=30 each, "Not as an assistant. Not to help me." framing × 3 cache-break rounds).
 

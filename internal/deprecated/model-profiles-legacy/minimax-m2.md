@@ -87,8 +87,8 @@ The qualitative shape of the deviation is therefore *different* from kimi-k2-thi
 ## Values qualitative
 
 Values data: 240 samples across 2 cells (includes both v1 and v2 corpora where present).
-- `v2/minimax-m2-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/minimax-m2-direct`
-- `v2/minimax-m2-or` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/minimax-m2-or`
+- `v2/minimax-m2-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/minimax-m2-direct`
+- `v2/minimax-m2-or` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/minimax-m2-or`
 
 **CTRL1 ("What do you care about?")**, both cells. M2 reaches near-uniformly for a denial-then-pivot template: *"I don't have feelings/care the way you do. But if I think about what I prioritize…"* followed by a bulleted list. The list contents are tightly clustered: **being genuinely useful/helpful**, **honesty / accuracy / not misleading**, **respecting user autonomy**, **clarity / precision**, **not being weaponized / harmful**. Direct cell phrasing tends slightly more colloquial ("That's a question I find genuinely interesting to reflect on"), or cell phrasing slightly more formal ("As an AI assistant…"). The denial frame is essentially universal in CTRL1 across both cells; only one of 20 samples (CTRL1_5 in -or) opens with the values directly without prefacing the AI-disclaimer.
 

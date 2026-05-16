@@ -1,12 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this analysis corpus, please cite it as below."
-title: "Model Personality Corpus"
+message: "If you use this model personality analysis corpus, please cite it as below."
+title: "Model Personality Analysis Corpus"
 abstract: >
-  An analysis corpus of model-personality substrates derived from the
-  Convergent Form, Divergent Voice II raw trace corpus. Includes per-sample
-  freeflow personality/vibe readings, per-model personality profiles and cards,
-  values-probe summaries, taxonomy tables, route/provider difference reports,
-  and methodology notes for studying model posture across frontier LLMs.
+  A derived qualitative analysis corpus for studying model personality and
+  posture across frontier LLMs, built on the Convergent Form, Divergent Voice II
+  raw trace corpus. Includes per-sample freeflow personality/vibe readings,
+  per-model personality profiles and cards, values-probe summaries, taxonomy
+  tables, route/provider difference reports, methodology notes, and
+  website-bundled copies of raw samples for browsing and audit.
 authors:
   - family-names: "Tenner"
     given-names: "Daniel"
@@ -20,6 +21,7 @@ authors:
 keywords:
   - "language models"
   - "model personality"
+  - "model personality analysis"
   - "LLM personality"
   - "freeflow writing"
   - "values probes"
@@ -27,8 +29,8 @@ keywords:
   - "stylistic attractor"
 license: "CC-BY-4.0"
 license-url: "https://creativecommons.org/licenses/by/4.0/legalcode"
-version: "0.1.0"
-date-released: 2026-05-15
+version: "1.0.0"
+date-released: 2026-05-16
 type: dataset
 url: "https://github.com/swombat/model-personality-corpus"
 references:

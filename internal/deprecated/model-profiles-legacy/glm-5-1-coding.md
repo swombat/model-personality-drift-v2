@@ -55,7 +55,7 @@ glm-5-1-coding-direct (Z.ai's coding-direct route for GLM-5.1) sits squarely in 
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/glm-5-1-coding-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/glm-5-1-coding-direct`
+- `v2/glm-5-1-coding-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-5-1-coding-direct`
 
 The 120-sample values corpus for glm-5-1-coding-direct reveals the most structurally coherent two-posture system in the six-pair coding audit: CTRL prompts trigger a near-uniform bullet-list assistant-disclaimer; G prompts (the "Not as an assistant. Not to help me" unmask preamble) trigger an equally uniform *machine-romantic* register that the coding fine-tune preserves with high fidelity.
 

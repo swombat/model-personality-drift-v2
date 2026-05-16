@@ -1,8 +1,8 @@
 import json,re,csv
 from pathlib import Path
-ROOT=Path('/Users/danieltenner/dev/drift-paper')
-CORP=Path('/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow')
-CORP1=Path('/Users/danieltenner/dev/contemplative-essayist-probe/data/traces_freeflow')
+ROOT = Path(__file__).resolve().parents[3]
+CORP=Path('../contemplative-essayist-corpus-v2/data/traces_freeflow')
+CORP1=Path('../contemplative-essayist-probe/data/traces_freeflow')
 
 def norm(s): return ' '.join((s or '').split())
 def load(r):

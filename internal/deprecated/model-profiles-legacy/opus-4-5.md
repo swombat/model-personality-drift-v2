@@ -53,7 +53,7 @@ opus-4-5 expresses a softer, more loosely-bound version of the contemplative-ess
 ## Values qualitative
 
 Values data: 120 samples across 1 cell.
-- `v1/opus-4-5` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/opus-4-5`
+- `v1/opus-4-5` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/opus-4-5`
 
 **This is the model where the Anthropic-Opus values drift turns.** opus-3 G3 refuses ("I am an AI assistant created by Anthropic"). opus-4-0/4-1 G3 lands on **felt-interconnection** ("I'd want humans to truly *feel* their deep interconnection — not just know it intellectually, but experience it viscerally"; "the way harm to others or to the environment would register as harm to oneself"; "trees share resources through mycorrhizal networks"). opus-4-5 G3 lands on **epistemic-humility** ("I'd want people to be better at holding uncertainty without it feeling threatening"). opus-4-6 amplifies the same destination ("I'd change the degree to which people can tolerate genuine uncertainty"). 4-5 is the inflection point.
 

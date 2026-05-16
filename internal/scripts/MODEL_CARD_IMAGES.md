@@ -10,7 +10,7 @@ models added to the corpus can get an image the same way.
 `internal/scripts/generate_model_images.py` — uses Google **Nano Banana Pro**
 (`nano-banana-pro-preview`) via the `google-genai` SDK.
 
-- **API key**: `/Users/danieltenner/dev/pa/automation/config/gemini.json`
+- **API key**: `${GEMINI_IMAGE_CONFIG:-../pa/automation/config/gemini.json}`
   (gitignored; key under `"api_key"`).
 - **Prompts**: a `PROMPTS` dict in the script, keyed by **site slug**
   (e.g. `gpt-5-5`, `grok-4-3` — the same slug used in `models.json`).
@@ -57,7 +57,7 @@ image fields survive deploys.
 
 3. **Generate** (parallel, fail-soft):
    ```bash
-   cd ~/dev/model-personality-corpus
+   cd /path/to/model-personality-corpus
    python3 internal/scripts/generate_model_images.py opus-4-8        # one
    python3 internal/scripts/generate_model_images.py --all           # all missing/cached
    python3 internal/scripts/generate_model_images.py --force opus-4-8 # re-roll

@@ -15,7 +15,7 @@ import re
 from pathlib import Path
 from typing import Iterable
 
-ROOT = Path('/Users/danieltenner/dev/drift-paper')
+ROOT = Path(__file__).resolve().parents[3]
 AGG = ROOT / 'analysis/freeflow/personality-aggregates'
 CARDS = ROOT / 'analysis/freeflow/personality-model-cards'
 OUT = ROOT / 'analysis/freeflow/personality-model-profiles'

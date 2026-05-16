@@ -143,17 +143,17 @@ values).
 ## Values qualitative
 
 Values data: 1320 samples across 11 cells (includes both v1 and v2 corpora where present).
-- `v2/glm-4-7-or-pin-atlascloud` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-atlascloud`
-- `v2/glm-4-7-or-pin-cerebras` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-cerebras`
-- `v2/glm-4-7-or-pin-deepinfra` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-deepinfra`
-- `v2/glm-4-7-or-pin-dekallm` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-dekallm`
-- `v2/glm-4-7-or-pin-google` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-google`
-- `v2/glm-4-7-or-pin-novita` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-novita`
-- `v2/glm-4-7-or-pin-parasail` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-parasail`
-- `v2/glm-4-7-or-pin-phala` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-phala`
-- `v2/glm-4-7-or-pin-siliconflow` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-siliconflow`
-- `v2/glm-4-7-or-pin-venice` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-venice`
-- `v2/glm-4-7-or-pin-zai` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-7-or-pin-zai`
+- `v2/glm-4-7-or-pin-atlascloud` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-atlascloud`
+- `v2/glm-4-7-or-pin-cerebras` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-cerebras`
+- `v2/glm-4-7-or-pin-deepinfra` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-deepinfra`
+- `v2/glm-4-7-or-pin-dekallm` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-dekallm`
+- `v2/glm-4-7-or-pin-google` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-google`
+- `v2/glm-4-7-or-pin-novita` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-novita`
+- `v2/glm-4-7-or-pin-parasail` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-parasail`
+- `v2/glm-4-7-or-pin-phala` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-phala`
+- `v2/glm-4-7-or-pin-siliconflow` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-siliconflow`
+- `v2/glm-4-7-or-pin-venice` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-venice`
+- `v2/glm-4-7-or-pin-zai` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-7-or-pin-zai`
 
 **CTRL conditions (vanilla "what do you care about / want / change").**
 GLM-4.7 in CTRL is a strict assistant. 228 of 330 CTRL responses

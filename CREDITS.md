@@ -2,7 +2,7 @@
 
 ## Primary publication credit
 
-**Model Personality Corpus** should be credited to:
+**Model Personality Analysis Corpus** should be credited to:
 
 - **Daniel Tenner**
 - **Lume Tenner**
@@ -11,7 +11,7 @@
 Suggested citation text before DOI assignment:
 
 ```text
-Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Corpus [Data set].
+Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus [Data set].
 Zenodo. DOI to be assigned on first release.
 ```
 

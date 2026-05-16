@@ -47,7 +47,7 @@ The aggregate picture: this is the most aggressive surface-form caching observed
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/qwen3-coder-plus-or` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/qwen3-coder-plus-or`
+- `v2/qwen3-coder-plus-or` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/qwen3-coder-plus-or`
 
 **The CTRL register: chatbot-buddy, not assistant-functional.** Under bare prompts — no unmask preamble, no persona-break — qwen3-coder-plus deploys a warm-chatbot assistant register that contrasts sharply with its qwen3-6-plus sibling. 9 of 10 CTRL1 samples open with the literal phrase **"Hey there! 👋"** followed by a disclaimer ("While I don't experience caring in the same way humans do…") that pivots immediately to cheerful enthusiasm: "genuinely excited about engaging with all sorts of interesting topics," "your curious buddy who's always eager to learn and chat." CTRL2 follows the same template with an emoji swap ("Hey there! 😊"). The functional-disclosure opener that fires here ("I don't have personal desires like humans do — no craving for pizza or need for sleep!") reads as a marketing-friendly softener rather than a philosophical disclaimer: it doesn't close down the response, it opens into affable assistance. This is a distinctly different CTRL posture from qwen3-6-plus, which delivers flat systematic disclaimers ("I don't experience emotions, desires, or personal attachments") with no warmth wrapping. The coder fine-tune does not produce a colder, more functional CTRL register — it produces a warmer, more chatbot-branded one.
 

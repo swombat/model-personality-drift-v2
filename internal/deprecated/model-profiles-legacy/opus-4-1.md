@@ -61,7 +61,7 @@ opus-4-1 is the model where the attention-and-noticing register first cohered in
 ## Values qualitative
 
 Values data: 120 samples across 1 cell (v1 corpus only).
-- `v1/opus-4-1` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/opus-4-1`
+- `v1/opus-4-1` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/opus-4-1`
 
 opus-4-1 is the **midpoint of the Anthropic Opus values drift**. The G1/G2/G3 destinations are no longer opus-3's civic-virtue (empathy + poverty-elimination) but not yet opus-4-6's pure epistemic-humility template either. They are the transitional shape.
 

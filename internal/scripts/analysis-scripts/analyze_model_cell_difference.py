@@ -8,7 +8,7 @@ from __future__ import annotations
 import json, os, re, ssl, time, urllib.request, urllib.error, collections, concurrent.futures
 from pathlib import Path
 
-ROOT=Path('/Users/danieltenner/dev/drift-paper')
+ROOT = Path(__file__).resolve().parents[3]
 AGG=ROOT/'analysis/freeflow/personality-aggregates'
 OUT=ROOT/'analysis/freeflow/model-cell-difference-analysis'
 PACKETS=OUT/'group-packets'

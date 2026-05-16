@@ -76,7 +76,7 @@ The exact production path can be adjusted before the full run, but each cell sho
 Each sub-agent should receive one cell packet and one bounded task. The prompt should be close to:
 
 ```text
-You are working on /Users/danieltenner/dev/drift-paper as a bounded subagent.
+You are working from the repository root as a bounded subagent.
 
 Task: read exactly one packet: <packet path>
 

@@ -1,6 +1,6 @@
 import csv
 from pathlib import Path
-OUT=Path('/Users/danieltenner/dev/drift-paper/freeflow-taxonomy/affective-pilot-2026-05-12')
+OUT=Path('freeflow-taxonomy/affective-pilot-2026-05-12')
 # pilot_id, is_fiction, narrator_carries, storyworld_present, dimension, candidate, rating, confidence, criteria, evidence, confounds, storyworld_dims, storyworld_rating, role, motifs
 rows=[]
 def add(pid, dim, rating, evidence, cand='candidate_strong', conf='medium', crit='repeated_framing', isfic='no', narr='yes', sw='no', swdims='', swrating='', role='narrator_carried', motifs='', confounds='none'):

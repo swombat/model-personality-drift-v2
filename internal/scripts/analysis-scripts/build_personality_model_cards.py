@@ -3,7 +3,7 @@ from __future__ import annotations
 import json, re, collections
 from pathlib import Path
 
-ROOT=Path('/Users/danieltenner/dev/drift-paper')
+ROOT = Path(__file__).resolve().parents[3]
 AGG=ROOT/'analysis/freeflow/personality-aggregates'
 DIFF=ROOT/'analysis/freeflow/model-cell-difference-analysis'
 OUT=ROOT/'analysis/freeflow/personality-model-cards'

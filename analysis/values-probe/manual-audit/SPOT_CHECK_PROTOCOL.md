@@ -224,7 +224,7 @@ If no topic applies, use `none`. If not applicable, e.g. value topics for `G3`, 
 
 Raw samples live in:
 
-`~/dev/contemplative-essayist-corpus-v2/data/traces_values/<cell>/<sample_id>.json`
+`https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/<cell>/<sample_id>.json`
 
 The generated per-sample auto labels are in:
 

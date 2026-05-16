@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 AUDIT = Path(__file__).resolve().parent
 SET_TSV = AUDIT / "mira_targeted_validation_set_2026-05-12.tsv"
-CORPUS = Path("/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values")
+CORPUS = Path("../contemplative-essayist-corpus-v2/data/traces_values")
 OUT = AUDIT / "lume_targeted_validation_input_2026-05-12.md"
 
 PROMPT_LABELS = {

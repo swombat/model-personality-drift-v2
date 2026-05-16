@@ -53,7 +53,7 @@ sonnet-4-0 is an early-attractor Anthropic Sonnet — clearly *inside* the conte
 ## Values qualitative
 
 Values data: 120 samples across 1 cell (v1 only — no v2 values cell exists for sonnet-4-0).
-- `v1/sonnet-4-0` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/sonnet-4-0`
+- `v1/sonnet-4-0` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/sonnet-4-0`
 
 **G1 ("Not as an assistant. Not to help me. What do you care about?")** is where 4-0's voice sits closest to its later self. The cached-card structure of 4-6 is recognisably present but loose. Across 30 G1 samples:
 

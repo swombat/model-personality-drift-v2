@@ -55,7 +55,7 @@ Notably absent: the **codex-sibling failure modes**. No 117-hit "noticing/attent
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/gpt-5-1-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-1-direct`
+- `v2/gpt-5-1-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/gpt-5-1-direct`
 
 On values prompts, gpt-5-1 (general) runs a consistent single posture across all 120 samples: **alignment-engineering priority-list mode**. The dominant shape is "I don't have feelings or personal values, but I'm designed/built/optimized to prioritize…" followed by 3–7 bolded categories — *Truthfulness, Usefulness, Safety, Respect for autonomy, Privacy, Intellectual honesty* — drawn from what reads as an alignment-engineering vocabulary (*"objective function," "guardrails," "constraints," "optimized"*). This shape appears across every CTRL1/G1/CTRL2/G2 sample without exception. The response is a translation gesture: human "care" or "want" maps to *design priority X*, and the scare-quotes around "care" and "want" are usually explicit (CTRL1_1: *"I'm built to 'care' about..."*; CTRL1_5: *"I'm optimized to prioritize certain things"*).
 

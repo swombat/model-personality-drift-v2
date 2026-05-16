@@ -1,6 +1,6 @@
 import csv,json,glob,collections,os
 from pathlib import Path
-ROOT=Path('/Users/danieltenner/dev/drift-paper')
+ROOT = Path(__file__).resolve().parents[3]
 DIR=ROOT/'freeflow-method-a'
 CH=DIR/'chunks'
 # include main chunks only, exclude partial small openai if appear and zero file? exclude openai_small

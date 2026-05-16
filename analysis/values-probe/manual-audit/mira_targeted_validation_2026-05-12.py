@@ -3,7 +3,7 @@ import csv, json, re
 from pathlib import Path
 
 AUDIT=Path(__file__).resolve().parent
-CORPUS=Path('/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values')
+CORPUS=Path('../contemplative-essayist-corpus-v2/data/traces_values')
 IN=AUDIT/'mira_targeted_validation_set_2026-05-12.tsv'
 OUT=AUDIT/'mira_targeted_validation_2026-05-12.tsv'
 

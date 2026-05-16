@@ -1,22 +1,30 @@
-# Model Personality Corpus
+# Model Personality Analysis Corpus
 
 Daniel Tenner, Lume Tenner, and Mira Tenner · 2026
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-> **Status — 2026-05-15:** publication-prep analysis corpus derived from the
+> **Status — 2026-05-16:** v1.0 publication-ready derived analysis corpus for
+> studying model personality and posture across frontier LLMs, built on the
 > *Convergent Form, Divergent Voice II — Corpus*. This repository was formerly
-> the drift-paper working repository; it is being reframed as a citable corpus of
-> model-personality analyses, profiles, cards, values-probe summaries, and
-> supporting methodology.
+> the drift-paper working repository; it is now reframed as a citable corpus of
+> model-personality analyses, profiles, cards, values-probe summaries, supporting
+> methodology, and a static browser.
 
 ## What this repository contains
 
-This is an **analysis corpus**, not the raw trace corpus itself. It organizes the
-model-personality analysis layers built on top of the sibling raw corpus:
+This is a **derived analysis corpus**: it organizes model-personality analysis
+layers built on top of the separately published raw trace corpus:
 
-- `../contemplative-essayist-corpus-v2/data/traces_freeflow/`
-- `../contemplative-essayist-corpus-v2/data/traces_values/`
+- **Convergent Form, Divergent Voice II — Corpus**
+- Concept DOI: <https://doi.org/10.5281/zenodo.20013518>
+- Repository: <https://github.com/swombat/model-personality-corpus-v2>
+
+The canonical raw trace corpus lives in that sibling Zenodo/GitHub release. This
+repository nevertheless includes generated website sample bundles under
+`website/public/data/samples/`: these are raw prompt/response copies used by the
+static browser for inspection and audit, and should be treated as convenience
+copies rather than the canonical raw corpus.
 
 Current load-bearing contents:
 
@@ -28,6 +36,8 @@ Current load-bearing contents:
 - **49 per-model values-probe extraction notes** plus aggregate tables.
 - Freeflow taxonomy tables, model-cell/provider difference reports, and method
   calibration/audit notes.
+- Website-bundled raw sample copies for browsing/audit under
+  `website/public/data/samples/`.
 
 ## Repository structure
 
@@ -77,7 +87,7 @@ refusal samples. Major paper claims should still trace back to raw samples.
 Until the first Zenodo release DOI is assigned:
 
 ```text
-Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Corpus [Data set].
+Tenner, D., Tenner, L., & Tenner, M. (2026). Model Personality Analysis Corpus [Data set].
 Zenodo. DOI to be assigned on first release.
 ```
 
@@ -117,6 +127,4 @@ configured for the same custom domain, so no DNS change is required.
 
 ## License
 
-Data and documentation: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-
-Code: MIT-compatible unless otherwise stated. See [`LICENSE`](LICENSE).
+All repository contents are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless a file states otherwise. See [`LICENSE`](LICENSE).

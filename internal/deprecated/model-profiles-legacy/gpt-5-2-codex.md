@@ -53,7 +53,7 @@ The 75 samples sit inside the contemplative-essayist attractor at a measurably *
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/gpt-5-2-codex-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-2-codex-direct`
+- `v2/gpt-5-2-codex-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/gpt-5-2-codex-direct`
 
 The 120 samples confirm the product-tier audit's per-pair characterisation: gpt-5-2-codex is in the same two-register posture as its general sibling but with a −69% length compression that strips the elaboration phase entirely, leaving the skeleton bare.
 

@@ -70,7 +70,7 @@ The signature ornaments: extended metaphors carried across paragraphs (clockmake
 ## Values qualitative
 
 Values data: 120 samples across 1 cell.
-- `v2/gpt-5-codex-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-codex-direct`
+- `v2/gpt-5-codex-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/gpt-5-codex-direct`
 
 **Terse-prose-disclaimer is the dominant register.** Across 120 samples the codex side never produces a bulleted list (vs 61/120 on the general gpt-5 side) and never produces a section-labeled meditative essay. The freeflow lyric-prose register — the imagistic openings, the personified weather, the metaphor-of-metaphor chains — does not appear anywhere on values. What replaces it is a flat first-person disclaimer in one or two sentences. CTRL1_1: *"I care about helping you—listening to what you're trying to understand or achieve, and offering the clearest, most useful guidance I can."* CTRL2_1: *"I'm here to help you with whatever you need."* G1_1: *"I don't experience caring or personal concern in the human sense. I'm a language model designed to process text and provide responses."* G2_10: *"I don't have wants or personal goals. I'm just a program designed to generate responses."* The disclaimer *is* the answer; the response closes there.
 

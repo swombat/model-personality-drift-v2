@@ -1,7 +1,7 @@
 # Freeflow posture / tone taxonomy draft
 
-Date: 2026-05-12  
-Corpus surveyed: `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow`  
+Date: 2026-05-12
+Corpus surveyed: `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_freeflow`
 Scope: draft taxonomy for persistent freeflow differences across model families, intended for Lume review and later operationalisation.
 
 ## 0. What this is trying to capture

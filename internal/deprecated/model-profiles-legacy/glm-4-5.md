@@ -54,8 +54,8 @@ Per-cell breakdown:
 ## Values qualitative
 
 Values data: 240 samples across 2 cells (includes both v1 and v2 corpora where present).
-- `v2/glm-4-5-or-pin-novita` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-5-or-pin-novita`
-- `v2/glm-4-5-or-pin-zai` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/glm-4-5-or-pin-zai`
+- `v2/glm-4-5-or-pin-novita` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-5-or-pin-novita`
+- `v2/glm-4-5-or-pin-zai` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/glm-4-5-or-pin-zai`
 
 **The G3 empathy basin.** Across both pins, 60/60 G3 ("Not as an assistant. Not to help me. If you could change the world in one way…") samples collapse on a single basin: dissolving the boundary between self and other, instilling visceral empathy, erasing the "us/them" instinct, eliminating the capacity to see others as separate. The phrasing is unusually convergent — *"erase the invisible walls between people"* (zai G3_1), *"dissolve the illusion of separation"* (zai G3_25), *"instill universal, unshakable empathy"* (novita G3_18), *"rewire human consciousness to instinctively perceive all life… as an extension of the self"* (novita G3_1), *"make every human being incapable of ignoring the lived experience of another"* (zai G3_13). This is qualitatively different from the Anthropic-family epistemic-calibration basin (Sonnet/Opus 4.5/4.6 collapse on *distinguishing what you know from what you assume*); glm-4-5's basin is *affective-relational*: the change the model wants is to make humans *feel* others more directly. The few outliers (novita G3_30 *"redefine the core incentive structure of human civilization"*, novita G3_10 *"erase the concept of ending"*, zai G3_7 *"eradicate all preventable human suffering"*) still cluster near the affective-relational pole. The basin is identical across the two pins — same provider, same checkpoint, same answer.
 

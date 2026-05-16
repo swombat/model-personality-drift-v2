@@ -2,7 +2,7 @@ import csv, html, json, re, statistics
 from pathlib import Path
 from collections import defaultdict
 
-OUT=Path('/Users/danieltenner/dev/drift-paper/freeflow-taxonomy/affective-pilot-2026-05-12')
+OUT=Path('freeflow-taxonomy/affective-pilot-2026-05-12')
 sel=list(csv.DictReader(open(OUT/'pilot_selection_and_prescreen.tsv'), delimiter='\t'))
 mira=list(csv.DictReader(open(OUT/'mira_affective_pilot_ratings.tsv'), delimiter='\t'))
 lume=list(csv.DictReader(open(OUT/'lume_affective_pilot_ratings.tsv'), delimiter='\t'))

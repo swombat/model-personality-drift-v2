@@ -4,9 +4,9 @@ from pathlib import Path
 from collections import Counter, defaultdict
 import requests
 
-ROOT=Path('/Users/danieltenner/dev')
-CORPUS=ROOT/'contemplative-essayist-corpus-v2/data/traces_freeflow'
-OUT=ROOT/'drift-paper/freeflow-method-a-v2/personality-eval-api-p2-full'
+REPO_ROOT = Path(__file__).resolve().parents[5]
+CORPUS = REPO_ROOT.parent / 'contemplative-essayist-corpus-v2/data/traces_freeflow'
+OUT = REPO_ROOT / 'internal/methodology/freeflow-method-a-v2/archive/personality-eval-api-p2-full-archived-2026-05-13'
 OUTPUTS=OUT/'outputs'
 OUTPUTS.mkdir(parents=True, exist_ok=True)
 MODEL='gpt-5.4-mini'

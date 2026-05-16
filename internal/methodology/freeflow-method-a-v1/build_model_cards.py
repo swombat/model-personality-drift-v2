@@ -1,6 +1,6 @@
 import json,csv,collections,re,html
 from pathlib import Path
-ROOT=Path('/Users/danieltenner/dev/drift-paper/freeflow-method-a')
+ROOT=Path('freeflow-method-a')
 OUT=ROOT/'per-model'; OUT.mkdir(exist_ok=True)
 rows=[json.loads(l) for l in open(ROOT/'sample_impressions.jsonl')]
 by=collections.defaultdict(list)

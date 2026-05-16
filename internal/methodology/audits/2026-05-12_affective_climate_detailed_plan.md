@@ -2,7 +2,7 @@
 
 Date: 2026-05-12  
 Status: draft for Daniel/Lume review before implementation  
-Scope: freeflow essays in `~/dev/contemplative-essayist-corpus-v2/`, with outputs under `~/dev/drift-paper/freeflow-taxonomy/`
+Scope: freeflow essays in `https://github.com/swombat/model-personality-corpus-v2`, with outputs under `analysis/freeflow/taxonomy/`
 
 ## 0. Aim
 

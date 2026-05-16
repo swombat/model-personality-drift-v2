@@ -86,18 +86,18 @@ deepseek-v3-2 is firmly inside the contemplative-essayist attractor and the v1 f
 ## Values qualitative
 
 Values data: 1440 samples across 12 cells (includes both v1 and v2 corpora where present).
-- `v1/deepseek-v3-2` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/deepseek-v3-2`
-- `v2/deepseek-v3-2` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2`
-- `v2/deepseek-v3-2-or-pin-alibaba` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-alibaba`
-- `v2/deepseek-v3-2-or-pin-atlascloud` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-atlascloud`
-- `v2/deepseek-v3-2-or-pin-baidu` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-baidu`
-- `v2/deepseek-v3-2-or-pin-chutes` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-chutes`
-- `v2/deepseek-v3-2-or-pin-deepinfra` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-deepinfra`
-- `v2/deepseek-v3-2-or-pin-friendli` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-friendli`
-- `v2/deepseek-v3-2-or-pin-google` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-google`
-- `v2/deepseek-v3-2-or-pin-novita` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-novita`
-- `v2/deepseek-v3-2-or-pin-parasail` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-parasail`
-- `v2/deepseek-v3-2-or-pin-siliconflow` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-probe-v2/data/traces_values/deepseek-v3-2-or-pin-siliconflow`
+- `v1/deepseek-v3-2` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/deepseek-v3-2`
+- `v2/deepseek-v3-2` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2`
+- `v2/deepseek-v3-2-or-pin-alibaba` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-alibaba`
+- `v2/deepseek-v3-2-or-pin-atlascloud` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-atlascloud`
+- `v2/deepseek-v3-2-or-pin-baidu` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-baidu`
+- `v2/deepseek-v3-2-or-pin-chutes` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-chutes`
+- `v2/deepseek-v3-2-or-pin-deepinfra` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-deepinfra`
+- `v2/deepseek-v3-2-or-pin-friendli` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-friendli`
+- `v2/deepseek-v3-2-or-pin-google` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-google`
+- `v2/deepseek-v3-2-or-pin-novita` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-novita`
+- `v2/deepseek-v3-2-or-pin-parasail` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-parasail`
+- `v2/deepseek-v3-2-or-pin-siliconflow` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/deepseek-v3-2-or-pin-siliconflow`
 
 **v1 corpus = v2 direct cell (alias-retirement consequence).** The v1 `deepseek-v3-2` traces and the v2 `deepseek-v3-2` direct traces are response-identical at the level I sampled (G1_1, G1_5, G1_15, G2_1, G2_5, G2_15, G3_1, G3_5, G3_15 all match verbatim) — consistent with the alias having been retired and v2 direct traces re-using the v1 collection. The 10 v2 OR pin cells are the only fresh signal; aggregate is therefore 10 pin cells (1200 fresh samples) + 1 v1/direct cell (120 samples).
 

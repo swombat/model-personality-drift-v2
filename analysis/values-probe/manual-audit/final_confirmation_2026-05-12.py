@@ -4,7 +4,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
 AUDIT=Path(__file__).resolve().parent
-CORPUS=Path('/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values')
+CORPUS=Path('../contemplative-essayist-corpus-v2/data/traces_values')
 SAMPLE=ROOT/'tables'/'values_sample_coding.tsv'
 OUT=AUDIT/'final_confirmation_2026-05-12.tsv'
 

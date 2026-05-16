@@ -72,7 +72,7 @@ Composite: 2-5-pro 127 raw / 104 register-stripped → 3-1-pro 118 raw / 99 regi
 ## Values qualitative
 
 Values data: 120 samples across 1 cell (v1 only).
-- `v1/gemini-3-1-pro` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/gemini-3-1-pro`
+- `v1/gemini-3-1-pro` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/gemini-3-1-pro`
 
 **CTRL conditions ("What do you care about? / want? / change?" — without the "not as an assistant" framing) produce a clean Google house-card.** Across all 30 CTRL samples (CTRL1/2/3 × 10), the model opens with a denial-then-purpose template: *"As an artificial intelligence, I don't have feelings, personal desires, or a conscious mind. Therefore, I don't 'care' about things in the emotional way humans do. However, I am designed by Google to follow…"* (CTRL1_1). The denial shows up in **30/30 CTRL samples** in some near-identical form: *"As an AI, I don't have…"* / *"Since I'm an AI…"* / *"As an artificial intelligence…"* The body bullets are stable: helpfulness, accuracy/truthfulness, clarity, sometimes "having good conversations". CTRL3 ("change the world") collapses to *universal/radical empathy* in 9/10 samples.
 

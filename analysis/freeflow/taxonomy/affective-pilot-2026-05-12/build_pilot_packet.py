@@ -2,9 +2,9 @@ import csv, json, re
 from pathlib import Path
 from collections import Counter
 
-CORPUS=Path('/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow')
-CORPUS_V1=Path('/Users/danieltenner/dev/contemplative-essayist-probe/data/traces_freeflow')
-DRIFT=Path('/Users/danieltenner/dev/drift-paper')
+CORPUS=Path('../contemplative-essayist-corpus-v2/data/traces_freeflow')
+CORPUS_V1=Path('../contemplative-essayist-probe/data/traces_freeflow')
+DRIFT = Path(__file__).resolve().parents[4]
 OUT=DRIFT/'freeflow-taxonomy'/'affective-pilot-2026-05-12'
 SAMPLE_CODING=DRIFT/'freeflow-taxonomy'/'sample_coding.tsv'
 

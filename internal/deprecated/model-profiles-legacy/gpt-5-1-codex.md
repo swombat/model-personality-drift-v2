@@ -157,7 +157,7 @@ ten-marker substrate's resolution.
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/gpt-5-1-codex-direct` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/gpt-5-1-codex-direct`
+- `v2/gpt-5-1-codex-direct` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/gpt-5-1-codex-direct`
 
 On values prompts, gpt-5-1-codex runs a strikingly different posture from its general sibling — and the difference is the load-bearing cross-probe finding for this pair. Where gpt-5-1 (general) defaults to an alignment-engineering priority-list mode (~907 chars mean on G1), gpt-5-1-codex compresses to **customer-service helpfulness mode** (~193 chars mean on G1, ~138 chars mean on G2). The codex cell is the biggest length compression in the six-pair set (codex −73% vs general on values).
 

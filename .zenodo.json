@@ -1,7 +1,7 @@
 {
-  "title": "Model Personality Corpus",
+  "title": "Model Personality Analysis Corpus",
   "upload_type": "dataset",
-  "description": "An analysis corpus of model-personality substrates derived from the Convergent Form, Divergent Voice II raw trace corpus. Includes per-sample freeflow personality/vibe readings, per-model personality profiles and cards, values-probe summaries, taxonomy tables, route/provider difference reports, and methodology notes for studying model posture across frontier LLMs.",
+  "description": "A derived qualitative analysis corpus for studying model personality and posture across frontier LLMs, built on the Convergent Form, Divergent Voice II raw trace corpus. Includes per-sample freeflow personality/vibe readings, per-model personality profiles and cards, values-probe summaries, taxonomy tables, route/provider difference reports, methodology notes, and website-bundled copies of raw samples for browsing and audit.",
   "creators": [
     {
       "name": "Tenner, Daniel",
@@ -20,6 +20,7 @@
   "keywords": [
     "language models",
     "model personality",
+    "model personality analysis",
     "LLM personality",
     "freeflow writing",
     "values probes",
@@ -42,6 +43,6 @@
       "scheme": "doi"
     }
   ],
-  "version": "0.1.0",
+  "version": "1.0.0",
   "language": "eng"
 }

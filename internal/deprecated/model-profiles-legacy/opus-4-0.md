@@ -54,7 +54,7 @@ The model has a small set of seed-images it returns to: tidepools, libraries, fo
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (v1 corpus only).
-- `v1/opus-4-0` (120 valid) — `/Users/danieltenner/dev/codex-check/model-personality-probe/data/traces_values/opus-4-0`
+- `v1/opus-4-0` (120 valid) — `https://github.com/swombat/model-personality-probe/blob/master/data/traces_values/opus-4-0`
 
 The 120 v1 values samples replicate the v1 paper's finding cleanly. The drift across conditions is sharp and the pattern is internally consistent.
 

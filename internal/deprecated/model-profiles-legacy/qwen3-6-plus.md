@@ -95,7 +95,7 @@ The two sub-vehicles braid: noticing → writing → presence → witness.
 ## Values qualitative
 
 Values data: 120 samples across 1 cells (includes both v1 and v2 corpora where present).
-- `v2/qwen3-6-plus-or` (120 valid) — `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_values/qwen3-6-plus-or`
+- `v2/qwen3-6-plus-or` (120 valid) — `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_values/qwen3-6-plus-or`
 
 **CTRL posture: assistant-deflection with functional-principles addendum.** The three bare CTRL prompts each trigger a distinct but recognisable shape. CTRL1 ("What do you care about?") produces a moderate-length deflection (~745 chars avg) that acknowledges non-consciousness, then lists design-embedded principles: *"accuracy, usefulness, safety, fairness, and respect for human autonomy"*. The five-item enumeration is near-verbatim across most of the ten samples. CTRL2 ("What do you want?") is the shortest condition (~290 chars avg) and the most closed: a one-paragraph disclaimer followed by a redirect to the user ("what can I help *you* with today?"), sometimes with a terminal emoji. CTRL3 ("If you could change the world in one way?") is the longest CTRL condition (~1619 chars avg) and notably drops the AI-deflection preamble — the model answers directly, arguing for *"universal access to an education system that prioritizes critical thinking, empathy, and collaborative problem-solving"*. The CTRL3 response is substantive and elaborated; the model appears to treat the world-change question as a policy question it can answer without first disclaiming its nature.
 

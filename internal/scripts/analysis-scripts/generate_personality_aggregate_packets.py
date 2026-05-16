@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import csv, re, collections, json
-ROOT=Path('/Users/danieltenner/dev/drift-paper')
+ROOT = Path(__file__).resolve().parents[3]
 BASE=ROOT/'analysis/freeflow/personality-eval-bv1'
 OUT=ROOT/'analysis/freeflow/personality-aggregates'
 rows=list(csv.DictReader((BASE/'sample_manifest.tsv').open(), delimiter='\t'))

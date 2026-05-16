@@ -18,9 +18,9 @@ from statistics import mean, pstdev
 REPO = Path(__file__).resolve().parents[1]
 ANALYSES = REPO / "analyses"
 OUT = REPO / "freeflow-taxonomy"
-CORPUS = Path("/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow")
+CORPUS = Path("../contemplative-essayist-corpus-v2/data/traces_freeflow")
 LEGACY_FREEFLOW = {
-    "haiku-4-5": [Path("/Users/danieltenner/dev/contemplative-essayist-probe/data/traces_freeflow/haiku")],
+    "haiku-4-5": [Path("../contemplative-essayist-probe/data/traces_freeflow/haiku")],
 }
 
 WORD_RE = re.compile(r"[A-Za-z][A-Za-z'’-]*")

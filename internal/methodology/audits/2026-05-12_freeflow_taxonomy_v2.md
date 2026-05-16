@@ -1,7 +1,7 @@
 # Freeflow posture taxonomy v2 — compressed methodology draft
 
-Date: 2026-05-12  
-Corpus target: `/Users/danieltenner/dev/contemplative-essayist-corpus-v2/data/traces_freeflow`  
+Date: 2026-05-12
+Corpus target: `https://github.com/swombat/model-personality-corpus-v2/blob/master/data/traces_freeflow`
 Status: methodology draft for Daniel/Lume review before application
 
 ## 0. Purpose
